@@ -1,0 +1,23 @@
+$src: $font-path + 'benton-sans/';
+$font-family: 'Benton Sans';
+
+@font-face {
+  font-family: $font-family;
+  src: url($src + 'benton-sans-book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family;
+  src: url($src + 'benton-sans-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family;
+  src: url($src + 'benton-sans-black.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}

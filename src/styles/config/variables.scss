@@ -1,0 +1,75 @@
+/* colors
+**********************************************************/
+// base
+$color-black: #000;
+$color-danger: #fe5b5c;
+$color-success: #a0cb4d;
+$color-type: #242f30;
+$color-warning: #fdb634;
+$color-white: #fff;
+
+// social
+$color-facebook: #3b5998;
+$color-google-plus: #f44336;
+$color-pinterest: #c92228;
+$color-twitter: #6cadde;
+
+// branding
+$color-primary: #addfe4;
+$color-primary-dark: darken(#addfe4, 10%);
+$color-secondary: #4fd287;
+$color-tertiary: #d1ef69;
+
+// component specific
+$color-border: rgba($color-type, 0.1);
+$disabled-opacity: 0.4;
+
+/* typography
+**********************************************************/
+// font families
+$font-family-mono: Monaco, Menlo, Consolas, 'Courier New', monospace;
+$font-family-sans-serif: 'Benton Sans', arial, sans-serif;
+$font-family-secondary: arial, sans-serif;
+
+// font sizes
+$font-size-base: 1;
+$line-height-base: 1.4;
+
+// font weights
+$font-weight-heavy: 800;
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600;
+$font-weight-base: 400;
+$font-weight-light: 200;
+
+/* device widths
+**********************************************************/
+$widescreen: 56.25%;
+$width-mobile: 576px;
+$width-mobile-small: 0;
+$width-tablet: 768px;
+$width-desktop: 992px;
+$width-max: 1200px;
+
+/* spacing
+**********************************************************/
+$spacer: 1rem;
+
+/* scaffolding
+**********************************************************/
+$border-radius: $spacer / 5;
+$border-width: 1px;
+$border-width-large: $border-width * 6;
+
+/* animations
+**********************************************************/
+// duration
+$duration-base: 0.2s;
+
+// easing
+$ease-default: ease;
+
+// html {
+//   // adjust this value to control entire app REM size
+//   // font-size: 63.75%;
+// }
