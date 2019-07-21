@@ -1,0 +1,30 @@
+@import '../../styles/config/variables';
+@import '../../styles/mixins/font-size.scss';
+@import '../../styles/mixins/line-height.scss';
+
+.root {
+  @include font-size(0.8);
+  @include line-height(0.8);
+
+  color: $color-white;
+  padding: $spacer / 2;
+  background: $color-quadrinary;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  .address {
+    margin-left: $spacer / 2;
+  }
+
+  .content {
+    margin: 0 auto;
+    max-width: $width-max;
+  }
+}

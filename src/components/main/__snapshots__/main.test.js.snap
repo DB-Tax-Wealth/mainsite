@@ -3,5 +3,39 @@
 exports[`<Main /> should render correctly 1`] = `
 <div
   className="root"
-/>
+>
+  <div
+    className="root"
+  >
+    <a
+      href="tel:+14147647730"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <i
+        className="fas fa-phone-alt"
+      />
+       
+      414-764-7330
+    </a>
+    <a
+      className="address"
+      href="https://www.google.com/maps/place/1125+Milwaukee+Ave,+South+Milwaukee,+WI+53172"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <i
+        className="fas fa-home"
+      />
+       
+      1125 Milwaukee Ave.
+       · 
+      South Milwaukee
+      , 
+      WI
+       · 
+      53172
+    </a>
+  </div>
+</div>
 `;
