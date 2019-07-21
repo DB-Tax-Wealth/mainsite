@@ -1,6 +1,6 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
-[![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/dbtax-mainsite.svg)](https://github.com/joeyschroeder/dbtax-mainsite/issues)
-[![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/dbtax-mainsite.svg)](https://github.com/joeyschroeder/dbtax-mainsite/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/BreadboxIO/dbtax-mainsite.svg)](https://github.com/BreadboxIO/dbtax-mainsite/issues)
+[![GitHub stars](https://img.shields.io/github/stars/BreadboxIO/dbtax-mainsite.svg)](https://github.com/BreadboxIO/dbtax-mainsite/stargazers)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
