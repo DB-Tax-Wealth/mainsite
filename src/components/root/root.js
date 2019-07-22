@@ -9,7 +9,7 @@ export const Root = () => {
   return (
     <BrowserRouter>
       <Main>
-        <Route exact path={ROUTES.SPLASH} component={Splash} />
+        <Route exact path={ROUTES.HOME} component={Splash} />
       </Main>
     </BrowserRouter>
   );

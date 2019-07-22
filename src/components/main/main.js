@@ -1,5 +1,6 @@
 import { App } from 'components/app/app';
-import { ContactBar } from '../contact-bar/contact-bar';
+import { ContactBar } from 'components/contact-bar/contact-bar';
+import { Navigation } from 'components/navigation/navigation';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -9,6 +10,7 @@ export const Main = props => {
   return (
     <App>
       <ContactBar />
+      <Navigation />
       {children}
     </App>
   );

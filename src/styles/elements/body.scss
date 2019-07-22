@@ -6,7 +6,7 @@ body {
   @include font-size($font-size-base);
   @include line-height($line-height-base);
 
-  background: $color-white;
+  background: $color-primary;
   color: $color-type;
   font-family: $font-family-sans-serif;
   height: 100%;
