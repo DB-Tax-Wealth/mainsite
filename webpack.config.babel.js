@@ -57,7 +57,7 @@ const outputConfig = {
   output: {
     filename: '[name]-[hash].js',
     path: ROOT_PATHS.dist,
-    publicPath: '/'
+    publicPath: './'
   }
 };
 

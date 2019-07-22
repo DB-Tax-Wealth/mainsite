@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><title>DB Tax & Financial Services</title><link href="./1-602e87553c102c380796.css" rel="stylesheet"><link href="./main-602e87553c102c380796.css" rel="stylesheet"></head><body><div id="app"></div><div id="pre-bootstrap-container"><script type="text/javascript">const appReadyClass = 'app-ready';
+                const body = document.getElementsByTagName('body')[0];
+                const inlinedStyles = document.getElementsByTagName('style')[0];
+                const preBootstrapContainer = document.getElementById('pre-bootstrap-container');
+                const handleAppReady = event => {
+                    setTimeout(() => {
+                        body.className = appReadyClass; // add app-ready class after timeout to trigger animations
+                    }, 100);
+                    setTimeout(() => {
+                        preBootstrapContainer.remove(); // remove pre bootstrap content;
+                        if (inlinedStyles) inlinedStyles.remove(); // remove inlined styles so they don't conflict;
+                    }, 900);
+                }
+                // Listen for the "appReady" event, which will be emitted by the app.js when component mounts
+                // and bubble up (as far as we know) to the document root.
+                document.addEventListener('appReady', handleAppReady);</script><div class="loader"><span></span><span></span><span></span><span></span><span></span></div></div><script type="text/javascript" src="./vendor-602e87553c102c380796.js"></script><script type="text/javascript" src="./main-602e87553c102c380796.js"></script></body></html>
