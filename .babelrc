@@ -10,6 +10,7 @@
         "components": "./src/components",
         "constants": "./src/constants",
         "fonts": "./src/fonts",
+        "images": "./src/images",
         "store": "./src/store",
         "styles": "./src/styles",
         "util": "./src/util"

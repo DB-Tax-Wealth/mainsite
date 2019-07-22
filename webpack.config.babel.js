@@ -5,13 +5,14 @@ import { devServer } from './webpack/dev-server';
 import { getHtml } from './webpack/get-html';
 import { getSourcemaps } from './webpack/get-sourcemaps';
 import { loadFonts } from './webpack/load-fonts';
+import loadImages from './webpack/load-images';
 import { loadJs } from './webpack/load-js';
 import { loadStyles } from './webpack/load-styles';
 import merge from 'webpack-merge';
 import path from 'path';
 
 const ROOT_PATHS = {
-  dist: path.join(__dirname, 'dist'),
+  dist: path.join(__dirname, 'docs'),
   src: path.join(__dirname, 'src')
 };
 
@@ -78,7 +79,13 @@ const optimizationConfig = {
 const commonConfig = merge([
   entryConfig,
   getHtml({ title: 'DB Tax & Financial Services', template: path.join(ROOT_PATHS.src, 'index.html') }),
-  loadJs({ include: ROOT_PATHS.src, exclude: '/node_modules/', options: { cacheDirectory: true } })
+  loadJs({ include: ROOT_PATHS.src, exclude: '/node_modules/', options: { cacheDirectory: true } }),
+  loadImages({
+    options: {
+      limit: 15000,
+      name: 'images/[name].[hash].[ext]'
+    }
+  })
 ]);
 
 const productionConfig = merge([
