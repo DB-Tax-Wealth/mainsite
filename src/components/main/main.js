@@ -1,6 +1,6 @@
-import { App } from 'components/app/app';
-import { ContactBar } from 'components/contact-bar/contact-bar';
-import { Navigation } from 'components/navigation/navigation';
+import { App } from 'components/main/app/app';
+import { ContactBar } from 'components/main/contact-bar/contact-bar';
+import { Navigation } from 'components/main/navigation/navigation';
 import PropTypes from 'prop-types';
 import React from 'react';
 

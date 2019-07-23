@@ -1,5 +1,5 @@
-@import '../../styles/config/variables';
-@import '../../styles/mixins/transition';
+@import '../../../styles/config/variables';
+@import '../../../styles/mixins/transition';
 
 .root {
   background: $color-white;
@@ -53,7 +53,7 @@
   }
 
   .logo {
-    background-image: url(../../images/db-tax-logo.png);
+    background-image: url(../../../images/db-tax-logo.png);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
