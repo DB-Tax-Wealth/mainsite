@@ -16,7 +16,8 @@ $color-twitter: #6cadde;
 
 // branding
 $color-primary: #addfe4;
-$color-primary-dark: darken(#addfe4, 10%);
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: darken($color-primary, 10%);
 $color-secondary: #4fd287;
 $color-tertiary: #d1ef69;
 $color-quadrinary: #3a4a4c;
