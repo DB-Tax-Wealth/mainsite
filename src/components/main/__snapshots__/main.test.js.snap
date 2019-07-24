@@ -92,6 +92,78 @@ exports[`<Main /> should render correctly 1`] = `
           Legal
         </a>
       </nav>
+      <div
+        className="accountAccess"
+      >
+        <button
+          className="root button"
+          onClick={null}
+          type="button"
+        >
+          Account Access
+        </button>
+      </div>
+      <div
+        className="mobileToggle"
+      >
+        <button
+          className="root root"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="fas fa-bars"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="root"
+  >
+    <div
+      className="root"
+      onClick={[Function]}
+    />
+    <div
+      className="menu"
+    >
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        About
+      </a>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Services
+      </a>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Client Resources
+      </a>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Legal
+      </a>
     </div>
   </div>
 </div>

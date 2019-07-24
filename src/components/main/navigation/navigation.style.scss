@@ -3,6 +3,27 @@
 
 .root {
   background: $color-white;
+  box-shadow: $shadow-float;
+
+  .accountAccess {
+    align-items: center;
+    display: flex;
+    margin-left: $spacer;
+
+    .button {
+      background: $color-primary-light;
+      color: $color-primary;
+
+      &:hover {
+        color: $color-white;
+        background: $color-primary;
+      }
+    }
+
+    @media screen and (max-width: $width-tablet) {
+      display: none;
+    }
+  }
 
   .content {
     display: flex;
@@ -21,7 +42,7 @@
       align-items: center;
       color: $color-type;
       display: flex;
-      height: $spacer * 5;
+      height: $spacer * 4;
       padding-left: $spacer / 2;
       padding-right: $spacer / 2;
       position: relative;
@@ -50,6 +71,10 @@
         }
       }
     }
+
+    @media screen and (max-width: $width-tablet) {
+      display: none;
+    }
   }
 
   .logo {
@@ -59,10 +84,21 @@
     background-size: contain;
     display: block;
     flex: 1;
-    height: $spacer * 5;
+    height: $spacer * 4;
+  }
+
+  .mobileToggle {
+    flex: 2;
+    align-items: center;
+    display: none;
+    justify-content: flex-end;
 
     @media screen and (max-width: $width-tablet) {
-      flex: 2;
+      display: flex;
+    }
+
+    @media screen and (max-width: $width-mobile) {
+      flex: 1;
     }
   }
 }

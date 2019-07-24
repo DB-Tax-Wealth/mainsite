@@ -1,0 +1,43 @@
+@import '../../../styles/config/variables';
+@import '../../../styles/mixins/font-size.scss';
+@import '../../../styles/mixins/transition.scss';
+
+.root {
+  .menu {
+    @include transition(transform);
+
+    background: $color-white;
+    box-shadow: $shadow-float;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    width: 50%;
+
+    a {
+      @include transition(#{'color, background'});
+
+      color: $color-primary;
+      display: block;
+      padding: $spacer;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &.active,
+      &:hover {
+        background: $color-primary;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.root.active {
+  .menu {
+    transform: translateX(0%);
+  }
+}

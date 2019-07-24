@@ -1,5 +1,4 @@
 @import '../../styles/config/variables';
-@import '../../styles/mixins/font-size';
 @import '../../styles/mixins/transition';
 
 .root {
@@ -13,6 +12,7 @@
   transform: scale(1);
 
   &:hover {
+    color: $color-white;
     background: $color-primary-dark;
     transform: scale(1.05);
   }

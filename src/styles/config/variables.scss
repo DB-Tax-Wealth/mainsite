@@ -63,6 +63,11 @@ $border-radius: $spacer / 5;
 $border-width: 1px;
 $border-width-large: $border-width * 6;
 
+/* shadows
+*********************************************************/
+$shadow-down: 0 $border-width $spacer rgba($color-black, 0.08);
+$shadow-float: 0 $border-width * 2 $spacer rgba($color-black, 0.08);
+
 /* animations
 **********************************************************/
 // duration
