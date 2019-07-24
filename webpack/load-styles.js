@@ -14,6 +14,7 @@ export const loadStyles = ({ production = false }) => {
     loader: 'css-loader',
     options: {
       importLoaders: 2,
+      localIdentName: production ? '[hash:base64:5]' : '[name][local]',
       modules: true,
       sourceMap: !production
     }
