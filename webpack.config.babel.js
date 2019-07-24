@@ -2,6 +2,7 @@ import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import { clean } from './webpack/clean';
 import { devServer } from './webpack/dev-server';
+import { getFavicons } from './webpack/get-favicons';
 import { getHtml } from './webpack/get-html';
 import { getSourcemaps } from './webpack/get-sourcemaps';
 import { loadFonts } from './webpack/load-fonts';
@@ -91,6 +92,7 @@ const commonConfig = merge([
 const productionConfig = merge([
   clean(ROOT_PATHS.dist),
   commonConfig,
+  getFavicons({ sourcePath: path.join(ROOT_PATHS.src, 'images/favicon.png') }),
   loadFonts({ options: { limit: 5000, name: 'fonts/[name]-[hash].[ext]' } }),
   loadStyles({ production: true }),
   optimizationConfig,
