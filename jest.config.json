@@ -22,6 +22,7 @@
     "<rootDir>/node_modules/"
   ],
   "transform": {
-    "^.+\\.js$": "babel-jest"
+    "^.+\\.js$": "babel-jest",
+    "\\.(jpg|jpeg|png)$": "<rootDir>/file-transformer.js"
   }
 }
