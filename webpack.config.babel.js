@@ -87,7 +87,7 @@ const commonConfig = merge([
   loadImages({
     options: {
       limit: 15000,
-      name: 'images/[name].[hash].[ext]'
+      name: '/images/[name].[hash].[ext]'
     }
   })
 ]);
@@ -95,8 +95,8 @@ const commonConfig = merge([
 const productionConfig = merge([
   clean(ROOT_PATHS.dist),
   commonConfig,
-  getFavicons({ sourcePath: path.join(ROOT_PATHS.src, 'images/favicon.png') }),
-  loadFonts({ options: { limit: 5000, name: 'fonts/[name]-[hash].[ext]' } }),
+  getFavicons({ sourcePath: path.join(ROOT_PATHS.src, '/images/favicon.png') }),
+  loadFonts({ options: { limit: 5000, name: '/fonts/[name]-[hash].[ext]' } }),
   loadStyles({ production: true }),
   optimizationConfig,
   outputConfig,
