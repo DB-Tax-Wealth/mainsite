@@ -47,11 +47,20 @@ exports[`<Main /> should render correctly 1`] = `
     <div
       className="content"
     >
-      <a
-        className="logo"
-        href="/"
-        onClick={[Function]}
-      />
+      <div
+        className="logoContainer"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt="DB Tax & Financial Services"
+            className="logo"
+            src="db-tax-logo.png"
+          />
+        </a>
+      </div>
       <nav
         className="links"
       >
@@ -135,6 +144,15 @@ exports[`<Main /> should render correctly 1`] = `
         onClick={[Function]}
         style={Object {}}
       >
+        Home
+      </a>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
         About
       </a>
       <a
@@ -163,6 +181,15 @@ exports[`<Main /> should render correctly 1`] = `
         style={Object {}}
       >
         Legal
+      </a>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Account Access
       </a>
     </div>
   </div>

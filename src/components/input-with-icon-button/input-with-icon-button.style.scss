@@ -1,0 +1,17 @@
+@import '../../styles/config/variables';
+@import '../../styles/mixins/font-size';
+@import '../../styles/mixins/line-height';
+
+.root {
+  background: $color-white;
+  border-radius: $spacer * 2;
+  display: flex;
+  padding: $spacer / 4;
+
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: $spacer / 2;
+  }
+}

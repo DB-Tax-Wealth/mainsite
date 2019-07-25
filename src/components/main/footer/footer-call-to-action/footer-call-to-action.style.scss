@@ -1,0 +1,46 @@
+@import '../../../../styles/config/variables';
+@import '../../../../styles/mixins/font-size.scss';
+@import '../../../../styles/mixins/line-height.scss';
+
+.root {
+  align-items: center;
+  border-bottom: $border-width solid rgba($color-white, $disabled-opacity);
+  display: flex;
+  padding: $spacer * 5 0;
+
+  .action {
+    margin-left: $spacer * 2;
+    flex: 1;
+
+    .button {
+      background: $color-secondary;
+      width: 100%;
+      display: block;
+    }
+
+    @media screen and (max-width: $width-tablet) {
+      margin-left: 0;
+    }
+  }
+
+  .content {
+    @include font-size(1.4);
+    @include line-height(1.8);
+
+    flex: 3;
+    font-weight: $font-weight-light;
+
+    @media screen and (max-width: $width-tablet) {
+      @include font-size(1.2);
+      @include line-height(1.6);
+
+      margin-bottom: $spacer;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: $width-tablet) {
+    display: block;
+    padding: $spacer * 2 0;
+  }
+}

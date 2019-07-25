@@ -1,0 +1,37 @@
+@import '../../../../styles/config/variables';
+@import '../../../../styles/mixins/font-size.scss';
+@import '../../../../styles/mixins/line-height.scss';
+
+.root {
+  @include font-size(0.8);
+  @include line-height(1.2);
+
+  display: flex;
+  align-items: center;
+
+  .copyright {
+    flex: 1;
+
+    @media screen and (max-width: $width-mobile) {
+      margin-bottom: $spacer;
+    }
+  }
+
+  .logoContainer {
+    margin-right: $spacer;
+
+    .logo {
+      display: block;
+      height: $spacer * 2.5;
+    }
+
+    @media screen and (max-width: $width-mobile) {
+      margin-right: 0;
+      margin-bottom: $spacer / 2;
+    }
+  }
+
+  @media screen and (max-width: $width-mobile) {
+    display: block;
+  }
+}

@@ -5,6 +5,17 @@
   background: $color-white;
   box-shadow: $shadow-float;
 
+  .logoContainer {
+    a {
+      display: block;
+    }
+
+    .logo {
+      display: block;
+      height: $spacer * 2.5;
+    }
+  }
+
   .accountAccess {
     align-items: center;
     display: flex;
@@ -26,6 +37,7 @@
   }
 
   .content {
+    align-items: center;
     display: flex;
     margin: 0 auto;
     max-width: $width-max;
@@ -77,16 +89,6 @@
     }
   }
 
-  .logo {
-    background-image: url(../../../images/db-tax-logo.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    flex: 1;
-    height: $spacer * 4;
-  }
-
   .mobileToggle {
     flex: 2;
     align-items: center;
@@ -100,5 +102,9 @@
     @media screen and (max-width: $width-mobile) {
       flex: 1;
     }
+  }
+
+  @media screen and (max-width: $width-tablet) {
+    padding: $spacer /2 0;
   }
 }

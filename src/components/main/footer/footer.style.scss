@@ -1,0 +1,14 @@
+@import '../../../styles/config/variables';
+@import '../../../styles/mixins/font-size.scss';
+@import '../../../styles/mixins/line-height.scss';
+
+.root {
+  background: $color-quadrinary;
+  padding: $spacer;
+  color: $color-white;
+
+  .content {
+    max-width: $width-max;
+    margin: 0 auto;
+  }
+}

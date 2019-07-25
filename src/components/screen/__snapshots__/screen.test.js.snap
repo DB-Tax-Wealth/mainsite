@@ -3,5 +3,198 @@
 exports[`<Screen /> should render correctly 1`] = `
 <div
   className="animated fadeIn root"
-/>
+>
+  <div
+    className="content"
+  />
+  <div
+    className="root"
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="root"
+      >
+        <div
+          className="content"
+        >
+          Whether you're facing retirement or looking to better understand investments, we can help you with money questions.
+        </div>
+        <div
+          className="action"
+        >
+          <button
+            className="root button"
+            onClick={null}
+            type="button"
+          >
+            Get Started Today
+          </button>
+        </div>
+      </div>
+      <div
+        className="root"
+      >
+        <div
+          className="contact"
+        >
+          <h3>
+            Contact
+          </h3>
+          <div
+            className="content"
+          >
+            <div>
+              <a
+                href="mailto:+414-764-7330"
+              >
+                414-764-7330
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.google.com/maps/place/1125+Milwaukee+Ave,+South+Milwaukee,+WI+53172"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                1125 Milwaukee Ave.
+                <br />
+                South Milwaukee
+                , 
+                WI
+                 · 
+                53172
+              </a>
+            </div>
+            <div>
+              <a
+                href="mailto:social@dbtaxinc.com"
+              >
+                social@dbtaxinc.com
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="links"
+        >
+          <h3>
+            Links
+          </h3>
+          <div
+            className="content"
+          >
+            <div>
+              <a
+                href="/"
+                onClick={[Function]}
+              >
+                About
+              </a>
+            </div>
+            <div>
+              <a
+                href="/"
+                onClick={[Function]}
+              >
+                Services
+              </a>
+            </div>
+            <div>
+              <a
+                href="/"
+                onClick={[Function]}
+              >
+                Client Resources
+              </a>
+            </div>
+            <div>
+              <a
+                href="/"
+                onClick={[Function]}
+              >
+                Legal
+              </a>
+            </div>
+            <div>
+              <a
+                href="/"
+                onClick={[Function]}
+              >
+                Account Access
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="learnMore"
+        >
+          <h3>
+            Want to Know More?
+          </h3>
+          <div>
+            We'll reach out via email to set up a call.
+          </div>
+          <div>
+            <div
+              className="root email"
+            >
+              <input
+                placeholder="enter your email address..."
+                type="text"
+                value=""
+              />
+              <button
+                className="root root"
+                onClick={null}
+                type="button"
+              >
+                <i
+                  className="fas fa-paper-plane"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="root"
+      >
+        <div
+          className="logoContainer"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <img
+              alt="DB Tax & Financial Services"
+              className="logo"
+              src="db-tax-logo-dark.png"
+            />
+          </a>
+        </div>
+        <div
+          className="copyright"
+        >
+          © 2019 DB Tax & Financial Services, Inc. All Rights Reserved.
+        </div>
+        <div
+          className="social"
+        >
+          <button
+            className="root root"
+            onClick={null}
+            type="button"
+          >
+            <i
+              className="fab fa-facebook-f"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;

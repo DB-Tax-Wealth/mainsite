@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
 
+import { Footer } from 'components/main/footer/footer';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './screen.style.scss';
 
 export class Screen extends Component {
   static propTypes = {
-    centerContent: PropTypes.bool,
     children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
     className: PropTypes.string
   };
 
   static defaultProps = {
-    centerContent: false,
     children: null,
     className: ''
   };
 
   getClassNames() {
-    const { centerContent, className } = this.props;
-
-    const result = classNames('animated', 'fadeIn', className, styles.root, { [styles.centerContent]: centerContent });
+    const { className } = this.props;
+    const result = classNames('animated', 'fadeIn', className, styles.root);
 
     return result;
   }
@@ -29,6 +27,11 @@ export class Screen extends Component {
     const { children } = this.props;
     const className = this.getClassNames();
 
-    return <div className={className}>{children}</div>;
+    return (
+      <div className={className}>
+        <div className={styles.content}>{children}</div>
+        <Footer />
+      </div>
+    );
   }
 }

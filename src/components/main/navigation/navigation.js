@@ -1,10 +1,12 @@
 import { Link, NavLink } from 'react-router-dom';
 
 import { Button } from 'components/button/button';
+import { COMPANY_NAME } from 'constants/company-name';
 import { IconButton } from 'components/icon-button/icon-button';
 import PropTypes from 'prop-types';
 import { ROUTES } from 'constants/routes';
 import React from 'react';
+import logo from 'images/db-tax-logo.png';
 import styles from './navigation.style.scss';
 
 export const Navigation = props => {
@@ -13,7 +15,11 @@ export const Navigation = props => {
   return (
     <div className={styles.root}>
       <div className={styles.content}>
-        <Link to={ROUTES.HOME} className={styles.logo} />
+        <div className={styles.logoContainer}>
+          <Link to={ROUTES.HOME}>
+            <img src={logo} alt={COMPANY_NAME} className={styles.logo} />
+          </Link>
+        </div>
         <nav className={styles.links}>
           <NavLink to={ROUTES.HOME}>About</NavLink>
           <NavLink to={ROUTES.HOME}>Services</NavLink>

@@ -1,0 +1,84 @@
+@import '../../../../styles/config/variables';
+@import '../../../../styles/mixins/font-size.scss';
+@import '../../../../styles/mixins/line-height.scss';
+
+.root {
+  @include font-size(0.8);
+  @include line-height(1);
+
+  display: flex;
+  padding: $spacer * 2 0;
+
+  .contact {
+    flex: 2;
+    margin-right: $spacer * 2;
+
+    @media screen and (max-width: $width-mobile) {
+      margin-bottom: $spacer * 2;
+    }
+  }
+
+  .content {
+    a {
+      color: $color-white;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    div {
+      margin-bottom: $spacer / 2;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  h3 {
+    @include font-size(0.8);
+    @include line-height(1);
+
+    text-transform: uppercase;
+  }
+
+  .learnMore {
+    flex: 3;
+
+    .email {
+      background: rgba($color-white, $disabled-opacity);
+      margin-top: $spacer;
+
+      input {
+        @include font-size(0.8);
+
+        &::placeholder {
+          color: rgba($color-white, $disabled-opacity);
+        }
+      }
+    }
+
+    @media screen and (max-width: $width-tablet) {
+      flex: 4;
+    }
+  }
+
+  .links {
+    margin-right: $spacer * 2;
+    flex: 3;
+
+    @media screen and (max-width: $width-tablet) {
+      flex: 2;
+    }
+
+    @media screen and (max-width: $width-mobile) {
+      margin-bottom: $spacer * 2;
+    }
+  }
+
+  @media screen and (max-width: $width-mobile) {
+    display: block;
+  }
+}
