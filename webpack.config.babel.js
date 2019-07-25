@@ -10,7 +10,10 @@ import loadImages from './webpack/load-images';
 import { loadJs } from './webpack/load-js';
 import { loadStyles } from './webpack/load-styles';
 import merge from 'webpack-merge';
+import { name } from './package.json';
 import path from 'path';
+
+const PUBLIC_PATH = `/${name}`;
 
 const ROOT_PATHS = {
   dist: path.join(__dirname, 'docs'),
@@ -58,7 +61,7 @@ const outputConfig = {
   output: {
     filename: '[name]-[hash].js',
     path: ROOT_PATHS.dist,
-    publicPath: './'
+    publicPath: PUBLIC_PATH
   }
 };
 

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 import { Main } from 'components/main/main';
 import { ROUTES } from 'constants/routes';
@@ -7,10 +7,10 @@ import { Splash } from 'components/splash/splash';
 
 export const Root = () => {
   return (
-    <BrowserRouter>
+    <HashRouter hashType="noslash">
       <Main>
         <Route exact path={ROUTES.HOME} component={Splash} />
       </Main>
-    </BrowserRouter>
+    </HashRouter>
   );
 };

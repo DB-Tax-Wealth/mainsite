@@ -1,7 +1,7 @@
 {
-  "name": "front-end-starter",
+  "name": "dbtax-mainsite",
   "version": "0.0.1",
-  "description": "A front-end starter application including React, Redux, Webpack and more!",
+  "description": "A DB Tax & Financial Services main branding website.",
   "main": "./src/index.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack --env production",
@@ -17,7 +17,7 @@
   },
   "author": {
     "name": "Joey Schroeder",
-    "email": "schrjos@gmail.com"
+    "email": "jschroeder@breadbox.io"
   },
   "license": "MIT",
   "pre-commit": {
