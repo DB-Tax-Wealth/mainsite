@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import { App } from 'components/main/app/app';
 import { ContactBar } from 'components/main/contact-bar/contact-bar';
-import { MobileNavigation } from './mobile-navigation/mobile-navigation';
 import { Navigation } from 'components/main/navigation/navigation';
 import PropTypes from 'prop-types';
+import { MobileNavigation } from './mobile-navigation/mobile-navigation';
 
 export class Main extends Component {
   static propTypes = {

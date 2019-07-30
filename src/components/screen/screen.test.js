@@ -1,6 +1,6 @@
 /* global React, create */
-import { Screen } from './screen';
 import { StaticRouter } from 'react-router-dom';
+import { Screen } from './screen';
 
 describe('<Screen />', () => {
   it('should render correctly', () => {

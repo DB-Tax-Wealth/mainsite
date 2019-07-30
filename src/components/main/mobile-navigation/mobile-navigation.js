@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
-import { Overlay } from '../../overlay/overlay';
 import PropTypes from 'prop-types';
 import { ROUTES } from 'constants/routes';
 import React from 'react';
 import classnames from 'classnames';
+import { Overlay } from '../../overlay/overlay';
 import styles from './mobile-navigation.style.scss';
 
 export const MobileNavigation = props => {

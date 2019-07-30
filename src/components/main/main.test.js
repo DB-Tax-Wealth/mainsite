@@ -1,5 +1,5 @@
-import { Main } from './main';
 import { StaticRouter } from 'react-router-dom';
+import { Main } from './main';
 /* global React, create */
 
 describe('<Main />', () => {

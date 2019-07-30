@@ -1,7 +1,7 @@
 import { AppContainer } from 'react-hot-loader';
 import React from 'react';
-import { Root } from './components/root/root';
 import { render } from 'react-dom';
+import { Root } from './components/root/root';
 
 const init = Component =>
   render(
