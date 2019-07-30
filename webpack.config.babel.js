@@ -83,24 +83,7 @@ const optimizationConfig = {
 const commonConfig = merge([
   entryConfig,
   getHtml({ title: 'DB Tax & Financial Services', template: path.join(ROOT_PATHS.src, 'index.html') }),
-  loadJs({ include: ROOT_PATHS.src, exclude: '/node_modules/', options: { cacheDirectory: true } }),
-  loadImages({
-    options: {
-      limit: 15000,
-      name: '/images/[name].[hash].[ext]'
-    }
-  })
-]);
-
-const productionConfig = merge([
-  clean(ROOT_PATHS.dist),
-  commonConfig,
-  getFavicons({ sourcePath: path.join(ROOT_PATHS.src, '/images/favicon.png') }),
-  loadFonts({ options: { limit: 5000, name: '/fonts/[name]-[hash].[ext]' } }),
-  loadStyles({ production: true }),
-  optimizationConfig,
-  outputConfig,
-  statConfig
+  loadJs({ include: ROOT_PATHS.src, exclude: '/node_modules/', options: { cacheDirectory: true } })
 ]);
 
 const developmentConfig = merge([
@@ -108,8 +91,21 @@ const developmentConfig = merge([
   devServer({ host: 'localhost', port: 9090 }),
   getSourcemaps({ type: 'cheap-module-eval-source-map' }),
   loadFonts({ options: { name: '[name].[ext]' } }),
+  loadImages({ options: { limit: 15000, name: 'images/[name].[hash].[ext]' } }),
   loadStyles({}),
   { output: { publicPath: '/' } }
+]);
+
+const productionConfig = merge([
+  clean(ROOT_PATHS.dist),
+  commonConfig,
+  getFavicons({ sourcePath: path.join(ROOT_PATHS.src, '/images/favicon.png') }),
+  loadFonts({ options: { limit: 5000, name: '/fonts/[name]-[hash].[ext]' } }),
+  loadImages({ options: { limit: 15000, name: '/images/[name].[hash].[ext]' } }),
+  loadStyles({ production: true }),
+  optimizationConfig,
+  outputConfig,
+  statConfig
 ]);
 
 export default mode => {
