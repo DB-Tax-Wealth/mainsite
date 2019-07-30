@@ -1,52 +1,27 @@
 import React from 'react';
 import { Screen } from 'components/screen/screen';
-import styles from './home.style.scss';
+import { SectionWithTextAndImage } from 'components/section-with-text-and-image/section-with-text-and-image';
+import womanManFinancialConsulting from 'images/woman-man-financial-consulting.jpg';
 
 export const Home = () => {
   return (
-    <Screen className={styles.root}>
-      <div className={styles.primary}>
-        <h1>
-          <strong>DB</strong>Tax
-        </h1>
+    <Screen>
+      <SectionWithTextAndImage subtitle="About" title="Mission Statement" image={womanManFinancialConsulting}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie, est porta tempus posuere, augue
-          nulla tempor nisi, eget maximus enim metus quis nulla. Nunc eleifend felis ex, in molestie mi efficitur eu.
-          Sed quis tortor nec orci viverra porttitor ac quis nisl. Nunc varius dolor lacus, sed rhoncus diam ultricies
-          sed. Fusce mattis urna lacus, ut fringilla tellus congue in. Nulla condimentum erat at odio dictum mollis sed
-          at urna. Pellentesque pulvinar nibh justo, vitae tincidunt neque tempus id.
+          Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you
+          develop, implement, and monitor a strategy that’s designed to address your individual situation.
         </p>
-
+        <p>We understand the challenges families face today.</p>
         <p>
-          Nam tellus lectus, luctus ut risus eget, rhoncus varius dolor. Maecenas porta sem sed bibendum venenatis.
-          Aenean laoreet augue quis neque tincidunt dignissim. Cras hendrerit, sem ut rutrum ultricies, nulla purus
-          aliquam ante, vitae iaculis mi est non dui. Mauris non condimentum dui. Mauris cursus aliquam nisi, a
-          tincidunt nisi euismod ut. Quisque vehicula, velit et rhoncus consequat, dolor neque accumsan libero, at
-          suscipit nunc arcu id odio.
+          From managing debt to saving for college to retirement, these personal finance challenges can be overwhelming.
+          Our commitment is to utilize all of our resources to help you pursue your goals.
         </p>
-
         <p>
-          In a dignissim ante. In pretium lectus non magna condimentum mollis. Aenean tempor dapibus vulputate. Proin id
-          lorem vel est vulputate vehicula. Suspendisse facilisis mauris id lobortis iaculis. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur
-          varius sapien elementum egestas tristique.
+          We believe in thinking “out of the box” and we are not afraid to challenge conventional wisdom in our approach
+          to investing and preserving wealth. All of our energy, commitment, and efforts are focused on you, the client,
+          and your satisfaction.
         </p>
-
-        <p>
-          Nulla facilisi. Donec et rhoncus lectus, vel eleifend libero. Duis vestibulum dictum dolor, eget venenatis
-          massa condimentum in. In faucibus, turpis ut tincidunt finibus, mi ipsum posuere felis, at tempus ligula
-          turpis nec arcu. Aliquam tempus nisi eget nibh convallis, a maximus velit dictum. Fusce vel fringilla enim.
-          Donec a magna sit amet quam scelerisque lacinia.
-        </p>
-
-        <p>
-          Maecenas sollicitudin diam sed placerat elementum. Praesent pulvinar elit non mattis eleifend. Fusce
-          hendrerit, erat ac ultricies facilisis, tellus leo tincidunt ipsum, in pharetra risus ligula eu nisl. Quisque
-          ultricies elit eget rutrum egestas. Curabitur gravida nulla venenatis, rhoncus est eu, fermentum risus. Aenean
-          vitae posuere urna, vel fermentum nunc. Proin a fringilla libero. Phasellus eu auctor justo. Suspendisse
-          fringilla porttitor dictum. Praesent quis auctor justo, auctor fermentum quam.
-        </p>
-      </div>
+      </SectionWithTextAndImage>
     </Screen>
   );
 };

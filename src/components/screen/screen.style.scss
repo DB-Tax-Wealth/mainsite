@@ -9,12 +9,4 @@
   flex: 1;
   overflow-y: auto;
   position: relative;
-
-  .content {
-    padding: $spacer;
-
-    @media screen and (min-width: $width-mobile) {
-      padding: $spacer * 2 $spacer;
-    }
-  }
 }

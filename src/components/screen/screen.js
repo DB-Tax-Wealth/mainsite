@@ -29,7 +29,7 @@ export class Screen extends Component {
 
     return (
       <div className={className}>
-        <div className={styles.content}>{children}</div>
+        {children}
         <Footer />
       </div>
     );

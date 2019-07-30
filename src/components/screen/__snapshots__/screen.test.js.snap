@@ -5,9 +5,6 @@ exports[`<Screen /> should render correctly 1`] = `
   className="animated fadeIn root"
 >
   <div
-    className="content"
-  />
-  <div
     className="root"
   >
     <div
