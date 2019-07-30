@@ -5,6 +5,9 @@
 h1 {
   @include font-size(3);
   @include line-height(3);
+
+  font-weight: $font-weight-heavy;
+  letter-spacing: -2px;
 }
 
 h2 {
