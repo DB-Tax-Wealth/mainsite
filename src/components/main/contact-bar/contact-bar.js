@@ -11,7 +11,12 @@ export const ContactBar = () => (
         <Icon name="phone-alt" /> {PHONE.DISPLAY}
       </a>
       <a href={ADDRESS.GOOGLE_MAPS} className={styles.address} target="_blank" rel="noopener noreferrer">
-        <Icon name="home" /> {ADDRESS.STREET} · {ADDRESS.CITY}, {ADDRESS.STATE} · {ADDRESS.ZIP}
+        <Icon name="home" /> {ADDRESS.STREET}
+        <span className={styles.city}>
+          {' '}
+          · {ADDRESS.CITY}, {ADDRESS.STATE}
+        </span>{' '}
+        · {ADDRESS.ZIP}
       </a>
     </div>
   </div>

@@ -23,6 +23,12 @@
     margin-left: $spacer / 2;
   }
 
+  .city {
+    @media screen and (max-width: $width-mobile) {
+      display: none;
+    }
+  }
+
   .content {
     margin: 0 auto;
     max-width: $width-max;
