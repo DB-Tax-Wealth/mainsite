@@ -1,11 +1,9 @@
 @import '../../../styles/config/variables';
-@import '../../../styles/mixins/font-size.scss';
-@import '../../../styles/mixins/line-height.scss';
 
 .root {
   background: $color-quadrinary;
-  padding: $spacer;
   color: $color-white;
+  padding: $spacer $spacer $spacer * 2;
 
   .content {
     max-width: $width-max;
