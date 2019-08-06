@@ -1,0 +1,41 @@
+@import '../../../styles/config/variables';
+@import '../../../styles/mixins/font-size';
+@import '../../../styles/mixins/line-height';
+@import '../../../styles/mixins/transition';
+
+.root {
+  color: $color-quaternary-light;
+  display: block;
+  flex: 1;
+  margin: $spacer;
+  text-align: center;
+  text-decoration: none;
+
+  .icon {
+    @include font-size(3);
+    @include line-height(3);
+
+    color: $color-primary;
+  }
+
+  .iconContainer {
+    @include transition('transform');
+
+    align-items: center;
+    background: $color-white;
+    border-radius: 50%;
+    display: flex;
+    height: $spacer * 7;
+    justify-content: center;
+    margin: 0 auto $spacer;
+    width: $spacer * 7;
+  }
+
+  &:hover {
+    color: $color-quaternary-light;
+
+    .iconContainer {
+      transform: scale(1.1);
+    }
+  }
+}
