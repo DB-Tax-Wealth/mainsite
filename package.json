@@ -90,6 +90,7 @@
     "@fortawesome/fontawesome-free": "^5.9.0",
     "animate.css": "^3.7.2",
     "classnames": "^2.2.6",
+    "google-map-react": "^1.1.4",
     "lodash": "^4.17.13",
     "moment": "^2.24.0",
     "normalize.css": "^8.0.1",

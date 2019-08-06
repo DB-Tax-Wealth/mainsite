@@ -7,6 +7,7 @@ import styles from './input-with-icon-button.style.scss';
 export const InputWithIconButton = props => {
   const { placeholder, iconName, className: classNameProp, value } = props;
   const className = classnames(styles.root, classNameProp);
+
   return (
     <div className={className}>
       <input type="text" placeholder={placeholder} value={value} />

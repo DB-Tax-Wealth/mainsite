@@ -1,0 +1,7 @@
+const LATITUDE = 42.910972;
+const LONGITUDE = -87.881397;
+
+export const LOCATION = {
+  LATITUDE,
+  LONGITUDE
+};

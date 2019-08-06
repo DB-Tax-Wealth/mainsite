@@ -52,8 +52,6 @@
       margin-top: $spacer;
 
       input {
-        @include font-size(0.8);
-
         &::placeholder {
           color: rgba($color-white, $disabled-opacity);
         }

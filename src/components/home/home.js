@@ -1,3 +1,4 @@
+import { GoogleMap } from 'components/google-map/google-map';
 import React from 'react';
 import { Screen } from 'components/screen/screen';
 import { SectionWithTextAndImage } from 'components/section-with-text-and-image/section-with-text-and-image';
@@ -22,6 +23,7 @@ export const Home = () => {
           and your satisfaction.
         </p>
       </SectionWithTextAndImage>
+      <GoogleMap />
     </Screen>
   );
 };
