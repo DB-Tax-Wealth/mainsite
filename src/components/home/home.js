@@ -16,7 +16,7 @@ export const Home = () => {
           <HeadingWithSubtitle subtitle="Services">
             We&apos;re here to help you reach your financial success
           </HeadingWithSubtitle>
-          <p className="color--quaternary-light">
+          <p className="color--quaternary-light margin--bottom">
             We want to learn more about your personal situation, identify your dreams and goals, and understand your
             tolerance for risk.
           </p>
