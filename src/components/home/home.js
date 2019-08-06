@@ -3,10 +3,39 @@ import React from 'react';
 import { Screen } from 'components/screen/screen';
 import { SectionWithTextAndImage } from 'components/section-with-text-and-image/section-with-text-and-image';
 import womanManFinancialConsulting from 'images/woman-man-financial-consulting.jpg';
+import { ServiceList } from 'components/service-list/service-list';
+import { ServiceListItem } from 'components/service-list/service-list-item/service-list-item';
+import { Section } from 'components/section/section';
+import { HeadingWithSubtitle } from 'components/heading-with-subtitle/heading-with-subtitle';
 
 export const Home = () => {
   return (
     <Screen>
+      <Section color="primary-light">
+        <div className="max-width--sm margin--horizontal--auto text-align--center">
+          <HeadingWithSubtitle subtitle="Services">
+            We&apos;re here to help you reach your financial success
+          </HeadingWithSubtitle>
+          <p className="color--quaternary-light">
+            We want to learn more about your personal situation, identify your dreams and goals, and understand your
+            tolerance for risk.
+          </p>
+        </div>
+        <ServiceList>
+          <ServiceListItem iconName="coins" title="Taxes">
+            <p>
+              We provide both businesses or persons with the professional taxation expertise and know how that they
+              deserve year round.
+            </p>
+          </ServiceListItem>
+          <ServiceListItem iconName="money-check-alt" title="Accounting">
+            <p>We provide our clients with value added accounting and outsourcing services for their businesses.</p>
+          </ServiceListItem>
+          <ServiceListItem iconName="search-dollar" title="Financial Services">
+            <p>We will ensure that your financial records are maintained correctly and accurately.</p>
+          </ServiceListItem>
+        </ServiceList>
+      </Section>
       <SectionWithTextAndImage subtitle="About" title="Mission Statement" image={womanManFinancialConsulting}>
         <p>
           Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you

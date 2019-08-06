@@ -1,15 +1,8 @@
 @import '../../styles/config/variables';
 
 .root {
-  background: $color-primary;
-  color: $color-white;
-  overflow: hidden;
-  padding: $spacer * 2 $spacer;
-
   .content {
-    margin: 0 auto;
     display: flex;
-    max-width: $width-max;
 
     @media screen and (max-width: $width-mobile) {
       display: block;
@@ -61,6 +54,6 @@
   }
 
   @media screen and (max-width: $width-mobile) {
-    padding: 0;
+    padding: 0 !important;
   }
 }
