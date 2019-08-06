@@ -1,0 +1,246 @@
+@import '../config/variables';
+@import '../mixins/breakpoint-infix';
+@import '../mixins/media-breakpoint-up';
+
+$selector: margin;
+
+$directions: (
+  bottom: 'bottom',
+  left: 'left',
+  right: 'right',
+  top: 'top'
+);
+
+.#{$selector} {
+  &--all {
+    margin: $spacer !important;
+
+    &--auto {
+      margin: auto !important;
+    }
+
+    &--half {
+      margin: $spacer / 2 !important;
+    }
+
+    &--none {
+      margin: 0 !important;
+    }
+  }
+
+  &--horizontal {
+    margin-left: $spacer !important;
+    margin-right: $spacer !important;
+
+    &--auto {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    &--half {
+      margin-left: $spacer / 2 !important;
+      margin-right: $spacer / 2 !important;
+    }
+
+    &--none {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+
+  &--vertical {
+    margin-top: $spacer !important;
+    margin-bottom: $spacer !important;
+
+    &--auto {
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+    }
+
+    &--half {
+      margin-top: $spacer / 2 !important;
+      margin-bottom: $spacer / 2 !important;
+    }
+
+    &--none {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  @each $direction in map-keys($directions) {
+    &--#{$direction} {
+      margin-#{$direction}: $spacer !important;
+
+      &--auto {
+        margin-#{$direction}: auto !important;
+      }
+
+      &--half {
+        margin-#{$direction}: $spacer / 2 !important;
+      }
+
+      &--none {
+        margin-#{$direction}: 0 !important;
+      }
+    }
+  }
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @each $direction in map-keys($directions) {
+        &--#{$infix}--#{$direction} {
+          margin-#{$direction}: $spacer !important;
+
+          &--auto {
+            margin-#{$direction}: auto !important;
+          }
+
+          &--half {
+            margin-#{$direction}: $spacer / 2 !important;
+          }
+
+          &--none {
+            margin-#{$direction}: 0 !important;
+          }
+        }
+      }
+
+      &--#{$infix}--all {
+        margin: $spacer !important;
+
+        &--auto {
+          margin: auto !important;
+        }
+
+        &--half {
+          margin: $spacer / 2 !important;
+        }
+
+        &--none {
+          margin: 0 !important;
+        }
+      }
+
+      &--#{$infix}--horizontal {
+        margin-left: $spacer !important;
+        margin-right: $spacer !important;
+
+        &--auto {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        &--half {
+          margin-left: $spacer / 2 !important;
+          margin-right: $spacer / 2 !important;
+        }
+
+        &--none {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+      }
+
+      &--#{$infix}--vertical {
+        margin-top: $spacer !important;
+        margin-bottom: $spacer !important;
+
+        &--auto {
+          margin-top: auto !important;
+          margin-bottom: auto !important;
+        }
+
+        &--half {
+          margin-top: $spacer / 2 !important;
+          margin-bottom: $spacer / 2 !important;
+        }
+
+        &--none {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  @media print {
+    &--print {
+      &--all {
+        margin: $spacer !important;
+
+        &--auto {
+          margin: auto !important;
+        }
+
+        &--half {
+          margin: $spacer / 2 !important;
+        }
+
+        &--none {
+          margin: 0 !important;
+        }
+      }
+
+      &--horizontal {
+        margin-left: $spacer !important;
+        margin-right: $spacer !important;
+
+        &--auto {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        &--half {
+          margin-left: $spacer / 2 !important;
+          margin-right: $spacer / 2 !important;
+        }
+
+        &--none {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+      }
+
+      &--vertical {
+        margin-top: $spacer !important;
+        margin-bottom: $spacer !important;
+
+        &--auto {
+          margin-top: auto !important;
+          margin-bottom: auto !important;
+        }
+
+        &--half {
+          margin-top: $spacer / 2 !important;
+          margin-bottom: $spacer / 2 !important;
+        }
+
+        &--none {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+      }
+
+      @each $direction in map-keys($directions) {
+        &--#{$direction} {
+          margin-#{$direction}: $spacer !important;
+
+          &--auto {
+            margin-#{$direction}: auto !important;
+          }
+
+          &--half {
+            margin-#{$direction}: $spacer / 2 !important;
+          }
+
+          &--none {
+            margin-#{$direction}: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}

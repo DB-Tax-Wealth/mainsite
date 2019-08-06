@@ -1,0 +1,16 @@
+$selector: momentum-scrolling;
+
+.#{$selector} {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.#{$selector}--x {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.#{$selector}--y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}

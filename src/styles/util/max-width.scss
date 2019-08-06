@@ -1,0 +1,12 @@
+@import '../config/variables';
+
+$selector: max-width;
+
+.#{$selector} {
+  @each $breakpoint, $value in $grid-breakpoints {
+    &--#{$breakpoint} {
+      max-width: $value;
+      width: 100%;
+    }
+  }
+}

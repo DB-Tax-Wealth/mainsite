@@ -1,0 +1,19 @@
+@import '../config/variables';
+
+$selector: color;
+
+.#{$selector} {
+  @each $color, $value in $colors {
+    &--#{$color} {
+      color: $value !important;
+    }
+  }
+}
+
+.#{$selector}-background {
+  @each $color, $value in $colors {
+    &--#{$color} {
+      background-color: $value !important;
+    }
+  }
+}

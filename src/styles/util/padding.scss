@@ -1,0 +1,188 @@
+@import '../config/variables';
+@import '../mixins/breakpoint-infix';
+@import '../mixins/media-breakpoint-up';
+
+$selector: padding;
+
+$directions: (
+  bottom: 'bottom',
+  left: 'left',
+  right: 'right',
+  top: 'top'
+);
+
+.#{$selector} {
+  &--all {
+    padding: $spacer !important;
+
+    &--half {
+      padding: $spacer / 2 !important;
+    }
+
+    &--none {
+      padding: 0 !important;
+    }
+  }
+
+  &--horizontal {
+    padding-left: $spacer !important;
+    padding-right: $spacer !important;
+
+    &--half {
+      padding-left: $spacer / 2 !important;
+      padding-right: $spacer / 2 !important;
+    }
+
+    &--none {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  &--vertical {
+    padding-top: $spacer !important;
+    padding-bottom: $spacer !important;
+
+    &--half {
+      padding-top: $spacer / 2 !important;
+      padding-bottom: $spacer / 2 !important;
+    }
+
+    &--none {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  @each $direction in map-keys($directions) {
+    &--#{$direction} {
+      padding-#{$direction}: $spacer !important;
+
+      &--half {
+        padding-#{$direction}: $spacer / 2 !important;
+      }
+
+      &--none {
+        padding-#{$direction}: 0 !important;
+      }
+    }
+  }
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @each $direction in map-keys($directions) {
+        &--#{$infix}--#{$direction} {
+          padding-#{$direction}: $spacer !important;
+
+          &--none {
+            padding-#{$direction}: 0 !important;
+          }
+        }
+      }
+
+      &--#{$infix}--all {
+        padding: $spacer !important;
+
+        &--half {
+          padding: $spacer / 2 !important;
+        }
+
+        &--none {
+          padding: 0 !important;
+        }
+      }
+
+      &--#{$infix}--horizontal {
+        padding-left: $spacer !important;
+        padding-right: $spacer !important;
+
+        &--half {
+          padding-left: $spacer / 2 !important;
+          padding-right: $spacer / 2 !important;
+        }
+
+        &--none {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+
+      &--#{$infix}--vertical {
+        padding-top: $spacer !important;
+        padding-bottom: $spacer !important;
+
+        &--half {
+          padding-top: $spacer / 2 !important;
+          padding-bottom: $spacer / 2 !important;
+        }
+
+        &--none {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  @media print {
+    &--print {
+      &--all {
+        padding: $spacer !important;
+
+        &--half {
+          padding: $spacer / 2 !important;
+        }
+
+        &--none {
+          padding: 0 !important;
+        }
+      }
+
+      &--horizontal {
+        padding-left: $spacer !important;
+        padding-right: $spacer !important;
+
+        &--half {
+          padding-left: $spacer / 2 !important;
+          padding-right: $spacer / 2 !important;
+        }
+
+        &--none {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+
+      &--vertical {
+        padding-top: $spacer !important;
+        padding-bottom: $spacer !important;
+
+        &--half {
+          padding-top: $spacer / 2 !important;
+          padding-bottom: $spacer / 2 !important;
+        }
+
+        &--none {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
+
+      @each $direction in map-keys($directions) {
+        &--#{$direction} {
+          padding-#{$direction}: $spacer !important;
+
+          &--half {
+            padding-#{$direction}: $spacer / 2 !important;
+          }
+
+          &--none {
+            padding-#{$direction}: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}

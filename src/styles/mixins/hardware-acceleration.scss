@@ -1,0 +1,7 @@
+@mixin hardware-acceleration() {
+  transform: translateZ(0);
+
+  @media print {
+    transform: none;
+  }
+}
