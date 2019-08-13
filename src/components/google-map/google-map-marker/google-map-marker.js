@@ -16,6 +16,7 @@ const STYLES = {
 };
 
 export const GoogleMapMarker = props => (
+  // eslint-disable-next-line react/jsx-props-no-spreading
   <div {...props} style={STYLES}>
     <Icon name="map-marker-alt" />
   </div>

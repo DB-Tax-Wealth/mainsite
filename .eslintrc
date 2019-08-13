@@ -24,10 +24,12 @@
     "quotes": [ "error", "single" ],
     "react/forbid-prop-types": [2, { "forbid": [ "any" ] }],
     "react/jsx-filename-extension": [ 0 ],
-    "react/jsx-indent-props": 0,
     "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0,
     "react/jsx-one-expression-per-line": [ 0 ],
     "react/no-unused-prop-types": 1,
+    "react/state-in-constructor": ["error", "always"],
+    "react/static-property-placement": ["error", "static public field"],
     "semi": [ "error", "always" ]
   },
   "settings": {
