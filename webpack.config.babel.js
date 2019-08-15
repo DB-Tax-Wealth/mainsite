@@ -1,5 +1,7 @@
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
+import merge from 'webpack-merge';
+import path from 'path';
 import { clean } from './webpack/clean';
 import { devServer } from './webpack/dev-server';
 import { getFavicons } from './webpack/get-favicons';
@@ -9,9 +11,7 @@ import { loadFonts } from './webpack/load-fonts';
 import loadImages from './webpack/load-images';
 import { loadJs } from './webpack/load-js';
 import { loadStyles } from './webpack/load-styles';
-import merge from 'webpack-merge';
 import { name } from './package.json';
-import path from 'path';
 
 const PUBLIC_PATH = `/${name}`;
 
@@ -91,7 +91,7 @@ const developmentConfig = merge([
   devServer({ host: 'localhost', port: 9090 }),
   getSourcemaps({ type: 'cheap-module-eval-source-map' }),
   loadFonts({ options: { name: '[name].[ext]' } }),
-  loadImages({ options: { limit: 15000, name: 'images/[name].[hash].[ext]' } }),
+  loadImages({ options: { limit: 15000, name: 'images/[name].[ext]' } }),
   loadStyles({}),
   { output: { publicPath: '/' } }
 ]);
