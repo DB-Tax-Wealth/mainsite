@@ -9,7 +9,7 @@ import styles from './footer-site-map.style.scss';
 
 export const FooterSiteMap = () => (
   <div className={styles.root}>
-    <div className={styles.contact}>
+    <div className={styles.section}>
       <h3>Contact</h3>
       <div className={styles.content}>
         <div>
@@ -27,7 +27,40 @@ export const FooterSiteMap = () => (
         </div>
       </div>
     </div>
-    <div className={styles.links}>
+    <div className={styles.section}>
+      <h3>Hours</h3>
+      <div className={styles.content}>
+        <div className="display--flex">
+          <div className={styles.day}>Sun.</div>
+          <div>Closed</div>
+        </div>
+        <div className="display--flex">
+          <div className={styles.day}>Mon.</div>
+          <div>9am-7pm</div>
+        </div>
+        <div className="display--flex">
+          <div className={styles.day}>Tues.</div>
+          <div>9am-7pm</div>
+        </div>
+        <div className="display--flex">
+          <div className={styles.day}>Wed.</div>
+          <div>9am-7pm</div>
+        </div>
+        <div className="display--flex">
+          <div className={styles.day}>Thurs.</div>
+          <div>9am-7pm</div>
+        </div>
+        <div className="display--flex">
+          <div className={styles.day}>Fri.</div>
+          <div>9am-7pm</div>
+        </div>
+        <div className="display--flex">
+          <div className={styles.day}>Sat.</div>
+          <div>10am-5pm</div>
+        </div>
+      </div>
+    </div>
+    <div className={styles.section}>
       <h3>Links</h3>
       <div className={styles.content}>
         <div>

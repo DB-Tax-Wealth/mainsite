@@ -7,10 +7,22 @@ import { ServiceList } from 'components/service-list/service-list';
 import { ServiceListItem } from 'components/service-list/service-list-item/service-list-item';
 import { Section } from 'components/section/section';
 import { HeadingWithSubtitle } from 'components/heading-with-subtitle/heading-with-subtitle';
+import { Hero } from 'components/hero/hero';
+import heroImage from 'images/woman-using-financial-app.jpg';
+import { Button } from 'components/button/button';
 
 export const Home = () => {
   return (
     <Screen>
+      <Hero image={heroImage}>
+        <div className="max-width--sm">
+          <HeadingWithSubtitle subtitle="Client Resources" subtitleColor="primary">
+            Don&apos;t buy the hype.
+          </HeadingWithSubtitle>
+          <p>There are a lot of misconceptions about Social Security. Here&apos;s the truth about three of them.</p>
+          <Button className="display--inline-block">Learn More</Button>
+        </div>
+      </Hero>
       <Section color="primary-light">
         <div className="max-width--sm margin--horizontal--auto text-align--center">
           <HeadingWithSubtitle subtitle="Services">

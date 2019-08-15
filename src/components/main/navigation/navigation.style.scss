@@ -1,24 +1,20 @@
-@import '../../../styles/config/variables';
+@import '~animate.css/animate';
+@import '../../../styles/util/animated';
 @import '../../../styles/mixins/transition';
+@import '../../../styles/config/variables';
 
 .root {
   background: $color-white;
   box-shadow: $shadow-float;
+  padding: 0 $spacer;
   position: relative;
   z-index: 10;
 
-  .logoContainer {
-    a {
-      display: block;
-    }
-
-    .logo {
-      display: block;
-      height: $spacer * 2.5;
-    }
-  }
-
   .accountAccess {
+    @extend .animated;
+    @extend .bounceIn;
+
+    animation-delay: $duration-base * 3;
     align-items: center;
     display: flex;
     margin-left: $spacer;
@@ -43,7 +39,6 @@
     display: flex;
     margin: 0 auto;
     max-width: $width-max;
-    padding: 0 $spacer;
   }
 
   .links {
@@ -53,6 +48,9 @@
     justify-content: flex-end;
 
     a {
+      @extend .animated;
+      @extend .fadeIn;
+
       align-items: center;
       color: $color-type;
       display: flex;
@@ -84,6 +82,12 @@
           width: 100%;
         }
       }
+
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+          animation-delay: $duration-base * $i / 2;
+        }
+      }
     }
 
     @media screen and (max-width: $width-tablet) {
@@ -91,22 +95,39 @@
     }
   }
 
-  .mobileToggle {
-    flex: 2;
-    align-items: center;
-    display: none;
-    justify-content: flex-end;
+  .logo {
+    display: block;
+    height: $spacer * 2.5;
+  }
+
+  .logoContainer {
+    @extend .animated;
+    @extend .fadeInLeft;
+
+    animation-delay: $duration-base * 2;
 
     @media screen and (max-width: $width-tablet) {
-      display: flex;
-    }
-
-    @media screen and (max-width: $width-mobile) {
       flex: 1;
     }
   }
 
+  .mobileToggle {
+    @extend .animated;
+    @extend .bounceIn;
+
+    align-items: center;
+    animation-delay: $duration-base * 3;
+    display: none;
+    flex: 2;
+    justify-content: flex-end;
+
+    @media screen and (max-width: $width-tablet) {
+      display: flex;
+      flex: 0;
+    }
+  }
+
   @media screen and (max-width: $width-tablet) {
-    padding: $spacer /2 0;
+    padding: $spacer / 2;
   }
 }

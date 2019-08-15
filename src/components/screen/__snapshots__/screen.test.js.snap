@@ -5,10 +5,10 @@ exports[`<Screen /> should render correctly 1`] = `
   className="animated fadeIn root"
 >
   <div
-    className="root"
+    className="color-background--quaternary color--white padding--all"
   >
     <div
-      className="content"
+      className="max-width--xl margin--horizontal--auto"
     >
       <div
         className="root"
@@ -34,7 +34,7 @@ exports[`<Screen /> should render correctly 1`] = `
         className="root"
       >
         <div
-          className="contact"
+          className="section"
         >
           <h3>
             Contact
@@ -74,7 +74,102 @@ exports[`<Screen /> should render correctly 1`] = `
           </div>
         </div>
         <div
-          className="links"
+          className="section"
+        >
+          <h3>
+            Hours
+          </h3>
+          <div
+            className="content"
+          >
+            <div
+              className="display--flex"
+            >
+              <div
+                className="day"
+              >
+                Sun.
+              </div>
+              <div>
+                Closed
+              </div>
+            </div>
+            <div
+              className="display--flex"
+            >
+              <div
+                className="day"
+              >
+                Mon.
+              </div>
+              <div>
+                9am-7pm
+              </div>
+            </div>
+            <div
+              className="display--flex"
+            >
+              <div
+                className="day"
+              >
+                Tues.
+              </div>
+              <div>
+                9am-7pm
+              </div>
+            </div>
+            <div
+              className="display--flex"
+            >
+              <div
+                className="day"
+              >
+                Wed.
+              </div>
+              <div>
+                9am-7pm
+              </div>
+            </div>
+            <div
+              className="display--flex"
+            >
+              <div
+                className="day"
+              >
+                Thurs.
+              </div>
+              <div>
+                9am-7pm
+              </div>
+            </div>
+            <div
+              className="display--flex"
+            >
+              <div
+                className="day"
+              >
+                Fri.
+              </div>
+              <div>
+                9am-7pm
+              </div>
+            </div>
+            <div
+              className="display--flex"
+            >
+              <div
+                className="day"
+              >
+                Sat.
+              </div>
+              <div>
+                10am-5pm
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="section"
         >
           <h3>
             Links
@@ -175,7 +270,11 @@ exports[`<Screen /> should render correctly 1`] = `
         <div
           className="copyright"
         >
-          © 2019 DB Tax & Financial Services, Inc. All Rights Reserved.
+          ©
+          2019
+           
+          DB Tax & Financial Services
+          . All Rights Reserved.
         </div>
         <div
           className="social"

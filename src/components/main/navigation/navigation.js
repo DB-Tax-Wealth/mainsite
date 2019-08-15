@@ -16,7 +16,7 @@ export const Navigation = props => {
     <div className={styles.root}>
       <div className={styles.content}>
         <div className={styles.logoContainer}>
-          <Link to={ROUTES.HOME}>
+          <Link to={ROUTES.HOME} className="display--block">
             <img src={logo} alt={COMPANY_NAME} className={styles.logo} />
           </Link>
         </div>

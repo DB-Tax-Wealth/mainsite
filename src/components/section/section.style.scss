@@ -3,12 +3,16 @@
 
 .root {
   overflow: hidden;
-  padding: $spacer * 2 $spacer;
+  padding: $spacer * 4 $spacer;
   background: $color-white;
 
   .content {
     margin: 0 auto;
     max-width: $width-max;
+  }
+
+  @media screen and (max-width: $width-mobile) {
+    padding: $spacer * 2 $spacer;
   }
 }
 

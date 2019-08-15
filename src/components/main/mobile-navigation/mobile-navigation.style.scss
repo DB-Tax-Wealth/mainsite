@@ -1,6 +1,8 @@
+@import '~animate.css/animate';
+@import '../../../styles/util/animated';
+@import '../../../styles/mixins/transition';
+@import '../../../styles/mixins/font-size';
 @import '../../../styles/config/variables';
-@import '../../../styles/mixins/font-size.scss';
-@import '../../../styles/mixins/transition.scss';
 
 .root {
   .menu {
@@ -17,12 +19,14 @@
     top: 0;
     transform: translateX(100%);
     width: 50%;
-    z-index: 10;
+    z-index: 30;
 
     a {
+      @extend .animated;
+
       @include transition(#{'color, background'});
 
-      color: $color-primary;
+      color: $color-primary-dark;
       display: block;
       padding: $spacer;
       text-decoration: none;
@@ -33,6 +37,22 @@
         background: $color-primary;
         color: $color-white;
       }
+
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+          animation-delay: $duration-base * $i / 4;
+        }
+      }
+    }
+
+    .logo {
+      @extend .animated;
+
+      animation-delay: $duration-base * 2.5;
+      display: block;
+      width: $spacer * 1.5;
+      height: $spacer * 1.5;
+      margin: $spacer * 4 auto 0;
     }
   }
 }
@@ -40,5 +60,13 @@
 .root.active {
   .menu {
     transform: translateX(0%);
+
+    a {
+      @extend .fadeInRight;
+    }
+
+    .logo {
+      @extend .fadeIn;
+    }
   }
 }

@@ -8,9 +8,10 @@ exports[`<Root /> should render correctly 1`] = `
     className="root"
   >
     <div
-      className="content"
+      className="max-width--xl margin--horizontal--auto"
     >
       <a
+        className="animated fadeIn"
         href="tel:+14147647730"
         rel="noopener noreferrer"
         target="_blank"
@@ -22,7 +23,7 @@ exports[`<Root /> should render correctly 1`] = `
         414-764-7330
       </a>
       <a
-        className="address"
+        className="animated fadeIn margin--left--half"
         href="https://www.google.com/maps/place/1125+Milwaukee+Ave,+South+Milwaukee,+WI+53172"
         rel="noopener noreferrer"
         target="_blank"
@@ -32,11 +33,17 @@ exports[`<Root /> should render correctly 1`] = `
         />
          
         1125 Milwaukee Ave.
-         · 
-        South Milwaukee
-        , 
-        WI
-         · 
+        <span
+          className="display--xs--none display--md--inline-block"
+        >
+           
+          · 
+          South Milwaukee
+          , 
+          WI
+        </span>
+         
+        · 
         53172
       </a>
     </div>
@@ -51,6 +58,7 @@ exports[`<Root /> should render correctly 1`] = `
         className="logoContainer"
       >
         <a
+          className="display--block"
           href="#"
           onClick={[Function]}
         >
@@ -134,47 +142,192 @@ exports[`<Root /> should render correctly 1`] = `
       className="root"
     >
       <div
+        className="image"
+        style={
+          Object {
+            "backgroundImage": "url(woman-using-financial-app.jpg)",
+          }
+        }
+      />
+      <div
+        className="spacer"
+      />
+      <div
         className="content"
       >
         <div
-          className="primary"
+          className="max-width--sm"
         >
           <div
             className="root"
           >
             <div
-              className="subtitle"
+              className="subtitle color--primary"
             >
-              About
+              Client Resources
             </div>
             <h1>
-              Mission Statement
+              Don't buy the hype.
             </h1>
           </div>
           <p>
-            Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you develop, implement, and monitor a strategy that’s designed to address your individual situation.
+            There are a lot of misconceptions about Social Security. Here's the truth about three of them.
           </p>
-          <p>
-            We understand the challenges families face today.
-          </p>
-          <p>
-            From managing debt to saving for college to retirement, these personal finance challenges can be overwhelming. Our commitment is to utilize all of our resources to help you pursue your goals.
-          </p>
-          <p>
-            We believe in thinking “out of the box” and we are not afraid to challenge conventional wisdom in our approach to investing and preserving wealth. All of our energy, commitment, and efforts are focused on you, the client, and your satisfaction.
+          <button
+            className="root display--inline-block"
+            onClick={null}
+            type="button"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="root primary-light"
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="max-width--sm margin--horizontal--auto text-align--center"
+        >
+          <div
+            className="root"
+          >
+            <div
+              className="subtitle color--secondary"
+            >
+              Services
+            </div>
+            <h1>
+              We're here to help you reach your financial success
+            </h1>
+          </div>
+          <p
+            className="color--quaternary-light margin--bottom"
+          >
+            We want to learn more about your personal situation, identify your dreams and goals, and understand your tolerance for risk.
           </p>
         </div>
         <div
-          className="imageContainer"
+          className="root"
+        >
+          <a
+            className="root"
+            href="#"
+            onClick={[Function]}
+          >
+            <div
+              className="iconContainer"
+            >
+              <i
+                className="icon fas fa-coins"
+              />
+            </div>
+            <h4
+              className="color--type"
+            >
+              Taxes
+            </h4>
+            <p>
+              We provide both businesses or persons with the professional taxation expertise and know how that they deserve year round.
+            </p>
+          </a>
+          <a
+            className="root"
+            href="#"
+            onClick={[Function]}
+          >
+            <div
+              className="iconContainer"
+            >
+              <i
+                className="icon fas fa-money-check-alt"
+              />
+            </div>
+            <h4
+              className="color--type"
+            >
+              Accounting
+            </h4>
+            <p>
+              We provide our clients with value added accounting and outsourcing services for their businesses.
+            </p>
+          </a>
+          <a
+            className="root"
+            href="#"
+            onClick={[Function]}
+          >
+            <div
+              className="iconContainer"
+            >
+              <i
+                className="icon fas fa-search-dollar"
+              />
+            </div>
+            <h4
+              className="color--type"
+            >
+              Financial Services
+            </h4>
+            <p>
+              We will ensure that your financial records are maintained correctly and accurately.
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="root root primary"
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="content"
         >
           <div
-            className="image"
-            style={
-              Object {
-                "backgroundImage": "url(woman-man-financial-consulting.jpg)",
+            className="primary"
+          >
+            <div
+              className="root"
+            >
+              <div
+                className="subtitle color--secondary"
+              >
+                About
+              </div>
+              <h1>
+                Mission Statement
+              </h1>
+            </div>
+            <p>
+              Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you develop, implement, and monitor a strategy that’s designed to address your individual situation.
+            </p>
+            <p>
+              We understand the challenges families face today.
+            </p>
+            <p>
+              From managing debt to saving for college to retirement, these personal finance challenges can be overwhelming. Our commitment is to utilize all of our resources to help you pursue your goals.
+            </p>
+            <p>
+              We believe in thinking “out of the box” and we are not afraid to challenge conventional wisdom in our approach to investing and preserving wealth. All of our energy, commitment, and efforts are focused on you, the client, and your satisfaction.
+            </p>
+          </div>
+          <div
+            className="imageContainer"
+          >
+            <div
+              className="image"
+              style={
+                Object {
+                  "backgroundImage": "url(woman-man-financial-consulting.jpg)",
+                }
               }
-            }
-          />
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -182,7 +335,162 @@ exports[`<Root /> should render correctly 1`] = `
       className="root"
     >
       <div
-        className="content"
+        className="map"
+      >
+        <div
+          onClick={[Function]}
+          onMouseDownCapture={[Function]}
+          onMouseMove={[Function]}
+          style={
+            Object {
+              "height": "100%",
+              "margin": 0,
+              "padding": 0,
+              "position": "relative",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "left": 0,
+                "margin": 0,
+                "padding": 0,
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "height": "50%",
+                "left": "50%",
+                "margin": 0,
+                "padding": 0,
+                "position": "absolute",
+                "top": "50%",
+                "width": "50%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                  "left": 0,
+                  "margin": 0,
+                  "padding": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <div
+                  $dimensionKey={0}
+                  $geoService={
+                    Geo {
+                      "hasSize_": false,
+                      "hasView_": true,
+                      "transform_": Transform {
+                        "_maxZoom": 52,
+                        "_minZoom": 0,
+                        "_zoom": 12,
+                        "angle": -0,
+                        "center": LatLng {
+                          "lat": 42.910972,
+                          "lng": -87.881397,
+                        },
+                        "height": 0,
+                        "latRange": Array [
+                          -85.05113,
+                          85.05113,
+                        ],
+                        "scale": 4096,
+                        "tileSize": 256,
+                        "tileZoom": 12,
+                        "width": 0,
+                        "zoomFraction": 0,
+                      },
+                    }
+                  }
+                  $getDimensions={[Function]}
+                  $hover={false}
+                  $onMouseAllow={[Function]}
+                  $prerender={true}
+                  lat={42.910972}
+                  lng={-87.881397}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": "50%",
+                      "color": "#ff5e58",
+                      "display": "flex",
+                      "fontSize": "2.2rem",
+                      "height": "2.5rem",
+                      "justifyContent": "center",
+                      "textShadow": "0 1px 0.5rem #fff",
+                      "width": "2.5rem",
+                    }
+                  }
+                  text="My Marker"
+                >
+                  <i
+                    className="fas fa-map-marker-alt"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="spacer"
+      />
+      <div
+        className="inputContainer"
+      >
+        <div
+          className="root input"
+        >
+          <input
+            placeholder="enter your address..."
+            type="text"
+            value=""
+          />
+          <button
+            className="root root"
+            onClick={null}
+            type="button"
+          >
+            <i
+              className="fas fa-map-marker-alt"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="color-background--quaternary color--white padding--all"
+    >
+      <div
+        className="max-width--xl margin--horizontal--auto"
       >
         <div
           className="root"
@@ -208,7 +516,7 @@ exports[`<Root /> should render correctly 1`] = `
           className="root"
         >
           <div
-            className="contact"
+            className="section"
           >
             <h3>
               Contact
@@ -248,7 +556,102 @@ exports[`<Root /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            className="links"
+            className="section"
+          >
+            <h3>
+              Hours
+            </h3>
+            <div
+              className="content"
+            >
+              <div
+                className="display--flex"
+              >
+                <div
+                  className="day"
+                >
+                  Sun.
+                </div>
+                <div>
+                  Closed
+                </div>
+              </div>
+              <div
+                className="display--flex"
+              >
+                <div
+                  className="day"
+                >
+                  Mon.
+                </div>
+                <div>
+                  9am-7pm
+                </div>
+              </div>
+              <div
+                className="display--flex"
+              >
+                <div
+                  className="day"
+                >
+                  Tues.
+                </div>
+                <div>
+                  9am-7pm
+                </div>
+              </div>
+              <div
+                className="display--flex"
+              >
+                <div
+                  className="day"
+                >
+                  Wed.
+                </div>
+                <div>
+                  9am-7pm
+                </div>
+              </div>
+              <div
+                className="display--flex"
+              >
+                <div
+                  className="day"
+                >
+                  Thurs.
+                </div>
+                <div>
+                  9am-7pm
+                </div>
+              </div>
+              <div
+                className="display--flex"
+              >
+                <div
+                  className="day"
+                >
+                  Fri.
+                </div>
+                <div>
+                  9am-7pm
+                </div>
+              </div>
+              <div
+                className="display--flex"
+              >
+                <div
+                  className="day"
+                >
+                  Sat.
+                </div>
+                <div>
+                  10am-5pm
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="section"
           >
             <h3>
               Links
@@ -349,7 +752,11 @@ exports[`<Root /> should render correctly 1`] = `
           <div
             className="copyright"
           >
-            © 2019 DB Tax & Financial Services, Inc. All Rights Reserved.
+            ©
+            2019
+             
+            DB Tax & Financial Services
+            . All Rights Reserved.
           </div>
           <div
             className="social"
@@ -432,6 +839,11 @@ exports[`<Root /> should render correctly 1`] = `
       >
         Account Access
       </a>
+      <img
+        alt="DB Tax & Financial Services"
+        className="logo"
+        src="db-tax-logo-icon.png"
+      />
     </div>
   </div>
 </div>

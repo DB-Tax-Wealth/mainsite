@@ -1,6 +1,6 @@
 @import '../../../../styles/config/variables';
-@import '../../../../styles/mixins/font-size.scss';
-@import '../../../../styles/mixins/line-height.scss';
+@import '../../../../styles/mixins/font-size';
+@import '../../../../styles/mixins/line-height';
 
 .root {
   @include font-size(0.8);
@@ -8,15 +8,6 @@
 
   display: flex;
   padding: $spacer * 2 0;
-
-  .contact {
-    flex: 2;
-    margin-right: $spacer * 2;
-
-    @media screen and (max-width: $width-mobile) {
-      margin-bottom: $spacer * 2;
-    }
-  }
 
   .content {
     a {
@@ -28,13 +19,17 @@
       }
     }
 
-    div {
+    > div {
       margin-bottom: $spacer / 2;
 
       &:last-child {
         margin-bottom: 0;
       }
     }
+  }
+
+  .day {
+    width: $spacer * 3;
   }
 
   h3 {
@@ -57,26 +52,18 @@
         }
       }
     }
-
-    @media screen and (max-width: $width-tablet) {
-      flex: 4;
-    }
   }
 
-  .links {
+  .section {
+    flex: 1;
     margin-right: $spacer * 2;
-    flex: 3;
 
     @media screen and (max-width: $width-tablet) {
-      flex: 2;
-    }
-
-    @media screen and (max-width: $width-mobile) {
       margin-bottom: $spacer * 2;
     }
   }
 
-  @media screen and (max-width: $width-mobile) {
+  @media screen and (max-width: $width-tablet) {
     display: block;
   }
 }

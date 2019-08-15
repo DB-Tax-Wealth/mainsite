@@ -1,0 +1,54 @@
+@import '../../styles/config/variables';
+@import '../../styles/mixins/gradient-horizontal';
+
+.root {
+  height: auto;
+  max-height: $spacer * 24;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .content {
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    margin: 0 auto;
+    max-width: $width-max;
+    padding: $spacer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .image {
+    background-color: $color-white;
+    background-origin: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .spacer {
+    @include gradient-horizontal($color-white, rgba($color-white, 0));
+
+    height: 0;
+    padding-bottom: $widescreen;
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+
+    @media screen and (max-width: $width-mobile) {
+      background: rgba($color-white, 0.7);
+    }
+  }
+}

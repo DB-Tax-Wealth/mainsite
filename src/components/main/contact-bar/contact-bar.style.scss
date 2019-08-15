@@ -1,36 +1,30 @@
 @import '../../../styles/config/variables';
-@import '../../../styles/mixins/font-size.scss';
-@import '../../../styles/mixins/line-height.scss';
+@import '../../../styles/mixins/font-size';
+@import '../../../styles/mixins/line-height';
 
 .root {
   @include font-size(0.8);
   @include line-height(0.8);
 
-  color: $color-white;
-  padding: $spacer / 2;
   background: $color-quaternary;
+  color: $color-white;
+  padding: $spacer / 2 $spacer;
 
   a {
+    animation-delay: $duration-base;
     color: $color-white;
     text-decoration: none;
 
     &:hover {
-      color: $color-primary;
+      color: $color-secondary;
+    }
+
+    &:nth-child(2) {
+      animation-delay: $duration-base * 2;
     }
   }
 
-  .address {
-    margin-left: $spacer / 2;
-  }
-
-  .city {
-    @media screen and (max-width: $width-mobile) {
-      display: none;
-    }
-  }
-
-  .content {
-    margin: 0 auto;
-    max-width: $width-max;
+  @media screen and (max-width: $width-tablet) {
+    padding: $spacer / 2;
   }
 }

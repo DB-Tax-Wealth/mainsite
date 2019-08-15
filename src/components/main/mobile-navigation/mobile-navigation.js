@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { ROUTES } from 'constants/routes';
 import React from 'react';
 import classnames from 'classnames';
+import logo from 'images/db-tax-logo-icon.png';
+import { COMPANY_NAME } from 'constants/company-name';
 import { Overlay } from '../../overlay/overlay';
 import styles from './mobile-navigation.style.scss';
 
@@ -32,6 +34,7 @@ export const MobileNavigation = props => {
         <NavLink to={ROUTES.HOME} onClick={onCloseClick}>
           Account Access
         </NavLink>
+        <img src={logo} className={styles.logo} alt={COMPANY_NAME} />
       </div>
     </div>
   );

@@ -5,9 +5,10 @@ exports[`<ContactBar /> should render correctly 1`] = `
   className="root"
 >
   <div
-    className="content"
+    className="max-width--xl margin--horizontal--auto"
   >
     <a
+      className="animated fadeIn"
       href="tel:+14147647730"
       rel="noopener noreferrer"
       target="_blank"
@@ -19,7 +20,7 @@ exports[`<ContactBar /> should render correctly 1`] = `
       414-764-7330
     </a>
     <a
-      className="address"
+      className="animated fadeIn margin--left--half"
       href="https://www.google.com/maps/place/1125+Milwaukee+Ave,+South+Milwaukee,+WI+53172"
       rel="noopener noreferrer"
       target="_blank"
@@ -29,11 +30,17 @@ exports[`<ContactBar /> should render correctly 1`] = `
       />
        
       1125 Milwaukee Ave.
-       · 
-      South Milwaukee
-      , 
-      WI
-       · 
+      <span
+        className="display--xs--none display--md--inline-block"
+      >
+         
+        · 
+        South Milwaukee
+        , 
+        WI
+      </span>
+       
+      · 
       53172
     </a>
   </div>
