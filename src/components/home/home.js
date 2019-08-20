@@ -13,7 +13,13 @@ import heroImage from 'images/woman-using-financial-app.jpg';
 export const Home = () => {
   return (
     <Screen>
-      <Hero image={heroImage} title="Don't buy the hype." subtitle="Client Resources">
+      <Hero
+        image={heroImage}
+        title="Don't buy the hype."
+        subtitle="Client Resources"
+        // eslint-disable-next-line no-console
+        buttonOnClick={() => console.log('TODO')}
+      >
         <p>There are a lot of misconceptions about Social Security. Here&apos;s the truth about three of them.</p>
       </Hero>
       <Section color="primary-light">

@@ -21,10 +21,10 @@ export const Navigation = props => {
           </Link>
         </div>
         <nav className={styles.links}>
-          <NavLink to={ROUTES.HOME}>About</NavLink>
-          <NavLink to={ROUTES.HOME}>Services</NavLink>
-          <NavLink to={ROUTES.HOME}>Client Resources</NavLink>
-          <NavLink to={ROUTES.HOME}>Legal</NavLink>
+          <NavLink to={ROUTES.DEMO}>About</NavLink>
+          <NavLink to={ROUTES.DEMO}>Services</NavLink>
+          <NavLink to={ROUTES.DEMO}>Client Resources</NavLink>
+          <NavLink to={ROUTES.DEMO}>Legal</NavLink>
         </nav>
         <div className={styles.accountAccess}>
           <Button className={styles.button}>Account Access</Button>

@@ -6,10 +6,10 @@ import { Button } from 'components/button/button';
 import styles from './hero.style.scss';
 
 export const Hero = props => {
-  const { buttonColor, buttonLabel, children, image, subtitle, subtitleColor, title } = props;
+  const { buttonColor, buttonLabel, buttonOnClick, children, image, subtitle, subtitleColor, title } = props;
 
   const titleExists = Boolean(title);
-  const buttonExists = Boolean(buttonLabel);
+  const buttonExists = Boolean(buttonOnClick);
 
   return (
     <div className={styles.root}>
@@ -24,7 +24,7 @@ export const Hero = props => {
           )}
           {children}
           {buttonExists && (
-            <Button className={styles.button} color={buttonColor}>
+            <Button onClick={buttonOnClick} className={styles.button} color={buttonColor}>
               {buttonLabel}
             </Button>
           )}
@@ -37,6 +37,7 @@ export const Hero = props => {
 Hero.propTypes = {
   buttonColor: PropTypes.string,
   buttonLabel: PropTypes.string,
+  buttonOnClick: PropTypes.func,
   children: CHILDREN_PROP_TYPE,
   image: PropTypes.node,
   subtitle: PropTypes.string,
@@ -47,6 +48,7 @@ Hero.propTypes = {
 Hero.defaultProps = {
   buttonColor: undefined,
   buttonLabel: 'Learn More',
+  buttonOnClick: null,
   children: null,
   image: null,
   subtitle: '',
