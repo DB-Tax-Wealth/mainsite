@@ -6,14 +6,16 @@ import { Section } from 'components/section/section';
 import styles from './section-with-text-and-image.style.scss';
 
 export const SectionWithTextAndImage = props => {
-  const { children, image, subtitle, title } = props;
+  const { children, image, subtitle, subtitleColor, title } = props;
   const imageExists = Boolean(image);
 
   return (
     <Section className={styles.root} color="primary">
       <div className={styles.content}>
         <div className={styles.primary}>
-          <HeadingWithSubtitle subtitle={subtitle}>{title}</HeadingWithSubtitle>
+          <HeadingWithSubtitle subtitle={subtitle} subtitleColor={subtitleColor}>
+            {title}
+          </HeadingWithSubtitle>
           {children}
         </div>
         {imageExists && (
@@ -30,6 +32,7 @@ SectionWithTextAndImage.propTypes = {
   children: CHILDREN_PROP_TYPE,
   image: PropTypes.node,
   subtitle: PropTypes.string,
+  subtitleColor: PropTypes.string,
   title: PropTypes.string
 };
 
@@ -37,5 +40,6 @@ SectionWithTextAndImage.defaultProps = {
   children: null,
   image: null,
   subtitle: '',
+  subtitleColor: undefined,
   title: ''
 };

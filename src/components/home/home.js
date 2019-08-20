@@ -9,19 +9,12 @@ import { Section } from 'components/section/section';
 import { HeadingWithSubtitle } from 'components/heading-with-subtitle/heading-with-subtitle';
 import { Hero } from 'components/hero/hero';
 import heroImage from 'images/woman-using-financial-app.jpg';
-import { Button } from 'components/button/button';
 
 export const Home = () => {
   return (
     <Screen>
-      <Hero image={heroImage}>
-        <div className="max-width--sm">
-          <HeadingWithSubtitle subtitle="Client Resources" subtitleColor="primary">
-            Don&apos;t buy the hype.
-          </HeadingWithSubtitle>
-          <p>There are a lot of misconceptions about Social Security. Here&apos;s the truth about three of them.</p>
-          <Button className="display--inline-block">Learn More</Button>
-        </div>
+      <Hero image={heroImage} title="Don't buy the hype." subtitle="Client Resources">
+        <p>There are a lot of misconceptions about Social Security. Here&apos;s the truth about three of them.</p>
       </Hero>
       <Section color="primary-light">
         <div className="max-width--sm margin--horizontal--auto text-align--center">
@@ -48,7 +41,12 @@ export const Home = () => {
           </ServiceListItem>
         </ServiceList>
       </Section>
-      <SectionWithTextAndImage subtitle="About" title="Mission Statement" image={womanManFinancialConsulting}>
+      <SectionWithTextAndImage
+        subtitle="About"
+        subtitleColor="white"
+        title="Mission Statement"
+        image={womanManFinancialConsulting}
+      >
         <p>
           Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you
           develop, implement, and monitor a strategy that’s designed to address your individual situation.

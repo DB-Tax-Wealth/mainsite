@@ -8,6 +8,13 @@
   position: relative;
   width: 100%;
 
+  .button {
+    @media screen and (max-width: $width-mobile) {
+      display: block;
+      width: 100%;
+    }
+  }
+
   .content {
     align-items: flex-start;
     box-sizing: border-box;
@@ -48,7 +55,12 @@
     width: 100%;
 
     @media screen and (max-width: $width-mobile) {
-      background: rgba($color-white, 0.7);
+      background: rgba($color-white, 0.8);
+      padding-bottom: 100%;
     }
+  }
+
+  @media screen and (max-width: $width-mobile) {
+    max-height: 100%;
   }
 }

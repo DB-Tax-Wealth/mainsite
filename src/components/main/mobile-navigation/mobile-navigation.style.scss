@@ -28,7 +28,7 @@
 
       color: $color-primary-dark;
       display: block;
-      padding: $spacer;
+      padding: $spacer / 2 $spacer;
       text-decoration: none;
       text-transform: uppercase;
 
@@ -52,7 +52,7 @@
       display: block;
       width: $spacer * 1.5;
       height: $spacer * 1.5;
-      margin: $spacer * 4 auto 0;
+      margin: $spacer * 2 auto 0;
     }
   }
 }

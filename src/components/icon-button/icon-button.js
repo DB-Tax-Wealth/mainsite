@@ -6,11 +6,11 @@ import classnames from 'classnames';
 import styles from './icon-button.style.scss';
 
 export const IconButton = props => {
-  const { className: classNameProp, iconName, onClick, iconType } = props;
+  const { className: classNameProp, color, glow, iconName, iconType, onClick } = props;
   const className = classnames(styles.root, classNameProp);
 
   return (
-    <Button className={className} onClick={onClick}>
+    <Button className={className} onClick={onClick} color={color} glow={glow}>
       <Icon name={iconName} type={iconType} />
     </Button>
   );
@@ -18,12 +18,16 @@ export const IconButton = props => {
 
 IconButton.propTypes = {
   className: PropTypes.string,
+  color: PropTypes.string,
+  glow: PropTypes.bool,
   iconName: PropTypes.string,
   iconType: PropTypes.string,
   onClick: PropTypes.func
 };
 
 IconButton.defaultProps = {
+  color: undefined,
+  glow: undefined,
   className: '',
   iconName: undefined,
   iconType: undefined,

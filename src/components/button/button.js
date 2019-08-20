@@ -5,24 +5,30 @@ import classnames from 'classnames';
 import styles from './button.style.scss';
 
 export const Button = props => {
-  const { children, onClick, className: classNameProp } = props;
-  const className = classnames(styles.root, classNameProp);
+  const { children, className: classNameProp, color, glow, onClick, style } = props;
+  const className = classnames(styles.root, { [styles[color]]: color }, { [styles.glow]: glow }, classNameProp);
 
   return (
-    <button onClick={onClick} type="button" className={className}>
+    <button onClick={onClick} type="button" className={className} style={style}>
       {children}
     </button>
   );
 };
 
 Button.propTypes = {
-  className: PropTypes.string,
   children: CHILDREN_PROP_TYPE,
-  onClick: PropTypes.func
+  className: PropTypes.string,
+  color: PropTypes.string,
+  glow: PropTypes.bool,
+  onClick: PropTypes.func,
+  style: PropTypes.object
 };
 
 Button.defaultProps = {
-  className: '',
   children: null,
-  onClick: null
+  className: '',
+  color: 'primary',
+  glow: false,
+  onClick: null,
+  style: null
 };

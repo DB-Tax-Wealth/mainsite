@@ -102,7 +102,7 @@
 
   .logoContainer {
     @extend .animated;
-    @extend .fadeInLeft;
+    @extend .fadeIn;
 
     animation-delay: $duration-base * 2;
 
