@@ -2,6 +2,7 @@ import { CHILDREN_PROP_TYPE } from 'constants/children-prop-type';
 import PropTypes from 'prop-types';
 import React from 'react';
 import classnames from 'classnames';
+import { STYLE_PROP_TYPE } from 'constants/style-prop-type';
 import styles from './button.style.scss';
 
 export const Button = props => {
@@ -21,7 +22,7 @@ Button.propTypes = {
   color: PropTypes.string,
   glow: PropTypes.bool,
   onClick: PropTypes.func,
-  style: PropTypes.object
+  style: STYLE_PROP_TYPE
 };
 
 Button.defaultProps = {
