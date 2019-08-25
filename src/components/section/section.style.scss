@@ -12,7 +12,7 @@
   }
 
   @media screen and (max-width: $width-mobile) {
-    padding: $spacer * 2 $spacer;
+    padding: $spacer * 2 $spacer / 2;
   }
 }
 

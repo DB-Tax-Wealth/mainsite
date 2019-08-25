@@ -128,6 +128,10 @@
   }
 
   @media screen and (max-width: $width-tablet) {
+    padding: $spacer / 2 $spacer;
+  }
+
+  @media screen and (max-width: $width-mobile) {
     padding: $spacer / 2;
   }
 }
