@@ -1,14 +1,19 @@
-import { GoogleMap } from 'components/google-map/google-map';
+import { GoogleMap } from 'components/home/google-map/google-map';
 import React from 'react';
 import { Screen } from 'components/screen/screen';
 import { SectionWithTextAndImage } from 'components/section-with-text-and-image/section-with-text-and-image';
 import womanManFinancialConsulting from 'images/woman-man-financial-consulting.jpg';
-import { ServiceList } from 'components/service-list/service-list';
-import { ServiceListItem } from 'components/service-list/service-list-item/service-list-item';
+import { ServiceList } from 'components/home/service-list/service-list';
+import { ServiceListItem } from 'components/home/service-list/service-list-item/service-list-item';
 import { Section } from 'components/section/section';
 import { HeadingWithSubtitle } from 'components/heading-with-subtitle/heading-with-subtitle';
 import { Hero } from 'components/hero/hero';
 import heroImage from 'images/woman-using-financial-app.jpg';
+import { FloatSection } from 'components/float-section/float-section';
+import { Grid } from 'components/grid/grid';
+import { Row } from 'components/grid/row/row';
+import { Column } from 'components/grid/column/column';
+import { IconButton } from 'components/icon-button/icon-button';
 
 export const Home = () => {
   return (
@@ -22,6 +27,39 @@ export const Home = () => {
       >
         <p>There are a lot of misconceptions about Social Security. Here&apos;s the truth about three of them.</p>
       </Hero>
+      <FloatSection spacerHeight="4rem" spacerColor="primary-light">
+        <Grid className="padding--horizontal--none">
+          <Row>
+            <Column widthMd={4} className="margin--xs--bottom margin--md--bottom--none">
+              <div className="display--flex">
+                <IconButton iconName="bullseye" iconType="solid" />
+                <div className="margin--left">
+                  <strong>Once upon a goal...</strong>
+                  <p className="margin--top--half">Do you know how to set up your financial goals for success?</p>
+                </div>
+              </div>
+            </Column>
+            <Column widthMd={4} className="margin--xs--bottom margin--md--bottom--none">
+              <div className="display--flex">
+                <IconButton iconName="list-ol" iconType="solid" color="secondary" />
+                <div className="margin--left">
+                  <strong>Your bucket list</strong>
+                  <p className="margin--top--half">Do you know how to set up your financial goals for success?</p>
+                </div>
+              </div>
+            </Column>
+            <Column widthMd={4}>
+              <div className="display--flex">
+                <IconButton iconName="dollar-sign" iconType="solid" color="tertiary" />
+                <div className="margin--left">
+                  <strong>You&apos;ve got money!</strong>
+                  <p className="margin--top--half">Do you know how to set up your financial goals for success?</p>
+                </div>
+              </div>
+            </Column>
+          </Row>
+        </Grid>
+      </FloatSection>
       <Section color="primary-light">
         <div className="max-width--sm margin--horizontal--auto text-align--center">
           <HeadingWithSubtitle subtitle="Services">
@@ -47,11 +85,21 @@ export const Home = () => {
           </ServiceListItem>
         </ServiceList>
       </Section>
+      <FloatSection spacerHeight="2rem" shadowColor="primary-dark">
+        <div className="display--flex">
+          <IconButton iconName="check" iconType="solid" color="secondary" />
+          <div className="margin--left" style={{ flex: 1 }}>
+            <p className="margin--top--half">
+              Investment and financial planning services are offered by Lisa Pugel through her affiliation with HD Vest
+            </p>
+          </div>
+        </div>
+      </FloatSection>
       <SectionWithTextAndImage
+        image={womanManFinancialConsulting}
         subtitle="About"
         subtitleColor="white"
         title="Mission Statement"
-        image={womanManFinancialConsulting}
       >
         <p>
           Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you

@@ -52,6 +52,6 @@ Hero.defaultProps = {
   children: null,
   image: null,
   subtitle: '',
-  subtitleColor: 'primary-dark',
+  subtitleColor: 'primary',
   title: ''
 };

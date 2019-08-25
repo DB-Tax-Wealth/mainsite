@@ -1,4 +1,4 @@
-@import '../../styles/config/variables';
+@import '../../../styles/config/variables';
 
 .root {
   height: auto;
@@ -21,7 +21,7 @@
     left: 0;
     margin: 0 auto;
     max-width: $width-max;
-    padding: $spacer * 2;
+    padding: $spacer * 2 $spacer;
     position: absolute;
     right: 0;
     top: 0;
