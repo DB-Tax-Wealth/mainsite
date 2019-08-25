@@ -9,6 +9,8 @@ import { Column } from 'components/grid/column/column';
 import { Icon } from 'components/icon/icon';
 import { Image } from 'components/image/image';
 import { CircularProgressIndicator } from 'components/circular-progress-indicator/circular-progress-indicator';
+import { FloatSection } from 'components/float-section/float-section';
+import { IconButton } from 'components/icon-button/icon-button';
 
 const HIGHEST_GROSSING_MOVIES = [
   {
@@ -171,42 +173,42 @@ export const Demo = () => {
                 </h4>
                 <div>
                   <div
-                    className="display--inline-block margin--right--half color-background--primary border--all"
+                    className="display--inline-block margin--right--half color-background--primary  border-radius--all"
                     style={{ height: '1rem', width: '1rem' }}
                   />{' '}
                   primary
                 </div>
                 <div>
                   <div
-                    className="display--inline-block margin--right--half color-background--primary-light border--all"
+                    className="display--inline-block margin--right--half color-background--primary-light  border-radius--all"
                     style={{ height: '1rem', width: '1rem' }}
                   />{' '}
                   primary-light
                 </div>
                 <div>
                   <div
-                    className="display--inline-block margin--right--half color-background--primary-dark border--all"
+                    className="display--inline-block margin--right--half color-background--primary-dark  border-radius--all"
                     style={{ height: '1rem', width: '1rem' }}
                   />{' '}
                   primary-dark
                 </div>
                 <div>
                   <div
-                    className="display--inline-block margin--right--half color-background--secondary border--all"
+                    className="display--inline-block margin--right--half color-background--secondary border-radius--all"
                     style={{ height: '1rem', width: '1rem' }}
                   />{' '}
                   secondary
                 </div>
                 <div>
                   <div
-                    className="display--inline-block margin--right--half color-background--tertiary border--all"
+                    className="display--inline-block margin--right--half color-background--tertiary border-radius--all"
                     style={{ height: '1rem', width: '1rem' }}
                   />{' '}
                   tertiary
                 </div>
                 <div>
                   <div
-                    className="display--inline-block margin--right--half color-background--quaternary border--all"
+                    className="display--inline-block margin--right--half color-background--quaternary border-radius--all"
                     style={{ height: '1rem', width: '1rem' }}
                   />{' '}
                   quaternary
@@ -216,6 +218,17 @@ export const Demo = () => {
           </Row>
         </Grid>
       </Section>
+      <FloatSection spacerHeight="2rem" shadowColor="primary" spacerColor="primary-light">
+        <div className="display--flex">
+          <IconButton iconName="check" iconType="solid" color="secondary" />
+          <div className="margin--left" style={{ flex: 1 }}>
+            <p className="margin--top--half">
+              This is a <code>{'<FloatSection />'}</code> component. It doesn&apos;t really do anything, but kind of
+              breaks up page content in an interesting way on the desktop.
+            </p>
+          </div>
+        </div>
+      </FloatSection>
       <Section color="primary-light">
         <h2 className="border--bottom padding--bottom--half margin--bottom">The Image</h2>
         <p>
@@ -254,6 +267,17 @@ export const Demo = () => {
           </Row>
         </Grid>
       </Section>
+      <FloatSection spacerHeight="2rem" shadowColor="primary" spacerColor="white">
+        <div className="display--flex">
+          <IconButton iconName="check" iconType="solid" color="secondary" />
+          <div className="margin--left" style={{ flex: 1 }}>
+            <p className="margin--top--half">
+              Here&apos;s another <strong>Float Section</strong> for fun. When implementing these be sure to pay
+              attention to the <code>spacerHeight</code> and <code>spacerColor</code> props.
+            </p>
+          </div>
+        </div>
+      </FloatSection>
       <Section>
         <h2 className="border--bottom padding--bottom--half margin--bottom">The Grid</h2>
         <p>
