@@ -1,0 +1,96 @@
+@import '../config/variables';
+@import '../mixins/breakpoint-infix';
+@import '../mixins/media-breakpoint-up';
+
+$selector: border-radius;
+
+$directions: (
+  bottom: 'bottom',
+  left: 'left',
+  right: 'right',
+  top: 'top'
+);
+
+.#{$selector} {
+  &--all {
+    border-radius: $border-radius !important;
+
+    &--none {
+      border-radius: none !important;
+    }
+  }
+
+  &--horizontal {
+    border-left: $border-radius !important;
+    border-right: $border-radius !important;
+
+    &--none {
+      border-left: none !important;
+      border-right: none !important;
+    }
+  }
+
+  &--vertical {
+    border-top: $border-radius !important;
+    border-bottom: $border-radius !important;
+
+    &--none {
+      border-top: none !important;
+      border-bottom: none !important;
+    }
+  }
+
+  @each $direction in map-keys($directions) {
+    &--#{$direction} {
+      border-#{$direction}: $border-radius !important;
+
+      &--none {
+        border-#{$direction}: none !important;
+      }
+    }
+  }
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @each $direction in map-keys($directions) {
+        &--#{$infix}--#{$direction} {
+          border-#{$direction}: $border-radius !important;
+
+          &--none {
+            border-#{$direction}: none !important;
+          }
+        }
+      }
+
+      &--#{$infix}--all {
+        border-radius: $border-radius !important;
+
+        &--none {
+          border-radius: none !important;
+        }
+      }
+
+      &--#{$infix}--horizontal {
+        border-left: $border-radius !important;
+        border-right: $border-radius !important;
+
+        &--none {
+          border-left: none !important;
+          border-right: none !important;
+        }
+      }
+
+      &--#{$infix}--vertical {
+        border-top: $border-radius !important;
+        border-bottom: $border-radius !important;
+
+        &--none {
+          border-top: none !important;
+          border-bottom: none !important;
+        }
+      }
+    }
+  }
+}
