@@ -9,7 +9,7 @@
       "images/*": ["images/*"],
       "store/*": ["store/*"],
       "styles/*": ["styles/*"],
-      "util/*": ["uti/*"]
+      "util/*": ["util/*"]
     },
     "target": "es6"
   },
