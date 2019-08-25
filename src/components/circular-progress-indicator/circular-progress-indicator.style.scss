@@ -1,0 +1,43 @@
+@import '../../styles/config/variables';
+@import '../../styles/mixins/transition';
+
+@keyframes circularProgressIndicatorRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.root {
+  height: $spacer * 3;
+  pointer-events: none;
+  width: $spacer * 3;
+  padding: $border-width;
+  overflow: hidden;
+
+  .indicator {
+    animation: circularProgressIndicatorRotate $duration-base * 8 infinite linear;
+    border-color: $color-primary rgba($color-type, 0.1) rgba($color-type, 0.1);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: $border-width-large;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@each $color, $value in $colors {
+  .root.#{$color} {
+    .indicator {
+      @if (lightness($value) > 80) {
+        border-color: rgba($color-white, 0.3);
+      }
+
+      border-top-color: $value;
+    }
+  }
+}
