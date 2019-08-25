@@ -6,9 +6,15 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import classnames from 'classnames';
 
+const TYPES = {
+  brand: 'fab',
+  solid: 'fas',
+  outline: 'far'
+};
+
 export const Icon = props => {
   const { className: classNameProp, name, type: typeProp } = props;
-  const type = typeProp === 'brand' ? 'fab' : 'fas';
+  const type = TYPES[typeProp];
   const className = classnames(classNameProp, `${type} fa-${name}`);
 
   return <i className={className} />;
@@ -17,7 +23,7 @@ export const Icon = props => {
 Icon.propTypes = {
   className: PropTypes.string,
   name: PropTypes.string,
-  type: PropTypes.oneOf(['brand', 'solid'])
+  type: PropTypes.oneOf(['brand', 'outline', 'solid'])
 };
 
 Icon.defaultProps = {
