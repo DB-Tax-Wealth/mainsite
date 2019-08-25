@@ -28,8 +28,8 @@ table {
   }
 
   th {
-    @include font-size(0.8);
-    @include line-height(0.8);
+    @include font-size(0.6);
+    @include line-height(0.6);
 
     font-weight: $font-weight-base;
     padding: $spacer / 2;

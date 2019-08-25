@@ -17,14 +17,18 @@ $color-twitter: #6cadde;
 // branding
 $color-primary: #addfe4;
 $color-primary-dark: darken($color-primary, 10%);
-$color-primary-light: lighten($color-primary, 15%);
+$color-primary-light: lighten($color-primary, 17%);
 $color-secondary: #4fd287;
 $color-tertiary: #d1ef69;
 $color-quaternary: #3a4a4c;
 $color-quaternary-light: lighten(#3a4a4c, 10%);
 
+// component specific
+$color-border: lighten($color-type, 75%);
+
 $colors: (
   black: $color-black,
+  border: $color-border,
   danger: $color-danger,
   facebook: $color-facebook,
   google-plus: $color-google-plus,
@@ -43,8 +47,7 @@ $colors: (
   white: $color-white
 );
 
-// component specific
-$color-border: rgba($color-type, 0.1);
+// inputs
 $disabled-opacity: 0.4;
 
 /* typography
@@ -80,7 +83,7 @@ $spacer: 1rem;
 
 /* scaffolding
 **********************************************************/
-$border-radius: $spacer / 5;
+$border-radius: $spacer;
 $border-width: 1px;
 $border-width-large: $border-width * 6;
 
@@ -110,5 +113,5 @@ $ease-default: ease;
 
 // html {
 //   // adjust this value to control entire app REM size
-//   // font-size: 63.75%;
+//   font-size: 63.75%;
 // }

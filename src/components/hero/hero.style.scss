@@ -50,7 +50,7 @@
   }
 
   .spacer {
-    @include gradient-horizontal($color-white, rgba($color-white, 0));
+    @include gradient-horizontal($color-white, rgba($color-white, 0.2));
 
     height: 0;
     padding-bottom: $widescreen;
