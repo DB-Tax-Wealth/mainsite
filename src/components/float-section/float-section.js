@@ -7,9 +7,9 @@ import styles from './float-section.style.scss';
 export const FloatSection = props => {
   const { children, spacerHeight, spacerColor, shadowColor } = props;
 
-  const rootClassNames = classnames(styles.root, { [styles[shadowColor]]: shadowColor });
+  const rootClassNames = classnames(styles.root, `shadow--${shadowColor}`);
   const spacerStyles = { height: spacerHeight };
-  const spacerClassNames = classnames('display--xs--none', 'display--md--block', `color-background--${spacerColor}`);
+  const spacerClassNames = classnames('display--xs--none', 'display--xl--block', `color-background--${spacerColor}`);
 
   return (
     <>

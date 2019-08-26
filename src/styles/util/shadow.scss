@@ -1,0 +1,11 @@
+@import '../config/variables';
+
+$selector: shadow;
+
+.#{$selector} {
+  @each $color, $value in $colors {
+    &--#{$color} {
+      box-shadow: 0 $spacer $spacer rgba($value, 0.5) !important;
+    }
+  }
+}
