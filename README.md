@@ -49,7 +49,7 @@ cd path/to/your/working/directory/dbtax-mainsite
 ```
 Then start the application:
 ```
-npm run docs:start
+npm run start
 ```
 After Webpack Dev Server has compiled the development bundle, it will print out something similar to following:
 ```
