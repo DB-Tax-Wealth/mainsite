@@ -2,7 +2,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/BreadboxIO/dbtax-mainsite.svg)](https://github.com/BreadboxIO/dbtax-mainsite/issues)
 [![GitHub stars](https://img.shields.io/github/stars/BreadboxIO/dbtax-mainsite.svg)](https://github.com/BreadboxIO/dbtax-mainsite/stargazers)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 # 🌈 DB Tax Mainsite
 An application using [React](https://reactjs.org/) deployed as the DB Tax main public website.
@@ -117,21 +116,15 @@ Before allowing a successful commit Git will run the following scripts:
 ```
 npm run eslint
 npm run stylelint
-npm run lib:test:changed
 ```
 It's recommended a developers run `npm run eslint:fix` often during development to prevent any failures from code-style or JavaScript syntactical errors.
-
-## Testing
-This project is equipped with [Jest](https://jestjs.io/), and [Enzyme](https://github.com/airbnb/enzyme) to assist in testing JavaScript files. Each JavaScript file in the application should be in it's own folder with a sibling `.test.js` test file.  The test file should test as close to 100% of it's sibling.
-
-To check the test coverage of the application run `npm run lib:coverage`.  This script will print out a code coverage report in the command line and generate an LCOV code coverage report in the project's `./coverage/` folder.
 
 ## Scripts
 ### `build`
 This command runs `webpack` in "production" mode.  It uses the `src/index.js` file as it's entry point, and generates a JavaScript `main.js` and `vendor.js` file in `docs/`.
 
 ### `clean`
-This command delets the `dist/` directory.
+This command deletes the `dist/` directory.
 
 ### `eslint`
 This command runs `eslint src/`.  It prints eslint warnings and errors in the command line.
@@ -143,23 +136,13 @@ This command runs `eslint --fix src/`.  It attempts to fix any eslint warnings/e
 This command runs `webpack-dev-server` in "development" mode on the documentation. Hot reloading is enabled.  Once running, you can access the documentation running locally at [localhost:9090/](http://localhost:9090/).
 
 ### `stylelint`
-This command runs `stylelint 'src/**/*/*.scss`.  It prints styelint warnings and errors in the command line.
+This command runs `stylelint 'src/**/*/*.scss`.  It prints stylelint warnings and errors in the command line.
 
 ### `stylelint:fix`
 This command runs `stylelint --fix 'src/**/*/*.scss`.  It attempts to fix any stylelint warnings/errors then prints the remaining warnings and errors in the command line.
 
-### `test`
-This command runs `jest`. It prints test successes/failures in the command line.
-
-### `test:changed`
-This command runs `jest -o` on the JavaScript files that have changed or are uncommitted. It prints test successes/failures in the command line.
-
-### `test:coverage`
-This command runs `jest --coverage`.  It prints the test successes/failures in the command line and creates an .html test coverage report in `./coverage/lcov-report/index.html`.
-
 ## Built With
 * [Babel](https://babeljs.io/) - A JavaScript transpiler
-* [Jest](https://jestjs.io/) - A JavaScript testing framework
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 * [Webpack](https://github.com/webpack/webpack) - A JavaScript module bundler
 
