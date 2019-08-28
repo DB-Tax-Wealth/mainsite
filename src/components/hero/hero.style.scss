@@ -1,9 +1,13 @@
 @import '../../styles/config/variables';
 @import '../../styles/mixins/gradient-horizontal';
 
+$hero-max-width: $width-max + 192;
+
 .root {
+  border-radius: $border-radius;
   height: auto;
-  max-height: $spacer * 24;
+  margin: 0 auto;
+  max-width: $hero-max-width;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -50,10 +54,11 @@
   }
 
   .spacer {
-    @include gradient-horizontal($color-white, rgba($color-white, 0.2));
+    @include gradient-horizontal(rgba($color-white, 0.9), rgba($color-white, 0.2));
 
     height: 0;
-    padding-bottom: $widescreen;
+    box-shadow: 0 0 $spacer * 10 rgba($color-black, 0.1) inset;
+    padding-bottom: $widescreen * (5/8);
     pointer-events: none;
     position: relative;
     width: 100%;
@@ -62,6 +67,10 @@
       background: rgba($color-white, 0.8);
       padding-bottom: 100%;
     }
+  }
+
+  @media screen and (max-width: $hero-max-width) {
+    border-radius: 0;
   }
 
   @media screen and (max-width: $width-mobile) {

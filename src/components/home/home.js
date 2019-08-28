@@ -18,15 +18,17 @@ import { IconButton } from 'components/icon-button/icon-button';
 export const Home = () => {
   return (
     <Screen>
-      <Hero
-        image={heroImage}
-        title="Don't buy the hype."
-        subtitle="Client Resources"
-        // eslint-disable-next-line no-console
-        buttonOnClick={() => console.log('TODO')}
-      >
-        <p>There are a lot of misconceptions about Social Security. Here&apos;s the truth about three of them.</p>
-      </Hero>
+      <div className="color-background--primary-lighter padding--xl--vertical">
+        <Hero
+          image={heroImage}
+          title="Don't buy the hype."
+          subtitle="Client Resources"
+          // eslint-disable-next-line no-console
+          buttonOnClick={() => console.log('TODO')}
+        >
+          <p>There are a lot of misconceptions about Social Security. Here&apos;s the truth about three of them.</p>
+        </Hero>
+      </div>
       <FloatSection spacerHeight="4rem" spacerColor="primary-light">
         <Grid className="padding--horizontal--none">
           <Row>

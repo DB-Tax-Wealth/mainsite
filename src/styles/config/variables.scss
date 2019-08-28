@@ -18,6 +18,7 @@ $color-twitter: #6cadde;
 $color-primary: #addfe4;
 $color-primary-dark: darken($color-primary, 10%);
 $color-primary-light: lighten($color-primary, 17%);
+$color-primary-lighter: lighten($color-primary, 19%);
 $color-secondary: #4fd287;
 $color-tertiary: #d1ef69;
 $color-quaternary: #3a4a4c;
@@ -35,6 +36,7 @@ $colors: (
   pinterest: $color-pinterest,
   primary-dark: $color-primary-dark,
   primary-light: $color-primary-light,
+  primary-lighter: $color-primary-lighter,
   primary: $color-primary,
   quaternary-light: $color-quaternary-light,
   quaternary: $color-quaternary,
@@ -101,7 +103,7 @@ $grid-breakpoints: (
 /* shadows
 *********************************************************/
 $shadow-down: 0 $border-width $spacer rgba($color-black, 0.1);
-$shadow-float: 0 $border-width * 2 $spacer rgba($color-black, 0.1);
+$shadow-float: 0 $border-width * 2 $spacer * 2 rgba($color-black, 0.05);
 
 /* animations
 **********************************************************/
