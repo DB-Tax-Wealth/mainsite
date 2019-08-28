@@ -18,7 +18,7 @@
     padding: $spacer / 2;
     pointer-events: none;
     position: absolute;
-    transform: translateX(-50%) scale(0.7);
+    transform: scale(0.7) translateX(-50%) translateY(-25%);
 
     a {
       @include transition(background);
