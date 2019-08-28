@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { Button } from 'components/button/button';
 import { COMPANY_NAME } from 'constants/company-name';
@@ -8,6 +8,7 @@ import { ROUTES } from 'constants/routes';
 import React from 'react';
 import logo from 'images/db-tax-logo.png';
 import styles from './navigation.style.scss';
+import { NavigationLink } from './navigation-link/navigation-link';
 
 export const Navigation = props => {
   const { onMobileNavigationToggleClick } = props;
@@ -16,13 +17,9 @@ export const Navigation = props => {
     .filter(key => key !== 'HOME')
     .map(key => {
       const route = ROUTES[key];
-      const { path, title } = route;
+      const { path, routes, title } = route;
 
-      return (
-        <NavLink to={path} key={key}>
-          {title}
-        </NavLink>
-      );
+      return <NavigationLink key={key} routes={routes} title={title} path={path} />;
     });
 
   return (

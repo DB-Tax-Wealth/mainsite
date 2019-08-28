@@ -1,0 +1,103 @@
+@import '~animate.css/animate';
+@import '../../../../styles/util/animated';
+@import '../../../../styles/mixins/transition';
+@import '../../../../styles/config/variables';
+
+.root {
+  position: relative;
+
+  .children {
+    @include transition(#{'opacity, transform'});
+
+    background: $color-primary;
+    border-radius: $border-radius;
+    box-shadow: $shadow-float;
+    left: 50%;
+    margin-top: -$spacer / 2;
+    opacity: 0;
+    padding: $spacer / 2;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-50%) scale(0.7);
+
+    a {
+      @include transition(background);
+
+      border-radius: $border-radius;
+      white-space: nowrap;
+      background-color: transparent;
+      color: $color-white;
+      display: block;
+      text-decoration: none;
+      padding: $spacer / 4 $spacer;
+
+      &:hover {
+        background-color: $color-primary-dark;
+      }
+    }
+
+    &::before {
+      border-bottom: $spacer solid $color-primary;
+      border-left: $spacer solid transparent;
+      border-right: $spacer solid transparent;
+      content: '';
+      display: block;
+      height: 0;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%) translateY(-100%);
+      width: 0;
+    }
+  }
+
+  .primary {
+    @extend .animated;
+    @extend .fadeIn;
+
+    align-items: center;
+    color: $color-type;
+    display: flex;
+    height: $spacer * 4;
+    padding-left: $spacer / 2;
+    padding-right: $spacer / 2;
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+      @include transition(#{'opacity, width'});
+
+      content: '';
+      background-color: $color-primary;
+      display: block;
+      height: $border-width * 5;
+      left: 50%;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      width: 0%;
+    }
+
+    &.active,
+    &:hover {
+      &::after {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        animation-delay: $duration-base * $i / 2;
+      }
+    }
+  }
+
+  &:hover {
+    .children {
+      pointer-events: auto;
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+  }
+}

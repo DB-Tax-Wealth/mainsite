@@ -2,7 +2,8 @@ import { Home } from 'components/home/home';
 import { Demo } from 'components/demo/demo';
 
 const ABOUT_ROUTES = {
-  MISSION_STATEMENT: { path: '/mission-statement', title: 'Mission Statement', component: Demo, exact: true }
+  MISSION_STATEMENT: { path: '/mission-statement', title: 'Mission Statement', component: Demo, exact: true },
+  TEAM: { path: '/team', title: 'Team', component: Demo, exact: true }
 };
 
 export const ROUTES = {
