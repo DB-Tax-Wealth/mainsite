@@ -1,4 +1,12 @@
+import { Home } from 'components/home/home';
+import { Demo } from 'components/demo/demo';
+
+const ABOUT_ROUTES = {
+  MISSION_STATEMENT: { path: '/mission-statement', title: 'Mission Statement', component: Demo, exact: true }
+};
+
 export const ROUTES = {
-  HOME: '/',
-  DEMO: '/demo'
+  HOME: { path: '/', title: 'Home', component: Home, exact: true },
+  ABOUT: { path: '/about', title: 'About', component: Home, exact: true, routes: ABOUT_ROUTES },
+  DEMO: { path: '/demo', title: 'Demo', component: Demo, exact: true }
 };

@@ -1,17 +1,29 @@
-import { HashRouter, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
-import { Home } from 'components/home/home';
 import { Main } from 'components/main/main';
-import { ROUTES } from 'constants/routes';
 import React from 'react';
-import { Demo } from 'components/demo/demo';
+import { ROUTES } from 'constants/routes';
+import { RouteWithSubRoutes } from './route-with-sub-routes/route-with-sub-routes';
 
 export const Root = () => {
   return (
     <HashRouter hashType="noslash">
       <Main>
-        <Route exact path={ROUTES.HOME} component={Home} />
-        <Route exact path={ROUTES.DEMO} component={Demo} />
+        {Object.keys(ROUTES).map(key => {
+          const route = ROUTES[key];
+          const { component, exact, path, routes } = route;
+
+          return (
+            <RouteWithSubRoutes
+              component={component}
+              exact={exact}
+              key={key}
+              path={path}
+              routeKey={key}
+              routes={routes}
+            />
+          );
+        })}
       </Main>
     </HashRouter>
   );

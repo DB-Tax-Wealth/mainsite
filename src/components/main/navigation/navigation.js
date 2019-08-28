@@ -12,20 +12,28 @@ import styles from './navigation.style.scss';
 export const Navigation = props => {
   const { onMobileNavigationToggleClick } = props;
 
+  const links = Object.keys(ROUTES)
+    .filter(key => key !== 'HOME')
+    .map(key => {
+      const route = ROUTES[key];
+      const { path, title } = route;
+
+      return (
+        <NavLink to={path} key={key}>
+          {title}
+        </NavLink>
+      );
+    });
+
   return (
     <div className={styles.root}>
       <div className={styles.content}>
         <div className={styles.logoContainer}>
-          <Link to={ROUTES.HOME} className="display--block">
+          <Link to={ROUTES.HOME.path} className="display--block">
             <img src={logo} alt={COMPANY_NAME} className={styles.logo} />
           </Link>
         </div>
-        <nav className={styles.links}>
-          <NavLink to={ROUTES.DEMO}>About</NavLink>
-          <NavLink to={ROUTES.DEMO}>Services</NavLink>
-          <NavLink to={ROUTES.DEMO}>Client Resources</NavLink>
-          <NavLink to={ROUTES.DEMO}>Legal</NavLink>
-        </nav>
+        <nav className={styles.links}>{links}</nav>
         <div className={styles.accountAccess}>
           <Button className={styles.button}>Account Access</Button>
         </div>

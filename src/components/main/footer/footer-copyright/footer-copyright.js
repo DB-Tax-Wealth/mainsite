@@ -1,10 +1,10 @@
 import { COMPANY_NAME } from 'constants/company-name';
 import { IconButton } from 'components/icon-button/icon-button';
 import { Link } from 'react-router-dom';
-import { ROUTES } from 'constants/routes';
 import React from 'react';
 import logo from 'images/db-tax-logo-dark.png';
 import moment from 'moment';
+import { ROUTES } from 'constants/routes';
 import styles from './footer-copyright.style.scss';
 
 export const FooterCopyright = () => {
@@ -13,7 +13,7 @@ export const FooterCopyright = () => {
   return (
     <div className={styles.root}>
       <div className={styles.logoContainer}>
-        <Link to={ROUTES.HOME}>
+        <Link to={ROUTES.HOME.path}>
           <img src={logo} alt={COMPANY_NAME} className={styles.logo} />
         </Link>
       </div>
