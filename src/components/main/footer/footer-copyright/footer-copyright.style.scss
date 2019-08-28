@@ -12,7 +12,7 @@
   .copyright {
     flex: 1;
 
-    @media screen and (max-width: $width-mobile) {
+    @media screen and (max-width: $width-sm) {
       margin-bottom: $spacer;
     }
   }
@@ -25,13 +25,13 @@
       height: $spacer * 2.5;
     }
 
-    @media screen and (max-width: $width-mobile) {
+    @media screen and (max-width: $width-sm) {
       margin-right: 0;
       margin-bottom: $spacer / 2;
     }
   }
 
-  @media screen and (max-width: $width-mobile) {
+  @media screen and (max-width: $width-sm) {
     display: block;
   }
 }

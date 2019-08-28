@@ -12,7 +12,7 @@ p {
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: $width-mobile) {
+  @media screen and (min-width: $width-sm) {
     margin-top: $spacer;
     margin-bottom: $spacer;
   }

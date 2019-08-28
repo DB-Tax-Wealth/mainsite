@@ -1,7 +1,7 @@
 @import '../../styles/config/variables';
 @import '../../styles/mixins/gradient-horizontal';
 
-$hero-max-width: $width-max + 192;
+$hero-max-width: $width-xl + 192;
 
 .root {
   border-radius: $border-radius;
@@ -13,7 +13,7 @@ $hero-max-width: $width-max + 192;
   width: 100%;
 
   .button {
-    @media screen and (max-width: $width-mobile) {
+    @media screen and (max-width: $width-sm) {
       display: block;
       width: 100%;
     }
@@ -28,7 +28,7 @@ $hero-max-width: $width-max + 192;
     justify-content: center;
     left: 0;
     margin: 0 auto;
-    max-width: $width-max;
+    max-width: $width-xl;
     padding: $spacer;
     position: absolute;
     right: 0;
@@ -36,7 +36,7 @@ $hero-max-width: $width-max + 192;
     width: 100%;
     z-index: 10;
 
-    @media screen and (max-width: $width-mobile) {
+    @media screen and (max-width: $width-sm) {
       padding: $spacer $spacer / 2;
     }
   }
@@ -63,7 +63,7 @@ $hero-max-width: $width-max + 192;
     position: relative;
     width: 100%;
 
-    @media screen and (max-width: $width-mobile) {
+    @media screen and (max-width: $width-sm) {
       background: rgba($color-white, 0.8);
       padding-bottom: 100%;
     }
@@ -73,7 +73,7 @@ $hero-max-width: $width-max + 192;
     border-radius: 0;
   }
 
-  @media screen and (max-width: $width-mobile) {
+  @media screen and (max-width: $width-sm) {
     max-height: 100%;
   }
 }

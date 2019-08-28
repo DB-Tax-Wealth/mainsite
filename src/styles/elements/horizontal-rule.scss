@@ -10,7 +10,7 @@ hr {
   margin: $spacer auto;
   padding: 0;
 
-  @media screen and (min-width: $width-mobile) {
+  @media screen and (min-width: $width-sm) {
     margin: $spacer * 2 auto;
   }
 }

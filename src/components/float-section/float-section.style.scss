@@ -6,14 +6,14 @@
   box-sizing: border-box;
   left: 0;
   margin: 0 auto;
-  max-width: $width-max;
+  max-width: $width-xl;
   padding: $spacer * 2;
   position: absolute;
   right: 0;
   transform: translateY(-50%);
   z-index: 10;
 
-  @media screen and (max-width: $width-max) {
+  @media screen and (max-width: $width-xl) {
     position: relative;
     border-radius: 0;
     padding: $spacer * 2 $spacer;

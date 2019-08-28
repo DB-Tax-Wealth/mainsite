@@ -18,7 +18,7 @@
       display: block;
     }
 
-    @media screen and (max-width: $width-tablet) {
+    @media screen and (max-width: $width-md) {
       margin-left: 0;
     }
   }
@@ -30,7 +30,7 @@
     flex: 3;
     font-weight: $font-weight-light;
 
-    @media screen and (max-width: $width-tablet) {
+    @media screen and (max-width: $width-md) {
       @include font-size(1.2);
       @include line-height(1.6);
 
@@ -39,7 +39,7 @@
     }
   }
 
-  @media screen and (max-width: $width-tablet) {
+  @media screen and (max-width: $width-md) {
     display: block;
     padding: $spacer * 2 0;
   }

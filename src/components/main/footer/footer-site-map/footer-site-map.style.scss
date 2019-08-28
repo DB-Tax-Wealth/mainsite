@@ -58,12 +58,12 @@
     flex: 1;
     margin-right: $spacer * 2;
 
-    @media screen and (max-width: $width-tablet) {
+    @media screen and (max-width: $width-md) {
       margin-bottom: $spacer * 2;
     }
   }
 
-  @media screen and (max-width: $width-tablet) {
+  @media screen and (max-width: $width-md) {
     display: block;
   }
 }

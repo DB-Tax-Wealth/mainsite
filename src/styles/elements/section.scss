@@ -3,7 +3,7 @@
 section {
   margin-bottom: $spacer;
 
-  @media screen and (min-width: $width-mobile) {
+  @media screen and (min-width: $width-sm) {
     margin-bottom: $spacer * 2;
   }
 }

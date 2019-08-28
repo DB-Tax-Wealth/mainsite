@@ -12,7 +12,7 @@
     width: 50%;
     box-sizing: border-box;
 
-    @media screen and (max-width: $width-mobile) {
+    @media screen and (max-width: $width-sm) {
       width: 75%;
     }
   }
@@ -20,14 +20,14 @@
   .inputContainer {
     left: 0;
     margin: 0 auto;
-    max-width: $width-max;
+    max-width: $width-xl;
     padding: $spacer * 2 $spacer;
     position: absolute;
     right: 0;
     top: 0;
     width: 100%;
 
-    @media screen and (max-width: $width-tablet) {
+    @media screen and (max-width: $width-md) {
       padding: $spacer;
     }
   }
