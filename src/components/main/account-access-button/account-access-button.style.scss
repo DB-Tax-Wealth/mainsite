@@ -1,0 +1,10 @@
+@import '../../../styles/config/variables';
+
+.root {
+  color: $color-primary;
+
+  &:hover {
+    color: $color-white;
+    background: $color-primary;
+  }
+}

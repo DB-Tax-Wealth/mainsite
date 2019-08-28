@@ -19,16 +19,6 @@
     display: flex;
     margin-left: $spacer;
 
-    .button {
-      background: $color-primary-light;
-      color: $color-primary;
-
-      &:hover {
-        color: $color-white;
-        background: $color-primary;
-      }
-    }
-
     @media screen and (max-width: $width-tablet) {
       display: none;
     }

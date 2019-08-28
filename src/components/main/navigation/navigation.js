@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import { Button } from 'components/button/button';
 import { COMPANY_NAME } from 'constants/company-name';
 import { IconButton } from 'components/icon-button/icon-button';
 import PropTypes from 'prop-types';
@@ -9,6 +8,7 @@ import React from 'react';
 import logo from 'images/db-tax-logo.png';
 import styles from './navigation.style.scss';
 import { NavigationLink } from './navigation-link/navigation-link';
+import { AccountAccessButton } from '../account-access-button/account-access-button';
 
 export const Navigation = props => {
   const { onMobileNavigationToggleClick } = props;
@@ -32,7 +32,7 @@ export const Navigation = props => {
         </div>
         <nav className={styles.links}>{links}</nav>
         <div className={styles.accountAccess}>
-          <Button className={styles.button}>Account Access</Button>
+          <AccountAccessButton />
         </div>
         <div className={styles.mobileToggle}>
           <IconButton iconName="bars" onClick={onMobileNavigationToggleClick} />

@@ -5,9 +5,9 @@ import React from 'react';
 import classnames from 'classnames';
 import logo from 'images/db-tax-logo-icon.png';
 import { COMPANY_NAME } from 'constants/company-name';
-import { Button } from 'components/button/button';
 import { Overlay } from '../../overlay/overlay';
 import styles from './mobile-navigation.style.scss';
+import { AccountAccessButton } from '../account-access-button/account-access-button';
 
 export const MobileNavigation = props => {
   const { active, onCloseClick } = props;
@@ -29,9 +29,7 @@ export const MobileNavigation = props => {
       <div className={styles.menu}>
         {links}
         <div className="padding--all">
-          <Button color="primary" style={{ width: '100%' }}>
-            Account Access
-          </Button>
+          <AccountAccessButton style={{ width: '100%' }} />
         </div>
         <img src={logo} className={styles.logo} alt={COMPANY_NAME} />
       </div>
