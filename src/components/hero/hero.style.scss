@@ -37,7 +37,7 @@ $hero-max-width: $width-xl + 192;
     z-index: 10;
 
     @media screen and (max-width: $width-sm) {
-      padding: $spacer $spacer / 2;
+      padding: $spacer;
     }
   }
 
@@ -65,6 +65,7 @@ $hero-max-width: $width-xl + 192;
 
     @media screen and (max-width: $width-sm) {
       background: rgba($color-white, 0.8);
+      box-shadow: none;
       padding-bottom: 100%;
     }
   }

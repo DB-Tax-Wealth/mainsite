@@ -14,10 +14,6 @@
   @media screen and (max-width: $width-md) {
     padding: $spacer * 2 $spacer;
   }
-
-  @media screen and (max-width: $width-sm) {
-    padding: $spacer * 2 $spacer / 2;
-  }
 }
 
 @each $color, $value in $colors {

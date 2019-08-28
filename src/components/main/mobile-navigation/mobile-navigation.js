@@ -17,7 +17,7 @@ export const MobileNavigation = props => {
     const { path, title } = route;
 
     return (
-      <NavLink to={path} key={key}>
+      <NavLink to={path} key={key} onClick={onCloseClick}>
         {title}
       </NavLink>
     );
@@ -28,7 +28,7 @@ export const MobileNavigation = props => {
       <Overlay active={active} onClick={onCloseClick} />
       <div className={styles.menu}>
         {links}
-        <div className="padding--all">
+        <div className={styles.accountAccess} onClick={onCloseClick}>
           <AccountAccessButton style={{ width: '100%' }} />
         </div>
         <img src={logo} className={styles.logo} alt={COMPANY_NAME} />

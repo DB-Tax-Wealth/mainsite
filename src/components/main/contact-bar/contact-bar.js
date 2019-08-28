@@ -19,9 +19,8 @@ export const ContactBar = () => (
         <Icon name="home" /> {ADDRESS.STREET}
         <span className="display--xs--none display--md--inline-block">
           {' '}
-          · {ADDRESS.CITY}, {ADDRESS.STATE}
-        </span>{' '}
-        · {ADDRESS.ZIP}
+          · {ADDRESS.CITY}, {ADDRESS.STATE} · {ADDRESS.ZIP}
+        </span>
       </a>
     </div>
   </div>

@@ -5,6 +5,23 @@
 @import '../../../styles/config/variables';
 
 .root {
+  .accountAccess {
+    @extend .animated;
+
+    animation-delay: $duration-base * 2;
+    padding: $spacer;
+  }
+
+  .logo {
+    @extend .animated;
+
+    animation-delay: $duration-base * 2.5;
+    display: block;
+    width: $spacer * 1.5;
+    height: $spacer * 1.5;
+    margin: $spacer auto 0;
+  }
+
   .menu {
     @include transition(transform);
 
@@ -18,7 +35,7 @@
     right: 0;
     top: 0;
     transform: translateX(100%);
-    width: 50%;
+    width: 60%;
     z-index: 30;
 
     a {
@@ -44,20 +61,14 @@
         }
       }
     }
-
-    .logo {
-      @extend .animated;
-
-      animation-delay: $duration-base * 2.5;
-      display: block;
-      width: $spacer * 1.5;
-      height: $spacer * 1.5;
-      margin: $spacer auto 0;
-    }
   }
 }
 
 .root.active {
+  .accountAccess {
+    @extend .bounceIn;
+  }
+
   .menu {
     transform: translateX(0%);
 
