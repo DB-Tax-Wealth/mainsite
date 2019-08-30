@@ -1,9 +1,7 @@
 @import '../../styles/config/variables';
-@import '../../styles/mixins/transition';
 
 .root {
-  @include transition(background-color);
-
+  background: $color-primary-lighter;
   -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
   flex: 1;
