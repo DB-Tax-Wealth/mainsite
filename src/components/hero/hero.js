@@ -13,21 +13,23 @@ export const Hero = props => {
 
   return (
     <div className={styles.root}>
-      <div className={styles.image} style={{ backgroundImage: `url(${image})` }} />
-      <div className={styles.spacer} />
-      <div className={styles.content}>
-        <div className="max-width--sm border-radius">
-          {titleExists && (
-            <HeadingWithSubtitle subtitle={subtitle} subtitleColor={subtitleColor}>
-              {title}
-            </HeadingWithSubtitle>
-          )}
-          {children}
-          {buttonExists && (
-            <Button onClick={buttonOnClick} className={styles.button} color={buttonColor}>
-              {buttonLabel}
-            </Button>
-          )}
+      <div className={styles.container}>
+        <div className={styles.image} style={{ backgroundImage: `url(${image})` }} />
+        <div className={styles.spacer} />
+        <div className={styles.content}>
+          <div className="max-width--sm border-radius">
+            {titleExists && (
+              <HeadingWithSubtitle subtitle={subtitle} subtitleColor={subtitleColor}>
+                {title}
+              </HeadingWithSubtitle>
+            )}
+            {children}
+            {buttonExists && (
+              <Button onClick={buttonOnClick} className={styles.button} color={buttonColor}>
+                {buttonLabel}
+              </Button>
+            )}
+          </div>
         </div>
       </div>
     </div>

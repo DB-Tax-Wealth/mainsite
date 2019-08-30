@@ -4,18 +4,26 @@
 $hero-max-width: $width-xl + 192;
 
 .root {
-  border-radius: $border-radius;
-  height: auto;
-  margin: 0 auto;
-  max-width: $hero-max-width;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+  padding: $spacer;
 
   .button {
     @media screen and (max-width: $width-sm) {
       display: block;
       width: 100%;
+    }
+  }
+
+  .container {
+    border-radius: $border-radius;
+    height: auto;
+    margin: 0 auto;
+    max-width: $hero-max-width;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    @media screen and (max-width: $width-sm) {
+      max-height: 50%;
     }
   }
 
@@ -68,13 +76,5 @@ $hero-max-width: $width-xl + 192;
       box-shadow: none;
       padding-bottom: 100%;
     }
-  }
-
-  @media screen and (max-width: $hero-max-width) {
-    border-radius: 0;
-  }
-
-  @media screen and (max-width: $width-sm) {
-    max-height: 100%;
   }
 }

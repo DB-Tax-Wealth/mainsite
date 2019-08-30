@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 import { App } from 'components/main/app/app';
-import { ContactBar } from 'components/main/contact-bar/contact-bar';
-import { Navigation } from 'components/main/navigation/navigation';
 import PropTypes from 'prop-types';
 import { MobileNavigation } from './mobile-navigation/mobile-navigation';
+import { Header } from './header/header';
 
 export class Main extends Component {
   static propTypes = {
@@ -33,8 +32,7 @@ export class Main extends Component {
 
     return (
       <App>
-        <ContactBar />
-        <Navigation onMobileNavigationToggleClick={this.toggleMobileNavigation} />
+        <Header onMobileNavigationToggleClick={this.toggleMobileNavigation} />
         {children}
         <MobileNavigation active={mobileNavigationActive} onCloseClick={this.toggleMobileNavigation} />
       </App>

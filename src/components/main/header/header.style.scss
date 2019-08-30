@@ -1,0 +1,20 @@
+@import '../../../styles/config/variables';
+
+.root {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
+  + div {
+    // this padding is used to push the element adjacent to
+    // this fixed heading down so the <Header /> does not
+    // cover the adjacent element
+    padding-top: $spacer * 5.8;
+
+    @media screen and (max-width: $width-sm) {
+      padding-top: $spacer * 3.5;
+    }
+  }
+}

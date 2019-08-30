@@ -100,14 +100,12 @@ export const Demo = () => {
 
   return (
     <Screen>
-      <div className="color-background--primary-lighter padding--xl--vertical">
-        <Hero image={heroImage} title="Demonstration Content" subtitle="A Demonstration" subtitleColor="primary-dark">
-          <p>
-            This top section is a <strong>Hero</strong> component. It has props to support changing the color of the
-            subtitle, as well as add an additional button.
-          </p>
-        </Hero>
-      </div>
+      <Hero image={heroImage} title="Demonstration Content" subtitle="A Demonstration" subtitleColor="primary-dark">
+        <p>
+          This top section is a <strong>Hero</strong> component. It has props to support changing the color of the
+          subtitle, as well as add an additional button.
+        </p>
+      </Hero>
       <Section>
         <Grid className="padding--horizontal--none">
           <h2 className="border--bottom padding--bottom--half margin--bottom">The Section</h2>

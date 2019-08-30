@@ -5,10 +5,10 @@
 
 .root {
   background: $color-white;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
   box-shadow: $shadow-float;
   padding: 0 $spacer;
-  position: relative;
-  z-index: 10;
 
   .accountAccess {
     @extend .animated;
