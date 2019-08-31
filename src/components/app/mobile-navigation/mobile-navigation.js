@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { ROUTES } from 'constants/routes';
 import React from 'react';
@@ -8,18 +7,24 @@ import { COMPANY_NAME } from 'constants/company-name';
 import { Overlay } from '../../overlay/overlay';
 import styles from './mobile-navigation.style.scss';
 import { AccountAccessButton } from '../account-access-button/account-access-button';
+import { MobileNavigationLink } from './mobile-navigation-link/mobile-navigation-link';
 
 export const MobileNavigation = props => {
   const { active, onCloseClick } = props;
   const className = classnames(styles.root, { [styles.active]: active });
   const links = Object.keys(ROUTES).map(key => {
     const route = ROUTES[key];
-    const { path, title } = route;
+    const { path, title, routes } = route;
 
     return (
-      <NavLink to={path} key={key} onClick={onCloseClick}>
-        {title}
-      </NavLink>
+      <MobileNavigationLink
+        active={active}
+        key={key}
+        onClick={onCloseClick}
+        path={path}
+        routes={routes}
+        title={title}
+      />
     );
   });
 

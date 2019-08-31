@@ -37,30 +37,6 @@
     transform: translateX(100%);
     width: 70%;
     z-index: 30;
-
-    a {
-      @extend .animated;
-
-      @include transition(#{'color, background'});
-
-      color: $color-primary-dark;
-      display: block;
-      padding: $spacer / 2 $spacer;
-      text-decoration: none;
-      text-transform: uppercase;
-
-      &.active,
-      &:hover {
-        background: $color-primary;
-        color: $color-white;
-      }
-
-      @for $i from 1 through 6 {
-        &:nth-child(#{$i}) {
-          animation-delay: $duration-base * $i / 4;
-        }
-      }
-    }
   }
 }
 
@@ -71,10 +47,6 @@
 
   .menu {
     transform: translateX(0%);
-
-    a {
-      @extend .fadeInRight;
-    }
 
     .logo {
       @extend .fadeIn;

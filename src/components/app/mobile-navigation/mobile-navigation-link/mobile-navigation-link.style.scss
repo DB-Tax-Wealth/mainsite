@@ -1,0 +1,72 @@
+@import '~animate.css/animate';
+@import '../../../../styles/util/animated';
+@import '../../../../styles/mixins/transition';
+@import '../../../../styles/mixins/font-size';
+@import '../../../../styles/config/variables';
+
+.root {
+  @extend .animated;
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .children {
+    @extend .animated;
+
+    background: $color-primary-light;
+    display: none;
+
+    a {
+      display: block;
+    }
+  }
+
+  .icon {
+    @include transition(transform);
+
+    transform: rotate(0deg);
+  }
+
+  .primary {
+    @include transition(#{'color, background'});
+
+    color: $color-primary-dark;
+    display: flex;
+    padding: $spacer / 2 $spacer;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $color-primary;
+
+      a,
+      button {
+        color: $color-white;
+      }
+    }
+  }
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation-delay: $duration-base * $i / 4;
+    }
+  }
+}
+
+.root.active {
+  @extend .fadeInRight;
+}
+
+.root.childrenActive {
+  .children {
+    @extend .fadeInUp;
+
+    display: block;
+  }
+
+  .icon {
+    transform: translateY(-2px) rotate(135deg);
+  }
+}
