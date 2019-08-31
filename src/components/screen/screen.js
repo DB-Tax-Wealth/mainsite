@@ -2,10 +2,11 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import styles from './screen.style.scss';
 
 export const Screen = props => {
   const { children, className: classNameProp } = props;
-  const className = classNames('animated', 'fadeIn', classNameProp);
+  const className = classNames('animated', 'fadeIn', styles.root, classNameProp);
 
   return <div className={className}>{children}</div>;
 };

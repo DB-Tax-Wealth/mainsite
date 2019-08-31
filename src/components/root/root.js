@@ -1,14 +1,14 @@
 import { HashRouter } from 'react-router-dom';
 
-import { Main } from 'components/main/main';
 import React from 'react';
 import { ROUTES } from 'constants/routes';
+import { App } from 'components/app/app';
 import { RouteWithSubRoutes } from './route-with-sub-routes/route-with-sub-routes';
 
 export const Root = () => {
   return (
     <HashRouter hashType="noslash">
-      <Main>
+      <App>
         {Object.keys(ROUTES).map(key => {
           const route = ROUTES[key];
           const { component, exact, path, routes } = route;
@@ -24,7 +24,7 @@ export const Root = () => {
             />
           );
         })}
-      </Main>
+      </App>
     </HashRouter>
   );
 };

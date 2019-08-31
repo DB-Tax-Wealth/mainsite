@@ -1,5 +1,5 @@
-import { FooterCallToAction } from 'components/main/footer/footer-call-to-action/footer-call-to-action';
-import { FooterSiteMap } from 'components/main/footer/footer-site-map/footer-site-map';
+import { FooterCallToAction } from 'components/app/footer/footer-call-to-action/footer-call-to-action';
+import { FooterSiteMap } from 'components/app/footer/footer-site-map/footer-site-map';
 import React from 'react';
 import { FooterCopyright } from './footer-copyright/footer-copyright';
 
