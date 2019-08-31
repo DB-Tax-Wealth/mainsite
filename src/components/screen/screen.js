@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import { Footer } from 'components/main/footer/footer';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './screen.style.scss';
@@ -27,11 +26,6 @@ export class Screen extends Component {
     const { children } = this.props;
     const className = this.getClassNames();
 
-    return (
-      <div className={className}>
-        {children}
-        <Footer />
-      </div>
-    );
+    return <div className={className}>{children}</div>;
   }
 }

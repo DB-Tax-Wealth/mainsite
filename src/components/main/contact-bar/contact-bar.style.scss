@@ -23,8 +23,4 @@
       animation-delay: $duration-base * 2;
     }
   }
-
-  @media screen and (max-width: $width-sm) {
-    display: none;
-  }
 }

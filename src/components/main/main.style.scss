@@ -1,0 +1,10 @@
+@import '../../styles/config/variables';
+
+.root {
+  background: $color-primary-lighter;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}

@@ -16,7 +16,11 @@ export const ContactBar = () => (
         rel="noopener noreferrer"
         target="_blank"
       >
-        <Icon name="home" /> {ADDRESS.STREET} · {ADDRESS.CITY}, {ADDRESS.STATE} · {ADDRESS.ZIP}
+        <Icon name="home" /> {ADDRESS.STREET}
+        <span className="display--xs--none display--sm--inline-block">
+          {' '}
+          · {ADDRESS.CITY}, {ADDRESS.STATE} · {ADDRESS.ZIP}
+        </span>
       </a>
     </div>
   </div>
