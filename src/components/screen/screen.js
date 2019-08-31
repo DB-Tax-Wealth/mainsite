@@ -1,31 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import styles from './screen.style.scss';
 
-export class Screen extends Component {
-  static propTypes = {
-    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
-    className: PropTypes.string
-  };
+export const Screen = props => {
+  const { children, className: classNameProp } = props;
+  const className = classNames('animated', 'fadeIn', classNameProp);
 
-  static defaultProps = {
-    children: null,
-    className: ''
-  };
+  return <div className={className}>{children}</div>;
+};
 
-  getClassNames() {
-    const { className } = this.props;
-    const result = classNames('animated', 'fadeIn', className, styles.root);
+Screen.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
+  className: PropTypes.string
+};
 
-    return result;
-  }
-
-  render() {
-    const { children } = this.props;
-    const className = this.getClassNames();
-
-    return <div className={className}>{children}</div>;
-  }
-}
+Screen.defaultProps = {
+  children: null,
+  className: ''
+};
