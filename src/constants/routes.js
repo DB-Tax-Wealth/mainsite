@@ -8,8 +8,7 @@ const ABOUT_ROUTES = {
     title: 'Mission Statement',
     component: MissionStatement,
     exact: true
-  },
-  TEAM: { path: '/team', title: 'Team', component: Demo, exact: true }
+  }
 };
 
 export const ROUTES = {

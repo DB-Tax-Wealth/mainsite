@@ -61,7 +61,7 @@
 
 .root.childrenActive {
   .children {
-    @extend .fadeInUp;
+    @extend .fadeIn;
 
     display: block;
   }
