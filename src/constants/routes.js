@@ -1,8 +1,14 @@
 import { Home } from 'components/home/home';
 import { Demo } from 'components/demo/demo';
+import { MissionStatement } from 'components/mission-statement/mission-statement';
 
 const ABOUT_ROUTES = {
-  MISSION_STATEMENT: { path: '/mission-statement', title: 'Mission Statement', component: Demo, exact: true },
+  MISSION_STATEMENT: {
+    path: '/mission-statement',
+    title: 'Mission Statement',
+    component: MissionStatement,
+    exact: true
+  },
   TEAM: { path: '/team', title: 'Team', component: Demo, exact: true }
 };
 
