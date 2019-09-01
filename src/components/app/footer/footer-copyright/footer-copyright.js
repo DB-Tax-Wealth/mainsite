@@ -1,5 +1,5 @@
 import { COMPANY_NAME } from 'constants/company-name';
-import { IconButton } from 'components/icon-button/icon-button';
+import { IconButton } from 'components/layout/icon-button/icon-button';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import logo from 'images/db-tax-logo-dark.png';

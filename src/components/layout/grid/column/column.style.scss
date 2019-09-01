@@ -1,0 +1,70 @@
+@import '../../../../styles/config/variables';
+@import '../../../../styles/mixins/breakpoint-infix';
+@import '../../../../styles/mixins/media-breakpoint-up';
+@import '../../../../styles/mixins/make-column-widths';
+@import '../../../../styles/mixins/make-column-offset';
+
+.root {
+  box-sizing: border-box;
+  min-height: 1px; // Prevent collapsing
+  padding-left: $grid-gutter / 2;
+  padding-right: $grid-gutter / 2;
+  position: relative;
+  width: 100%;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints); // Allow columns to stretch full width below their breakpoints
+
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+    .root-#{$infix} {
+      flex-grow: 1;
+      max-width: 100%;
+    }
+
+    .root-#{$infix}-auto {
+      flex: 0 0 auto;
+      max-width: none; // Reset earlier grid tiers
+      width: auto;
+    }
+
+    @for $i from 1 through $grid-columns {
+      .root-#{$infix}-#{$i} {
+        @include make-column-widths($i, $grid-columns);
+      }
+
+      .root.print-#{$i} {
+        @media print {
+          float: left !important;
+          width: percentage($i / $grid-columns) !important;
+          max-width: unset;
+        }
+      }
+    }
+
+    .root.order-#{$infix}-first {
+      order: -1;
+    }
+
+    @for $i from 1 through $grid-columns {
+      .root.order-#{$infix}-#{$i} {
+        order: $i;
+      }
+    }
+
+    @for $i from 0 through ($grid-columns - 1) {
+      @if not ($infix == '') {
+        .root.offset-#{$infix}-#{$i} {
+          @include make-column-offset($i, $grid-columns);
+        }
+      }
+
+      .root.print-offset-#{$i} {
+        @media print {
+          @include make-column-offset($i, $grid-columns);
+        }
+      }
+    }
+  }
+}

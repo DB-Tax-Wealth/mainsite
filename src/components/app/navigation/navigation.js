@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { COMPANY_NAME } from 'constants/company-name';
-import { IconButton } from 'components/icon-button/icon-button';
+import { IconButton } from 'components/layout/icon-button/icon-button';
 import PropTypes from 'prop-types';
 import { ROUTES } from 'constants/routes';
 import React from 'react';

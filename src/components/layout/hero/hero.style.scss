@@ -1,0 +1,76 @@
+@import '../../../styles/config/variables';
+@import '../../../styles/mixins/gradient-horizontal';
+
+$hero-max-width: $width-xl + 192;
+
+.root {
+  padding: $spacer;
+
+  .button {
+    @media screen and (max-width: $width-sm) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .container {
+    border-radius: $border-radius;
+    height: auto;
+    margin: 0 auto;
+    max-width: $hero-max-width;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .content {
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    margin: 0 auto;
+    max-width: $width-xl;
+    padding: $spacer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    @media screen and (max-width: $width-sm) {
+      padding: $spacer;
+    }
+  }
+
+  .image {
+    background-color: $color-primary;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .spacer {
+    @include gradient-horizontal(rgba($color-white, 0.9), rgba($color-white, 0.2));
+
+    height: 0;
+    box-shadow: 0 0 $spacer * 10 rgba($color-black, 0.1) inset;
+    padding-bottom: $widescreen * (5/8);
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+
+    @media screen and (max-width: $width-sm) {
+      background: rgba($color-white, 0.8);
+      box-shadow: none;
+      padding-bottom: 100%;
+    }
+  }
+}

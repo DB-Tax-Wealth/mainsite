@@ -1,4 +1,4 @@
-import { Button } from 'components/button/button';
+import { Button } from 'components/layout/button/button';
 import React from 'react';
 import styles from './footer-call-to-action.style.scss';
 

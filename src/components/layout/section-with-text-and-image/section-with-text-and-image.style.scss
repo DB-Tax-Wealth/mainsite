@@ -1,0 +1,59 @@
+@import '../../../styles/config/variables';
+
+.root {
+  .content {
+    display: flex;
+
+    @media screen and (max-width: $width-sm) {
+      display: block;
+    }
+  }
+
+  .imageContainer {
+    flex: 1;
+    margin: 0 0 -100% $spacer * 2;
+    transform: translateY(-5%);
+
+    .image {
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 100%;
+      height: 0;
+      padding-bottom: 150%;
+      width: 150%;
+
+      @media screen and (max-width: $width-md) {
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: $width-sm) {
+        border-radius: 0;
+        width: 100%;
+        padding-bottom: $widescreen;
+      }
+    }
+
+    @media screen and (max-width: $width-md) {
+      margin: 25% 0 25% $spacer * 2;
+      transform: translateY(0);
+    }
+
+    @media screen and (max-width: $width-md) {
+      margin: 0;
+      transform: translateY(0);
+    }
+  }
+
+  .primary {
+    flex: 1;
+
+    @media screen and (max-width: $width-sm) {
+      padding: $spacer * 2 $spacer;
+    }
+  }
+
+  @media screen and (max-width: $width-sm) {
+    padding: 0 !important;
+  }
+}

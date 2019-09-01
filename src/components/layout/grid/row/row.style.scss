@@ -1,0 +1,13 @@
+@import '../../../../styles/config/variables';
+
+.root {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$grid-gutter / 2;
+  margin-right: -$grid-gutter / 2;
+
+  @media print {
+    display: block;
+  }
+}

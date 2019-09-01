@@ -1,6 +1,6 @@
 import { ADDRESS } from 'constants/address';
 import { EMAIL } from 'constants/email';
-import { InputWithIconButton } from 'components/input-with-icon-button/input-with-icon-button';
+import { InputWithIconButton } from 'components/layout/input-with-icon-button/input-with-icon-button';
 import { Link } from 'react-router-dom';
 import { PHONE } from 'constants/phone-number';
 import React from 'react';

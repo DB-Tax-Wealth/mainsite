@@ -1,0 +1,21 @@
+@import '../../../styles/config/variables';
+@import '../../../styles/mixins/transition';
+
+.root {
+  @include transition(opacity);
+
+  background: $color-black;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.root.active {
+  opacity: 0.6;
+  pointer-events: auto;
+}

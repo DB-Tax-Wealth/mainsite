@@ -4,7 +4,7 @@ import React from 'react';
 import classnames from 'classnames';
 import logo from 'images/db-tax-logo-icon.png';
 import { COMPANY_NAME } from 'constants/company-name';
-import { Overlay } from '../../overlay/overlay';
+import { Overlay } from '../../layout/overlay/overlay';
 import styles from './mobile-navigation.style.scss';
 import { AccountAccessButton } from '../account-access-button/account-access-button';
 import { MobileNavigationLink } from './mobile-navigation-link/mobile-navigation-link';

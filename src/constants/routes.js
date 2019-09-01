@@ -1,6 +1,6 @@
-import { Home } from 'components/home/home';
-import { Demo } from 'components/demo/demo';
-import { MissionStatement } from 'components/mission-statement/mission-statement';
+import { Home } from 'components/screens/home/home';
+import { Demo } from 'components/screens/demo/demo';
+import { MissionStatement } from 'components/screens/mission-statement/mission-statement';
 
 const ABOUT_ROUTES = {
   MISSION_STATEMENT: {

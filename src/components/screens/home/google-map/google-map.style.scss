@@ -1,0 +1,64 @@
+@import '../../../../styles/config/variables';
+
+.root {
+  height: auto;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .input {
+    box-shadow: $shadow-down;
+    width: 50%;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $width-sm) {
+      width: 75%;
+    }
+  }
+
+  .inputContainer {
+    left: 0;
+    margin: 0 auto;
+    max-width: $width-xl;
+    padding: $spacer * 2 $spacer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    @media screen and (max-width: $width-md) {
+      padding: $spacer;
+    }
+  }
+
+  .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    :global {
+      button {
+        display: none;
+      }
+
+      .gm-style-cc {
+        display: none;
+      }
+
+      .gmnoprint {
+        display: none;
+      }
+    }
+  }
+
+  .spacer {
+    // background: rgba($color-black, $disabled-opacity);
+    height: 0;
+    padding-bottom: $widescreen;
+    position: relative;
+    width: 100%;
+  }
+}

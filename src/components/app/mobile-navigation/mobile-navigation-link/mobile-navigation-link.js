@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import { Icon } from 'components/icon/icon';
+import { Icon } from 'components/layout/icon/icon';
 import classnames from 'classnames';
 import styles from './mobile-navigation-link.style.scss';
 
@@ -26,6 +26,7 @@ export class MobileNavigationLink extends Component {
     super(props);
     this.state = { childrenActive: false };
 
+    this.handleOnClick = this.handleOnClick.bind(this);
     this.toggleChildren = this.toggleChildren.bind(this);
   }
 
@@ -34,8 +35,14 @@ export class MobileNavigationLink extends Component {
     this.setState({ childrenActive: !childrenActive });
   }
 
+  handleOnClick() {
+    const { onClick } = this.props;
+    onClick();
+    this.setState({ childrenActive: false });
+  }
+
   render() {
-    const { active, onClick, path, routes, title } = this.props;
+    const { active, path, routes, title } = this.props;
     const { childrenActive } = this.state;
 
     const childRouteKeys = Object.keys(routes);
@@ -45,7 +52,7 @@ export class MobileNavigationLink extends Component {
     return (
       <div className={className}>
         <div className={styles.primary}>
-          <NavLink to={path} style={{ flex: 1 }} onClick={onClick}>
+          <NavLink to={path} style={{ flex: 1 }} onClick={this.handleOnClick}>
             {title}
           </NavLink>
           {hasChildRoutes && (
@@ -63,7 +70,7 @@ export class MobileNavigationLink extends Component {
 
               return (
                 <div key={key} className={styles.primary}>
-                  <NavLink to={combinedPath} onClick={onClick} style={{ flex: 1 }}>
+                  <NavLink to={combinedPath} onClick={this.handleOnClick} style={{ flex: 1 }}>
                     {childTitle}
                   </NavLink>
                 </div>

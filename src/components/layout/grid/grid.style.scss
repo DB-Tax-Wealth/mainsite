@@ -1,0 +1,14 @@
+@import '../../../styles/config/variables';
+
+.root {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $grid-gutter / 2;
+  padding-right: $grid-gutter / 2;
+  width: 100%;
+}
+
+.root.maxWidth {
+  max-width: $width-xl;
+}

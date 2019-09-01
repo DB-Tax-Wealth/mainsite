@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'components/button/button';
+import { Button } from 'components/layout/button/button';
 import { STYLE_PROP_TYPE } from 'constants/style-prop-type';
 import styles from './account-access-button.style.scss';
 

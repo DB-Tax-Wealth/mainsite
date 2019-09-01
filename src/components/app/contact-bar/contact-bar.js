@@ -1,5 +1,5 @@
 import { ADDRESS } from 'constants/address';
-import { Icon } from 'components/icon/icon';
+import { Icon } from 'components/layout/icon/icon';
 import { PHONE } from 'constants/phone-number';
 import React from 'react';
 import styles from './contact-bar.style.scss';
