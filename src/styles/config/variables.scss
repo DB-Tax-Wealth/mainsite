@@ -100,6 +100,11 @@ $grid-breakpoints: (
   xl: $width-xl
 );
 
+// z-indexes
+$z-index-navigation: 10;
+$z-index-overlay: 20;
+$z-index-mobile-navigation: 30;
+
 /* shadows
 *********************************************************/
 $shadow-down: 0 $border-width $spacer rgba($color-black, 0.1);

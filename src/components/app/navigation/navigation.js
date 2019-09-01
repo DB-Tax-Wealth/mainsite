@@ -8,7 +8,7 @@ import React from 'react';
 import logo from 'images/db-tax-logo.png';
 import styles from './navigation.style.scss';
 import { NavigationLink } from './navigation-link/navigation-link';
-import { AccountAccessButton } from '../account-access-button/account-access-button';
+import { AccountAccessButtonConnected } from '../account-access-button/account-access-button.connected';
 
 export const Navigation = props => {
   const { onMobileNavigationToggleClick } = props;
@@ -32,7 +32,7 @@ export const Navigation = props => {
         </div>
         <nav className={styles.links}>{links}</nav>
         <div className={styles.accountAccess}>
-          <AccountAccessButton />
+          <AccountAccessButtonConnected />
         </div>
         <div className={styles.mobileToggle}>
           <IconButton iconName="bars" onClick={onMobileNavigationToggleClick} />

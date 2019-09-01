@@ -38,7 +38,7 @@ $hero-max-width: $width-xl + 192;
     right: 0;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 1;
 
     @media screen and (max-width: $width-sm) {
       padding: $spacer;

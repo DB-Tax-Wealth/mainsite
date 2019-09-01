@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { sampleReducer } from './sample/sample';
+import { accountAccessReducer } from './account-access/account-access';
 
 export const reducers = combineReducers({
-  sample: sampleReducer
+  accountAccess: accountAccessReducer
 });

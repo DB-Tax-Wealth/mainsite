@@ -6,8 +6,8 @@ import logo from 'images/db-tax-logo-icon.png';
 import { COMPANY_NAME } from 'constants/company-name';
 import { Overlay } from '../../layout/overlay/overlay';
 import styles from './mobile-navigation.style.scss';
-import { AccountAccessButton } from '../account-access-button/account-access-button';
 import { MobileNavigationLink } from './mobile-navigation-link/mobile-navigation-link';
+import { AccountAccessButtonConnected } from '../account-access-button/account-access-button.connected';
 
 export const MobileNavigation = props => {
   const { active, onCloseClick } = props;
@@ -34,7 +34,7 @@ export const MobileNavigation = props => {
       <div className={styles.menu}>
         {links}
         <div className={styles.accountAccess} onClick={onCloseClick}>
-          <AccountAccessButton style={{ width: '100%' }} />
+          <AccountAccessButtonConnected style={{ width: '100%' }} />
         </div>
         <img src={logo} className={styles.logo} alt={COMPANY_NAME} />
       </div>
