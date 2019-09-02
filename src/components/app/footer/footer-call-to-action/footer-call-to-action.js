@@ -9,7 +9,9 @@ export const FooterCallToAction = () => (
       questions.
     </div>
     <div className={styles.action}>
-      <Button className={styles.button}>Get Started Today</Button>
+      <Button className={styles.button} color="secondary">
+        Get Started Today
+      </Button>
     </div>
   </div>
 );
