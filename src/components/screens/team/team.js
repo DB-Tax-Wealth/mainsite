@@ -19,7 +19,7 @@ export const Team = () => {
     <Screen>
       <Section>
         <HeadingWithSubtitle subtitle="About" subtitleColor="primary">
-          Team
+          Meet the Team
         </HeadingWithSubtitle>
         <p className="margin--top--none max-width--sm">
           We believe our team oriented approach adds a broader perspective to all we do and provides increased benefits
