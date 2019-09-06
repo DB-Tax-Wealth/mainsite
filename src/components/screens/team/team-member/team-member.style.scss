@@ -1,0 +1,57 @@
+@import '../../../../styles/config/variables';
+@import '../../../../styles/util/shadow';
+
+.root {
+  @extend .shadow--primary;
+
+  background-color: $color-white;
+  border-radius: $border-radius;
+  padding: $spacer * 2;
+  display: flex;
+
+  .avatar {
+    flex: 2;
+    margin-right: $spacer * 2;
+
+    img {
+      border-radius: 50%;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      width: 100%;
+
+      @media screen and (max-width: $width-sm) {
+        width: 50%;
+      }
+    }
+
+    @media screen and (max-width: $width-sm) {
+      margin-right: 0;
+      margin-bottom: $spacer;
+    }
+  }
+
+  .content {
+    flex: 5;
+  }
+
+  .description {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: pre-line;
+
+    @media screen and (max-width: $width-sm) {
+      -webkit-line-clamp: 4;
+    }
+  }
+
+  @media screen and (max-width: $width-lg) {
+    padding: $spacer;
+  }
+
+  @media screen and (max-width: $width-sm) {
+    display: block;
+  }
+}

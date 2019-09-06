@@ -1,0 +1,24 @@
+@import '../../../../../styles/config/variables';
+@import '../../../../../styles/util/shadow';
+
+.root {
+  position: relative;
+
+  .avatar {
+    margin: -$spacer * 5 auto $spacer;
+    position: relative;
+    width: $spacer * 14;
+
+    img {
+      border-radius: 50%;
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .description {
+    max-height: 30vh;
+    overflow-y: auto;
+  }
+}

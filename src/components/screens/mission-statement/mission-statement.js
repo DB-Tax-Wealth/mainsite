@@ -16,7 +16,7 @@ export const MissionStatement = () => {
         <p className="margin--top--none">The client &amp; only the client in mind.</p>
       </Section>
       <Section color="primary-light">
-        <Grid>
+        <Grid className="padding--horizontal--none">
           <Row>
             <Column widthMd={8} widthLg={9} className="margin--xs--bottom margin--md--bottom--none">
               <p>

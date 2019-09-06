@@ -1,13 +1,20 @@
 import { Home } from 'components/screens/home/home';
 import { Demo } from 'components/screens/demo/demo';
 import { MissionStatement } from 'components/screens/mission-statement/mission-statement';
+import { Team } from 'components/screens/team/team';
 
 const ABOUT_ROUTES = {
   MISSION_STATEMENT: {
-    path: '/mission-statement',
-    title: 'Mission Statement',
     component: MissionStatement,
-    exact: true
+    exact: true,
+    path: '/mission-statement',
+    title: 'Mission Statement'
+  },
+  TEAM: {
+    component: Team,
+    exact: true,
+    path: '/team',
+    title: 'Team'
   }
 };
 
