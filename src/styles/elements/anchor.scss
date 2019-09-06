@@ -4,12 +4,12 @@
 a {
   @include transition(color);
 
-  color: $color-primary;
+  color: $color-primary-dark;
   font-weight: $font-weight-base;
   text-decoration: underline;
 
   &:hover {
-    color: $color-primary-dark;
+    color: darken($color-primary-dark, 10%);
   }
 
   h1,

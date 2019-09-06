@@ -66,11 +66,10 @@ export class MobileNavigationLink extends Component {
             {childRouteKeys.map(key => {
               const route = routes[key];
               const { path: childPath, title: childTitle } = route;
-              const combinedPath = `${path}${childPath}`;
 
               return (
                 <div key={key} className={styles.primary}>
-                  <NavLink to={combinedPath} onClick={this.handleOnClick} style={{ flex: 1 }}>
+                  <NavLink to={childPath} onClick={this.handleOnClick} style={{ flex: 1 }}>
                     {childTitle}
                   </NavLink>
                 </div>

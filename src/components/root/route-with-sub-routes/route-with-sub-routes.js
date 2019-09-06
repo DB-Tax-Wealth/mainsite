@@ -11,7 +11,6 @@ export const RouteWithSubRoutes = props => {
       {Object.keys(routes).map(childKey => {
         const route = routes[childKey];
         const { component: childComponent, exact: childExact, path: childPath, routes: childRoutes } = route;
-        const combinedPath = `${path}${childPath}`;
 
         return (
           <RouteWithSubRoutes
@@ -19,7 +18,7 @@ export const RouteWithSubRoutes = props => {
             exact={childExact}
             key={routeKey}
             routeKey={childKey}
-            path={combinedPath}
+            path={childPath}
             routes={childRoutes}
           />
         );

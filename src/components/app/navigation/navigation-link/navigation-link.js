@@ -19,10 +19,9 @@ export const NavigationLink = props => {
           {childRouteKeys.map(key => {
             const route = routes[key];
             const { path: childPath, title: childTitle } = route;
-            const combinedPath = `${path}${childPath}`;
 
             return (
-              <NavLink to={combinedPath} key={key}>
+              <NavLink to={childPath} key={key}>
                 {childTitle}
               </NavLink>
             );

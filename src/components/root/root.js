@@ -1,7 +1,7 @@
 import { HashRouter } from 'react-router-dom';
 
 import React from 'react';
-import { ROUTES } from 'constants/routes';
+import { ROUTES_CONFIG } from 'constants/routes';
 import { Provider } from 'react-redux';
 import { App } from 'components/app/app';
 import PropTypes from 'prop-types';
@@ -14,8 +14,8 @@ export const Root = props => {
     <Provider store={store}>
       <HashRouter hashType="noslash">
         <App>
-          {Object.keys(ROUTES).map(key => {
-            const route = ROUTES[key];
+          {Object.keys(ROUTES_CONFIG).map(key => {
+            const route = ROUTES_CONFIG[key];
             const { component, exact, path, routes } = route;
 
             return (
