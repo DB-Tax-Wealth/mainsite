@@ -2,10 +2,13 @@ import { ADDRESS } from 'constants/address';
 import { EMAIL } from 'constants/email';
 import { InputWithIconButton } from 'components/layout/input-with-icon-button/input-with-icon-button';
 import { Link } from 'react-router-dom';
-import { PHONE } from 'constants/phone-number';
+import { PHONE_NUMBER } from 'constants/phone-number';
 import React from 'react';
 import { ROUTES } from 'constants/routes';
+import { convertPhoneNumberToTelLink } from 'util/convert-phone-number-to-tel-link/convert-phone-number-to-tel-link';
 import styles from './footer-site-map.style.scss';
+
+const phoneLink = convertPhoneNumberToTelLink(PHONE_NUMBER);
 
 export const FooterSiteMap = () => {
   const links = Object.keys(ROUTES).map(key => {
@@ -25,7 +28,7 @@ export const FooterSiteMap = () => {
         <h3>Contact</h3>
         <div className={styles.content}>
           <div>
-            <a href={`mailto:+${PHONE.DISPLAY}`}>{PHONE.DISPLAY}</a>
+            <a href={phoneLink}>{PHONE_NUMBER}</a>
           </div>
           <div>
             <a href={ADDRESS.GOOGLE_MAPS} target="_blank" rel="noopener noreferrer">
