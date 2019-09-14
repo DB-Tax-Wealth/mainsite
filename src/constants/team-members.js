@@ -13,6 +13,7 @@ import chuckWinn from 'images/team/chuck-winn.jpg';
 
 export const TEAM_MEMBERS = [
   {
+    id: 1,
     email: 'lpugel@dbtaxinc.com',
     fax: '',
     img: lisaPugel,
@@ -32,6 +33,7 @@ export const TEAM_MEMBERS = [
     Lisa is a resident of the Town of Raymond, married, raising 4 wonderful children.`
   },
   {
+    id: 2,
     email: 'gfisher@dbtaxinc.com',
     fax: '',
     img: gailFisher,
@@ -47,6 +49,7 @@ export const TEAM_MEMBERS = [
     Gail has 2 children, both boys, Jordan (22) and Zachary (14) and 3 stepchildren, Kodi (25), Joshua (19) and Megan (17). She is married to John. They have a family dog that is 4 years old, a pekingese/maltese mix, named Max. Outside of the office she enjoys traveling, attending sporting events, spending time with family and friends and relaxing.`
   },
   {
+    id: 3,
     email: 'mark@dbtaxinc.com',
     fax: '',
     img: markPugel,
@@ -62,6 +65,7 @@ export const TEAM_MEMBERS = [
     Mark lives in downtown Milwaukee, is married and has 4 children that keep him busy. He is an avid sports fan, loves his Brewers, Packers and Badgers, and is a hack golfer, but loves to play anyway.`
   },
   {
+    id: 4,
     email: 'aweber@dbtaxinc.com',
     fax: '',
     img: angelaWeber,
@@ -73,6 +77,7 @@ export const TEAM_MEMBERS = [
     Angela has 2 children (Trey, 14 and Payton, 11), and is currently engaged to her fiancé, James.  Angela and James spend their free time supporting her two active children in multiple sports and competitive dance.  Angela also enjoys both watching and playing sports, outdoor activities, and live music.`
   },
   {
+    id: 5,
     email: '',
     fax: '',
     img: aliinaKlatt,
@@ -84,6 +89,7 @@ export const TEAM_MEMBERS = [
     Outside of school, Allina keeps busy with sports and other activities. She participated in 4 years of club volleyball for BU. In addition, she loves to travel and ski, and is an active alum of Sigma Kappa Sorority. Previously she served as VP of Finance for Sigma Kappa Beta Nu for 2 years. Aliina was the 2016 recipient of the Sigma Kappa Outstanding Active Caryl Cordis D'hodt Award. Other professional experience consists of Credit Operation Intern at CEFCU in Peoria, IL and Manager at the Armory which requires managerial, cost accounting, inventory, and other general business management skills. Her leadership in this department provided her for an Outstanding Achievement Award in 2013 presented at the Business Community event in Oak Creek, WI. Aliina has also spent time mentoring and tutoring high school students who attended alternative and charter school within Peoria, IL. Lastly, Aliina has coached club volleyball at Next Level Volleyball Club (2010 – 2016) and is a certified scorekeeper with the Badger Region and works NCAA Div I matches. She has also volunteered as an assistant coach at St. Matthews School providing basic volleyball instruction and practices (2010-2013) and St. Francis High School (2014- current). Aliina is an accomplished volleyball player herself – 3 year Varsity player at Oak Creek High School (starter) and 8 year club player (starter). All-Conference Honorable Mention 2012 and 2013. Aliina is looking forward to attending Law School next year to enhance her career in wealth management and comprehensive estate planning.`
   },
   {
+    id: 6,
     email: 'rcampos@dbtaxinc.com',
     fax: '',
     img: rebeccaCampos,
@@ -99,6 +105,7 @@ export const TEAM_MEMBERS = [
     Rebecca has 6 children. Ruth, who is a paralegal at Gimbel, Reilly, Geurin and Brown Law Firm. Ronald, who is a Milwaukee Police Officer. Rachel, who is a Program Assistant at UCC Residential Facility for Drug Addiction. Robert, who is a South Milwaukee Postal Worker. Richard, who is a Master Electrician and works for Ladish Company in Cudahy as Maintenance General Foreman. Rosalinda, who is a recent medical school graduate is doing her residency at Adventist Hinsdale Hospital in Hinsdale, IL.   Rebecca has lived in South Milwaukee since 1991.`
   },
   {
+    id: 7,
     email: 'cwinn@dbtaxinc.com',
     fax: '',
     img: chuckWinn,
@@ -117,6 +124,7 @@ export const TEAM_MEMBERS = [
     Chuck lives in Menomonee Falls. If you run into him outside of work, he’s probably having fun with his kids Mark (13) and Joelle (12) or his extended family. He loves adventure and the outdoors, especially riding dirt bikes, fishing, skiing in the mountains and riding off-road trails on his mountain bike.`
   },
   {
+    id: 8,
     email: 'lreinke@dbtaxinc.com',
     fax: '414-755-1508',
     img: lisaReinke,
@@ -131,6 +139,7 @@ export const TEAM_MEMBERS = [
     In November of 2014, Lisa joined DB Tax and Financial Services. Lisa's primary job duties include assisting DB Tax Owner, Lisa Pugel. Lisa's role at DB Tax is unique due to her willingness to help out with numerous tasks on a daily basis. Customer care, staff support, filing, managing QuickBooks files, data entry, scheduling and various duties requiring exceptional organizational skills and creativity. The job requirements will continue to grow and develop as Lisa's knowledge and expertise  the firm continues to grow. Lisa enjoys the flexibility her new job brings and is excited to continue to learn more as DB Tax continues to grow.`
   },
   {
+    id: 9,
     email: 'mtaylor@dbtaxinc.com',
     fax: '',
     img: mariaTaylor,
@@ -146,6 +155,7 @@ export const TEAM_MEMBERS = [
     Maria has been married for 31 years and has been blessed with 3 children and now 3 grandchildren.`
   },
   {
+    id: 10,
     email: 'reception@dbtaxinc.com',
     fax: '',
     img: alyssaHonkonen,
@@ -157,6 +167,7 @@ export const TEAM_MEMBERS = [
     Outside of work, Alyssa enjoys family time and hanging out with her best friend who is her twin sister. She appreciates exploring the outdoors, enjoys watching movies, and cheering on the Milwaukee Brewers & Green Bay Packers! She is looking forward to the future and enhancing her career at our firm.`
   },
   {
+    id: 11,
     email: 'mwood@dbtaxinc.com',
     fax: '',
     img: milenaWood,
@@ -170,6 +181,7 @@ export const TEAM_MEMBERS = [
     In addition to working in tax and finance, Milena has been employed at Delta Airlines for 32 years. This provides her with the opportunity to travel, which she truly loves to do with her husband of 25 years and their 3 wonderful grown children. She and her husband are also involved in social change by running Promiseview, an aftercare home for men recovering from substance abuse. `
   },
   {
+    id: 12,
     email: 'mwood@dbtaxinc.com',
     fax: '',
     img: lindaScholer,
