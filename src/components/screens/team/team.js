@@ -8,9 +8,18 @@ import { Column } from 'components/layout/grid/column/column';
 import { TEAM_MEMBERS } from 'constants/team-members';
 import { TeamMember } from './team-member/team-member';
 
-const teamMembers = TEAM_MEMBERS.map(({ description, email, fax, img, name, phone, title }) => (
+const teamMembers = TEAM_MEMBERS.map(({ description, email, fax, id, img, name, phone, title }) => (
   <Column widthMd={6} key={name} className="margin--bottom display--flex">
-    <TeamMember description={description} email={email} fax={fax} img={img} name={name} phone={phone} title={title} />
+    <TeamMember
+      description={description}
+      email={email}
+      fax={fax}
+      id={id}
+      img={img}
+      name={name}
+      phone={phone}
+      title={title}
+    />
   </Column>
 ));
 
