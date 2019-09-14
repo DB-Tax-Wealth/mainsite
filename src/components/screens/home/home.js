@@ -14,6 +14,7 @@ import { Grid } from 'components/layout/grid/grid';
 import { Row } from 'components/layout/grid/row/row';
 import { Column } from 'components/layout/grid/column/column';
 import { IconButton } from 'components/layout/icon-button/icon-button';
+import { ROUTES } from 'constants/routes';
 
 export const Home = () => {
   return (
@@ -71,17 +72,17 @@ export const Home = () => {
           </p>
         </div>
         <ServiceList>
-          <ServiceListItem iconName="coins" title="Taxes">
+          <ServiceListItem iconName="coins" title="Taxes" to={ROUTES.TAX}>
             <p>
               We provide both businesses or persons with the professional taxation expertise and know how that they
               deserve year round.
             </p>
           </ServiceListItem>
-          <ServiceListItem iconName="money-check-alt" title="Accounting">
-            <p>We provide our clients with value added accounting and outsourcing services for their businesses.</p>
-          </ServiceListItem>
-          <ServiceListItem iconName="search-dollar" title="Financial Services">
+          <ServiceListItem iconName="search-dollar" title="Wealth" to={ROUTES.WEALTH}>
             <p>We will ensure that your financial records are maintained correctly and accurately.</p>
+          </ServiceListItem>
+          <ServiceListItem iconName="money-check-alt" title="Accounting" to={ROUTES.ACCOUNTING}>
+            <p>We provide our clients with value added accounting and outsourcing services for their businesses.</p>
           </ServiceListItem>
         </ServiceList>
       </Section>
