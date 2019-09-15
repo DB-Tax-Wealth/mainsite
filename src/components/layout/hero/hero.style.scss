@@ -58,7 +58,8 @@ $hero-max-width: $width-xl + 192;
   }
 
   .spacer {
-    @include gradient-horizontal(rgba($color-white, 0.9), rgba($color-white, 0.2));
+    background: rgba($color-white, 0.7);
+    // @include gradient-horizontal(rgba($color-white, 0.9), rgba($color-white, 0.2));
 
     height: 0;
     box-shadow: 0 0 $spacer * 10 rgba($color-black, 0.1) inset;
@@ -68,7 +69,7 @@ $hero-max-width: $width-xl + 192;
     width: 100%;
 
     @media screen and (max-width: $width-sm) {
-      background: rgba($color-white, 0.8);
+      // background: rgba($color-white, 0.8);
       box-shadow: none;
       padding-bottom: 100%;
     }

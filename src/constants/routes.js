@@ -5,6 +5,7 @@ import { Team } from 'components/screens/team/team';
 import { About } from 'components/screens/about/about';
 import { TeamMemberDetail } from 'components/screens/team/team-member/team-member-detail/team-member-detail';
 import { UnderConstruction } from 'components/screens/under-construction/under-construction';
+import { Careers } from 'components/screens/careers/careers';
 
 export const ROUTES = {
   ABOUT: '/about',
@@ -57,7 +58,7 @@ export const ROUTES_CONFIG = {
     routes: SERVICES_ROUTES,
     title: 'Services'
   },
-  CAREERS: { path: ROUTES.CAREERS, title: 'Careers', component: UnderConstruction, exact: true },
+  CAREERS: { path: ROUTES.CAREERS, title: 'Careers', component: Careers, exact: true },
   CONTACT: { path: ROUTES.CONTACT, title: 'Contact', component: UnderConstruction, exact: true }
   // DEMO: { path: ROUTES.DEMO, title: 'Demo', component: Demo, exact: true }
 };
