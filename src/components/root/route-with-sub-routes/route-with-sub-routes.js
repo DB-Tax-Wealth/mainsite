@@ -16,7 +16,7 @@ export const RouteWithSubRoutes = props => {
           <RouteWithSubRoutes
             component={childComponent}
             exact={childExact}
-            key={routeKey}
+            key={childKey}
             routeKey={childKey}
             path={childPath}
             routes={childRoutes}
