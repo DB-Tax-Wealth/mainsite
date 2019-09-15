@@ -29,7 +29,7 @@ export const TeamMemberDetail = props => {
             <HeadingWithSubtitle subtitle="Team" subtitleColor="primary">
               {name}
             </HeadingWithSubtitle>
-            <p className="margin--top--none max-width--sm">
+            <div className="margin--top--none max-width--sm">
               <span>{title}</span>
               {phoneExists && (
                 <div>
@@ -50,7 +50,7 @@ export const TeamMemberDetail = props => {
                   <Icon name="fax" /> {fax}
                 </div>
               )}
-            </p>
+            </div>
           </div>
         </div>
       </Section>
