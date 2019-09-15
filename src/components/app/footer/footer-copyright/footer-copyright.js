@@ -13,7 +13,7 @@ export const FooterCopyright = () => {
   return (
     <div className={styles.root}>
       <div className={styles.logoContainer}>
-        <Link to={ROUTES.HOME.path}>
+        <Link to={ROUTES.HOME}>
           <img src={logo} alt={COMPANY_NAME} className={styles.logo} />
         </Link>
       </div>
