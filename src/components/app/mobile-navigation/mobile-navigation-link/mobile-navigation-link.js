@@ -10,7 +10,7 @@ export class MobileNavigationLink extends Component {
     active: PropTypes.bool,
     onClick: PropTypes.func,
     path: PropTypes.string,
-    routes: PropTypes.object,
+    routes: PropTypes.array,
     title: PropTypes.string
   };
 
@@ -18,7 +18,7 @@ export class MobileNavigationLink extends Component {
     active: false,
     onClick: null,
     path: '',
-    routes: {},
+    routes: [],
     title: ''
   };
 
@@ -45,9 +45,8 @@ export class MobileNavigationLink extends Component {
     const { active, path, routes, title } = this.props;
     const { childrenActive } = this.state;
 
-    const childRouteKeys = Object.keys(routes);
     const className = classnames(styles.root, { [styles.active]: active, [styles.childrenActive]: childrenActive });
-    const hasChildRoutes = Boolean(childRouteKeys.length);
+    const hasChildRoutes = Boolean(routes.length);
 
     return (
       <div className={className}>
@@ -63,9 +62,8 @@ export class MobileNavigationLink extends Component {
         </div>
         {hasChildRoutes && (
           <div className={styles.children}>
-            {childRouteKeys.map(key => {
-              const route = routes[key];
-              const { path: childPath, title: childTitle } = route;
+            {routes.map(route => {
+              const { path: childPath, title: childTitle, key } = route;
 
               return (
                 <div key={key} className={styles.primary}>

@@ -3,6 +3,7 @@ import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { HeadingWithSubtitle } from 'components/layout/heading-with-subtitle/heading-with-subtitle';
 import { Link } from 'react-router-dom';
+import { ROUTES } from 'constants/routes';
 
 export const About = () => {
   return (
@@ -21,9 +22,9 @@ export const About = () => {
           Established in 1989 by its founders <strong>Larry & Diane Burger</strong>. After many years of dedicated
           service with the Wisconsin Air National Guard – 128th Air Refueling Wing in Milwaukee, WI, Larry and Diane
           retired from the military and ventured into small business entrepreneurship. After its establishment and
-          continued growth, <Link to="/about/team">new staff was hired</Link>, more office space was added, and the firm
-          began to accomplish what most small businesses envy – that is growth, dedicated clients, quality service, and
-          an excellent reputation in a great community. In 1989, Diane and Larry retired and their daughter{' '}
+          continued growth, <Link to={ROUTES.TEAM.path}>new staff was hired</Link>, more office space was added, and the
+          firm began to accomplish what most small businesses envy – that is growth, dedicated clients, quality service,
+          and an excellent reputation in a great community. In 1989, Diane and Larry retired and their daughter{' '}
           <strong>Lisa Pugel</strong>, began actively managing the <strong>South Milwaukee</strong> location.
         </p>
         <p>
@@ -47,10 +48,11 @@ export const About = () => {
           represent, what types of tax matters they can handle, and which IRS offices they can practice before.
         </p>
         <p>
-          After being in business for more than 25 years, we find <Link to="/about/mission-statement">our mission</Link>{' '}
-          remains maintaining superior client relationships while giving our clients the confidence they need to provide
-          us with quality referrals. To those existing clients, thank you for your continued support. For those looking
-          to build a new relationship, we would love to have the opportunity to work with you!
+          After being in business for more than 25 years, we find{' '}
+          <Link to={ROUTES.MISSION_STATEMENT.path}>our mission</Link> remains maintaining superior client relationships
+          while giving our clients the confidence they need to provide us with quality referrals. To those existing
+          clients, thank you for your continued support. For those looking to build a new relationship, we would love to
+          have the opportunity to work with you!
         </p>
       </Section>
     </Screen>

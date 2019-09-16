@@ -4,16 +4,15 @@ import { InputWithIconButton } from 'components/layout/input-with-icon-button/in
 import { Link } from 'react-router-dom';
 import { PHONE_NUMBER } from 'constants/phone-number';
 import React from 'react';
-import { ROUTES_CONFIG } from 'constants/routes';
+import { NAVIGATION } from 'constants/routes';
 import { convertPhoneNumberToTelLink } from 'util/convert-phone-number-to-tel-link/convert-phone-number-to-tel-link';
 import styles from './footer-site-map.style.scss';
 
 const phoneLink = convertPhoneNumberToTelLink(PHONE_NUMBER);
 
 export const FooterSiteMap = () => {
-  const links = Object.keys(ROUTES_CONFIG).map(key => {
-    const route = ROUTES_CONFIG[key];
-    const { path, title } = route;
+  const links = NAVIGATION.map(route => {
+    const { path, title, key } = route;
 
     return (
       <div key={key}>

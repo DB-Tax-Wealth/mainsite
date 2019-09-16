@@ -6,8 +6,7 @@ import styles from './navigation-link.style.scss';
 export const NavigationLink = props => {
   const { path, title, routes } = props;
 
-  const childRouteKeys = Object.keys(routes);
-  const hasChildRoutes = Boolean(childRouteKeys.length);
+  const hasChildRoutes = Boolean(routes.length);
 
   return (
     <div className={styles.root}>
@@ -16,9 +15,8 @@ export const NavigationLink = props => {
       </NavLink>
       {hasChildRoutes && (
         <div className={styles.children}>
-          {childRouteKeys.map(key => {
-            const route = routes[key];
-            const { path: childPath, title: childTitle } = route;
+          {routes.map(route => {
+            const { path: childPath, title: childTitle, key } = route;
 
             return (
               <NavLink to={childPath} key={key}>
@@ -35,11 +33,11 @@ export const NavigationLink = props => {
 NavigationLink.propTypes = {
   path: PropTypes.string,
   title: PropTypes.string,
-  routes: PropTypes.object
+  routes: PropTypes.array
 };
 
 NavigationLink.defaultProps = {
   path: '',
   title: '',
-  routes: {}
+  routes: []
 };

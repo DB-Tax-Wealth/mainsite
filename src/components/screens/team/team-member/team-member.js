@@ -48,7 +48,7 @@ export const TeamMember = props => {
             )}
           </div>
           <div className={styles.description}>{description}</div>
-          <Link to={`${ROUTES.TEAM}/${id}`} style={{ textDecoration: 'none' }}>
+          <Link to={`${ROUTES.TEAM.path}/${id}`} style={{ textDecoration: 'none' }}>
             <Button className="display--block margin--top" style={{ width: '100%' }}>
               Read More
             </Button>

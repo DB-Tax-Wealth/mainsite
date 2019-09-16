@@ -4,7 +4,7 @@ import { Icon } from 'components/layout/icon/icon';
 import { Link } from 'react-router-dom';
 import { ROUTES } from 'constants/routes';
 
-export const UnderConstruction = () => {
+export const NoMatch = () => {
   return (
     <Screen>
       <div
@@ -13,11 +13,11 @@ export const UnderConstruction = () => {
       >
         <div className="max-width--sm">
           <h1>
-            <Icon name="exclamation-triangle" className="color--warning" />
-            <div>Under Construction</div>
+            <Icon name="exclamation-circle" className="color--danger" />
+            <div>Page Not Found</div>
           </h1>
           <p>
-            This page is currently under construction. Please check back soon. Click{' '}
+            The page you&apos;re attempting to access has been moved or deleted. Click{' '}
             <Link to={ROUTES.HOME.path}>here</Link> to return to the <strong>Home&nbsp;Screen</strong>.
           </p>
         </div>

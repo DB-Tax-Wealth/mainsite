@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ROUTES_CONFIG } from 'constants/routes';
+import { NAVIGATION } from 'constants/routes';
 import React from 'react';
 import classnames from 'classnames';
 import logo from 'images/db-tax-logo-icon.png';
@@ -12,9 +12,8 @@ import { AccountAccessButtonConnected } from '../account-access-button/account-a
 export const MobileNavigation = props => {
   const { active, onCloseClick } = props;
   const className = classnames(styles.root, { [styles.active]: active });
-  const links = Object.keys(ROUTES_CONFIG).map(key => {
-    const route = ROUTES_CONFIG[key];
-    const { path, title, routes } = route;
+  const links = NAVIGATION.map(route => {
+    const { path, title, routes, key } = route;
 
     return (
       <MobileNavigationLink

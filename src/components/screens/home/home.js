@@ -72,16 +72,16 @@ export const Home = () => {
           </p>
         </div>
         <ServiceList>
-          <ServiceListItem iconName="coins" title="Taxes" to={ROUTES.TAX}>
+          <ServiceListItem iconName="coins" title="Taxes" to={ROUTES.TAX.path}>
             <p>
               We provide both businesses or persons with the professional taxation expertise and know how that they
               deserve year round.
             </p>
           </ServiceListItem>
-          <ServiceListItem iconName="search-dollar" title="Wealth" to={ROUTES.WEALTH}>
+          <ServiceListItem iconName="search-dollar" title="Wealth" to={ROUTES.WEALTH.path}>
             <p>We will ensure that your financial records are maintained correctly and accurately.</p>
           </ServiceListItem>
-          <ServiceListItem iconName="money-check-alt" title="Accounting" to={ROUTES.ACCOUNTING}>
+          <ServiceListItem iconName="money-check-alt" title="Accounting" to={ROUTES.ACCOUNTING.path}>
             <p>We provide our clients with value added accounting and outsourcing services for their businesses.</p>
           </ServiceListItem>
         </ServiceList>

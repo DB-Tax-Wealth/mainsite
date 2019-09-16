@@ -1,64 +1,53 @@
 import { Home } from 'components/screens/home/home';
-// import { Demo } from 'components/screens/demo/demo';
 import { MissionStatement } from 'components/screens/mission-statement/mission-statement';
 import { Team } from 'components/screens/team/team';
 import { About } from 'components/screens/about/about';
 import { TeamMemberDetail } from 'components/screens/team/team-member/team-member-detail/team-member-detail';
 import { UnderConstruction } from 'components/screens/under-construction/under-construction';
 import { Careers } from 'components/screens/careers/careers';
+import { Demo } from 'components/screens/demo/demo';
 
 export const ROUTES = {
-  ABOUT: '/about',
-  ACCOUNTING: '/services/accounting',
-  CAREERS: '/careers',
-  CONTACT: '/contact',
-  DEMO: '/demo',
-  HOME: '/',
-  MISSION_STATEMENT: '/about/mission-statement',
-  SERVICES: '/services',
-  TAX: '/services/tax',
-  TEAM: '/about/team',
-  TEAM_MEMBER: '/about/team/:id',
-  WEALTH: '/services/wealth'
-};
-
-const SERVICES_ROUTES = {
-  TAX: { path: ROUTES.TAX, title: 'Tax', component: UnderConstruction, exact: true },
-  WEALTH: { path: ROUTES.WEALTH, title: 'Wealth', component: UnderConstruction, exact: true },
-  ACCOUNTING: { path: ROUTES.ACCOUNTING, title: 'Accounting', component: UnderConstruction, exact: true }
-};
-
-const TEAM_ROUTES = {
-  TEAM_MEMBER: { component: TeamMemberDetail, exact: true, path: ROUTES.TEAM_MEMBER }
-};
-
-const ABOUT_ROUTES = {
+  ABOUT: { component: About, exact: true, key: 'about', path: '/about', title: 'About' },
+  ACCOUNTING: {
+    component: UnderConstruction,
+    exact: true,
+    key: 'accounting',
+    path: '/services/accounting',
+    title: 'Accounting'
+  },
+  CAREERS: { component: Careers, exact: true, key: 'careers', path: '/careers', title: 'Careers' },
+  CONTACT: { component: UnderConstruction, exact: true, key: 'contact', path: '/contact', title: 'Contact' },
+  DEMO: { component: Demo, exact: true, key: 'demo', path: '/demo', title: 'Demo' },
+  HOME: { component: Home, exact: true, key: 'home', path: '/', title: 'Home' },
   MISSION_STATEMENT: {
     component: MissionStatement,
     exact: true,
-    path: ROUTES.MISSION_STATEMENT,
+    key: 'mission-statement',
+    path: '/about/mission-statement',
     title: 'Mission Statement'
   },
-  TEAM: {
-    component: Team,
+  SERVICES: { component: UnderConstruction, exact: true, key: 'services', path: '/services', title: 'Services' },
+  TAX: { component: UnderConstruction, exact: true, key: 'tax', path: '/services/tax', title: 'Tax' },
+  TEAM: { component: Team, exact: true, key: 'team', path: '/about/team', title: 'Team' },
+  TEAM_MEMBER: {
+    component: TeamMemberDetail,
     exact: true,
-    path: ROUTES.TEAM,
-    title: 'Team',
-    routes: TEAM_ROUTES
-  }
-};
-
-export const ROUTES_CONFIG = {
-  HOME: { path: ROUTES.HOME, title: 'Home', component: Home, exact: true },
-  ABOUT: { path: ROUTES.ABOUT, title: 'About', component: About, exact: true, routes: ABOUT_ROUTES },
-  SERVICES: {
-    component: UnderConstruction,
-    exact: true,
-    path: ROUTES.SERVICES,
-    routes: SERVICES_ROUTES,
-    title: 'Services'
+    key: 'team-member',
+    path: '/about/team/:id',
+    title: 'Team Member'
   },
-  CAREERS: { path: ROUTES.CAREERS, title: 'Careers', component: Careers, exact: true },
-  CONTACT: { path: ROUTES.CONTACT, title: 'Contact', component: UnderConstruction, exact: true }
-  // DEMO: { path: ROUTES.DEMO, title: 'Demo', component: Demo, exact: true }
+  WEALTH: { component: UnderConstruction, exact: true, key: 'wealth', path: '/services/wealth', title: 'Wealth' }
 };
+const TEAM_ROUTES = [ROUTES.TEAM_MEMBER];
+
+const ABOUT_ROUTES = [ROUTES.MISSION_STATEMENT, { ...ROUTES.TEAM, routes: TEAM_ROUTES }];
+const SERVICES_ROUTES = [ROUTES.TAX, ROUTES.WEALTH, ROUTES.ACCOUNTING];
+
+export const NAVIGATION = [
+  ROUTES.HOME,
+  { ...ROUTES.ABOUT, routes: ABOUT_ROUTES },
+  { ...ROUTES.SERVICES, routes: SERVICES_ROUTES },
+  ROUTES.CAREERS,
+  ROUTES.CONTACT
+];
