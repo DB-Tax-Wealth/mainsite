@@ -1,20 +1,17 @@
 import React from 'react';
 import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
-import { HeadingWithSubtitle } from 'components/layout/heading-with-subtitle/heading-with-subtitle';
 import { Grid } from 'components/layout/grid/grid';
 import { Row } from 'components/layout/grid/row/row';
 import { Column } from 'components/layout/grid/column/column';
+import { Hero } from 'components/layout/hero/hero';
 
 export const MissionStatement = () => {
   return (
     <Screen>
-      <Section>
-        <HeadingWithSubtitle subtitle="About" subtitleColor="primary">
-          Mission Statement
-        </HeadingWithSubtitle>
-        <p className="margin--top--none">The client &amp; only the client in mind.</p>
-      </Section>
+      <Hero title="Mission Statement" subtitle="About">
+        <p>The client &amp; only the client in mind.</p>
+      </Hero>
       <Section color="primary-light">
         <Grid className="padding--horizontal--none">
           <Row>

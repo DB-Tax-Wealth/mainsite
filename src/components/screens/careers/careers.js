@@ -8,7 +8,7 @@ import { COMPANY_NAME } from 'constants/company-name';
 export const Careers = () => {
   return (
     <Screen>
-      <Hero image={heroImage} title="A Future With Us" subtitle="Careers" subtitleColor="primary-dark">
+      <Hero image={heroImage} title="A Future With Us" subtitle="Careers">
         <p>
           We are passionate about finding the best talent to join our organization and building long-term partnerships
           with those who come on board.

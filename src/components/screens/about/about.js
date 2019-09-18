@@ -1,21 +1,16 @@
 import React from 'react';
 import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
-import { HeadingWithSubtitle } from 'components/layout/heading-with-subtitle/heading-with-subtitle';
 import { Link } from 'react-router-dom';
 import { ROUTES } from 'constants/routes';
+import { Hero } from 'components/layout/hero/hero';
 
 export const About = () => {
   return (
     <Screen>
-      <Section>
-        <div className="max-width--sm">
-          <HeadingWithSubtitle subtitle="About" subtitleColor="primary">
-            Our Story
-          </HeadingWithSubtitle>
-          <p className="margin--top--none">When you have a great story, share it.</p>
-        </div>
-      </Section>
+      <Hero title="Our Story" subtitle="About">
+        <p>When you have a great story, share it.</p>
+      </Hero>
       <Section color="primary-light">
         <h2>The Beginning</h2>
         <p>

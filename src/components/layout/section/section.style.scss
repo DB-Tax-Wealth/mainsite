@@ -1,5 +1,7 @@
 @import '../../../styles/config/variables';
 @import '../../../styles/mixins/transition';
+@import '../../../styles/util//animated';
+@import '~animate.css/animate';
 
 .root {
   overflow: hidden;
@@ -7,6 +9,10 @@
   background: $color-white;
 
   .content {
+    @extend .animated;
+    @extend .fadeIn;
+
+    animation-delay: 0.6s;
     margin: 0 auto;
     max-width: $width-xl;
   }
