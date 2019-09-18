@@ -26,7 +26,7 @@ export const TeamMemberDetail = props => {
             <img src={img} alt={name} />
           </div>
           <div style={{ flex: 4 }}>
-            <HeadingWithSubtitle subtitle="Team" subtitleColor="primary">
+            <HeadingWithSubtitle subtitle="Team" subtitleColor="primary" subtitleBackground>
               {name}
             </HeadingWithSubtitle>
             <div className="margin--top--none max-width--sm">
