@@ -1,7 +1,7 @@
-@import '../../../styles/config/variables';
-@import '../../../styles/mixins/transition';
-@import '../../../styles/util//animated';
 @import '~animate.css/animate';
+@import '../../../styles/util//animated';
+@import '../../../styles/mixins/transition';
+@import '../../../styles/config/variables';
 
 .root {
   overflow: hidden;
