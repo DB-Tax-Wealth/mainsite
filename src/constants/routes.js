@@ -7,6 +7,7 @@ import { MissionStatement } from 'components/screens/mission-statement/mission-s
 import { Team } from 'components/screens/team/team';
 import { TeamMemberDetail } from 'components/screens/team/team-member/team-member-detail/team-member-detail';
 import { UnderConstruction } from 'components/screens/under-construction/under-construction';
+import { DB_WEALTH_LINK } from './db-wealth-link';
 
 export const ROUTES = {
   ABOUT: { component: About, exact: true, key: 'about', path: '/about', title: 'About' },
@@ -80,10 +81,8 @@ export const ROUTES = {
     title: 'Documents'
   },
   WEALTH_DB_MONEY: {
-    component: UnderConstruction,
-    exact: true,
     key: 'wealth-db-money',
-    path: '/services/wealth/db-money',
+    externalLink: DB_WEALTH_LINK,
     title: 'DB Money'
   },
   /**

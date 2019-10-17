@@ -14,8 +14,8 @@ export const Navigation = props => {
   const { onMobileNavigationToggleClick } = props;
 
   const links = NAVIGATION.filter(route => route.key !== 'home').map(route => {
-    const { path, routes, title, key: routeKey } = route;
-    return <NavigationLink key={routeKey} routes={routes} title={title} path={path} />;
+    const { path, routes, title, key: routeKey, externalLink } = route;
+    return <NavigationLink key={routeKey} routes={routes} title={title} path={path} externalLink={externalLink} />;
   });
 
   return (

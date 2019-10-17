@@ -4,27 +4,43 @@ import PropTypes from 'prop-types';
 import styles from './navigation-link.style.scss';
 
 export const NavigationLink = props => {
-  const { path, title, routes } = props;
+  const { path, title, routes, externalLink } = props;
 
   const hasChildRoutes = Boolean(routes.length);
 
   return (
     <div className={styles.root}>
-      <NavLink to={path} className={styles.primary}>
-        {title}
-      </NavLink>
-      {hasChildRoutes && (
-        <div className={styles.children}>
-          {routes.map(route => {
-            const { path: childPath, title: childTitle, key } = route;
+      {externalLink ? (
+        <a href={externalLink} target="blank">
+          {title}
+        </a>
+      ) : (
+        <>
+          <NavLink to={path} className={styles.primary}>
+            {title}
+          </NavLink>
+          {hasChildRoutes && (
+            <div className={styles.children}>
+              {routes.map(route => {
+                const { path: childPath, title: childTitle, key, externalLink: childExternalLink } = route;
 
-            return (
-              <NavLink to={childPath} key={key}>
-                {childTitle}
-              </NavLink>
-            );
-          })}
-        </div>
+                if (childExternalLink) {
+                  return (
+                    <a href={childExternalLink} target="blank">
+                      {childTitle}
+                    </a>
+                  );
+                }
+
+                return (
+                  <NavLink to={childPath} key={key}>
+                    {childTitle}
+                  </NavLink>
+                );
+              })}
+            </div>
+          )}
+        </>
       )}
     </div>
   );
@@ -32,6 +48,7 @@ export const NavigationLink = props => {
 
 NavigationLink.propTypes = {
   path: PropTypes.string,
+  externalLink: PropTypes.string,
   title: PropTypes.string,
   routes: PropTypes.array
 };
@@ -39,5 +56,6 @@ NavigationLink.propTypes = {
 NavigationLink.defaultProps = {
   path: '',
   title: '',
-  routes: []
+  routes: [],
+  externalLink: null
 };
