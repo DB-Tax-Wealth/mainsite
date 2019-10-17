@@ -1,16 +1,17 @@
+import { About } from 'components/screens/about/about';
+import { Careers } from 'components/screens/careers/careers';
+import { Contact } from 'components/screens/contact/contact';
+import { Demo } from 'components/screens/demo/demo';
 import { Home } from 'components/screens/home/home';
 import { MissionStatement } from 'components/screens/mission-statement/mission-statement';
 import { Team } from 'components/screens/team/team';
-import { About } from 'components/screens/about/about';
 import { TeamMemberDetail } from 'components/screens/team/team-member/team-member-detail/team-member-detail';
 import { UnderConstruction } from 'components/screens/under-construction/under-construction';
-import { Careers } from 'components/screens/careers/careers';
-import { Demo } from 'components/screens/demo/demo';
 
 export const ROUTES = {
   ABOUT: { component: About, exact: true, key: 'about', path: '/about', title: 'About' },
   CAREERS: { component: Careers, exact: true, key: 'careers', path: '/careers', title: 'Careers' },
-  CONTACT: { component: UnderConstruction, exact: true, key: 'contact', path: '/contact', title: 'Contact' },
+  CONTACT: { component: Contact, exact: true, key: 'contact', path: '/contact', title: 'Contact' },
   DEMO: { component: Demo, exact: true, key: 'demo', path: '/demo', title: 'Demo' },
   HOME: { component: Home, exact: true, key: 'home', path: '/', title: 'Home' },
   MISSION_STATEMENT: {
