@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import { ROUTES, NAVIGATION } from 'constants/routes';
 import React from 'react';
 import logo from 'images/db-tax-logo.png';
+import { goToFacebook } from 'util/go-to-facebook/go-to-facebook';
+import { goToLinkedIn } from 'util/go-to-linked-in/go-to-linked-in';
 import styles from './navigation.style.scss';
 import { NavigationLink } from './navigation-link/navigation-link';
 import { AccountAccessButtonConnected } from '../account-access-button/account-access-button.connected';
@@ -27,8 +29,16 @@ export const Navigation = props => {
           </Link>
         </div>
         <nav className={styles.links}>{links}</nav>
-        <div className={styles.accountAccess}>
-          <AccountAccessButtonConnected />
+        <div className={styles.buttons}>
+          <div>
+            <AccountAccessButtonConnected />
+          </div>
+          <div className="margin--left--half">
+            <IconButton iconName="facebook-f" iconType="brand" onClick={goToFacebook} />
+          </div>
+          <div className="margin--left--half">
+            <IconButton iconName="linkedin-in" iconType="brand" onClick={goToLinkedIn} />
+          </div>
         </div>
         <div className={styles.mobileToggle}>
           <IconButton iconName="bars" onClick={onMobileNavigationToggleClick} />

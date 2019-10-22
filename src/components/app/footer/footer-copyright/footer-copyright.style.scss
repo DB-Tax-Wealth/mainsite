@@ -31,6 +31,10 @@
     }
   }
 
+  .social {
+    display: flex;
+  }
+
   @media screen and (max-width: $width-sm) {
     display: block;
   }

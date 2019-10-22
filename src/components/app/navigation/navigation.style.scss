@@ -13,14 +13,22 @@
   top: 0;
   z-index: $z-index-navigation;
 
-  .accountAccess {
-    @extend .animated;
-    @extend .bounceIn;
-
-    animation-delay: $duration-base * 3;
+  .buttons {
     align-items: center;
     display: flex;
-    margin-left: $spacer;
+
+    div {
+      @extend .animated;
+      @extend .bounceIn;
+
+      margin-left: $spacer;
+
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+          animation-delay: $duration-base * $i + $duration-base;
+        }
+      }
+    }
 
     @media screen and (max-width: $width-md) {
       display: none;

@@ -85,12 +85,6 @@
         width: 100%;
       }
     }
-
-    @for $i from 1 through 6 {
-      &:nth-child(#{$i}) {
-        animation-delay: $duration-base * $i / 2;
-      }
-    }
   }
 
   &:hover {
@@ -98,6 +92,12 @@
       pointer-events: auto;
       opacity: 1;
       transform: translateX(-50%) scale(1);
+    }
+  }
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) .primary {
+      animation-delay: $duration-base * $i / 2;
     }
   }
 }

@@ -5,6 +5,8 @@ import React from 'react';
 import logo from 'images/db-tax-logo-dark.png';
 import moment from 'moment';
 import { ROUTES } from 'constants/routes';
+import { goToFacebook } from 'util/go-to-facebook/go-to-facebook';
+import { goToLinkedIn } from 'util/go-to-linked-in/go-to-linked-in';
 import styles from './footer-copyright.style.scss';
 
 export const FooterCopyright = () => {
@@ -21,7 +23,12 @@ export const FooterCopyright = () => {
         ©{year} {COMPANY_NAME}. All Rights Reserved.
       </div>
       <div className={styles.social}>
-        <IconButton iconName="facebook-f" iconType="brand" />
+        <div>
+          <IconButton iconName="facebook-f" iconType="brand" onClick={goToFacebook} />
+        </div>
+        <div className="margin--left--half">
+          <IconButton iconName="linkedin-in" iconType="brand" onClick={goToLinkedIn} />
+        </div>
       </div>
     </div>
   );
