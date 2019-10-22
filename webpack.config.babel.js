@@ -1,5 +1,5 @@
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
-import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
+import TerserWebpackPlugin from 'terser-webpack-plugin';
 import merge from 'webpack-merge';
 import path from 'path';
 import { clean } from './webpack/clean';
@@ -67,7 +67,7 @@ const outputConfig = {
 
 const optimizationConfig = {
   optimization: {
-    minimizer: [new OptimizeCSSAssetsPlugin(), new UglifyJsPlugin()],
+    minimizer: [new OptimizeCSSAssetsPlugin(), new TerserWebpackPlugin()],
     splitChunks: {
       cacheGroups: {
         commons: {
