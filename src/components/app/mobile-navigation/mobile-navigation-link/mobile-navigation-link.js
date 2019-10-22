@@ -63,13 +63,20 @@ export class MobileNavigationLink extends Component {
         {hasChildRoutes && (
           <div className={styles.children}>
             {routes.map(route => {
-              const { path: childPath, title: childTitle, key } = route;
+              const { path: childPath, title: childTitle, key, externalLink } = route;
+              const isExternalLink = Boolean(externalLink);
 
               return (
                 <div key={key} className={styles.primary}>
-                  <NavLink to={childPath} onClick={this.handleOnClick} style={{ flex: 1 }}>
-                    {childTitle}
-                  </NavLink>
+                  {isExternalLink ? (
+                    <a href={externalLink} target="_blank" rel="noopener noreferrer" key={key} style={{ flex: 1 }}>
+                      {childTitle}
+                    </a>
+                  ) : (
+                    <NavLink to={childPath} onClick={this.handleOnClick} style={{ flex: 1 }}>
+                      {childTitle}
+                    </NavLink>
+                  )}
                 </div>
               );
             })}

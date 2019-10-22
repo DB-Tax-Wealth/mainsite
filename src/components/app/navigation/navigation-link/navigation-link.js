@@ -11,7 +11,7 @@ export const NavigationLink = props => {
   return (
     <div className={styles.root}>
       {externalLink ? (
-        <a href={externalLink} target="blank">
+        <a href={externalLink} target="_blank" rel="noopener noreferrer">
           {title}
         </a>
       ) : (
@@ -26,7 +26,7 @@ export const NavigationLink = props => {
 
                 if (childExternalLink) {
                   return (
-                    <a href={childExternalLink} target="blank">
+                    <a href={childExternalLink} target="_blank" rel="noopener noreferrer" key={key}>
                       {childTitle}
                     </a>
                   );
