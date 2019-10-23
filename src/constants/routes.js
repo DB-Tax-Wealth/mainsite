@@ -7,6 +7,7 @@ import { MissionStatement } from 'components/screens/mission-statement/mission-s
 import { Team } from 'components/screens/team/team';
 import { TeamMemberDetail } from 'components/screens/team/team-member/team-member-detail/team-member-detail';
 import { UnderConstruction } from 'components/screens/under-construction/under-construction';
+import { WealthProcess } from 'components/screens/wealth/wealth-process/wealth-process';
 import { DB_WEALTH_LINK } from './db-wealth-link';
 
 export const ROUTES = {
@@ -60,14 +61,14 @@ export const ROUTES = {
    * Wealth Pages
    */
   WEALTH: {
-    component: UnderConstruction,
+    component: WealthProcess,
     exact: true,
     key: 'wealth',
     path: '/services/wealth/process',
     title: 'Wealth'
   },
   WEALTH_PROCESS: {
-    component: UnderConstruction,
+    component: WealthProcess,
     exact: true,
     key: 'wealth-process',
     path: '/services/wealth/process',
@@ -119,6 +120,7 @@ const ABOUT_ROUTES = [
     routes: [ROUTES.MISSION_STATEMENT, ROUTES.CAREERS, { ...ROUTES.TEAM, routes: TEAM_ROUTES }]
   }
 ];
+
 const SERVICES_ROUTES = [
   {
     ...ROUTES.TAX,

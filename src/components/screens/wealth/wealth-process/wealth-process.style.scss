@@ -1,0 +1,37 @@
+@import '~animate.css/animate';
+@import '../../../../styles/util/animated';
+@import '../../../../styles/config/variables';
+@import '../../../../styles/util/shadow';
+@import '../../../../styles/mixins/transition';
+
+$size: $spacer * 30;
+
+.root {
+  font-size: 0.6rem;
+  // position: relative;
+
+  .circle {
+    // left: 0;
+    // position: absolute;
+    // top: 0;
+
+    .section {
+      @extend .animated;
+      @extend .fadeIn;
+
+      @include transition(stroke);
+
+      @for $i from 1 through 15 {
+        &:nth-child(#{$i}) {
+          animation-delay: ($duration-base / 3 * $i) + 1;
+          stroke: darken($color-secondary, $i * 4%);
+
+          &:hover {
+            // stroke: darken($color-secondary, ($i + 2) * 5%);
+            stroke: $color-tertiary;
+          }
+        }
+      }
+    }
+  }
+}
