@@ -1,0 +1,36 @@
+@import '~animate.css/animate';
+@import '../../styles/util/animated';
+@import '../../styles/mixins/transition';
+@import '../../styles/config/variables';
+
+.root {
+  position: relative;
+
+  .section {
+    @include transition(transform);
+
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition-duration: $duration-base * 3;
+    z-index: 1;
+
+    .wheelSection {
+      @for $i from 1 through 12 {
+        &:nth-child(#{$i}) {
+          animation-delay: ($duration-base * $i) + 1;
+        }
+      }
+    }
+  }
+
+  .title {
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+  }
+}
