@@ -1,0 +1,59 @@
+@import '~animate.css/animate';
+@import '../../../styles/util/animated';
+@import '../../../styles/config/variables';
+@import '../../../styles/util/shadow';
+@import '../../../styles/mixins/transition';
+
+.root {
+  transform-origin: center center;
+
+  .label,
+  .message {
+    @include transition(fill);
+
+    fill: $color-white;
+    pointer-events: none;
+    transform-origin: center center;
+  }
+
+  .label {
+    font-size: 0.3rem;
+  }
+
+  .message {
+    font-size: 0.2rem;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+
+  .path {
+    pointer-events: none;
+    transform-origin: center center;
+  }
+
+  .circle {
+    @include transition(stroke);
+
+    cursor: pointer;
+    transform-origin: center center;
+    transform: rotate(-180deg);
+
+    &:hover {
+      stroke: $color-tertiary;
+
+      & ~ text {
+        fill: $color-type;
+      }
+    }
+  }
+
+  &.active {
+    .circle {
+      stroke: $color-tertiary;
+
+      & ~ text {
+        fill: $color-type;
+      }
+    }
+  }
+}
