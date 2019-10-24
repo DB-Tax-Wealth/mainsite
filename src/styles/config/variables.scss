@@ -1,3 +1,5 @@
+/* stylelint-disable property-no-unknown, selector-pseudo-class-no-unknown */
+
 /* colors
 **********************************************************/
 // base
@@ -122,3 +124,28 @@ $ease-default: ease;
 //   // adjust this value to control entire app REM size
 //   font-size: 63.75%;
 // }
+
+/* exports
+**********************************************************/
+// colors
+:export {
+  black: $color-black;
+  border: $color-border;
+  danger: $color-danger;
+  facebook: $color-facebook;
+  google-plus: $color-google-plus;
+  pinterest: $color-pinterest;
+  primary-dark: $color-primary-dark;
+  primary-light: $color-primary-light;
+  primary-lighter: $color-primary-lighter;
+  primary: $color-primary;
+  quaternary-light: $color-quaternary-light;
+  quaternary: $color-quaternary;
+  secondary: $color-secondary;
+  success: $color-success;
+  tertiary: $color-tertiary;
+  twitter: $color-twitter;
+  type: $color-type;
+  warning: $color-warning;
+  white: $color-white;
+}
