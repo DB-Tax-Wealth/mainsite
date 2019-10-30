@@ -17,14 +17,17 @@ export const TeamMemberDetail = props => {
   const phoneExists = Boolean(phone);
   const emailExists = Boolean(email);
   const faxExists = Boolean(fax);
+  const imageExists = Boolean(img);
 
   return (
     <Screen className={styles.root}>
       <Section>
         <div className="display--flex">
-          <div className={styles.avatar} style={{ flex: 1 }}>
-            <img src={img} alt={name} />
-          </div>
+          {imageExists && (
+            <div className={styles.avatar} style={{ flex: 1 }}>
+              <img src={img} alt={name} />
+            </div>
+          )}
           <div style={{ flex: 4 }}>
             <HeadingWithSubtitle subtitle="Team" subtitleColor="primary">
               {name}

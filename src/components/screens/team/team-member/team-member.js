@@ -14,13 +14,16 @@ export const TeamMember = props => {
   const phoneExists = Boolean(phone);
   const emailExists = Boolean(email);
   const faxExists = Boolean(fax);
+  const imageExists = Boolean(img);
 
   return (
     <>
       <div className={styles.root}>
-        <div className={styles.avatar}>
-          <img src={img} alt={name} />
-        </div>
+        {imageExists && (
+          <div className={styles.avatar}>
+            <img src={img} alt={name} />
+          </div>
+        )}
         <div className={styles.content}>
           <div>
             <strong>{name}</strong>
