@@ -47,10 +47,10 @@ export const ProcessWheelSection = props => {
           a ${radius}, ${radius} 0 0, 1 ${radius * 2}, 0
         `}
       />
-      <text className={styles.label} dx={labelDx} dy="-1%" x="50%" y="0" textAnchor="middle">
+      <text className={styles.label} dx={labelDx} dy="-1%" x="57%" y="0" textAnchor="middle">
         <textPath xlinkHref={`#${id}`}>{label}</textPath>
       </text>
-      <text className={styles.message} dx={messageDx} dy="3.5%" x="50%" y="0" textAnchor="middle">
+      <text className={styles.message} dx={messageDx} dy="3.5%" x="57%" y="0" textAnchor="middle">
         <textPath xlinkHref={`#${id}`}>{message}</textPath>
       </text>
     </g>

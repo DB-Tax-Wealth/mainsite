@@ -8,6 +8,10 @@ import { Row } from 'components/layout/grid/row/row';
 import { Column } from 'components/layout/grid/column/column';
 import { ProcessWheel } from 'components/process-wheel/process-wheel';
 import { Icon } from 'components/layout/icon/icon';
+import { WealthProcessGoals } from './wealth-process-goals/wealth-process-goals';
+import { WealthProcessTeam } from './wealth-process-team/wealth-process-team';
+import { WealthProcessPlan } from './wealth-process-plan/wealth-process-plan';
+import { WealthProcessMonitor } from './wealth-process-monitor/wealth-process-monitor';
 
 export class WealthProcess extends Component {
   constructor(props) {
@@ -24,39 +28,41 @@ export class WealthProcess extends Component {
 
     const processes = [
       {
-        label: 'Review',
-        message: 'Monitor the Plan',
+        content: <WealthProcessGoals />,
         icon: 'file-contract',
+        label: 'Understand Goals',
+        message: 'Know Your Financial Position',
         onClick: () => this.handleOnSectionClick(0)
       },
       {
-        label: 'Engage',
-        message: 'Define the Relationship',
+        content: <WealthProcessTeam />,
         icon: 'users',
+        label: 'Meet Your Team',
+        message: 'Define the Relationship',
         onClick: () => this.handleOnSectionClick(1)
       },
       {
-        label: 'Collect',
-        message: 'Understand Client Goals',
+        content: <WealthProcessPlan />,
         icon: 'search',
+        label: 'Build a Plan',
+        message: 'Understand Client Goals',
         onClick: () => this.handleOnSectionClick(2)
       },
-      { label: 'Analyze', message: 'Analyze & Evaluate', icon: 'signal', onClick: () => this.handleOnSectionClick(3) },
-      { label: 'Design', message: 'Create & Revise', icon: 'lightbulb', onClick: () => this.handleOnSectionClick(4) }
-      // {
-      //   label: 'Implement',
-      //   message: 'Implement Client Decisions',
-      //   icon: 'cogs',
-      //   onClick: () => this.handleOnSectionClick(5)
-      // }
+      {
+        content: <WealthProcessMonitor />,
+        icon: 'signal',
+        label: 'Monitor',
+        message: 'Update Your Goals',
+        onClick: () => this.handleOnSectionClick(3)
+      }
     ];
 
     return (
       <Screen>
         <Hero title="Process" subtitle="Wealth">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus magna, venenatis ut ligula eu, lobortis
-            consectetur orci.
+            A solid financial strategy can help you pursue financial independence. But to be truly effective, any
+            financial strategy must be customized to your unique situation.
           </p>
         </Hero>
         <Section color="primary-light">
@@ -71,16 +77,7 @@ export class WealthProcess extends Component {
                     <Icon name={processes[activeProcessIndex].icon} /> {processes[activeProcessIndex].label}
                   </h3>
                   <h5 className="margin--top--half">{processes[activeProcessIndex].message}</h5>
-                  <p>
-                    Ut pretium egestas dolor, quis suscipit arcu luctus nec. Donec pulvinar, orci faucibus pellentesque
-                    sodales, arcu augue pulvinar nulla, sit amet sodales urna enim eu tortor.
-                  </p>
-                  <p>Donec convallis odio et vestibulum hendrerit. Ut viverra euismod posuere.</p>
-                  <p>
-                    Integer imperdiet placerat luctus. Vivamus dignissim finibus est vel fermentum. Sed ut lobortis sem.
-                    Etiam a iaculis urna, sed rutrum ligula. Mauris volutpat, lorem sit amet aliquam lobortis, nibh elit
-                    interdum erat, sed consectetur sapien nibh a nibh
-                  </p>
+                  {processes[activeProcessIndex].content}
                 </div>
               </Column>
             </Row>
