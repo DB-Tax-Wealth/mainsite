@@ -1,9 +1,13 @@
 @import '../../../styles/config/variables';
 @import '../../../styles/mixins/font-size';
 @import '../../../styles/mixins/line-height';
+@import '../../../styles/mixins/transition';
 
 .root {
+  @include transition(border-color);
+
   background: $color-white;
+  border: $border-width solid transparent;
   border-radius: $spacer * 2;
   display: flex;
   padding: $spacer / 4;
@@ -14,6 +18,21 @@
     outline: none;
     padding: $spacer / 2;
   }
+}
+
+.errorMessage {
+  @include font-size(0.8);
+
+  color: $color-danger;
+  margin-top: $spacer / 2;
+}
+
+.root.error {
+  border-color: $color-danger;
+}
+
+.root.valid {
+  border-color: $color-success;
 }
 
 .root.shadow {

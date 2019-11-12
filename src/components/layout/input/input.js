@@ -10,22 +10,32 @@ export const Input = props => {
     buttonGlow,
     buttonOnClick,
     className: classNameProp,
+    error,
+    errorMessage,
     iconName,
     onChange,
     placeholder,
     shadow,
+    valid,
     value
   } = props;
 
-  const className = classnames(styles.root, classNameProp, { [styles.shadow]: shadow });
+  const className = classnames(styles.root, classNameProp, {
+    [styles.error]: error,
+    [styles.shadow]: shadow,
+    [styles.valid]: valid
+  });
   const showButton = Boolean(buttonOnClick);
   const handleOnChange = event => onChange(event.target.value);
 
   return (
-    <div className={className}>
-      <input type="text" placeholder={placeholder} value={value} onChange={handleOnChange} />
-      {showButton && <IconButton iconName={iconName} color={buttonColor} glow={buttonGlow} onClick={buttonOnClick} />}
-    </div>
+    <>
+      <div className={className}>
+        <input type="text" placeholder={placeholder} value={value} onChange={handleOnChange} />
+        {showButton && <IconButton iconName={iconName} color={buttonColor} glow={buttonGlow} onClick={buttonOnClick} />}
+      </div>
+      {error && Boolean(errorMessage) && <div className={styles.errorMessage}>{errorMessage}</div>}
+    </>
   );
 };
 
@@ -34,10 +44,13 @@ Input.propTypes = {
   buttonGlow: PropTypes.bool,
   buttonOnClick: PropTypes.func,
   className: PropTypes.string,
+  error: PropTypes.bool,
+  errorMessage: PropTypes.string,
   iconName: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   shadow: PropTypes.bool,
+  valid: PropTypes.bool,
   value: PropTypes.string
 };
 
@@ -46,9 +59,12 @@ Input.defaultProps = {
   buttonGlow: undefined,
   buttonOnClick: null,
   className: '',
+  error: false,
+  errorMessage: '',
   iconName: undefined,
   onChange: () => '',
   placeholder: 'enter a value...',
   shadow: false,
+  valid: false,
   value: ''
 };
