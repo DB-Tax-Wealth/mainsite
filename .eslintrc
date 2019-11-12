@@ -38,6 +38,7 @@
           "constants": "./src/constants",
           "fonts": "./src/fonts",
           "images": "./src/images",
+          "services": "./src/services",
           "store": "./src/store",
           "styles": "./src/styles",
           "util": "./src/util"

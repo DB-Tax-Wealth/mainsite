@@ -7,6 +7,7 @@
       "constants/*": ["constants/*"],
       "fonts/*": ["fonts/*"],
       "images/*": ["images/*"],
+      "services/*": ["services/*"],
       "store/*": ["store/*"],
       "styles/*": ["styles/*"],
       "util/*": ["util/*"]

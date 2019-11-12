@@ -4,9 +4,13 @@ import classnames from 'classnames';
 import styles from './textarea.style.scss';
 
 export const Textarea = props => {
-  const { className: classNameProp, onChange, placeholder, shadow, value } = props;
+  const { className: classNameProp, error, onChange, placeholder, shadow, valid, value } = props;
 
-  const className = classnames(styles.root, classNameProp, { [styles.shadow]: shadow });
+  const className = classnames(styles.root, classNameProp, {
+    [styles.error]: error,
+    [styles.shadow]: shadow,
+    [styles.valid]: valid
+  });
   const handleOnChange = event => onChange(event.target.value);
 
   return (
@@ -18,16 +22,20 @@ export const Textarea = props => {
 
 Textarea.propTypes = {
   className: PropTypes.string,
+  error: PropTypes.bool,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   shadow: PropTypes.bool,
+  valid: PropTypes.bool,
   value: PropTypes.string
 };
 
 Textarea.defaultProps = {
   className: '',
+  error: false,
   onChange: () => '',
   placeholder: 'enter a value...',
   shadow: false,
+  valid: false,
   value: ''
 };
