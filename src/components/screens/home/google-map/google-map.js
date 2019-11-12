@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { GOOGLE_MAPS_API_KEY } from 'constants/google-maps-api-key';
 import GoogleMapReact from 'google-map-react';
-import { InputWithIconButton } from 'components/layout/input-with-icon-button/input-with-icon-button';
+import { Input } from 'components/layout/input/input';
 import { LOCATION } from 'constants/location';
 import { GoogleMapMarker } from './google-map-marker/google-map-marker';
 import styles from './google-map.style.scss';
@@ -24,10 +24,11 @@ export const GoogleMap = ({ showAddress }) => {
       {showAddress ? (
         <>
           <div className={styles.inputContainer}>
-            <InputWithIconButton
+            <Input
+              buttonOnClick={() => {}}
               className={styles.input}
-              placeholder="enter your address..."
               iconName="map-marker-alt"
+              placeholder="enter your address..."
             />
           </div>
         </>

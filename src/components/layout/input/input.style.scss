@@ -15,3 +15,7 @@
     padding: $spacer / 2;
   }
 }
+
+.root.shadow {
+  box-shadow: $shadow-float;
+}

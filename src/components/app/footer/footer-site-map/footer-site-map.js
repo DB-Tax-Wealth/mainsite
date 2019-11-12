@@ -1,6 +1,6 @@
 import { ADDRESS } from 'constants/address';
 import { EMAIL } from 'constants/email';
-import { InputWithIconButton } from 'components/layout/input-with-icon-button/input-with-icon-button';
+import { Input } from 'components/layout/input/input';
 import { Link } from 'react-router-dom';
 import { PHONE_NUMBER } from 'constants/phone-number';
 import React from 'react';
@@ -82,10 +82,11 @@ export const FooterSiteMap = () => {
         <h3>Want to Know More?</h3>
         <div>We&apos;ll reach out via email to set up a call.</div>
         <div>
-          <InputWithIconButton
-            placeholder="enter your email address..."
-            iconName="paper-plane"
+          <Input
+            buttonOnClick={() => {}}
             className={styles.email}
+            iconName="paper-plane"
+            placeholder="enter your email address..."
           />
         </div>
       </div>
