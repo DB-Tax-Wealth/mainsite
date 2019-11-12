@@ -8,13 +8,13 @@ import { Row } from 'components/layout/grid/row/row';
 import { Column } from 'components/layout/grid/column/column';
 import { ProcessWheel } from 'components/process-wheel/process-wheel';
 import { Icon } from 'components/layout/icon/icon';
-import HeroImage from 'images/person-holding-pen.jpg';
-import { WealthProcessGoals } from './wealth-process-goals/wealth-process-goals';
-import { WealthProcessTeam } from './wealth-process-team/wealth-process-team';
-import { WealthProcessPlan } from './wealth-process-plan/wealth-process-plan';
-import { WealthProcessMonitor } from './wealth-process-monitor/wealth-process-monitor';
+import HeroImage from 'images/person-writing-down-plan.jpg';
+import { WealthProcessGoals } from 'components/screens/wealth/wealth-process/wealth-process-goals/wealth-process-goals';
+import { WealthProcessTeam } from 'components/screens/wealth/wealth-process/wealth-process-team/wealth-process-team';
+import { WealthProcessPlan } from 'components/screens/wealth/wealth-process/wealth-process-plan/wealth-process-plan';
+import { WealthProcessMonitor } from 'components/screens/wealth/wealth-process/wealth-process-monitor/wealth-process-monitor';
 
-export class WealthProcess extends Component {
+export class TaxProcess extends Component {
   constructor(props) {
     super(props);
     this.state = { activeProcessIndex: 0 };
@@ -60,10 +60,10 @@ export class WealthProcess extends Component {
 
     return (
       <Screen>
-        <Hero title="Our Onboarding Process" subtitle="Wealth" image={HeroImage}>
+        <Hero title="Our Onboarding Process" subtitle="Tax" image={HeroImage}>
           <p>
-            <strong>Becoming a Wealth Client</strong> The investment recommendations and services we provide are
-            designed to support the personal needs and goals outlined in your financial plan.
+            <strong>Becoming a Tax Client</strong> A solid financial strategy can help you pursue financial
+            independence. But to be truly effective, any financial strategy must be customized to your unique situation.
           </p>
         </Hero>
         <Section color="primary-light">

@@ -8,6 +8,8 @@ import { Team } from 'components/screens/team/team';
 import { TeamMemberDetail } from 'components/screens/team/team-member/team-member-detail/team-member-detail';
 import { UnderConstruction } from 'components/screens/under-construction/under-construction';
 import { WealthProcess } from 'components/screens/wealth/wealth-process/wealth-process';
+import { TaxProcess } from 'components/screens/tax/tax-process/tax-process';
+import { AccountingProcess } from 'components/screens/accounting/accounting-process/accounting-process';
 import { DB_WEALTH_LINK } from './db-wealth-link';
 
 export const ROUTES = {
@@ -35,9 +37,9 @@ export const ROUTES = {
   /**
    * Tax Pages
    */
-  TAX: { component: UnderConstruction, exact: true, key: 'tax', path: '/services/tax/process', title: 'Tax' },
+  TAX: { component: TaxProcess, exact: true, key: 'tax', path: '/services/tax/process', title: 'Tax' },
   TAX_PROCESS: {
-    component: UnderConstruction,
+    component: TaxProcess,
     exact: true,
     key: 'tax-process',
     path: '/services/tax/process',
@@ -56,6 +58,30 @@ export const ROUTES = {
     key: 'tax-db-docushare',
     path: '/services/tax/db-docushare',
     title: 'DB DocuShare'
+  },
+  /**
+   * Accounting Pages
+   */
+  ACCOUNTING: {
+    component: AccountingProcess,
+    exact: true,
+    key: 'accounting',
+    path: '/services/accounting/process',
+    title: 'Accounting'
+  },
+  ACCOUNTING_PROCESS: {
+    component: AccountingProcess,
+    exact: true,
+    key: 'accounting-process',
+    path: '/services/accounting/process',
+    title: 'Process'
+  },
+  ACCOUNTING_QUICK_LINKS: {
+    component: UnderConstruction,
+    exact: true,
+    key: 'accounting-quick-links',
+    path: '/services/accounting/quick-links',
+    title: 'Quick Links'
   },
   /**
    * Wealth Pages
@@ -85,30 +111,6 @@ export const ROUTES = {
     key: 'wealth-db-money',
     externalLink: DB_WEALTH_LINK,
     title: 'DB Money'
-  },
-  /**
-   * Accounting Pages
-   */
-  ACCOUNTING: {
-    component: UnderConstruction,
-    exact: true,
-    key: 'accounting',
-    path: '/services/accounting/process',
-    title: 'Accounting'
-  },
-  ACCOUNTING_PROCESS: {
-    component: UnderConstruction,
-    exact: true,
-    key: 'accounting-process',
-    path: '/services/accounting/process',
-    title: 'Process'
-  },
-  ACCOUNTING_QUICK_LINKS: {
-    component: UnderConstruction,
-    exact: true,
-    key: 'accounting-quick-links',
-    path: '/services/accounting/quick-links',
-    title: 'Quick Links'
   }
 };
 
