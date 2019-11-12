@@ -8,7 +8,4 @@ const mapDispatchToProps = {
   onClick: openAccountAccess
 };
 
-export const AccountAccessButtonConnected = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(AccountAccessButton);
+export const AccountAccessButtonConnected = connect(mapStateToProps, mapDispatchToProps)(AccountAccessButton);

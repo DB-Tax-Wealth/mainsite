@@ -10,7 +10,4 @@ const mapDispatchToProps = {
   onOverlayClick: closeAccountAccess
 };
 
-export const AccountAccessModalConnected = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(AccountAccessModal);
+export const AccountAccessModalConnected = connect(mapStateToProps, mapDispatchToProps)(AccountAccessModal);
