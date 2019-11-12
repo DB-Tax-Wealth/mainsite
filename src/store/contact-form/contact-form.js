@@ -1,4 +1,5 @@
 import { createAction, handleActions } from 'redux-actions';
+import { isValidEmailAddress } from 'util/is-valid-email-address/is-valid-email-address';
 
 // Actions
 const RESET = 'contact-form/RESET';
@@ -41,6 +42,35 @@ export const selectContactFormActive = state => selectContactForm(state).active 
 export const selectContactFormEmail = state => selectContactForm(state).email || DEFAULT_STATE.email;
 export const selectContactFormMessage = state => selectContactForm(state).message || DEFAULT_STATE.message;
 export const selectContactFormName = state => selectContactForm(state).name || DEFAULT_STATE.name;
+
+export const selectContactFormNameValid = state => Boolean(selectContactFormName(state));
+export const selectContactFormMessageValid = state => Boolean(selectContactFormMessage(state));
+export const selectContactFormEmailValid = state => {
+  const emailExists = Boolean(selectContactFormEmail(state));
+  const email = selectContactFormEmail(state);
+  const emailIsCorrectFormat = isValidEmailAddress(email);
+
+  return emailExists && emailIsCorrectFormat;
+};
+export const selectContactFormEmailError = state => {
+  const emailExists = Boolean(selectContactFormEmail(state));
+  const email = selectContactFormEmail(state);
+  const emailIsCorrectFormat = isValidEmailAddress(email);
+
+  return emailExists && !emailIsCorrectFormat;
+};
+export const selectContactFormEmailErrorMessage = state => {
+  const email = selectContactFormEmail(state);
+  return `${email} is not a valid email address.`;
+};
+
+export const selectContactFormValid = state => {
+  const emailValid = selectContactFormEmailValid(state);
+  const messageValid = selectContactFormMessageValid(state);
+  const nameValid = selectContactFormNameValid(state);
+
+  return Boolean(emailValid && messageValid && nameValid);
+};
 
 // Thunks
 export const closeContactForm = () => dispatch => {
