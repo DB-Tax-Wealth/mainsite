@@ -3,7 +3,7 @@
 @import '../../../styles/mixins/gradient-horizontal.scss';
 
 .root {
-  @include transition(#{'color, background, transform'});
+  @include transition(#{'color, background, transform, opacity'});
 
   background: $color-primary;
   color: $color-white;
@@ -17,6 +17,11 @@
     background: $color-primary-dark;
     transform: scale(1.05);
   }
+}
+
+.root.disabled {
+  opacity: $disabled-opacity;
+  pointer-events: none;
 }
 
 .root.glow {
