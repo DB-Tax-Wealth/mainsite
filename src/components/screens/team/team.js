@@ -6,6 +6,7 @@ import { Row } from 'components/layout/grid/row/row';
 import { Column } from 'components/layout/grid/column/column';
 import { TEAM_MEMBERS } from 'constants/team-members';
 import { Hero } from 'components/layout/hero/hero';
+import { ROUTES } from 'constants/routes';
 import { TeamMember } from './team-member/team-member';
 
 const teamMembers = TEAM_MEMBERS.map(({ description, email, fax, id, img, name, phone, title }) => (
@@ -25,8 +26,8 @@ const teamMembers = TEAM_MEMBERS.map(({ description, email, fax, id, img, name, 
 
 export const Team = () => {
   return (
-    <Screen>
-      <Hero title="Meet the Team" subtitle="About">
+    <Screen metaTitle={ROUTES.TEAM.title}>
+      <Hero title="Meet the Team" subtitle={ROUTES.ABOUT.title}>
         <p>
           We believe our team oriented approach adds a broader perspective to all we do and provides increased benefits
           to our clients.

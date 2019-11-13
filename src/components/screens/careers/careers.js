@@ -4,11 +4,12 @@ import { Section } from 'components/layout/section/section';
 import { Hero } from 'components/layout/hero/hero';
 import heroImage from 'images/hand-with-glasses.jpg';
 import { COMPANY_NAME } from 'constants/company-name';
+import { ROUTES } from 'constants/routes';
 
 export const Careers = () => {
   return (
-    <Screen>
-      <Hero image={heroImage} title="A Future With Us" subtitle="Careers">
+    <Screen metaTitle={ROUTES.CAREERS.title}>
+      <Hero image={heroImage} title="A Future With Us" subtitle={ROUTES.CAREERS.title}>
         <p>
           We are passionate about finding the best talent to join our organization and building long-term partnerships
           with those who come on board.

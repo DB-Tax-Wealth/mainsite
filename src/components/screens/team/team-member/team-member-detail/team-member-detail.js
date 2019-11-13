@@ -20,7 +20,7 @@ export const TeamMemberDetail = props => {
   const imageExists = Boolean(img);
 
   return (
-    <Screen className={styles.root}>
+    <Screen className={styles.root} metaTitle={name}>
       <Section>
         <div className="display--flex">
           {imageExists && (

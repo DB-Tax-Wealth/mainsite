@@ -7,8 +7,8 @@ import { Hero } from 'components/layout/hero/hero';
 
 export const About = () => {
   return (
-    <Screen>
-      <Hero title="Our Story" subtitle="About">
+    <Screen metaTitle={ROUTES.ABOUT.title}>
+      <Hero title="Our Story" subtitle={ROUTES.ABOUT.title}>
         <p>When you have a great story, share it.</p>
       </Hero>
       <Section color="primary-light">
