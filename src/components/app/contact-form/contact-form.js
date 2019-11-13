@@ -22,6 +22,7 @@ export const ContactForm = props => {
     messageValid,
     name,
     nameValid,
+    onEmailBlur,
     onEmailChange,
     onMessageChange,
     onNameChange,
@@ -47,6 +48,7 @@ export const ContactForm = props => {
               <Input
                 error={emailError}
                 errorMessage={emailErrorMessage}
+                onBlur={onEmailBlur}
                 onChange={onEmailChange}
                 placeholder="enter your email..."
                 shadow
@@ -91,6 +93,7 @@ ContactForm.propTypes = {
   messageValid: PropTypes.bool,
   name: PropTypes.string,
   nameValid: PropTypes.bool,
+  onEmailBlur: PropTypes.func,
   onEmailChange: PropTypes.func,
   onMessageChange: PropTypes.func,
   onNameChange: PropTypes.func,
@@ -110,6 +113,7 @@ ContactForm.defaultProps = {
   messageValid: false,
   name: '',
   nameValid: false,
+  onEmailBlur: null,
   onEmailChange: () => {},
   onMessageChange: () => {},
   onNameChange: () => {},

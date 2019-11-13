@@ -15,7 +15,8 @@ import {
   selectContactFormEmailError,
   selectContactFormEmailErrorMessage,
   requestContactFormSubmit,
-  selectContactFormIsRequesting
+  selectContactFormIsRequesting,
+  updateContactFormEmailIsDirty
 } from 'store/contact-form/contact-form';
 import { ContactForm } from './contact-form';
 
@@ -34,6 +35,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
+  onEmailBlur: () => dispatch(updateContactFormEmailIsDirty(true)),
   onEmailChange: value => dispatch(updateContactFormEmail(value)),
   onMessageChange: value => dispatch(updateContactFormMessage(value)),
   onNameChange: value => dispatch(updateContactFormName(value)),
