@@ -1,6 +1,5 @@
 import { About } from 'components/screens/about/about';
 import { Careers } from 'components/screens/careers/careers';
-import { Contact } from 'components/screens/contact/contact';
 import { Demo } from 'components/screens/demo/demo';
 import { Home } from 'components/screens/home/home';
 import { MissionStatement } from 'components/screens/mission-statement/mission-statement';
@@ -10,12 +9,13 @@ import { UnderConstruction } from 'components/screens/under-construction/under-c
 import { WealthProcess } from 'components/screens/wealth/wealth-process/wealth-process';
 import { TaxProcess } from 'components/screens/tax/tax-process/tax-process';
 import { AccountingProcess } from 'components/screens/accounting/accounting-process/accounting-process';
+import { ContactConnected } from 'components/screens/contact/contact.connected';
 import { DB_WEALTH_LINK } from './db-wealth-link';
 
 export const ROUTES = {
   ABOUT: { component: About, exact: true, key: 'about', path: '/about', title: 'About' },
   CAREERS: { component: Careers, exact: true, key: 'careers', path: '/careers', title: 'Careers' },
-  CONTACT: { component: Contact, exact: true, key: 'contact', path: '/contact', title: 'Contact' },
+  CONTACT: { component: ContactConnected, exact: true, key: 'contact', path: '/contact', title: 'Contact' },
   DEMO: { component: Demo, exact: true, key: 'demo', path: '/demo', title: 'Demo' },
   HOME: { component: Home, exact: true, key: 'home', path: '/', title: 'Home' },
   MISSION_STATEMENT: {
