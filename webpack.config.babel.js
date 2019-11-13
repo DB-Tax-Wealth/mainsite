@@ -15,7 +15,7 @@ import { loadStyles } from './webpack/load-styles';
 const PUBLIC_PATH = '/';
 
 const ROOT_PATHS = {
-  dist: path.join(__dirname, 'build'),
+  dist: path.join(__dirname, 'docs'),
   src: path.join(__dirname, 'src')
 };
 
@@ -100,7 +100,7 @@ const productionConfig = merge([
   commonConfig,
   getFavicons({ sourcePath: path.join(ROOT_PATHS.src, '/images/favicon.png') }),
   loadFonts({ options: { limit: 5000, name: '/fonts/[name].[ext]' } }),
-  loadImages({ options: { limit: 15000, name: '/images/[name].[ext]' } }),
+  loadImages({ options: { limit: 1000, name: 'images/[name].[ext]' } }),
   loadStyles({ production: true }),
   optimizationConfig,
   outputConfig,
