@@ -11,12 +11,11 @@ import { loadFonts } from './webpack/load-fonts';
 import loadImages from './webpack/load-images';
 import { loadJs } from './webpack/load-js';
 import { loadStyles } from './webpack/load-styles';
-import { name } from './package.json';
 
-const PUBLIC_PATH = `/${name}`;
+const PUBLIC_PATH = '/';
 
 const ROOT_PATHS = {
-  dist: path.join(__dirname, 'docs'),
+  dist: path.join(__dirname, 'build'),
   src: path.join(__dirname, 'src')
 };
 

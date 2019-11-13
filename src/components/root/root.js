@@ -1,4 +1,4 @@
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import React from 'react';
 import { ROUTES } from 'constants/routes';
@@ -12,7 +12,7 @@ export const Root = props => {
 
   return (
     <Provider store={store}>
-      <HashRouter hashType="noslash">
+      <BrowserRouter>
         <App>
           <Switch>
             {Object.keys(ROUTES).map(key => {
@@ -23,7 +23,7 @@ export const Root = props => {
             <Route component={NoMatch} />
           </Switch>
         </App>
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   );
 };
