@@ -9,8 +9,12 @@ $hero-max-width: $width-xl + 192;
   padding: $spacer;
 
   .button {
-    @extend .animated;
-    @extend .fadeIn;
+    animation-delay: $duration-base * 4;
+
+    &.animated {
+      @extend .animated;
+      @extend .fadeIn;
+    }
 
     @media screen and (max-width: $width-sm) {
       display: block;

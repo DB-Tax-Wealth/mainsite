@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { GoogleMap } from 'components/screens/home/google-map/google-map';
 import React from 'react';
 import { Screen } from 'components/layout/screen/screen';
@@ -7,60 +8,70 @@ import { ServiceList } from 'components/screens/home/service-list/service-list';
 import { ServiceListItem } from 'components/screens/home/service-list/service-list-item/service-list-item';
 import { Section } from 'components/layout/section/section';
 import { HeadingWithSubtitle } from 'components/layout/heading-with-subtitle/heading-with-subtitle';
-import { Hero } from 'components/layout/hero/hero';
-import heroImage from 'images/woman-using-financial-app.jpg';
 import { FloatSection } from 'components/layout/float-section/float-section';
-import { Grid } from 'components/layout/grid/grid';
-import { Row } from 'components/layout/grid/row/row';
-import { Column } from 'components/layout/grid/column/column';
 import { IconButton } from 'components/layout/icon-button/icon-button';
 import { ROUTES } from 'constants/routes';
+import { Carousel } from 'components/layout/carousel/carousel';
+import heroImage1 from 'images/woman-using-financial-app.jpg';
+import heroImage2 from 'images/person-writing-down-plan.jpg';
+
+const SLIDES = [
+  {
+    buttonOnClick: () => console.log('TODO'),
+    children: (
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue venenatis erat, nec lacinia libero
+        scelerisque id.
+      </p>
+    ),
+    iconName: 'bullseye',
+    image: heroImage1,
+    subtitle: 'Slide 1',
+    title: 'This is title 1'
+  },
+  {
+    buttonColor: 'secondary',
+    buttonOnClick: () => console.log('TODO'),
+    children: <p>Donec et purus justo. Aenean vel ex consectetur, viverra lectus eu, feugiat augue.</p>,
+    iconName: 'list-ol',
+    image: heroImage2,
+    subtitle: 'Slide 2',
+    title: 'This is title 2'
+  },
+  {
+    buttonColor: 'tertiary',
+    buttonOnClick: () => console.log('TODO'),
+    children: (
+      <p>
+        Aliquam in pharetra dolor, et interdum risus. Nullam eu ligula congue, imperdiet quam a, laoreet lacus. Nam et
+        ornare nisl, nec consequat lacus.
+      </p>
+    ),
+    iconName: 'dollar-sign',
+    image: womanManFinancialConsulting,
+    subtitle: 'Slide 3',
+    title: 'This is title 3'
+  },
+  {
+    buttonColor: 'primary-dark',
+    buttonOnClick: () => console.log('TODO'),
+    children: (
+      <p>
+        Aliquam in pharetra dolor, et interdum risus. Nullam eu ligula congue, imperdiet quam a, laoreet lacus. Nam et
+        ornare nisl, nec consequat lacus.
+      </p>
+    ),
+    iconName: 'bullseye',
+    image: heroImage2,
+    subtitle: 'Slide 4',
+    title: 'This is title 4'
+  }
+];
 
 export const Home = () => {
   return (
     <Screen>
-      <Hero
-        image={heroImage}
-        title="Don't buy the hype."
-        subtitle="Client Resources"
-        // eslint-disable-next-line no-console
-        buttonOnClick={() => console.log('TODO')}
-      >
-        <p>There are a lot of misconceptions about Social Security. Here&apos;s the truth about three of them.</p>
-      </Hero>
-      <FloatSection spacerHeight="4rem" spacerColor="primary-light">
-        <Grid className="padding--horizontal--none">
-          <Row>
-            <Column widthMd={4} className="margin--xs--bottom margin--md--bottom--none">
-              <div className="display--flex">
-                <IconButton iconName="bullseye" iconType="solid" />
-                <div className="margin--left">
-                  <strong>Once upon a goal...</strong>
-                  <p className="margin--top--half">Do you know how to set up your financial goals for success?</p>
-                </div>
-              </div>
-            </Column>
-            <Column widthMd={4} className="margin--xs--bottom margin--md--bottom--none">
-              <div className="display--flex">
-                <IconButton iconName="list-ol" iconType="solid" color="secondary" />
-                <div className="margin--left">
-                  <strong>Your bucket list</strong>
-                  <p className="margin--top--half">Do you know how to set up your financial goals for success?</p>
-                </div>
-              </div>
-            </Column>
-            <Column widthMd={4}>
-              <div className="display--flex">
-                <IconButton iconName="dollar-sign" iconType="solid" color="tertiary" />
-                <div className="margin--left">
-                  <strong>You&apos;ve got money!</strong>
-                  <p className="margin--top--half">Do you know how to set up your financial goals for success?</p>
-                </div>
-              </div>
-            </Column>
-          </Row>
-        </Grid>
-      </FloatSection>
+      <Carousel slides={SLIDES} />
       <Section color="primary-light">
         <div className="max-width--sm margin--horizontal--auto text-align--center">
           <HeadingWithSubtitle subtitle="Services">

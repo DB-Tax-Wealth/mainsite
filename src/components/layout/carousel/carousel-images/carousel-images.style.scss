@@ -1,0 +1,25 @@
+@import '../../../../styles/config/variables';
+@import '../../../../styles/mixins/transition';
+
+.root {
+  position: relative;
+
+  .slide {
+    @include transition(opacity);
+
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transition-duration: $duration-base * 4;
+    width: 100%;
+    z-index: 1;
+
+    &.active {
+      pointer-events: initial;
+      opacity: 1;
+    }
+  }
+}
