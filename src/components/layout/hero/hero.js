@@ -4,10 +4,22 @@ import { CHILDREN_PROP_TYPE } from 'constants/children-prop-type';
 import { HeadingWithSubtitle } from 'components/layout/heading-with-subtitle/heading-with-subtitle';
 import { Button } from 'components/layout/button/button';
 import classnames from 'classnames';
+import { STYLE_PROP_TYPE } from 'constants/style-prop-type';
 import styles from './hero.style.scss';
 
 export const Hero = props => {
-  const { animated, buttonColor, buttonLabel, buttonOnClick, children, image, subtitle, subtitleColor, title } = props;
+  const {
+    animated,
+    buttonColor,
+    buttonLabel,
+    buttonOnClick,
+    children,
+    image,
+    style,
+    subtitle,
+    subtitleColor,
+    title
+  } = props;
 
   const imageExists = Boolean(image);
   const className = classnames(styles.root, { [styles.hasImage]: imageExists });
@@ -19,7 +31,7 @@ export const Hero = props => {
   const buttonClassName = classnames(styles.button, { animated });
 
   return (
-    <div className={className}>
+    <div className={className} style={style}>
       <div className={styles.container}>
         <div className={styles.image} style={{ backgroundImage: `url(${image})` }} />
         <div className={styles.spacer} />
@@ -57,6 +69,7 @@ Hero.propTypes = {
   buttonOnClick: PropTypes.func,
   children: CHILDREN_PROP_TYPE,
   image: PropTypes.node,
+  style: STYLE_PROP_TYPE,
   subtitle: PropTypes.string,
   subtitleColor: PropTypes.string,
   title: PropTypes.string
@@ -69,6 +82,7 @@ Hero.defaultProps = {
   buttonOnClick: null,
   children: null,
   image: null,
+  style: null,
   subtitle: '',
   subtitleColor: 'primary',
   title: ''

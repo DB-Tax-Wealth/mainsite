@@ -18,12 +18,8 @@ import heroImage2 from 'images/person-writing-down-plan.jpg';
 const SLIDES = [
   {
     buttonOnClick: () => console.log('TODO'),
-    children: (
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue venenatis erat, nec lacinia libero
-        scelerisque id.
-      </p>
-    ),
+    children:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue venenatis erat, nec lacinia libero scelerisque id.',
     iconName: 'bullseye',
     image: heroImage1,
     subtitle: 'Slide 1',
@@ -32,7 +28,7 @@ const SLIDES = [
   {
     buttonColor: 'secondary',
     buttonOnClick: () => console.log('TODO'),
-    children: <p>Donec et purus justo. Aenean vel ex consectetur, viverra lectus eu, feugiat augue.</p>,
+    children: 'Donec et purus justo. Aenean vel ex consectetur, viverra lectus eu, feugiat augue.',
     iconName: 'list-ol',
     image: heroImage2,
     subtitle: 'Slide 2',
@@ -41,12 +37,8 @@ const SLIDES = [
   {
     buttonColor: 'tertiary',
     buttonOnClick: () => console.log('TODO'),
-    children: (
-      <p>
-        Aliquam in pharetra dolor, et interdum risus. Nullam eu ligula congue, imperdiet quam a, laoreet lacus. Nam et
-        ornare nisl, nec consequat lacus.
-      </p>
-    ),
+    children:
+      'Aliquam in pharetra dolor, et interdum risus. Nullam eu ligula congue, imperdiet quam a, laoreet lacus. Nam et ornare nisl, nec consequat lacus.',
     iconName: 'dollar-sign',
     image: womanManFinancialConsulting,
     subtitle: 'Slide 3',
@@ -55,12 +47,8 @@ const SLIDES = [
   {
     buttonColor: 'primary-dark',
     buttonOnClick: () => console.log('TODO'),
-    children: (
-      <p>
-        Aliquam in pharetra dolor, et interdum risus. Nullam eu ligula congue, imperdiet quam a, laoreet lacus. Nam et
-        ornare nisl, nec consequat lacus.
-      </p>
-    ),
+    children:
+      'Aliquam in pharetra dolor, et interdum risus. Nullam eu ligula congue, imperdiet quam a, laoreet lacus. Nam et ornare nisl, nec consequat lacus.',
     iconName: 'bullseye',
     image: heroImage2,
     subtitle: 'Slide 4',

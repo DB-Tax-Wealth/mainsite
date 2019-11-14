@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Hero } from 'components/layout/hero/hero';
-import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import styles from './carousel-images.style.scss';
 
 export class CarouselImages extends Component {
   static propTypes = {
@@ -20,28 +18,16 @@ export class CarouselImages extends Component {
 
     return slides.map((props, index) => {
       const active = index === activeIndex;
-      const className = classNames(styles.slide, { [styles.active]: active });
+      const style = { display: active ? 'block' : 'none' };
 
-      return (
-        // eslint-disable-next-line react/jsx-key
-        <div className={className}>
-          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-          <Hero {...props} animated={active} />
-        </div>
-      );
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      return <Hero {...props} buttonColor="primary" key={index} style={style} />;
     });
   }
 
   render() {
     const slides = this.getSlides();
 
-    return (
-      <div className={styles.root}>
-        {slides}
-        <div className={styles.placeholder}>
-          <Hero image="placeholder" />
-        </div>
-      </div>
-    );
+    return <>{slides}</>;
   }
 }
