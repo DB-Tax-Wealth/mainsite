@@ -9,10 +9,10 @@ import { Column } from 'components/layout/grid/column/column';
 import { ProcessWheel } from 'components/process-wheel/process-wheel';
 import { Icon } from 'components/layout/icon/icon';
 import HeroImage from 'images/magazine-in-hands.jpg';
-import { WealthProcessGoals } from 'components/screens/wealth/wealth-process/wealth-process-goals/wealth-process-goals';
-import { WealthProcessTeam } from 'components/screens/wealth/wealth-process/wealth-process-team/wealth-process-team';
-import { WealthProcessPlan } from 'components/screens/wealth/wealth-process/wealth-process-plan/wealth-process-plan';
-import { WealthProcessMonitor } from 'components/screens/wealth/wealth-process/wealth-process-monitor/wealth-process-monitor';
+import { AccountingProcessGoals } from 'components/screens/accounting/accounting-process/accounting-process-goals/accounting-process-goals';
+import { AccountingProcessOrganize } from 'components/screens/accounting/accounting-process/accounting-process-organize/accounting-process-organize';
+import { AccountingProcessWorkTogether } from 'components/screens/accounting/accounting-process/accounting-process-work-together/accounting-process-work-together';
+import { AccountingProcessPlan } from 'components/screens/accounting/accounting-process/accounting-process-plan/accounting-process-plan';
 
 export class AccountingProcess extends Component {
   constructor(props) {
@@ -29,31 +29,31 @@ export class AccountingProcess extends Component {
 
     const processes = [
       {
-        content: <WealthProcessGoals />,
+        content: <AccountingProcessGoals />,
         icon: 'file-contract',
-        label: '1) Understand Goals',
-        message: 'Know Your Financial Position',
+        label: '1) Contact Us',
+        message: 'Own a business or starting a new one?',
         onClick: () => this.handleOnSectionClick(0)
       },
       {
-        content: <WealthProcessTeam />,
+        content: <AccountingProcessOrganize />,
         icon: 'users',
-        label: '2) Meet Your Team',
-        message: 'Define the Relationship',
+        label: '2) Organize',
+        message: 'Get organized',
         onClick: () => this.handleOnSectionClick(1)
       },
       {
-        content: <WealthProcessPlan />,
+        content: <AccountingProcessWorkTogether />,
         icon: 'search',
-        label: '3) Build a Plan',
-        message: 'Understand Client Goals',
+        label: '3) Work Together',
+        message: 'How we work together',
         onClick: () => this.handleOnSectionClick(2)
       },
       {
-        content: <WealthProcessMonitor />,
+        content: <AccountingProcessPlan />,
         icon: 'signal',
-        label: '4) Monitor',
-        message: 'Update Your Goals',
+        label: '4) Plan',
+        message: 'Plan for the future',
         onClick: () => this.handleOnSectionClick(3)
       }
     ];
@@ -62,9 +62,9 @@ export class AccountingProcess extends Component {
       <Screen>
         <Hero title="Our Onboarding Process" subtitle="Accounting" image={HeroImage}>
           <p>
-            <strong>Becoming an Accounting Client</strong> Accounting can often be complex wheather you have many vast
-            and varied assets, or just a few. We aim to streamline the process so that you can comfortably weigh your
-            options and make the most appropriate decisions.
+            DB Tax & Wealth is a one-stop shop for your payroll, bookkeeping and accounting needs. Our experienced team
+            understands and addresses the risks and opportunities of owning a small business. Our passion is to help you
+            get your business on track. Explore our Accounting Wheel to learn more.
           </p>
         </Hero>
         <Section color="primary-light">

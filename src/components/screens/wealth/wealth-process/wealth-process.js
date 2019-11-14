@@ -32,28 +32,28 @@ export class WealthProcess extends Component {
         content: <WealthProcessGoals />,
         icon: 'file-contract',
         label: '1) Understand Goals',
-        message: 'Know Your Financial Position',
+        message: 'Understand your goals and financial position',
         onClick: () => this.handleOnSectionClick(0)
       },
       {
         content: <WealthProcessTeam />,
         icon: 'users',
-        label: '2) Meet Your Team',
-        message: 'Define the Relationship',
+        label: '2) Prepare',
+        message: 'Prepare to meet your team',
         onClick: () => this.handleOnSectionClick(1)
       },
       {
         content: <WealthProcessPlan />,
         icon: 'search',
-        label: '3) Build a Plan',
-        message: 'Understand Client Goals',
+        label: '3) Plan',
+        message: 'Build financial plan',
         onClick: () => this.handleOnSectionClick(2)
       },
       {
         content: <WealthProcessMonitor />,
         icon: 'signal',
         label: '4) Monitor',
-        message: 'Update Your Goals',
+        message: 'Monitor and update your goals',
         onClick: () => this.handleOnSectionClick(3)
       }
     ];
@@ -62,8 +62,9 @@ export class WealthProcess extends Component {
       <Screen>
         <Hero title="Our Onboarding Process" subtitle="Wealth" image={HeroImage}>
           <p>
-            <strong>Becoming a Wealth Client</strong> The investment recommendations and services we provide are
-            designed to support the personal needs and goals outlined in your financial plan.
+            At DB Tax & Wealth, we integrate tax information for a comprehensive picture. Our unique approach allows the
+            advisors to peek around corners, find hidden opportunities, and provide maximum clarity. Explore our Wealth
+            Wheel to learn more.
           </p>
         </Hero>
         <Section color="primary-light">

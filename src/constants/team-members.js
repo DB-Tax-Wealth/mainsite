@@ -22,7 +22,7 @@ export const TEAM_MEMBERS = [
     shortBio:
       'Driven. Hard-Working. Generous.  Family Oriented.  Convinced she never sleeps, only takes naps. Full of knowledge and wildly competitive.  Be ready to lose if you’re playing against her.',
     phone: '414-764-7330',
-    title: 'CEO, Senior Wealth Planner',
+    title: 'Investment Advisor Representative\nCEO, Senior Wealth Planner',
     description: `Began her employment with DB Tax & Wealth as a Business Partners Program student in 1989. After completing her work study and education, she became a staff preparer at the firm, and then President of the corporation in 1995. She is currently the firm’s CEO and Senior Wealth Planner. Lisa studied at Milwaukee Area Technical College, Axia College, and UW Milwaukee earning her degree in Accounting and further studied at the American College while completing her Degree in Finance. In 1995, Lisa studied and passed the securities licensing requirements for her Series 6 Investment Company Products/Variable Contracts Representative Series and 63 Investment Company Products/Variable Contracts Representative Series examinations. These exams are administered by the Financial Industry Regulatory Authority or FINRA, (formerly the National Association of Securities Dealers).
 
     Successful completion of the Series 6 & 63 license exams entitles the representative to solicit and sell mutual funds, variable annuities, and variable life insurance contracts, and will entitle an individual with the qualifications necessary to become a limited registered representative who solicits orders for corporate debt and equity securities such as common and preferred stock, bonds, warrants, and more. At that same time, she also obtained her resident license in Life Insurance in the State of Wisconsin. In addition, Lisa has obtained her Accident and Health Insurance License and also passed the Series 7 & Series 65 Uniform Investment Adviser Law Exam. Lisa also tackled the Special Enrollment Examination (SEE) to become an Enrolled Agent by passing the 3 part examinations providing her the privilege of practicing (representing taxpayers) before the Internal Revenue Service. Enrolled agents, like attorneys and certified public accountants (CPAs), are unrestricted as to which taxpayers they can represent, what types of tax matters they can handle, and which IRS offices they can practice before. Annually Lisa attends various tax and financial seminars, continuing education workshops, national conferences, and goes beyond the rigorous continuing education and ethics requirements of her industry.
@@ -64,7 +64,7 @@ export const TEAM_MEMBERS = [
     shortBio:
       'Capable.  Honest (Sometimes Brutally).  Headstrong.  Baseball Fanatic.  Loves stats.  Traveler and Geography buff. Foodie who will try anything once, especially if it’s spicy.',
     phone: '414-764-7330',
-    title: 'Accounting Director',
+    title: 'Accounting Director\nRegistered Representative',
     description: `Mark graduated from St. Mary’s University in Winona, MN in 1996 with a Bachelor’s degree in Accounting, and is also proud to be a graduate of Marquette University High School here in Milwaukee. Mark played baseball through his junior year in college, and became an assistant coach for his senior season.
 
     He began his career in accounting with Midwest Express Airlines, as a data entry clerk in the Revenue Accounting department. He was promoted 5 times in 4 years and was trusted to work in correlation with other departments on many projects, creating enhancements to out of date processes and automated tasks that were formerly manual. In 2001, Mark was hired as a staff accountant for Time Warner Cable. In 2006 when the company switched gears and regionalized positions, he gladly accepted a new role as a Financial Analyst. Over the course of his career there, Mark’s skill set grew in many areas. He gained valuable experience in creating and reading financial statements, compiling annual budgets and monthly outlooks, 1099-MISC calculations and submissions, Federal and State Tax filings, data analytics and compliance auditing. Over the course of 11 years, Mark became an expert in Microsoft Excel, learning most everything on his own. This knowledge allows him to create working templates for tax and financial services needs.
@@ -128,7 +128,7 @@ export const TEAM_MEMBERS = [
     shortBio:
       'Adventurous.  Cordial.  Easygoing.  Lover of nature.  Daredevil on his dirt bike, the slopes, and the water.  Fun-loving Dad of Mark and Joelle.',
     phone: '414-764-7730',
-    title: 'Financial Advisor',
+    title: 'Financial Planner\nSenior Wealth Planner',
     description: `Chuck Winn is a Certified Financial Planner with DB Tax & Wealth. With over 20 years of investment experience, he is ready to discuss your financial scenario and goals.
 
     As a planner, he provides financial advice to individuals and business owners who seek strategies to improve their financial position.
@@ -184,7 +184,7 @@ export const TEAM_MEMBERS = [
     shortBio:
       'Enthusiastic.  Helpful.  Kind.  Loves to read and learn new things.  Wants to make it a point to travel more with her partner in crime, her twin sister.',
     phone: '414-764-7330',
-    title: 'Administration',
+    title: 'Tax Analyst',
     description: `Alyssa is a graduate from Oak Creek High School and is a Milwaukee native. She has been a member of DB tax since 2017. Alyssa is the first person you will engage with when you interact with our firm! Whether it be her charming voice on the phone or her warm smile as you walk through the doors, she is the point of contact as our full time receptionist. She has been in the customer service field for 10 years and is exceptionally accomplished in providing a welcoming client experience. She has quickly adopted many responsibilities and as she continues to advance, her dedication and willingness to learn have proved her role to be vital to our growing firm. Alyssa administrates all client inquires, provides coordination of document workflow, manages data entry, maintains QuickBook files, regulates tax preparation & organizes the processing, and provides crucial assistance to all staff members. She oversees an array of fundamental tasks and is proficient in her skill set.
 
     Outside of work, Alyssa enjoys family time and hanging out with her best friend who is her twin sister. She appreciates exploring the outdoors, enjoys watching movies, and cheering on the Milwaukee Brewers & Green Bay Packers! She is looking forward to the future and enhancing her career at our firm.`
