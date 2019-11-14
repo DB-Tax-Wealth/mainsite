@@ -10,6 +10,8 @@ import { WealthProcess } from 'components/screens/wealth/wealth-process/wealth-p
 import { TaxProcess } from 'components/screens/tax/tax-process/tax-process';
 import { AccountingProcess } from 'components/screens/accounting/accounting-process/accounting-process';
 import { ContactConnected } from 'components/screens/contact/contact.connected';
+import { TaxDocuments } from 'components/screens/tax/tax-documents/tax-documents';
+import { WealthDocuments } from 'components/screens/wealth/wealth-documents/wealth-documents';
 import { DB_WEALTH_LINK } from './db-wealth-link';
 
 export const ROUTES = {
@@ -46,7 +48,7 @@ export const ROUTES = {
     title: 'Process'
   },
   TAX_DOCUMENTS: {
-    component: UnderConstruction,
+    component: TaxDocuments,
     exact: true,
     key: 'tax-documents',
     path: '/services/tax/documents',
@@ -101,7 +103,7 @@ export const ROUTES = {
     title: 'Process'
   },
   WEALTH_DOCUMENTS: {
-    component: UnderConstruction,
+    component: WealthDocuments,
     exact: true,
     key: 'wealth-documents',
     path: '/services/wealth/documents',
