@@ -8,18 +8,9 @@ import { TEAM_MEMBERS } from 'constants/team-members';
 import { Hero } from 'components/layout/hero/hero';
 import { TeamMember } from './team-member/team-member';
 
-const teamMembers = TEAM_MEMBERS.map(({ description, email, fax, id, img, name, phone, title }) => (
-  <Column widthMd={6} key={name} className="margin--bottom display--flex">
-    <TeamMember
-      description={description}
-      email={email}
-      fax={fax}
-      id={id}
-      img={img}
-      name={name}
-      phone={phone}
-      title={title}
-    />
+const teamMembers = TEAM_MEMBERS.map(({ description, id, img, name, title }) => (
+  <Column widthMd={4} widthLg={3} key={name} className="margin--bottom display--flex">
+    <TeamMember description={description} id={id} img={img} name={name} title={title} />
   </Column>
 ));
 
