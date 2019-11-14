@@ -6,7 +6,7 @@ import { ROUTES } from 'constants/routes';
 import styles from './team-member.style.scss';
 
 export const TeamMember = props => {
-  const { description, name, img, title, id } = props;
+  const { shortBio, name, img, title, id } = props;
   const imageExists = Boolean(img);
 
   return (
@@ -22,7 +22,7 @@ export const TeamMember = props => {
             <strong>{name}</strong>
           </div>
           <div className="border--bottom margin--bottom padding--bottom--half">{title}</div>
-          <div className={styles.description}>{description}</div>
+          <div className={styles.description}>{shortBio}</div>
           <Link to={`${ROUTES.TEAM.path}/${id}`} style={{ textDecoration: 'none' }}>
             <Button className="display--block margin--top" style={{ width: '100%' }}>
               Read More
@@ -35,7 +35,7 @@ export const TeamMember = props => {
 };
 
 TeamMember.propTypes = {
-  description: PropTypes.string,
+  shortBio: PropTypes.string,
   id: PropTypes.number,
   img: PropTypes.node,
   name: PropTypes.string,
@@ -43,7 +43,7 @@ TeamMember.propTypes = {
 };
 
 TeamMember.defaultProps = {
-  description: '',
+  shortBio: '',
   id: null,
   img: null,
   name: '',

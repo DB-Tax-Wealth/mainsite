@@ -1,5 +1,5 @@
 import { About } from 'components/screens/about/about';
-import { Careers } from 'components/screens/careers/careers';
+// import { Careers } from 'components/screens/careers/careers';
 import { Demo } from 'components/screens/demo/demo';
 import { Home } from 'components/screens/home/home';
 import { MissionStatement } from 'components/screens/mission-statement/mission-statement';
@@ -16,7 +16,7 @@ import { DB_WEALTH_LINK } from './db-wealth-link';
 
 export const ROUTES = {
   ABOUT: { component: About, exact: true, key: 'about', path: '/about', title: 'About' },
-  CAREERS: { component: Careers, exact: true, key: 'careers', path: '/careers', title: 'Careers' },
+  // CAREERS: { component: Careers, exact: true, key: 'careers', path: '/careers', title: 'Careers' },
   CONTACT: { component: ContactConnected, exact: true, key: 'contact', path: '/contact', title: 'Contact' },
   DEMO: { component: Demo, exact: true, key: 'demo', path: '/demo', title: 'Demo' },
   HOME: { component: Home, exact: true, key: 'home', path: '/', title: 'Home' },
@@ -121,7 +121,7 @@ const TEAM_ROUTES = [ROUTES.TEAM_MEMBER];
 const ABOUT_ROUTES = [
   {
     ...ROUTES.ABOUT,
-    routes: [ROUTES.MISSION_STATEMENT, ROUTES.CAREERS, { ...ROUTES.TEAM, routes: TEAM_ROUTES }]
+    routes: [ROUTES.MISSION_STATEMENT, { ...ROUTES.TEAM, routes: TEAM_ROUTES }]
   }
 ];
 

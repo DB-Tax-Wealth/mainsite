@@ -27,13 +27,8 @@
 
   .description {
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
     display: -webkit-box;
     overflow: hidden;
     white-space: pre-line;
-
-    @media screen and (max-width: $width-sm) {
-      -webkit-line-clamp: 4;
-    }
   }
 }

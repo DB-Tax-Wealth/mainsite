@@ -8,9 +8,9 @@ import { TEAM_MEMBERS } from 'constants/team-members';
 import { Hero } from 'components/layout/hero/hero';
 import { TeamMember } from './team-member/team-member';
 
-const teamMembers = TEAM_MEMBERS.map(({ description, id, img, name, title }) => (
+const teamMembers = TEAM_MEMBERS.map(({ shortBio, id, img, name, title }) => (
   <Column widthMd={4} widthLg={3} key={name} className="margin--bottom display--flex">
-    <TeamMember description={description} id={id} img={img} name={name} title={title} />
+    <TeamMember shortBio={shortBio} id={id} img={img} name={name} title={title} />
   </Column>
 ));
 
