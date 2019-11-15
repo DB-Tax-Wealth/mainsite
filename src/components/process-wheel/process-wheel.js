@@ -27,7 +27,7 @@ export const ProcessWheel = props => {
       </svg>
       <h2 className={styles.title}>{title}</h2>
       <svg viewBox="0 0 100 100" className={styles.section} style={{ transform: `rotate(${rotation}deg)` }}>
-        {sections.map(({ onClick, message, label }, index) => {
+        {sections.map(({ onClick, label }, index) => {
           const key = `section-${index}`;
 
           const strokeColor = Color(color)
@@ -35,7 +35,6 @@ export const ProcessWheel = props => {
             .hex();
 
           const labelDx = -25;
-          const messageDx = -25;
 
           return (
             <ProcessWheelSection
@@ -45,8 +44,6 @@ export const ProcessWheel = props => {
               key={key}
               label={label}
               labelDx={labelDx}
-              message={message}
-              messageDx={messageDx}
               onClick={onClick}
               radius={radiusAdjusted}
               rotation={(360 / sectionsLength) * index}

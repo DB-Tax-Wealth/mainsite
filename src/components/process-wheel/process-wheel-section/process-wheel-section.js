@@ -11,8 +11,6 @@ export const ProcessWheelSection = props => {
     color,
     label,
     labelDx,
-    message,
-    messageDx,
     onClick,
     radius,
     rotation,
@@ -47,11 +45,8 @@ export const ProcessWheelSection = props => {
           a ${radius}, ${radius} 0 0, 1 ${radius * 2}, 0
         `}
       />
-      <text className={styles.label} dx={labelDx} dy="-1%" x="57%" y="0" textAnchor="middle">
+      <text className={styles.label} dx={labelDx} dy="2%" x="57%" y="0" textAnchor="middle">
         <textPath xlinkHref={`#${id}`}>{label}</textPath>
-      </text>
-      <text className={styles.message} dx={messageDx} dy="3.5%" x="57%" y="0" textAnchor="middle">
-        <textPath xlinkHref={`#${id}`}>{message}</textPath>
       </text>
     </g>
   );
@@ -63,8 +58,6 @@ ProcessWheelSection.propTypes = {
   color: PropTypes.string,
   label: PropTypes.string,
   labelDx: PropTypes.number,
-  message: PropTypes.string,
-  messageDx: PropTypes.number,
   onClick: PropTypes.func,
   radius: PropTypes.number,
   rotation: PropTypes.number,
@@ -78,8 +71,6 @@ ProcessWheelSection.defaultProps = {
   color: '',
   label: '',
   labelDx: 0,
-  message: '',
-  messageDx: 0,
   onClick: null,
   radius: 0,
   rotation: 0,

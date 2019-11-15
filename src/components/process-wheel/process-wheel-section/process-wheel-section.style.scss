@@ -7,23 +7,14 @@
 .root {
   transform-origin: center center;
 
-  .label,
-  .message {
+  .label {
     @include transition(fill);
 
     fill: $color-white;
+    font-size: 0.3rem;
+    font-weight: bold;
     pointer-events: none;
     transform-origin: center center;
-  }
-
-  .label {
-    font-size: 0.3rem;
-  }
-
-  .message {
-    font-size: 0.2rem;
-    font-weight: $font-weight-bold;
-    text-transform: uppercase;
   }
 
   .path {
