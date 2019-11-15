@@ -113,7 +113,7 @@ export const Contact = props => {
               </div>
             </Column>
             <Column widthMd={6} widthLg={7}>
-              <GoogleMap showAddress={false} />
+              <GoogleMap />
             </Column>
           </Row>
         </Grid>
