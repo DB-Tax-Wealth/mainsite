@@ -10,27 +10,25 @@ export const TeamMember = props => {
   const imageExists = Boolean(img);
 
   return (
-    <>
-      <div className={styles.root}>
-        {imageExists && (
-          <div className={styles.avatar}>
-            <img src={img} alt={name} />
-          </div>
-        )}
-        <div className={styles.content}>
-          <div>
-            <strong>{name}</strong>
-          </div>
-          <div className="border--bottom margin--bottom padding--bottom--half">{title}</div>
-          <div className={styles.description}>{shortBio}</div>
-          <Link to={`${ROUTES.TEAM.path}/${id}`} style={{ textDecoration: 'none' }}>
-            <Button className="display--block margin--top" style={{ width: '100%' }}>
-              Read More
-            </Button>
-          </Link>
+    <div className={styles.root}>
+      {imageExists && (
+        <div className={styles.avatar}>
+          <img src={img} alt={name} />
         </div>
+      )}
+      <div className={styles.content}>
+        <div>
+          <strong>{name}</strong>
+        </div>
+        <div className="border--bottom margin--bottom padding--bottom--half">{title}</div>
+        <div className={styles.description}>{shortBio}</div>
+        <Link to={`${ROUTES.TEAM.path}/${id}`} style={{ textDecoration: 'none' }}>
+          <Button className="display--block margin--top" style={{ width: '100%' }}>
+            Read More
+          </Button>
+        </Link>
       </div>
-    </>
+    </div>
   );
 };
 
