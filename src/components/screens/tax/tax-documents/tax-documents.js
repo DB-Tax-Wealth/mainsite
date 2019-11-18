@@ -5,37 +5,38 @@ import { Section } from 'components/layout/section/section';
 import { ROUTES } from 'constants/routes';
 import DocumentPlaceholder from 'images/document-placeholder.jpg';
 import { DocumentList } from 'components/layout/document-list/document-list';
+import Document from '../../../../documents/pdf-sample.pdf';
 
 const DOCUMENTS = [
   {
+    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    file: Document,
     image: DocumentPlaceholder,
-    name: 'Test Document Name',
-    downloadUrl: 'http://google.com',
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.'
+    name: 'Test Document Name'
   },
   {
+    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    file: Document,
     image: DocumentPlaceholder,
-    name: 'Test Document Name',
-    downloadUrl: 'http://google.com',
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.'
+    name: 'Test Document Name'
   },
   {
+    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    file: Document,
     image: DocumentPlaceholder,
-    name: 'Test Document Name',
-    downloadUrl: 'http://google.com',
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.'
+    name: 'Test Document Name'
   },
   {
+    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    file: Document,
     image: DocumentPlaceholder,
-    name: 'Test Document Name',
-    downloadUrl: 'http://google.com',
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.'
+    name: 'Test Document Name'
   },
   {
+    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    file: Document,
     image: DocumentPlaceholder,
-    name: 'Test Document Name',
-    downloadUrl: 'http://google.com',
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.'
+    name: 'Test Document Name'
   }
 ];
 

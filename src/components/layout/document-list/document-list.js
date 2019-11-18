@@ -20,8 +20,8 @@ export class DocumentList extends Component {
     const { documents } = this.props;
 
     return documents.map((document, index) => {
-      const { image, name, description, downloadUrl } = document;
-      const onClick = () => window.open(downloadUrl, '_blank');
+      const { description, file, image, name } = document;
+      const onClick = () => window.open(file, '_blank');
 
       return (
         <Column widthLg={6} className="margin--bottom" key={index}>
