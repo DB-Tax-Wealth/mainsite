@@ -5,6 +5,7 @@
     "paths": {
       "components/*": ["components/*"],
       "constants/*": ["constants/*"],
+      "documents/*": ["documents/*"],
       "fonts/*": ["fonts/*"],
       "images/*": ["images/*"],
       "services/*": ["services/*"],
