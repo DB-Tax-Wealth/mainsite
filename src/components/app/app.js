@@ -14,6 +14,7 @@ import { Footer } from './footer/footer';
 import { MobileNavigation } from './mobile-navigation/mobile-navigation';
 import { AccountAccessModalConnected } from './account-access-modal/account-access-modal.connected';
 import { ContactFormConnected } from './contact-form/contact-form.connected';
+import { AlertsContainerConnected } from './alert-container/alert-container.connected';
 
 class AppBase extends Component {
   static propTypes = {
@@ -74,6 +75,7 @@ class AppBase extends Component {
         <AccountAccessModalConnected />
         <ContactFormConnected />
         <MobileNavigation active={mobileNavigationActive} onCloseClick={this.toggleMobileNavigation} />
+        <AlertsContainerConnected />
       </div>
     );
   }

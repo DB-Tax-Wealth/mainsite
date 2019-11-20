@@ -1,6 +1,7 @@
 import { createAction, handleActions } from 'redux-actions';
 import { isValidEmailAddress } from 'util/is-valid-email-address/is-valid-email-address';
 import { postContactForm } from 'services/contact-form/contact-form';
+import { triggerAlert } from 'store/alerts/alerts';
 
 // Actions
 const REQUEST_FAILURE = 'contact-form/REQUEST_FAILURE';
@@ -113,8 +114,22 @@ export const requestContactFormSubmit = () => async (dispatch, getState) => {
     await postContactForm({ email, name, message });
     dispatch(contactFormRequestSuccess());
     dispatch(updateContactFormEmailIsDirty(false));
+    dispatch(
+      triggerAlert({
+        children: 'Your message has been submitted. We will get back to you soon.',
+        color: 'success',
+        title: 'Success!'
+      })
+    );
     dispatch(resetContactForm());
   } catch (error) {
     dispatch(contactFormRequestFailure());
+    dispatch(
+      triggerAlert({
+        children: 'There was an error submitting your contact form submission.  Please try again.',
+        color: 'danger',
+        title: 'Contact Form Failure'
+      })
+    );
   }
 };
