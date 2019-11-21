@@ -7,6 +7,8 @@ import { Column } from 'components/layout/grid/column/column';
 import { IconButton } from 'components/layout/icon-button/icon-button';
 import PropTypes from 'prop-types';
 
+const BUTTON_COLORS = ['primary', 'secondary', 'tertiary'];
+
 export class CarouselTeasers extends Component {
   static propTypes = {
     activeIndex: PropTypes.number,
@@ -29,17 +31,25 @@ export class CarouselTeasers extends Component {
 
     const orderedPreviews = [...back, ...front].filter(({ key }) => key !== activeIndex);
 
-    return orderedPreviews.map(preview => {
-      const { buttonColor, children, iconName, title, key } = preview;
+    return orderedPreviews.map((preview, index) => {
+      const { iconName, key, teaser, title } = preview;
+
       const onClick = () => onTeaserClick(key);
+      const animationDelay = index * 0.2 + 1;
 
       return (
-        <Column widthMd={4} className="margin--xs--bottom margin--md--bottom--none" key={key}>
+        <Column widthMd={4} className="margin--xs--bottom margin--md--bottom--none" key={index}>
           <div className="display--flex">
-            <IconButton iconName={iconName} onClick={onClick} color={buttonColor} />
-            <div className="margin--left">
+            <IconButton
+              className="animated fadeIn"
+              color={BUTTON_COLORS[index]}
+              iconName={iconName}
+              onClick={onClick}
+              style={{ animationDelay: `${animationDelay}s` }}
+            />
+            <div className="margin--left animated fadeIn" style={{ animationDelay: `${animationDelay + 0.1}s` }}>
               <strong className="margin--bottom--half">{title}</strong>
-              <div>{children}</div>
+              <div>{teaser}</div>
             </div>
           </div>
         </Column>

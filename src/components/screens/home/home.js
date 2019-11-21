@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { GoogleMap } from 'components/screens/home/google-map/google-map';
 import React from 'react';
 import { Screen } from 'components/layout/screen/screen';
@@ -14,52 +13,60 @@ import { ROUTES } from 'constants/routes';
 import { Carousel } from 'components/layout/carousel/carousel';
 import heroImage1 from 'images/woman-using-financial-app.jpg';
 import heroImage2 from 'images/person-writing-down-plan.jpg';
+import heroImage3 from 'images/man-fishing.jpg';
+import heroImage4 from 'images/db-tax-team.jpg';
+import PropTypes from 'prop-types';
 
-const SLIDES = [
-  {
-    buttonOnClick: () => console.log('TODO'),
-    children:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue venenatis erat, nec lacinia libero scelerisque id.',
-    iconName: 'bullseye',
-    image: heroImage1,
-    subtitle: 'Slide 1',
-    title: 'This is title 1'
-  },
-  {
-    buttonColor: 'secondary',
-    buttonOnClick: () => console.log('TODO'),
-    children: 'Donec et purus justo. Aenean vel ex consectetur, viverra lectus eu, feugiat augue.',
-    iconName: 'list-ol',
-    image: heroImage2,
-    subtitle: 'Slide 2',
-    title: 'This is title 2'
-  },
-  {
-    buttonColor: 'tertiary',
-    buttonOnClick: () => console.log('TODO'),
-    children:
-      'Aliquam in pharetra dolor, et interdum risus. Nullam eu ligula congue, imperdiet quam a, laoreet lacus. Nam et ornare nisl, nec consequat lacus.',
-    iconName: 'dollar-sign',
-    image: womanManFinancialConsulting,
-    subtitle: 'Slide 3',
-    title: 'This is title 3'
-  },
-  {
-    buttonColor: 'primary-dark',
-    buttonOnClick: () => console.log('TODO'),
-    children:
-      'Aliquam in pharetra dolor, et interdum risus. Nullam eu ligula congue, imperdiet quam a, laoreet lacus. Nam et ornare nisl, nec consequat lacus.',
-    iconName: 'bullseye',
-    image: heroImage2,
-    subtitle: 'Slide 4',
-    title: 'This is title 4'
-  }
-];
+export const Home = props => {
+  const { history } = props;
+  const { push } = history;
 
-export const Home = () => {
+  const slides = [
+    {
+      buttonOnClick: () => push(ROUTES.TAX.path),
+      children:
+        'Our goal is to provide our clients, both business or person, with the professional taxation expertise and know how that they deserve year round.',
+      iconName: 'bullseye',
+      image: heroImage1,
+      subtitle: 'Tax',
+      teaser: 'Our experienced advisors will help you save money.',
+      title: 'Don’t miss out.'
+    },
+    {
+      buttonOnClick: () => push(ROUTES.WEALTH.path),
+      children:
+        'The financial world is often complex, but financial solutions do not have to be. You deserve a partner as dedicated to pursuing your goals as you are.',
+      iconName: 'list-ol',
+      image: heroImage3,
+      subtitle: 'Wealth',
+      teaser: 'Make sure your investments align with your goals.',
+      title: 'The future in your hands.'
+    },
+    {
+      buttonOnClick: () => push(ROUTES.ACCOUNTING.path),
+      children:
+        'We provide our clients with responsive and dedicated accounting professionals who will help you manage your business and keep your finances on track.',
+      iconName: 'dollar-sign',
+      image: heroImage2,
+      subtitle: 'Accounting',
+      teaser: 'Stay on top of your business instead of your books.',
+      title: 'There’s more that you’ve earned.'
+    },
+    {
+      buttonOnClick: () => push(ROUTES.ABOUT.path),
+      children:
+        'We are not afraid to challenge conventional wisdom in our approach. All of our energy, commitment, and efforts are focused on you and your satisfaction.',
+      iconName: 'bullseye',
+      image: heroImage4,
+      subtitle: 'About',
+      teaser: 'We want to develop a strategy designed for your individual situation.',
+      title: 'A history of helping.'
+    }
+  ];
+
   return (
     <Screen>
-      <Carousel slides={SLIDES} />
+      <Carousel slides={slides} />
       <Section color="primary-light">
         <div className="max-width--sm margin--horizontal--auto text-align--center">
           <HeadingWithSubtitle subtitle="Services">
@@ -119,4 +126,12 @@ export const Home = () => {
       <GoogleMap />
     </Screen>
   );
+};
+
+Home.propTypes = {
+  history: PropTypes.object
+};
+
+Home.defaultProps = {
+  history: { push: () => {} }
 };
