@@ -1,33 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Hero } from 'components/layout/hero/hero';
 import PropTypes from 'prop-types';
 
-export class CarouselImages extends Component {
-  static propTypes = {
-    activeIndex: PropTypes.number,
-    slides: PropTypes.arrayOf(PropTypes.object)
-  };
+export const CarouselImages = props => {
+  const { activeIndex, slides } = props;
 
-  static defaultProps = {
-    activeIndex: 0,
-    slides: []
-  };
+  return slides.map((slideProps, index) => {
+    const active = index === activeIndex;
+    const style = { display: active ? 'block' : 'none' };
 
-  getSlides() {
-    const { activeIndex, slides } = this.props;
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    return <Hero {...slideProps} buttonColor="primary" key={index} style={style} />;
+  });
+};
 
-    return slides.map((props, index) => {
-      const active = index === activeIndex;
-      const style = { display: active ? 'block' : 'none' };
+CarouselImages.propTypes = {
+  activeIndex: PropTypes.number,
+  slides: PropTypes.arrayOf(PropTypes.object)
+};
 
-      // eslint-disable-next-line react/jsx-props-no-spreading
-      return <Hero {...props} buttonColor="primary" key={index} style={style} />;
-    });
-  }
-
-  render() {
-    const slides = this.getSlides();
-
-    return <>{slides}</>;
-  }
-}
+CarouselImages.defaultProps = {
+  activeIndex: 0,
+  slides: []
+};
