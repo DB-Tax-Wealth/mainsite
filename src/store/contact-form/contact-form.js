@@ -108,6 +108,8 @@ export const requestContactFormSubmit = () => async (dispatch, getState) => {
   const name = selectContactFormName(state);
   const message = selectContactFormMessage(state);
 
+  if (!email) return;
+
   dispatch(contactFormRequestStart());
 
   try {

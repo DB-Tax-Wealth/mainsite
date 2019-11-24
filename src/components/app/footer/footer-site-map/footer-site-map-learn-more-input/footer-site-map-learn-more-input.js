@@ -13,6 +13,7 @@ export const FooterSiteMapLearnMoreInput = props => {
       iconName="paper-plane"
       onChange={onChange}
       placeholder="enter your email address..."
+      type="email"
       valid={valid}
       value={value}
     />

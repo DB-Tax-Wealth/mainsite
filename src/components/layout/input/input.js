@@ -17,6 +17,7 @@ export const Input = props => {
     onChange,
     placeholder,
     shadow,
+    type,
     valid,
     value
   } = props;
@@ -32,7 +33,7 @@ export const Input = props => {
   return (
     <>
       <div className={className}>
-        <input type="text" placeholder={placeholder} value={value} onChange={handleOnChange} onBlur={onBlur} />
+        <input type={type} placeholder={placeholder} value={value} onChange={handleOnChange} onBlur={onBlur} />
         {showButton && <IconButton iconName={iconName} color={buttonColor} glow={buttonGlow} onClick={buttonOnClick} />}
       </div>
       {error && Boolean(errorMessage) && <div className={styles.errorMessage}>{errorMessage}</div>}
@@ -52,6 +53,7 @@ Input.propTypes = {
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   shadow: PropTypes.bool,
+  type: PropTypes.string,
   valid: PropTypes.bool,
   value: PropTypes.string
 };
@@ -68,6 +70,7 @@ Input.defaultProps = {
   onChange: () => '',
   placeholder: 'enter a value...',
   shadow: false,
+  type: 'text',
   valid: false,
   value: ''
 };

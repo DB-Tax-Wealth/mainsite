@@ -52,6 +52,7 @@ export const ContactForm = props => {
                 onChange={onEmailChange}
                 placeholder="enter your email..."
                 shadow
+                type="email"
                 valid={emailValid}
                 value={email}
               />
