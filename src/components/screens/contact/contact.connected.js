@@ -4,8 +4,8 @@ import { Contact } from './contact';
 
 const mapStateToProps = undefined;
 
-const mapDispatchToProps = {
-  onHeroButtonClick: openContactForm
-};
+const mapDispatchToProps = dispatch => ({
+  onHeroButtonClick: () => dispatch(openContactForm())
+});
 
 export const ContactConnected = connect(mapStateToProps, mapDispatchToProps)(Contact);

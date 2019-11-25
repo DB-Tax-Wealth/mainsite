@@ -6,8 +6,8 @@ const mapStateToProps = state => ({
   active: selectAccountAccess(state)
 });
 
-const mapDispatchToProps = {
-  onOverlayClick: closeAccountAccess
-};
+const mapDispatchToProps = dispatch => ({
+  onOverlayClick: () => dispatch(closeAccountAccess())
+});
 
 export const AccountAccessModalConnected = connect(mapStateToProps, mapDispatchToProps)(AccountAccessModal);
