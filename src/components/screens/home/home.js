@@ -50,7 +50,7 @@ export const Home = props => {
       image: heroImage2,
       subtitle: 'Accounting',
       teaser: 'Stay on top of your business instead of your books.',
-      title: 'There’s more that you’ve earned.'
+      title: 'There’s more you’ve earned.'
     },
     {
       buttonOnClick: () => push(ROUTES.ABOUT.path),

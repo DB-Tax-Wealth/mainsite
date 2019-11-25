@@ -36,7 +36,7 @@ export const Hero = props => {
         <div className={styles.image} style={{ backgroundImage: `url(${image})` }} />
         <div className={styles.spacer} />
         <div className={styles.content}>
-          <div className="max-width--sm border-radius">
+          <div className="max-width--md border-radius">
             {titleExists && (
               <HeadingWithSubtitle
                 animated={animated}
