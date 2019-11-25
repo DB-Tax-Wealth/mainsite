@@ -3,42 +3,10 @@ import { Screen } from 'components/layout/screen/screen';
 import { Hero } from 'components/layout/hero/hero';
 import { Section } from 'components/layout/section/section';
 import { ROUTES } from 'constants/routes';
-import DocumentPlaceholder from 'images/document-placeholder.jpg';
 import { DocumentList } from 'components/layout/document-list/document-list';
-import Document from '../../../../documents/pdf-sample.pdf';
+import { TAX_DOCUMENTS } from 'documents/tax/documents';
 
-const DOCUMENTS = [
-  {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
-    file: Document,
-    image: DocumentPlaceholder,
-    name: 'Test Document Name'
-  },
-  {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
-    file: Document,
-    image: DocumentPlaceholder,
-    name: 'Test Document Name'
-  },
-  {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
-    file: Document,
-    image: DocumentPlaceholder,
-    name: 'Test Document Name'
-  },
-  {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
-    file: Document,
-    image: DocumentPlaceholder,
-    name: 'Test Document Name'
-  },
-  {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
-    file: Document,
-    image: DocumentPlaceholder,
-    name: 'Test Document Name'
-  }
-];
+const DOCUMENTS = TAX_DOCUMENTS;
 
 export const TaxDocuments = () => {
   return (
