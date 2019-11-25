@@ -1,17 +1,20 @@
-import { About } from 'components/screens/about/about';
 // import { Careers } from 'components/screens/careers/careers';
+import { About } from 'components/screens/about/about';
+import { AccountingProcess } from 'components/screens/accounting/accounting-process/accounting-process';
+import { ContactConnected } from 'components/screens/contact/contact.connected';
 import { Demo } from 'components/screens/demo/demo';
+import { EngagementPolicy } from 'components/screens/about/engagement-policy';
+import { FeeSchedule } from 'components/screens/about/fee-schedule';
 import { Home } from 'components/screens/home/home';
 import { MissionStatement } from 'components/screens/mission-statement/mission-statement';
+import { TaxDocuments } from 'components/screens/tax/tax-documents/tax-documents';
+import { TaxProcess } from 'components/screens/tax/tax-process/tax-process';
 import { Team } from 'components/screens/team/team';
 import { TeamMemberDetail } from 'components/screens/team/team-member/team-member-detail/team-member-detail';
 import { UnderConstruction } from 'components/screens/under-construction/under-construction';
-import { WealthProcess } from 'components/screens/wealth/wealth-process/wealth-process';
-import { TaxProcess } from 'components/screens/tax/tax-process/tax-process';
-import { AccountingProcess } from 'components/screens/accounting/accounting-process/accounting-process';
-import { ContactConnected } from 'components/screens/contact/contact.connected';
-import { TaxDocuments } from 'components/screens/tax/tax-documents/tax-documents';
 import { WealthDocuments } from 'components/screens/wealth/wealth-documents/wealth-documents';
+import { WealthProcess } from 'components/screens/wealth/wealth-process/wealth-process';
+
 import { DB_WEALTH_LINK } from './db-wealth-link';
 
 export const ROUTES = {
@@ -19,6 +22,20 @@ export const ROUTES = {
   // CAREERS: { component: Careers, exact: true, key: 'careers', path: '/careers', title: 'Careers' },
   CONTACT: { component: ContactConnected, exact: true, key: 'contact', path: '/contact', title: 'Contact' },
   DEMO: { component: Demo, exact: true, key: 'demo', path: '/demo', title: 'Demo' },
+  ENGAGEMENT_POLICY: {
+    component: EngagementPolicy,
+    exact: true,
+    key: 'engagement-policy',
+    path: '/about/engagement-policy',
+    title: 'Engagement Policy'
+  },
+  FEE_SCHEDULE: {
+    component: FeeSchedule,
+    exact: true,
+    key: 'fee-schedule',
+    path: '/about/fee-schedule',
+    title: 'Fee Schedule'
+  },
   HOME: { component: Home, exact: true, key: 'home', path: '/', title: 'Home' },
   MISSION_STATEMENT: {
     component: MissionStatement,
@@ -121,7 +138,12 @@ const TEAM_ROUTES = [ROUTES.TEAM_MEMBER];
 const ABOUT_ROUTES = [
   {
     ...ROUTES.ABOUT,
-    routes: [ROUTES.MISSION_STATEMENT, { ...ROUTES.TEAM, routes: TEAM_ROUTES }]
+    routes: [
+      ROUTES.MISSION_STATEMENT,
+      { ...ROUTES.TEAM, routes: TEAM_ROUTES },
+      ROUTES.FEE_SCHEDULE,
+      ROUTES.ENGAGEMENT_POLICY
+    ]
   }
 ];
 
