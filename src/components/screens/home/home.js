@@ -97,7 +97,7 @@ export const Home = props => {
           <IconButton iconName="check" iconType="solid" color="secondary" />
           <div className="margin--left" style={{ flex: 1 }}>
             <p className="margin--top--half">
-              Investment and financial planning services are offered by Lisa Pugel through her affiliation with HD Vest
+              Investment and financial planning services are offered by Lisa Pugel through her affiliation with Avantax.
             </p>
           </div>
         </div>

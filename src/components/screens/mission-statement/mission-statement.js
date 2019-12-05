@@ -39,8 +39,8 @@ export const MissionStatement = () => {
                 <p>
                   Investment and financial planning services are offered by <strong>Lisa Pugel</strong> through her
                   affiliation with{' '}
-                  <a href="https://www.hdvest.com/" target="_blank" rel="noopener noreferrer">
-                    HD&nbsp;Vest
+                  <a href="https://www.avantaxwealthmanagement.com/" target="_blank" rel="noopener noreferrer">
+                    Avantax
                   </a>
                   .
                 </p>
