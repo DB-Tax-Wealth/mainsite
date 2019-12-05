@@ -12,25 +12,25 @@ import InterviewChecklistDocument from './Tax Interview Checklist.docx';
 
 export const TAX_DOCUMENTS = [
   {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    description: '.',
     file: ConsentDocument,
     image: ConsentDocumentPlaceholder,
     name: 'Consent to Use Tax Return Information'
   },
   {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    description: '.',
     file: EngagementDocument,
     image: EngagementDocumentPlaceholder,
     name: 'General Engagement Letter'
   },
   {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    description: '.',
     file: ChecklistDocument,
     image: ChecklistDocumentPlaceholder,
     name: 'Tax Checklist'
   },
   {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    description: '.',
     file: InterviewChecklistDocument,
     image: InterviewChecklistDocumentPlaceholder,
     name: 'Tax Interview Checklist'

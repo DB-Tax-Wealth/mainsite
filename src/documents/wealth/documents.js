@@ -12,25 +12,25 @@ import ShortFormDocument from './Short Form.docx';
 
 export const WEALTH_DOCUMENTS = [
   {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    description: '.',
     file: CashflowDocument,
     image: CashflowDocumentPlaceholder,
     name: 'Cash Flow & Inventory Worksheet'
   },
   {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    description: '.',
     file: EMoneyDocument,
     image: EMoneyDocumentPlaceholder,
     name: 'eMoney Client Intro Letter'
   },
   {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    description: '.',
     file: FinancialAdvisingDocument,
     image: FinancialAdvisingDocumentPlaceholder,
     name: 'Financial Advising Checklist'
   },
   {
-    description: 'Vestibulum tristique lorem ac eros malesuada, vel ultrices enim convallis.',
+    description: '.',
     file: ShortFormDocument,
     image: ShortFormDocumentPlaceholder,
     name: 'Short Form'

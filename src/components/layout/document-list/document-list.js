@@ -24,13 +24,13 @@ export class DocumentList extends Component {
       const onClick = () => window.open(file, '_blank');
 
       return (
-        <Column widthLg={6} className="margin--bottom" key={index}>
+        <Column widthMd={6} widthLg={4} className="margin--bottom display--flex" key={index}>
           <div className="border-radius--all color-background--white padding--all shadow--primary display--flex">
             <div className={styles.image}>
               <Image src={image} />
             </div>
             <div className={styles.content}>
-              <strong>{name}</strong>
+              <h4>{name}</h4>
               <p>{description}</p>
               <Button style={{ width: '100%' }} color="secondary" onClick={onClick}>
                 Download
