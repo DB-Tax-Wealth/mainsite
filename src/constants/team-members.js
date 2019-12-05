@@ -18,7 +18,7 @@ export const TEAM_MEMBERS = [
     email: 'lpugel@dbtaxinc.com',
     fax: '',
     img: lisaPugel,
-    name: 'Lisa A. Pugel, EA, IAR',
+    name: 'Lisa A. Pugel, EA',
     shortBio:
       'Driven. Hard-Working. Generous.  Family Oriented.  Convinced she never sleeps, only takes naps. Full of knowledge and wildly competitive.  Be ready to lose if you’re playing against her.',
     phone: '414-764-7330',
@@ -49,7 +49,7 @@ export const TEAM_MEMBERS = [
     title: 'Client Services Manager',
     description: `Gail is a graduate of Milwaukee Area Technical College- Associates in Applied Science- Criminal Justice graduating with honors/GPA 4.0. She is currently obtaining her Bachelors degree at Lakeland College maintaining a GPA of 3.875 thus far. She also has obtained her 520-hour Law Enforcement State Board Certification for the State of Wisconsin in 2012. Gail recently passed her Series 7 exam and Series 63 is currently studying for her Series 66 exam.
 
-    Prior to her employment with D.B. Tax & Wealth. Gail worked almost 7 years at a small investment firm as an office manager and executive assistant (2007-2013). Before that she comes from the field of law offices. She was a billing supervisor specialist for 10 years. Currently she is working as a Client Services Manager. She oversees the operations department. She assists in maintaining client files, processes mail that contains to securities/investments and checks, and many other miscellaneous office tasks.
+    Prior to her employment with DB Tax Wealth & Wealth. Gail worked almost 7 years at a small investment firm as an office manager and executive assistant (2007-2013). Before that she comes from the field of law offices. She was a billing supervisor specialist for 10 years. Currently she is working as a Client Services Manager. She oversees the operations department. She assists in maintaining client files, processes mail that contains to securities/investments and checks, and many other miscellaneous office tasks.
 
     Gail has been a Wisconsin Notary Public since 2007.
 
@@ -64,7 +64,7 @@ export const TEAM_MEMBERS = [
     shortBio:
       'Capable.  Honest (Sometimes Brutally).  Headstrong.  Baseball Fanatic.  Loves stats.  Traveler and Geography buff. Foodie who will try anything once, especially if it’s spicy.',
     phone: '414-764-7330',
-    title: 'Accounting Director\nRegistered Representative',
+    title: 'President, Accounting Director',
     description: `Mark graduated from St. Mary’s University in Winona, MN in 1996 with a Bachelor’s degree in Accounting, and is also proud to be a graduate of Marquette University High School here in Milwaukee. Mark played baseball through his junior year in college, and became an assistant coach for his senior season.
 
     He began his career in accounting with Midwest Express Airlines, as a data entry clerk in the Revenue Accounting department. He was promoted 5 times in 4 years and was trusted to work in correlation with other departments on many projects, creating enhancements to out of date processes and automated tasks that were formerly manual. In 2001, Mark was hired as a staff accountant for Time Warner Cable. In 2006 when the company switched gears and regionalized positions, he gladly accepted a new role as a Financial Analyst. Over the course of his career there, Mark’s skill set grew in many areas. He gained valuable experience in creating and reading financial statements, compiling annual budgets and monthly outlooks, 1099-MISC calculations and submissions, Federal and State Tax filings, data analytics and compliance auditing. Over the course of 11 years, Mark became an expert in Microsoft Excel, learning most everything on his own. This knowledge allows him to create working templates for tax and financial services needs.
@@ -128,7 +128,7 @@ export const TEAM_MEMBERS = [
     shortBio:
       'Adventurous.  Cordial.  Easygoing.  Lover of nature.  Daredevil on his dirt bike, the slopes, and the water.  Fun-loving Dad of Mark and Joelle.',
     phone: '414-764-7730',
-    title: 'Financial Planner\nSenior Wealth Planner',
+    title: 'Senior Wealth Planner',
     description: `Chuck Winn is a Certified Financial Planner with DB Tax & Wealth. With over 20 years of investment experience, he is ready to discuss your financial scenario and goals.
 
     As a planner, he provides financial advice to individuals and business owners who seek strategies to improve their financial position.
@@ -216,7 +216,7 @@ export const TEAM_MEMBERS = [
       'Genuine.  Resourceful.  Patient.  Mother of girls.  Loves being outdoors, traveling, and spending time with family.  Dog mom to Tukker and Lilee.',
     phone: '414-764-7330',
     title: 'Securities Sales Assistant',
-    description: `Graduate of Carthage College, Kenosha, WI, double major in Accounting and Business Administration (May 2008). Linda then graduated from Keller Graduate School of Management in December 2012 with an MBA in Accounting and Financial Management.  She joined D.B. Tax & Financial Services in October 2018 and is currently in the process of studying for the Series 7 exam. She is also a Wisconsin Notary Public.
+    description: `Graduate of Carthage College, Kenosha, WI, double major in Accounting and Business Administration (May 2008). Linda then graduated from Keller Graduate School of Management in December 2012 with an MBA in Accounting and Financial Management.  She joined DB Tax & Wealth in October 2018 and is currently in the process of studying for the Series 7 exam. She is also a Wisconsin Notary Public.
 
     Linda began her career working for a non-profit organization, Milwaukee Habitat for Humanity.  She was the Loan Service Coordinator and managed all performing and non-performing loans. She worked strategically with their corporate attorney on all non-performing loans, loans that were in foreclosure and bankruptcy, setting up payment plans, tax & insurance disbursements and reporting all loan activity to the monthly foreclosure committee.  In February of 2016, Linda was hired as a Default Consumer Loan Reporting Specialist with Johnson Financial Group.  Her primary duty was to report all default mortgages to their investors on a monthly basis.  For 2+ years she continued to work with foreclosure & bankruptcy accounts, submitting 1099 reporting, filing claims with investors on foreclosed properties, and handling all invoicing on delinquent properties.
 

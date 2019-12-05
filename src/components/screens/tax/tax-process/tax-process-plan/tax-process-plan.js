@@ -5,8 +5,8 @@ export const TaxProcessPlan = () => (
     <p>
       Our team is here for you throughout the year! We will keep you informed with a custom plan of communication,
       including: market commentary, tax planning, community events, financial workshops, etc. We have the tools,
-      knowledge, and expertise to tackle the toughest questions and plan for your life changing events (hoverable) that
-      potentially impact your next year’s taxes.
+      knowledge, and expertise to tackle the toughest questions and plan for your life changing events that potentially
+      impact your next year’s taxes.
     </p>
     <p>
       Buying or selling a home or investment property. Change in marital status. Growing family and kids going to
