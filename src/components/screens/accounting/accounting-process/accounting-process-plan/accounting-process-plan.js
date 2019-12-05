@@ -7,7 +7,7 @@ export const AccountingProcessPlan = () => (
       needs for periodic review. We will keep you informed with a custom plan of communication, monitor your plan and
       adapt to your changing needs. including: market commentary, tax planning, community events, financial workshops,
       etc. We have the tools, knowledge, and expertise to tackle the toughest questions and plan for your life changing
-      events (hoverable) that potentially impact your business or personal tax situations.
+      events that potentially impact your business or personal tax situations.
     </p>
   </div>
 );

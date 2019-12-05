@@ -8,8 +8,8 @@ export const AccountingProcessGoals = () => (
     </p>
     <p>
       During your initial contact with our office, we will provide details on the next steps to working with our team.
-      We prefer an in person meeting meeting for our first engagement so we can identify your specific goals and
-      objectives surrounding your business.
+      We prefer an in person meeting for our first engagement so we can identify your specific goals and objectives
+      surrounding your business.
     </p>
   </div>
 );
