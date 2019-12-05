@@ -27,6 +27,7 @@
   </script>
   <style>
     html {
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       height: 100%;
       margin: 0;
@@ -36,49 +37,80 @@
     }
 
     body {
-      min-height: 100%;
+      background: #f6f6f6;
       margin: 0;
-      overflow-x: hidden;
+      min-height: 100%;
+      overflow: hidden;
       padding: 0;
       position: relative;
       width: 100%;
     }
 
-    body {
-      background: #f6f6f6;
-      overflow: hidden;
+    @-webkit-keyframes preBootstrapContainerGrow {
+      0%,
+      50% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+      }
+
+      25% {
+        -webkit-transform: scaleY(2);
+        transform: scaleY(2);
+      }
     }
 
     @keyframes preBootstrapContainerGrow {
       0%,
       50% {
+        -webkit-transform: scaleY(1);
         transform: scaleY(1);
       }
+
       25% {
+        -webkit-transform: scaleY(2);
         transform: scaleY(2);
       }
     }
 
     #pre-bootstrap-container {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
       background: #addfe4;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
       height: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
       left: 0;
       pointer-events: none;
       position: fixed;
       top: 0;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
       transition-duration: 0.2s;
+      -webkit-transition-property: opacity;
+      -o-transition-property: opacity;
       transition-property: opacity;
+      -webkit-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
       transition-timing-function: ease;
       width: 100%;
     }
 
     #pre-bootstrap-container .loader span {
+      -webkit-animation-duration: 1.2s;
       animation-duration: 1.2s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
+      -webkit-animation-name: preBootstrapContainerGrow;
       animation-name: preBootstrapContainerGrow;
+      -webkit-animation-timing-function: ease-in-out;
       animation-timing-function: ease-in-out;
       background-color: #fff;
       display: inline-block;
@@ -88,22 +120,27 @@
     }
 
     #pre-bootstrap-container .loader span:nth-child(1) {
+      -webkit-animation-delay: 0.0666666667s;
       animation-delay: 0.0666666667s;
     }
 
     #pre-bootstrap-container .loader span:nth-child(2) {
+      -webkit-animation-delay: 0.1333333333s;
       animation-delay: 0.1333333333s;
     }
 
     #pre-bootstrap-container .loader span:nth-child(3) {
+      -webkit-animation-delay: 0.2s;
       animation-delay: 0.2s;
     }
 
     #pre-bootstrap-container .loader span:nth-child(4) {
+      -webkit-animation-delay: 0.2666666667s;
       animation-delay: 0.2666666667s;
     }
 
     #pre-bootstrap-container .loader span:nth-child(5) {
+      -webkit-animation-delay: 0.3333333333s;
       animation-delay: 0.3333333333s;
     }
 
