@@ -17,8 +17,7 @@ export const MissionStatement = () => {
           <Row>
             <Column widthMd={8} widthLg={9} className="margin--xs--bottom margin--md--bottom--none">
               <p>
-                At <strong>DB Tax &amp; Financial Services, Inc.</strong>, we have the client—and only the client—in
-                mind.
+                At <strong>DB Tax &amp; Wealth</strong>, we have the client—and only the client—in mind.
               </p>
               <p>
                 Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you
@@ -40,8 +39,8 @@ export const MissionStatement = () => {
                 <p>
                   Investment and financial planning services are offered by <strong>Lisa Pugel</strong> through her
                   affiliation with{' '}
-                  <a href="https://www.hdvest.com/" target="_blank" rel="noopener noreferrer">
-                    HD&nbsp;Vest
+                  <a href="https://www.avantaxwealthmanagement.com/" target="_blank" rel="noopener noreferrer">
+                    Avantax
                   </a>
                   .
                 </p>

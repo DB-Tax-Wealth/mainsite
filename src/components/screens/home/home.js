@@ -7,60 +7,66 @@ import { ServiceList } from 'components/screens/home/service-list/service-list';
 import { ServiceListItem } from 'components/screens/home/service-list/service-list-item/service-list-item';
 import { Section } from 'components/layout/section/section';
 import { HeadingWithSubtitle } from 'components/layout/heading-with-subtitle/heading-with-subtitle';
-import { Hero } from 'components/layout/hero/hero';
-import heroImage from 'images/woman-using-financial-app.jpg';
 import { FloatSection } from 'components/layout/float-section/float-section';
-import { Grid } from 'components/layout/grid/grid';
-import { Row } from 'components/layout/grid/row/row';
-import { Column } from 'components/layout/grid/column/column';
 import { IconButton } from 'components/layout/icon-button/icon-button';
 import { ROUTES } from 'constants/routes';
+import { Carousel } from 'components/layout/carousel/carousel';
+import heroImage1 from 'images/woman-using-financial-app.jpg';
+import heroImage2 from 'images/person-writing-down-plan.jpg';
+import heroImage3 from 'images/man-fishing.jpg';
+import heroImage4 from 'images/db-tax-team.jpg';
+import PropTypes from 'prop-types';
 
-export const Home = () => {
+export const Home = props => {
+  const { history } = props;
+  const { push } = history;
+
+  const slides = [
+    {
+      buttonOnClick: () => push(ROUTES.TAX.path),
+      children:
+        'Our goal is to provide our clients, both business or person, with the professional taxation expertise and know how that they deserve year round.',
+      iconName: 'bullseye',
+      image: heroImage1,
+      subtitle: 'Tax',
+      teaser: 'Our experienced advisors will help you save money.',
+      title: 'Don’t miss out.'
+    },
+    {
+      buttonOnClick: () => push(ROUTES.WEALTH.path),
+      children:
+        'The financial world is often complex, but financial solutions do not have to be. You deserve a partner as dedicated to pursuing your goals as you are.',
+      iconName: 'list-ol',
+      image: heroImage3,
+      subtitle: 'Wealth',
+      teaser: 'Make sure your investments align with your goals.',
+      title: 'The future in your hands.'
+    },
+    {
+      buttonOnClick: () => push(ROUTES.ACCOUNTING.path),
+      children:
+        'We provide our clients with responsive and dedicated accounting professionals who will help you manage your business and keep your finances on track.',
+      iconName: 'dollar-sign',
+      image: heroImage2,
+      subtitle: 'Accounting',
+      teaser: 'Stay on top of your business instead of your books.',
+      title: 'There’s more you’ve earned.'
+    },
+    {
+      buttonOnClick: () => push(ROUTES.ABOUT.path),
+      children:
+        'We are not afraid to challenge conventional wisdom in our approach. All of our energy, commitment, and efforts are focused on you and your satisfaction.',
+      iconName: 'bullseye',
+      image: heroImage4,
+      subtitle: 'About',
+      teaser: 'We want to develop a strategy designed for your individual situation.',
+      title: 'A history of helping.'
+    }
+  ];
+
   return (
     <Screen>
-      <Hero
-        image={heroImage}
-        title="Don't buy the hype."
-        subtitle="Client Resources"
-        // eslint-disable-next-line no-console
-        buttonOnClick={() => console.log('TODO')}
-      >
-        <p>There are a lot of misconceptions about Social Security. Here&apos;s the truth about three of them.</p>
-      </Hero>
-      <FloatSection spacerHeight="4rem" spacerColor="primary-light">
-        <Grid className="padding--horizontal--none">
-          <Row>
-            <Column widthMd={4} className="margin--xs--bottom margin--md--bottom--none">
-              <div className="display--flex">
-                <IconButton iconName="bullseye" iconType="solid" />
-                <div className="margin--left">
-                  <strong>Once upon a goal...</strong>
-                  <p className="margin--top--half">Do you know how to set up your financial goals for success?</p>
-                </div>
-              </div>
-            </Column>
-            <Column widthMd={4} className="margin--xs--bottom margin--md--bottom--none">
-              <div className="display--flex">
-                <IconButton iconName="list-ol" iconType="solid" color="secondary" />
-                <div className="margin--left">
-                  <strong>Your bucket list</strong>
-                  <p className="margin--top--half">Do you know how to set up your financial goals for success?</p>
-                </div>
-              </div>
-            </Column>
-            <Column widthMd={4}>
-              <div className="display--flex">
-                <IconButton iconName="dollar-sign" iconType="solid" color="tertiary" />
-                <div className="margin--left">
-                  <strong>You&apos;ve got money!</strong>
-                  <p className="margin--top--half">Do you know how to set up your financial goals for success?</p>
-                </div>
-              </div>
-            </Column>
-          </Row>
-        </Grid>
-      </FloatSection>
+      <Carousel slides={slides} />
       <Section color="primary-light">
         <div className="max-width--sm margin--horizontal--auto text-align--center">
           <HeadingWithSubtitle subtitle="Services">
@@ -91,7 +97,7 @@ export const Home = () => {
           <IconButton iconName="check" iconType="solid" color="secondary" />
           <div className="margin--left" style={{ flex: 1 }}>
             <p className="margin--top--half">
-              Investment and financial planning services are offered by Lisa Pugel through her affiliation with HD Vest
+              Investment and financial planning services are offered by Lisa Pugel through her affiliation with Avantax.
             </p>
           </div>
         </div>
@@ -120,4 +126,12 @@ export const Home = () => {
       <GoogleMap />
     </Screen>
   );
+};
+
+Home.propTypes = {
+  history: PropTypes.object
+};
+
+Home.defaultProps = {
+  history: { push: () => {} }
 };

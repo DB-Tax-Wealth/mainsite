@@ -10,6 +10,7 @@
       "alias": {
         "components": "./src/components",
         "constants": "./src/constants",
+        "documents": "./src/documents",
         "fonts": "./src/fonts",
         "images": "./src/images",
         "services": "./src/services",

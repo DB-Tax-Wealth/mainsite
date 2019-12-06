@@ -1,4 +1,5 @@
 import lisaPugel from 'images/team/lisa-pugel.jpg';
+import andreaOstrowski from 'images/team/andrea-ostrowski.jpeg';
 import gailFisher from 'images/team/gail-fisher.jpg';
 import markPugel from 'images/team/mark-pugel.jpg';
 import angelaWeber from 'images/team/angela-weber.jpg';
@@ -17,9 +18,11 @@ export const TEAM_MEMBERS = [
     email: 'lpugel@dbtaxinc.com',
     fax: '',
     img: lisaPugel,
-    name: 'Lisa A. Pugel, EA, IAR',
+    name: 'Lisa A. Pugel, EA',
+    shortBio:
+      'Driven. Hard-Working. Generous.  Family Oriented.  Convinced she never sleeps, only takes naps. Full of knowledge and wildly competitive.  Be ready to lose if you’re playing against her.',
     phone: '414-764-7330',
-    title: 'CEO, Senior Wealth Planner',
+    title: 'Investment Advisor Representative\nCEO, Senior Wealth Planner',
     description: `Began her employment with DB Tax & Wealth as a Business Partners Program student in 1989. After completing her work study and education, she became a staff preparer at the firm, and then President of the corporation in 1995. She is currently the firm’s CEO and Senior Wealth Planner. Lisa studied at Milwaukee Area Technical College, Axia College, and UW Milwaukee earning her degree in Accounting and further studied at the American College while completing her Degree in Finance. In 1995, Lisa studied and passed the securities licensing requirements for her Series 6 Investment Company Products/Variable Contracts Representative Series and 63 Investment Company Products/Variable Contracts Representative Series examinations. These exams are administered by the Financial Industry Regulatory Authority or FINRA, (formerly the National Association of Securities Dealers).
 
     Successful completion of the Series 6 & 63 license exams entitles the representative to solicit and sell mutual funds, variable annuities, and variable life insurance contracts, and will entitle an individual with the qualifications necessary to become a limited registered representative who solicits orders for corporate debt and equity securities such as common and preferred stock, bonds, warrants, and more. At that same time, she also obtained her resident license in Life Insurance in the State of Wisconsin. In addition, Lisa has obtained her Accident and Health Insurance License and also passed the Series 7 & Series 65 Uniform Investment Adviser Law Exam. Lisa also tackled the Special Enrollment Examination (SEE) to become an Enrolled Agent by passing the 3 part examinations providing her the privilege of practicing (representing taxpayers) before the Internal Revenue Service. Enrolled agents, like attorneys and certified public accountants (CPAs), are unrestricted as to which taxpayers they can represent, what types of tax matters they can handle, and which IRS offices they can practice before. Annually Lisa attends various tax and financial seminars, continuing education workshops, national conferences, and goes beyond the rigorous continuing education and ethics requirements of her industry.
@@ -40,11 +43,13 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: gailFisher,
     name: 'Gail Fisher',
+    shortBio:
+      'Witty. Caring. Professional.  Loves to work out.  (Not really, but she does anyway).  Her 3 keys to a happy life? Good shoes, Stitch Fix, and finding time to relax.',
     phone: '414-856-2166',
     title: 'Client Services Manager',
     description: `Gail is a graduate of Milwaukee Area Technical College- Associates in Applied Science- Criminal Justice graduating with honors/GPA 4.0. She is currently obtaining her Bachelors degree at Lakeland College maintaining a GPA of 3.875 thus far. She also has obtained her 520-hour Law Enforcement State Board Certification for the State of Wisconsin in 2012. Gail recently passed her Series 7 exam and Series 63 is currently studying for her Series 66 exam.
 
-    Prior to her employment with D.B. Tax & Wealth. Gail worked almost 7 years at a small investment firm as an office manager and executive assistant (2007-2013). Before that she comes from the field of law offices. She was a billing supervisor specialist for 10 years. Currently she is working as a Client Services Manager. She oversees the operations department. She assists in maintaining client files, processes mail that contains to securities/investments and checks, and many other miscellaneous office tasks.
+    Prior to her employment with DB Tax Wealth & Wealth. Gail worked almost 7 years at a small investment firm as an office manager and executive assistant (2007-2013). Before that she comes from the field of law offices. She was a billing supervisor specialist for 10 years. Currently she is working as a Client Services Manager. She oversees the operations department. She assists in maintaining client files, processes mail that contains to securities/investments and checks, and many other miscellaneous office tasks.
 
     Gail has been a Wisconsin Notary Public since 2007.
 
@@ -56,8 +61,10 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: markPugel,
     name: 'Mark Pugel',
+    shortBio:
+      'Capable.  Honest (Sometimes Brutally).  Headstrong.  Baseball Fanatic.  Loves stats.  Traveler and Geography buff. Foodie who will try anything once, especially if it’s spicy.',
     phone: '414-764-7330',
-    title: 'Accounting Director',
+    title: 'President, Accounting Director',
     description: `Mark graduated from St. Mary’s University in Winona, MN in 1996 with a Bachelor’s degree in Accounting, and is also proud to be a graduate of Marquette University High School here in Milwaukee. Mark played baseball through his junior year in college, and became an assistant coach for his senior season.
 
     He began his career in accounting with Midwest Express Airlines, as a data entry clerk in the Revenue Accounting department. He was promoted 5 times in 4 years and was trusted to work in correlation with other departments on many projects, creating enhancements to out of date processes and automated tasks that were formerly manual. In 2001, Mark was hired as a staff accountant for Time Warner Cable. In 2006 when the company switched gears and regionalized positions, he gladly accepted a new role as a Financial Analyst. Over the course of his career there, Mark’s skill set grew in many areas. He gained valuable experience in creating and reading financial statements, compiling annual budgets and monthly outlooks, 1099-MISC calculations and submissions, Federal and State Tax filings, data analytics and compliance auditing. Over the course of 11 years, Mark became an expert in Microsoft Excel, learning most everything on his own. This knowledge allows him to create working templates for tax and financial services needs.
@@ -72,6 +79,8 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: angelaWeber,
     name: 'Angela Weber, EA',
+    shortBio:
+      'Hard worker.  Go-getter.  Athletic.  Lover of the outdoors.  Enjoys playing and watching sports, especially when her kids are involved.  Big fan of live music.',
     phone: '414-764-7330',
     title: 'Tax & Accounting Manager',
     description: `Angela is an Enrolled Agent (EA), who has been assisting clients in public accounting for over 20 years.  She earned a Bachelor’s Degree in Economics from the University of Wisconsin-Milwaukee in 1998 and obtained her EA status in 2002.  She specializes in personal income tax and strives to provide an excellent interpersonal relationship with her clients that is both informative and friendly. She also has extensive experience with many other facets in the accounting field, such as payroll preparation, sales tax, personal property taxes, and financial statement compilation.  In addition, she is a commissioned Notary Public.
@@ -84,6 +93,8 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: aliinaKlatt,
     name: 'Aliina Klatt',
+    shortBio:
+      'Determined.  Competitive.  Logical.  Fast talker.  World traveler.  Expert volleyball player & coach.  Make-Up addict.',
     phone: '414-764-7330',
     title: 'Securities Analyst',
     description: `Graduate of Bradley University, Peoria, IL, double major - Business Finance and Economics.  Aliina has worked with the firm since 2009 providing assistance with receptionist duties, appointment management, processing electronic filing, payroll and accounting, and customer care. As Aliina advanced in her career and studies, she assisted with general accounting, reconciliations, financial statements, and basic tax preparation. Her newest role in the firm upon graduation is to perform as our Financial Analyst as she pursues her CFP designation.
@@ -96,6 +107,8 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: rebeccaCampos,
     name: 'Rebecca Campos',
+    shortBio:
+      'Thoughtful.  Warm.  Spiritual.  Christian Mother who is dedicated to volunteering at her church.  Loves to keep busy with the children and grandchildren.',
     phone: '414-764-7330',
     title: 'Tax Professional',
     description: `Rebecca is a graduate of Holy Trinity Grade School and a graduate of St. Mary’s Academy Major-History Minor-Business. She completed her tax preparation studies at H & R Block (2001). She also completed a course in Corporate Taxation at MATC, Oak Creek Campus (2009).
@@ -112,8 +125,10 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: chuckWinn,
     name: 'Chuck Winn, CFP®',
+    shortBio:
+      'Adventurous.  Cordial.  Easygoing.  Lover of nature.  Daredevil on his dirt bike, the slopes, and the water.  Fun-loving Dad of Mark and Joelle.',
     phone: '414-764-7730',
-    title: 'Financial Advisor',
+    title: 'Senior Wealth Planner',
     description: `Chuck Winn is a Certified Financial Planner with DB Tax & Wealth. With over 20 years of investment experience, he is ready to discuss your financial scenario and goals.
 
     As a planner, he provides financial advice to individuals and business owners who seek strategies to improve their financial position.
@@ -132,6 +147,8 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: lisaReinke,
     name: 'Lisa Reinke',
+    shortBio:
+      'Dependable.  Organized.  Friendly.  Cheers on her 3 children during their sporting events.  Takes care of everything and everyone.  Always count on Reinke.',
     phone: '414-764-7330',
     title: 'Personal Assistant',
     description: `Lisa began her career immediately after graduating from Pulaski High school at Northwestern Mutual where she worked for over 10 years dividing her time between working in the Audit department and Sales Reporting and Honors department. After her marriage and growing family, Lisa decided to stay home and raise her 3 children. Alyssa who will be graduating Alverno College in the Winter of 2019, with her bachelor's degree in Biology, Alexander who just started his 2nd year at Butler University in Indianapolis, IN is studying Accounting and Abigail who is currently a Junior at Oak Creek High School. All three of her children are actively involved in sports, which is where Lisa spends the majority of her free time. She is their number one fan.
@@ -146,6 +163,8 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: mariaTaylor,
     name: 'Maria Taylor',
+    shortBio:
+      'Happy.  Outgoing.  Optimistic.  Treasures spending time with her children and grandchildren.  Working on becoming fluent in American Sign Language.',
     phone: '414-764-7330',
     title: 'Tax Professional',
     description: `Maria’s education begins with an Associates Degree in Applied Science and Medical Administration. She also completed the H&R Block Tax Course in 1989. Currently she is working on her degree in American Sign Language. Maria was both an Assistant Manager and Manager for Sentry Foods from 1987-2005. Soon after, she began employment for Outpost Natural Foods as a Supervisor in 2008, and is still with the store today.
@@ -162,8 +181,10 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: alyssaHonkonen,
     name: 'Alyssa Honkonen',
+    shortBio:
+      'Enthusiastic.  Helpful.  Kind.  Loves to read and learn new things.  Wants to make it a point to travel more with her partner in crime, her twin sister.',
     phone: '414-764-7330',
-    title: 'Administration',
+    title: 'Tax Analyst',
     description: `Alyssa is a graduate from Oak Creek High School and is a Milwaukee native. She has been a member of DB tax since 2017. Alyssa is the first person you will engage with when you interact with our firm! Whether it be her charming voice on the phone or her warm smile as you walk through the doors, she is the point of contact as our full time receptionist. She has been in the customer service field for 10 years and is exceptionally accomplished in providing a welcoming client experience. She has quickly adopted many responsibilities and as she continues to advance, her dedication and willingness to learn have proved her role to be vital to our growing firm. Alyssa administrates all client inquires, provides coordination of document workflow, manages data entry, maintains QuickBook files, regulates tax preparation & organizes the processing, and provides crucial assistance to all staff members. She oversees an array of fundamental tasks and is proficient in her skill set.
 
     Outside of work, Alyssa enjoys family time and hanging out with her best friend who is her twin sister. She appreciates exploring the outdoors, enjoys watching movies, and cheering on the Milwaukee Brewers & Green Bay Packers! She is looking forward to the future and enhancing her career at our firm.`
@@ -174,6 +195,8 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: milenaWood,
     name: 'Milena Wood',
+    shortBio:
+      'Trustworthy.  Caring.  Compassionate.  Loves to travel with family.  Flight attendant who also prepares taxes.  Dedicated to making a difference in this world.',
     phone: '414-764-7330',
     title: 'Tax Professional',
     description: `Milena graduated from UW-Milwaukee in 1982 with a Bachelor’s degree in Accounting. Her education and background gained her the opportunity to work as a Financial Analyst for Compcare Health Service soon after graduation. Later, in 1998, Milena attended the H&R Block Tax Preparation Course and also completed the Milwaukee Area Technical College Income Tax Course in 2009. In 2013 Milena passed her SEE (EA).
@@ -189,9 +212,11 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: lindaScholer,
     name: 'Linda Scholer',
+    shortBio:
+      'Genuine.  Resourceful.  Patient.  Mother of girls.  Loves being outdoors, traveling, and spending time with family.  Dog mom to Tukker and Lilee.',
     phone: '414-764-7330',
     title: 'Securities Sales Assistant',
-    description: `Graduate of Carthage College, Kenosha, WI, double major in Accounting and Business Administration (May 2008). Linda then graduated from Keller Graduate School of Management in December 2012 with an MBA in Accounting and Financial Management.  She joined D.B. Tax & Financial Services in October 2018 and is currently in the process of studying for the Series 7 exam. She is also a Wisconsin Notary Public.
+    description: `Graduate of Carthage College, Kenosha, WI, double major in Accounting and Business Administration (May 2008). Linda then graduated from Keller Graduate School of Management in December 2012 with an MBA in Accounting and Financial Management.  She joined DB Tax & Wealth in October 2018 and is currently in the process of studying for the Series 7 exam. She is also a Wisconsin Notary Public.
 
     Linda began her career working for a non-profit organization, Milwaukee Habitat for Humanity.  She was the Loan Service Coordinator and managed all performing and non-performing loans. She worked strategically with their corporate attorney on all non-performing loans, loans that were in foreclosure and bankruptcy, setting up payment plans, tax & insurance disbursements and reporting all loan activity to the monthly foreclosure committee.  In February of 2016, Linda was hired as a Default Consumer Loan Reporting Specialist with Johnson Financial Group.  Her primary duty was to report all default mortgages to their investors on a monthly basis.  For 2+ years she continued to work with foreclosure & bankruptcy accounts, submitting 1099 reporting, filing claims with investors on foreclosed properties, and handling all invoicing on delinquent properties.
 
@@ -201,8 +226,10 @@ export const TEAM_MEMBERS = [
     id: 13,
     email: 'aostrowski@dbtaxinc.com',
     fax: '',
-    img: '',
+    img: andreaOstrowski,
     name: 'Andrea Ostrowski',
+    shortBio:
+      'Creative. Detail-oriented. Social.  Ultimate party planner.  Jello & Pudding Shot Queen. Loyal supporter of Packers, Badgers, Brewers, Bucks.',
     phone: '414-764-7330',
     title: 'Head of Marketing & Public Relations',
     description: `Andrea graduated from Winona State University in 1999 with a Bachelor’s Degree in Elementary Education.  She returned back home to Milwaukee where she got her first teaching job at St. Rita’s in Racine teaching 4th grade.  She taught at 3 other Racine schools (Roosevelt, Wind Point, and Julian Thomas) during her 19 year teaching career.  During that time, Andrea taught 2nd, 3rd, & 4th grade and also received her Master’s Degree from Olivet Nazarene University in 2004 in Curriculum & Instruction.  Although she never imagined doing anything other than teaching, Andrea was offered an amazing opportunity by DB Tax & Wealth!  Because of her creativity, ability to build connections with people, and her attention to detail, Andrea was offered a job in Marketing to build a better experience for our incredible clients.  She gladly accepted and looks forward to building relationships, planning events tailored to the interests of our clients, creating a stronger bond between our business and the community, and developing a charitable initiative.
@@ -211,21 +238,12 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 14,
-    email: 'ahonkonen@dbtaxinc.com',
-    fax: '',
-    img: '',
-    name: 'Alyssa Honkonen',
-    phone: '414-764-7330',
-    title: 'Tax Analyst',
-    description:
-      'Alyssa is a graduate from Oak Creek High School and is a Milwaukee native. She is currently continuing her education in the School of Business and previously spent two years as a 4.0 student at the University of Milwaukee. She has been in the customer service field for over 12 years and is exceptionally proficient in her skill set. She has been a member of DB Tax & Wealth since 2017 and her dedicated experience has advanced her to the Lead Receptionist role within our growing firm. Alyssa has provided crucial assistance to all sides of the business and has become an essential team member to all operations. You will find her consulting on all client inquiries, coordinating document workflow, managing data entry, maintaining QuickBook files, as well as regulating and overseeing the tax process as a whole. Her new position as Lead Receptionist has provided her the opportunity to provide direct support to the accounting and tax departments in a variety of fundamental tasks. In addition to her regular duties, she has now been engaged in assisting with basic tax preparation, bank reconciliations, general data analysis, plus reviewing and updating client accounts. Outside of work Alyssa enjoys family time, traveling with her twin sister, exploring the outdoors and cheering on the Milwaukee Brewers & Green Bay Packers! She is looking forward to the future and enhancing her career at our firm.'
-  },
-  {
-    id: 15,
     email: 'rkoeller@dbtaxinc.com',
     fax: '',
     img: '',
     name: 'Ramona Koeller',
+    shortBio:
+      'Friendly.  Approachable.  Considerate.  Wisconsin sports supporter.  Active. Loves to jog, ride her bike, and do Yoga with her Mom.  Namaste.',
     phone: '414-764-7330',
     title: 'Receptionist',
     description: `Ramona is a graduate from Eachieve Academy and a current part time student at Milwaukee Area Technical College. She is the first person you will engage with when you interact with our firm. Being our full time receptionist ensures that you will see her bright smile when you walk in the door and hear her welcoming voice on the phone. Ramona has been is the customer service industry for 7 years which has given her the skill set to ensure that each client has a welcoming experience with our firm! Ramona has adopted many responsibilities since starting with us and her dedication to learning increases every day. Ramona manages all client inquiries, organizes all data entry, and provides pivotal assistance to all staff members. As full time receptionist Ramona has taken on a vital role in our growing firm.

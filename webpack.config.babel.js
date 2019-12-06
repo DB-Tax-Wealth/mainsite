@@ -11,6 +11,7 @@ import { loadFonts } from './webpack/load-fonts';
 import loadImages from './webpack/load-images';
 import { loadJs } from './webpack/load-js';
 import { loadStyles } from './webpack/load-styles';
+import { loadFiles } from './webpack/load-files';
 
 const PUBLIC_PATH = '/';
 
@@ -89,6 +90,7 @@ const developmentConfig = merge([
   commonConfig,
   devServer({ host: 'localhost', port: 9090 }),
   getSourcemaps({ type: 'cheap-module-eval-source-map' }),
+  loadFiles({ name: '[name].[ext]' }),
   loadFonts({ options: { name: '[name].[ext]' } }),
   loadImages({ options: { limit: 15000, name: 'images/[name].[ext]' } }),
   loadStyles({}),
@@ -99,8 +101,9 @@ const productionConfig = merge([
   clean(ROOT_PATHS.dist),
   commonConfig,
   getFavicons({ sourcePath: path.join(ROOT_PATHS.src, '/images/favicon.png') }),
+  loadFiles({ limit: 1000, name: '/documents/[name].[ext]' }),
   loadFonts({ options: { limit: 5000, name: '/fonts/[name].[ext]' } }),
-  loadImages({ options: { limit: 1000, name: 'images/[name].[ext]' } }),
+  loadImages({ options: { limit: 160000, name: '/images/[name].[ext]' } }),
   loadStyles({ production: true }),
   optimizationConfig,
   outputConfig,

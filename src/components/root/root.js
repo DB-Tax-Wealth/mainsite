@@ -3,9 +3,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import React from 'react';
 import { ROUTES } from 'constants/routes';
 import { Provider } from 'react-redux';
-import { App } from 'components/app/app';
 import PropTypes from 'prop-types';
 import { NoMatch } from 'components/screens/no-match/no-match';
+import { AppConnected } from 'components/app/app.connected';
 
 export const Root = props => {
   const { store } = props;
@@ -13,7 +13,7 @@ export const Root = props => {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <App>
+        <AppConnected>
           <Switch>
             {Object.keys(ROUTES).map(key => {
               const route = ROUTES[key];
@@ -22,7 +22,7 @@ export const Root = props => {
             })}
             <Route component={NoMatch} />
           </Switch>
-        </App>
+        </AppConnected>
       </BrowserRouter>
     </Provider>
   );

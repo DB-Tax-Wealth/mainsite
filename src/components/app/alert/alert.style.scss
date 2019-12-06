@@ -1,0 +1,45 @@
+@import '~animate.css/animate';
+@import '../../../styles/util/animated';
+@import '../../../styles/config/variables';
+
+.root {
+  @extend .animated;
+  @extend .fadeInRight;
+
+  background-color: $color-white;
+  border-radius: $border-radius;
+  border-left: $border-width-large solid $color-success;
+  box-shadow: $shadow-float;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacer / 2;
+  max-height: 100%;
+  max-width: $width-sm;
+  padding: $spacer;
+  position: relative;
+  width: 100%;
+  z-index: $z-index-alert;
+
+  .heading {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: $spacer;
+  }
+
+  .title {
+    flex: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: $width-sm) {
+    padding: $spacer * 2;
+  }
+}
+
+@each $color, $value in $colors {
+  .root.#{$color} {
+    border-left-color: $value;
+  }
+}

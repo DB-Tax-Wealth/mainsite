@@ -1,0 +1,28 @@
+@import '../../../styles/config/variables';
+
+.root {
+  align-items: flex-end;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: $width-sm;
+  padding: $spacer;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: $z-index-overlay;
+
+  .alert {
+    margin-bottom: $spacer / 2;
+
+    @media screen and (min-width: $width-sm) {
+      margin-bottom: $spacer;
+    }
+  }
+
+  @media screen and (min-width: $width-sm) {
+    padding: $spacer * 2;
+  }
+}

@@ -34,9 +34,9 @@ export const About = () => {
           To date, the firm has processed more than{' '}
           <strong>60,000 Personal Income Tax, Corporate, Partnership, Proprietorship, and Fiduciary Tax Returns</strong>
           . We not only prepare these returns, but we stand behind them with 100% accuracy guarantee. No additional
-          insurance is required to be purchased because D.B. Tax provides this guarantee at no extra cost to our
-          clients. We have Enrolled Agents on staff to represent clients in any situation. Our staff has either begun
-          the process or passed the <strong>IRS Special Enrollment Examination (SEE)</strong> process to become an
+          insurance is required to be purchased because DB Tax &amp; Wealth provides this guarantee at no extra cost to
+          our clients. We have Enrolled Agents on staff to represent clients in any situation. Our staff has either
+          begun the process or passed the <strong>IRS Special Enrollment Examination (SEE)</strong> process to become an
           Enrolled Agent. This 3 part examinations provides us the privilege of practicing (representing taxpayers)
           before the Internal Revenue Service. Enrolled agents, like attorneys and{' '}
           <strong>certified public accountants (CPAs)</strong>, are unrestricted as to which taxpayers they can

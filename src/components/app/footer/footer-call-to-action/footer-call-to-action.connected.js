@@ -4,8 +4,8 @@ import { FooterCallToAction } from './footer-call-to-action';
 
 const mapStateToProps = undefined;
 
-const mapDispatchToProps = {
-  onClick: openContactForm
-};
+const mapDispatchToProps = dispatch => ({
+  onClick: () => dispatch(openContactForm())
+});
 
 export const FooterCallToActionConnected = connect(mapStateToProps, mapDispatchToProps)(FooterCallToAction);

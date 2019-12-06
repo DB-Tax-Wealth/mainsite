@@ -87,34 +87,34 @@ export const Contact = props => {
                     </tr>
                     <tr>
                       <td>Monday</td>
-                      <td>9am–7pm</td>
+                      <td>8am–4pm</td>
                     </tr>
                     <tr>
                       <td>Tuesday</td>
-                      <td>9am–7pm</td>
+                      <td>8am–4pm</td>
                     </tr>
                     <tr>
                       <td>Wednesday</td>
-                      <td>9am–7pm</td>
+                      <td>8am–4pm</td>
                     </tr>
                     <tr>
                       <td>Thursday</td>
-                      <td>9am–7pm</td>
+                      <td>8am–4pm</td>
                     </tr>
                     <tr>
                       <td>Friday</td>
-                      <td>9am–7pm</td>
+                      <td>8am–4pm</td>
                     </tr>
                     <tr>
                       <td>Saturday</td>
-                      <td>10am-5pm</td>
+                      <td>Closed</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </Column>
             <Column widthMd={6} widthLg={7}>
-              <GoogleMap showAddress={false} />
+              <GoogleMap />
             </Column>
           </Row>
         </Grid>

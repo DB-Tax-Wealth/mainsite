@@ -13,7 +13,7 @@
   "rules": {
     "comma-dangle": 0,
     "import/no-cycle": 0,
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["./webpack/**/*.js", "webpack.config.babel.js"] }],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["./webpack/**/*.js", "webpack.config.babel.js", "postcss.config.js"] }],
     "import/prefer-default-export": [0],
     "jsx-a11y/click-events-have-key-events": [0],
     "jsx-a11y/label-has-for": [0],
@@ -25,6 +25,7 @@
     "react/jsx-indent": 0,
     "react/jsx-indent-props": 0,
     "react/jsx-one-expression-per-line": [0],
+    "react/no-array-index-key": 0,
     "react/no-unused-prop-types": 1,
     "react/state-in-constructor": ["error", "always"],
     "react/static-property-placement": ["error", "static public field"],
@@ -36,6 +37,7 @@
         "alias": {
           "components": "./src/components",
           "constants": "./src/constants",
+          "documents": "./src/documents",
           "fonts": "./src/fonts",
           "images": "./src/images",
           "services": "./src/services",

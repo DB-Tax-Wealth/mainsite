@@ -1,1 +1,1 @@
-export const COMPANY_NAME = 'DB Tax & Financial Services';
+export const COMPANY_NAME = 'DB Tax & Wealth';

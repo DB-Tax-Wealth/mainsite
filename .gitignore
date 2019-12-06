@@ -1,5 +1,17 @@
-npm-debug.*
-node_modules/
-google-maps-api-key.js
 coverage/
-build/
+node_modules/
+npm-debug.*
+google-maps-api-key.js
+
+# OSX General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace

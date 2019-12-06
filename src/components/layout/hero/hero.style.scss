@@ -9,8 +9,13 @@ $hero-max-width: $width-xl + 192;
   padding: $spacer;
 
   .button {
-    @extend .animated;
     @extend .fadeIn;
+
+    animation-delay: $duration-base * 4;
+
+    &.animated {
+      @extend .animated;
+    }
 
     @media screen and (max-width: $width-sm) {
       display: block;
@@ -84,6 +89,12 @@ $hero-max-width: $width-xl + 192;
 
     @media screen and (max-width: $width-sm) {
       position: relative;
+    }
+  }
+
+  .container {
+    @media screen and (max-width: $width-sm) {
+      height: 370px;
     }
   }
 

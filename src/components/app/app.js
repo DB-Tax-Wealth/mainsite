@@ -16,14 +16,19 @@ import { Footer } from './footer/footer';
 import { MobileNavigation } from './mobile-navigation/mobile-navigation';
 import { AccountAccessModalConnected } from './account-access-modal/account-access-modal.connected';
 import { ContactFormConnected } from './contact-form/contact-form.connected';
+import { AlertsContainerConnected } from './alert-container/alert-container.connected';
 
 class AppBase extends Component {
   static propTypes = {
-    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
+    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
+    history: PropTypes.object,
+    onHistoryChange: PropTypes.func
   };
 
   static defaultProps = {
-    children: null
+    children: null,
+    history: { listen: () => {} },
+    onHistoryChange: () => {}
   };
 
   constructor(props) {
@@ -31,10 +36,13 @@ class AppBase extends Component {
     this.state = { mobileNavigationActive: false };
     this.content = createRef();
 
+    this.handleHistoryChange = this.handleHistoryChange.bind(this);
     this.toggleMobileNavigation = this.toggleMobileNavigation.bind(this);
   }
 
   componentDidMount() {
+    const { history } = this.props;
+    const { listen } = history;
     // When the app.js component mounts it fires an event called 'appReady'
     const event = new CustomEvent('appReady', {
       bubbles: true,
@@ -42,6 +50,9 @@ class AppBase extends Component {
     });
 
     document.dispatchEvent(event);
+
+    // This is used to close modals when the user changes routes
+    listen(this.handleHistoryChange);
   }
 
   componentDidUpdate(prevProps) {
@@ -54,6 +65,11 @@ class AppBase extends Component {
     // routes.  The code below will scroll the content of the page
     // back to the top when the route path changes.
     if (pathName !== prevPathName) this.content.current.scrollTo(0, 0);
+  }
+
+  handleHistoryChange() {
+    const { onHistoryChange } = this.props;
+    onHistoryChange();
   }
 
   toggleMobileNavigation() {
@@ -79,6 +95,7 @@ class AppBase extends Component {
         <AccountAccessModalConnected />
         <ContactFormConnected />
         <MobileNavigation active={mobileNavigationActive} onCloseClick={this.toggleMobileNavigation} />
+        <AlertsContainerConnected />
       </div>
     );
   }

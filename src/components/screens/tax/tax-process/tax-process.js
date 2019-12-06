@@ -9,10 +9,10 @@ import { Column } from 'components/layout/grid/column/column';
 import { ProcessWheel } from 'components/process-wheel/process-wheel';
 import { Icon } from 'components/layout/icon/icon';
 import HeroImage from 'images/person-writing-down-plan.jpg';
-import { WealthProcessGoals } from 'components/screens/wealth/wealth-process/wealth-process-goals/wealth-process-goals';
-import { WealthProcessTeam } from 'components/screens/wealth/wealth-process/wealth-process-team/wealth-process-team';
-import { WealthProcessPlan } from 'components/screens/wealth/wealth-process/wealth-process-plan/wealth-process-plan';
-import { WealthProcessMonitor } from 'components/screens/wealth/wealth-process/wealth-process-monitor/wealth-process-monitor';
+import { TaxProcessGoals } from 'components/screens/tax/tax-process/tax-process-goals/tax-process-goals';
+import { TaxProcessOrganize } from 'components/screens/tax/tax-process/tax-process-organize/tax-process-organize';
+import { TaxProcessWorkTogether } from 'components/screens/tax/tax-process/tax-process-work-together/tax-process-work-together';
+import { TaxProcessPlan } from 'components/screens/tax/tax-process/tax-process-plan/tax-process-plan';
 
 export class TaxProcess extends Component {
   constructor(props) {
@@ -29,31 +29,31 @@ export class TaxProcess extends Component {
 
     const processes = [
       {
-        content: <WealthProcessGoals />,
+        content: <TaxProcessGoals />,
         icon: 'file-contract',
-        label: '1) Understand Goals',
-        message: 'Know Your Financial Position',
+        label: '1) File',
+        message: 'It is time to file your taxes',
         onClick: () => this.handleOnSectionClick(0)
       },
       {
-        content: <WealthProcessTeam />,
+        content: <TaxProcessOrganize />,
         icon: 'users',
-        label: '2) Meet Your Team',
-        message: 'Define the Relationship',
+        label: '2) Organize',
+        message: 'Get organized',
         onClick: () => this.handleOnSectionClick(1)
       },
       {
-        content: <WealthProcessPlan />,
+        content: <TaxProcessWorkTogether />,
         icon: 'search',
-        label: '3) Build a Plan',
-        message: 'Understand Client Goals',
+        label: '3) Work Together',
+        message: 'How we work together',
         onClick: () => this.handleOnSectionClick(2)
       },
       {
-        content: <WealthProcessMonitor />,
+        content: <TaxProcessPlan />,
         icon: 'signal',
-        label: '4) Monitor',
-        message: 'Update Your Goals',
+        label: '4) Plan',
+        message: 'Plan for the future',
         onClick: () => this.handleOnSectionClick(3)
       }
     ];
@@ -62,8 +62,10 @@ export class TaxProcess extends Component {
       <Screen>
         <Hero title="Our Onboarding Process" subtitle="Tax" image={HeroImage}>
           <p>
-            <strong>Becoming a Tax Client</strong> A solid financial strategy can help you pursue financial
-            independence. But to be truly effective, any financial strategy must be customized to your unique situation.
+            Our approach helps clients minimize one of life&apos;s most complicated and costly expenses: taxes. DB Tax &
+            Wealth is equipped with tools, processes and platforms to accurately and efficiently combine tax planning
+            and wealth management strategies to optimize a clients&apos; financial success. Explore our Tax Wheel to
+            learn more.
           </p>
         </Hero>
         <Section color="primary-light">

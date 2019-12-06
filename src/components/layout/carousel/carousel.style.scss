@@ -1,0 +1,14 @@
+@import '../../../styles/config/variables';
+
+.root {
+  position: relative;
+
+  .slide {
+    flex: 1;
+    display: relative;
+  }
+
+  .slideContainer {
+    display: flex;
+  }
+}

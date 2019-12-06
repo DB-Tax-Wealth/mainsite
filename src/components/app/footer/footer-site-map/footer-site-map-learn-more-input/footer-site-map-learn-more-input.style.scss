@@ -1,0 +1,14 @@
+@import '../../../../../styles/config/variables';
+
+.root {
+  background: rgba($color-white, $disabled-opacity);
+  margin-top: $spacer;
+
+  input {
+    color: $color-white;
+
+    &::placeholder {
+      color: rgba($color-white, $disabled-opacity);
+    }
+  }
+}
