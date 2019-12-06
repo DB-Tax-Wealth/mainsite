@@ -1,7 +1,7 @@
 // Placeholder images
 import CashflowDocumentPlaceholder from './cashflow_preview.png';
 import EMoneyDocumentPlaceholder from './emoney_preview.png';
-import FinancialAdvisingDocumentPlaceholder from './checklist_preview.png';
+import FinancialAdvisingDocumentPlaceholder from './financial_advising_document_preview.png';
 import ShortFormDocumentPlaceholder from './short_form_preview.png';
 
 // Docs
