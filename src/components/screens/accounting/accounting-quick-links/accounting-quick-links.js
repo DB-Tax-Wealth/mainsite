@@ -16,7 +16,7 @@ export const AccountingQuickLinks = () => {
   return (
     <Screen>
       <Hero title="Accounting" subtitle={ROUTES.ACCOUNTING_QUICK_LINKS.title}>
-        <p>Documents to help you with your taxes.</p>
+        <p>Documents and links to help you with your accounting.</p>
       </Hero>
       <Section color="primary-light">
         <h2>Documents</h2>
