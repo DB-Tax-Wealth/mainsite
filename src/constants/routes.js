@@ -15,6 +15,7 @@ import { UnderConstruction } from 'components/screens/under-construction/under-c
 import { WealthDocuments } from 'components/screens/wealth/wealth-documents/wealth-documents';
 import { WealthProcess } from 'components/screens/wealth/wealth-process/wealth-process';
 
+import { AccountingQuickLinks } from 'components/screens/accounting/accounting-quick-links/accounting-quick-links';
 import { DB_WEALTH_LINK } from './db-wealth-link';
 
 export const ROUTES = {
@@ -96,7 +97,7 @@ export const ROUTES = {
     title: 'Process'
   },
   ACCOUNTING_QUICK_LINKS: {
-    component: UnderConstruction,
+    component: AccountingQuickLinks,
     exact: true,
     key: 'accounting-quick-links',
     path: '/services/accounting/quick-links',
