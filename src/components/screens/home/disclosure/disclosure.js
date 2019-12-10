@@ -1,11 +1,9 @@
 import React from 'react';
 import { convertPhoneNumberToTelLink } from 'util/convert-phone-number-to-tel-link/convert-phone-number-to-tel-link';
+import { Section } from 'components/layout/section/section';
 
 export const Disclosure = () => (
-  <div
-    className="padding--vertical max-width--xl padding--horizontal--half margin--horizontal--auto"
-    style={{ fontSize: '0.8rem', lineHeight: '1.2rem' }}
-  >
+  <Section className="padding--vertical" style={{ fontSize: '0.8rem', lineHeight: '1.2rem' }}>
     <div className="margin--bottom--half">
       <strong>DISCLOSURE</strong>
     </div>
@@ -85,5 +83,5 @@ export const Disclosure = () => (
       </strong>{' '}
       are not affiliated with <strong>DB Tax & Wealth</strong>.
     </p>
-  </div>
+  </Section>
 );
