@@ -16,6 +16,7 @@ import heroImage2 from 'images/person-writing-down-plan.jpg';
 import heroImage3 from 'images/man-fishing.jpg';
 import heroImage4 from 'images/db-tax-team.jpg';
 import PropTypes from 'prop-types';
+import { Disclosure } from './disclosure/disclosure';
 
 export const Home = props => {
   const { history } = props;
@@ -65,66 +66,70 @@ export const Home = props => {
   ];
 
   return (
-    <Screen>
-      <Carousel slides={slides} />
-      <Section color="primary-light">
-        <div className="max-width--sm margin--horizontal--auto text-align--center">
-          <HeadingWithSubtitle subtitle="Services">
-            We&apos;re here to help you reach your financial success
-          </HeadingWithSubtitle>
-          <p className="color--quaternary-light margin--bottom">
-            We want to learn more about your personal situation, identify your dreams and goals, and understand your
-            tolerance for risk.
-          </p>
-        </div>
-        <ServiceList>
-          <ServiceListItem iconName="coins" title="Taxes" to={ROUTES.TAX.path}>
-            <p>
-              We provide both businesses or persons with the professional taxation expertise and know how that they
-              deserve year round.
-            </p>
-          </ServiceListItem>
-          <ServiceListItem iconName="search-dollar" title="Wealth" to={ROUTES.WEALTH.path}>
-            <p>We will ensure that your financial records are maintained correctly and accurately.</p>
-          </ServiceListItem>
-          <ServiceListItem iconName="money-check-alt" title="Accounting" to={ROUTES.ACCOUNTING.path}>
-            <p>We provide our clients with value added accounting and outsourcing services for their businesses.</p>
-          </ServiceListItem>
-        </ServiceList>
-      </Section>
-      <FloatSection spacerHeight="2rem" shadowColor="primary-dark">
-        <div className="display--flex">
-          <IconButton iconName="check" iconType="solid" color="secondary" />
-          <div className="margin--left" style={{ flex: 1 }}>
-            <p className="margin--top--half">
-              Investment and financial planning services are offered by Lisa Pugel through her affiliation with Avantax.
+    <>
+      <Screen>
+        <Carousel slides={slides} />
+        <Section color="primary-light">
+          <div className="max-width--sm margin--horizontal--auto text-align--center">
+            <HeadingWithSubtitle subtitle="Services">
+              We&apos;re here to help you reach your financial success
+            </HeadingWithSubtitle>
+            <p className="color--quaternary-light margin--bottom">
+              We want to learn more about your personal situation, identify your dreams and goals, and understand your
+              tolerance for risk.
             </p>
           </div>
-        </div>
-      </FloatSection>
-      <SectionWithTextAndImage
-        image={womanManFinancialConsulting}
-        subtitle="About"
-        subtitleColor="white"
-        title="Mission Statement"
-      >
-        <p>
-          Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you
-          develop, implement, and monitor a strategy that’s designed to address your individual situation.
-        </p>
-        <p>We understand the challenges families face today.</p>
-        <p>
-          From managing debt to saving for college to retirement, these personal finance challenges can be overwhelming.
-          Our commitment is to utilize all of our resources to help you pursue your goals.
-        </p>
-        <p>
-          We believe in thinking “out of the box” and we are not afraid to challenge conventional wisdom in our approach
-          to investing and preserving wealth. All of our energy, commitment, and efforts are focused on you, the client,
-          and your satisfaction.
-        </p>
-      </SectionWithTextAndImage>
-      <GoogleMap />
-    </Screen>
+          <ServiceList>
+            <ServiceListItem iconName="coins" title="Taxes" to={ROUTES.TAX.path}>
+              <p>
+                We provide both businesses or persons with the professional taxation expertise and know how that they
+                deserve year round.
+              </p>
+            </ServiceListItem>
+            <ServiceListItem iconName="search-dollar" title="Wealth" to={ROUTES.WEALTH.path}>
+              <p>We will ensure that your financial records are maintained correctly and accurately.</p>
+            </ServiceListItem>
+            <ServiceListItem iconName="money-check-alt" title="Accounting" to={ROUTES.ACCOUNTING.path}>
+              <p>We provide our clients with value added accounting and outsourcing services for their businesses.</p>
+            </ServiceListItem>
+          </ServiceList>
+        </Section>
+        <FloatSection spacerHeight="2rem" shadowColor="primary-dark">
+          <div className="display--flex">
+            <IconButton iconName="check" iconType="solid" color="secondary" />
+            <div className="margin--left" style={{ flex: 1 }}>
+              <p className="margin--top--half">
+                Investment and financial planning services are offered by Lisa Pugel through her affiliation with
+                Avantax.
+              </p>
+            </div>
+          </div>
+        </FloatSection>
+        <SectionWithTextAndImage
+          image={womanManFinancialConsulting}
+          subtitle="About"
+          subtitleColor="white"
+          title="Mission Statement"
+        >
+          <p>
+            Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you
+            develop, implement, and monitor a strategy that’s designed to address your individual situation.
+          </p>
+          <p>We understand the challenges families face today.</p>
+          <p>
+            From managing debt to saving for college to retirement, these personal finance challenges can be
+            overwhelming. Our commitment is to utilize all of our resources to help you pursue your goals.
+          </p>
+          <p>
+            We believe in thinking “out of the box” and we are not afraid to challenge conventional wisdom in our
+            approach to investing and preserving wealth. All of our energy, commitment, and efforts are focused on you,
+            the client, and your satisfaction.
+          </p>
+        </SectionWithTextAndImage>
+        <GoogleMap />
+        <Disclosure />
+      </Screen>
+    </>
   );
 };
 

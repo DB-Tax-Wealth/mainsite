@@ -2,27 +2,30 @@ import React from 'react';
 import { CHILDREN_PROP_TYPE } from 'constants/children-prop-type';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import { STYLE_PROP_TYPE } from 'constants/style-prop-type';
 import styles from './section.style.scss';
 
 export const Section = props => {
-  const { children, color, className: classNameProp } = props;
+  const { children, color, className: classNameProp, style } = props;
   const className = classnames(styles.root, classNameProp, { [styles[color]]: color });
 
   return (
-    <div className={className}>
+    <div className={className} style={style}>
       <div className={styles.content}>{children}</div>
     </div>
   );
 };
 
 Section.propTypes = {
-  className: PropTypes.string,
   children: CHILDREN_PROP_TYPE,
-  color: PropTypes.string
+  className: PropTypes.string,
+  color: PropTypes.string,
+  style: STYLE_PROP_TYPE
 };
 
 Section.defaultProps = {
-  className: '',
   children: null,
-  color: undefined
+  className: '',
+  color: undefined,
+  style: null
 };
