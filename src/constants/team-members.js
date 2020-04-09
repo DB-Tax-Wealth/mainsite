@@ -2,7 +2,7 @@ import lisaPugel from 'images/team/lisa-pugel.jpg';
 import andreaOstrowski from 'images/team/andrea-ostrowski.jpeg';
 import gailFisher from 'images/team/gail-fisher.jpg';
 import markPugel from 'images/team/mark-pugel.jpg';
-import angelaWeber from 'images/team/angela-weber.jpg';
+import angelaHernandez from 'images/team/angela-hernandez.jpg';
 import aliinaKlatt from 'images/team/aliina-klatt.jpg';
 import lindaScholer from 'images/team/linda-scholer.jpg';
 import lisaReinke from 'images/team/lisa-reinke.jpg';
@@ -76,8 +76,8 @@ export const TEAM_MEMBERS = [
     id: 4,
     email: 'ahernandez@dbtaxinc.com',
     fax: '',
-    img: angelaWeber,
-    name: 'Angela Weber, EA',
+    img: angelaHernandez,
+    name: 'Angela Hernandez, EA',
     shortBio:
       'Hard worker.  Go-getter.  Athletic.  Lover of the outdoors.  Enjoys playing and watching sports, especially when her kids are involved.  Big fan of live music.',
     phone: '414-764-7330',
