@@ -63,7 +63,7 @@ export const TEAM_MEMBERS = [
     shortBio:
       'Capable.  Honest (Sometimes Brutally).  Headstrong.  Baseball Fanatic.  Loves stats.  Traveler and Geography buff. Foodie who will try anything once, especially if it’s spicy.',
     phone: '414-764-7330',
-    title: 'President, Accounting Director',
+    title: 'President of DB Tax & Wealth, Accounting Director',
     description: `Mark graduated from St. Mary’s University in Winona, MN in 1996 with a Bachelor’s degree in Accounting, and is also proud to be a graduate of Marquette University High School here in Milwaukee. Mark played baseball through his junior year in college, and became an assistant coach for his senior season.
 
     He began his career in accounting with Midwest Express Airlines, as a data entry clerk in the Revenue Accounting department. He was promoted 5 times in 4 years and was trusted to work in correlation with other departments on many projects, creating enhancements to out of date processes and automated tasks that were formerly manual. In 2001, Mark was hired as a staff accountant for Time Warner Cable. In 2006 when the company switched gears and regionalized positions, he gladly accepted a new role as a Financial Analyst. Over the course of his career there, Mark’s skill set grew in many areas. He gained valuable experience in creating and reading financial statements, compiling annual budgets and monthly outlooks, 1099-MISC calculations and submissions, Federal and State Tax filings, data analytics and compliance auditing. Over the course of 11 years, Mark became an expert in Microsoft Excel, learning most everything on his own. This knowledge allows him to create working templates for tax and financial services needs.
