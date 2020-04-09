@@ -16,7 +16,6 @@ import heroImage2 from 'images/person-writing-down-plan.jpg';
 import heroImage3 from 'images/man-fishing.jpg';
 import heroImage4 from 'images/db-tax-team.jpg';
 import PropTypes from 'prop-types';
-import { Disclosure } from './disclosure/disclosure';
 
 export const Home = (props) => {
   const { history } = props;
@@ -127,7 +126,6 @@ export const Home = (props) => {
           </p>
         </SectionWithTextAndImage>
         <GoogleMap />
-        <Disclosure />
       </Screen>
     </>
   );
