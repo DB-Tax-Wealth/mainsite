@@ -130,7 +130,7 @@ export const TEAM_MEMBERS = [
     title: 'Senior Wealth Planner',
     description: `Chuck Winn is a Certified Financial Planner with DB Tax & Wealth. With over 20 years of investment experience, he is ready to discuss your financial scenario and goals.
 
-    As a planner, he provides financial advice to individuals and business owners who seek strategies to improve their financial position.
+    As a planner, he provides financial advice to individuals and business owners who seek strategies to help improve their financial position.
 
     Chuck loves the financial services industry. “Personal finance is a school subject most individuals have had little exposure. I love connecting with people and learning about their unique needs and goals. Your financial goals and concerns deserve the attention of an experienced financial professional, call today!"
 
