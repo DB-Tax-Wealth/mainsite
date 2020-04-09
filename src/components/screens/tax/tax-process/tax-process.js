@@ -64,8 +64,8 @@ export class TaxProcess extends Component {
           <p>
             Our approach helps clients minimize one of life&apos;s most complicated and costly expenses: taxes. DB Tax &
             Wealth is equipped with tools, processes and platforms to accurately and efficiently combine tax planning
-            and wealth management strategies to optimize a clients&apos; financial success. Explore our Tax Wheel to
-            learn more.
+            and wealth management strategies to help optimize a clients&apos; financial success. Explore our Tax Wheel
+            to learn more.
           </p>
         </Hero>
         <Section color="primary-light">
