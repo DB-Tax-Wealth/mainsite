@@ -7,6 +7,8 @@ import moment from 'moment';
 import { ROUTES } from 'constants/routes';
 import { goToFacebook } from 'util/go-to-facebook/go-to-facebook';
 import { goToLinkedIn } from 'util/go-to-linked-in/go-to-linked-in';
+import { goToTwitter } from 'util/go-to-twitter/go-to-twitter';
+import { goToInstagram } from 'util/go-to-instagram/go-to-instagram';
 import styles from './footer-copyright.style.scss';
 
 export const FooterCopyright = () => {
@@ -28,6 +30,12 @@ export const FooterCopyright = () => {
         </div>
         <div className="margin--left--half">
           <IconButton iconName="linkedin-in" iconType="brand" onClick={goToLinkedIn} />
+        </div>
+        <div className="margin--left--half">
+          <IconButton iconName="twitter" iconType="brand" onClick={goToTwitter} />
+        </div>
+        <div className="margin--left--half">
+          <IconButton iconName="instagram" iconType="brand" onClick={goToInstagram} />
         </div>
       </div>
     </div>

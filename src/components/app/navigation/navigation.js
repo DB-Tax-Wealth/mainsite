@@ -8,6 +8,8 @@ import React from 'react';
 import logo from 'images/db-tax-logo.png';
 import { goToFacebook } from 'util/go-to-facebook/go-to-facebook';
 import { goToLinkedIn } from 'util/go-to-linked-in/go-to-linked-in';
+import { goToTwitter } from 'util/go-to-twitter/go-to-twitter';
+import { goToInstagram } from 'util/go-to-instagram/go-to-instagram';
 import styles from './navigation.style.scss';
 import { NavigationLink } from './navigation-link/navigation-link';
 import { AccountAccessButtonConnected } from '../account-access-button/account-access-button.connected';
@@ -38,6 +40,12 @@ export const Navigation = (props) => {
           </div>
           <div className="margin--left--half">
             <IconButton iconName="linkedin-in" iconType="brand" onClick={goToLinkedIn} />
+          </div>
+          <div className="margin--left--half">
+            <IconButton iconName="twitter" iconType="brand" onClick={goToTwitter} />
+          </div>
+          <div className="margin--left--half">
+            <IconButton iconName="instagram" iconType="brand" onClick={goToInstagram} />
           </div>
         </div>
         <div className={styles.mobileToggle}>
