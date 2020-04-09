@@ -4,7 +4,6 @@ import gailFisher from 'images/team/gail-fisher.jpg';
 import markPugel from 'images/team/mark-pugel.jpg';
 import angelaWeber from 'images/team/angela-weber.jpg';
 import aliinaKlatt from 'images/team/aliina-klatt.jpg';
-import alyssaHonkonen from 'images/team/alyssa-honkonen.jpg';
 import lindaScholer from 'images/team/linda-scholer.jpg';
 import lisaReinke from 'images/team/lisa-reinke.jpg';
 import mariaTaylor from 'images/team/maria-taylor.jpg';
@@ -174,20 +173,6 @@ export const TEAM_MEMBERS = [
     It was in 2009 Maria came to work with DB Tax & Wealth as a Tax Professional, specializing in individual income tax but gaining much experience with more complex returns.
 
     Maria has been married for 31 years and has been blessed with 3 children and 3 grandchildren.`,
-  },
-  {
-    id: 10,
-    email: 'reception@dbtaxinc.com',
-    fax: '',
-    img: alyssaHonkonen,
-    name: 'Alyssa Honkonen',
-    shortBio:
-      'Enthusiastic.  Helpful.  Kind.  Loves to read and learn new things.  Wants to make it a point to travel more with her partner in crime, her twin sister.',
-    phone: '414-764-7330',
-    title: 'Tax Analyst',
-    description: `Alyssa is a graduate from Oak Creek High School and is a Milwaukee native. She has been a member of DB tax since 2017. Alyssa is the first person you will engage with when you interact with our firm! Whether it be her charming voice on the phone or her warm smile as you walk through the doors, she is the point of contact as our full time receptionist. She has been in the customer service field for 10 years and is exceptionally accomplished in providing a welcoming client experience. She has quickly adopted many responsibilities and as she continues to advance, her dedication and willingness to learn have proved her role to be vital to our growing firm. Alyssa administrates all client inquires, provides coordination of document workflow, manages data entry, maintains QuickBook files, regulates tax preparation & organizes the processing, and provides crucial assistance to all staff members. She oversees an array of fundamental tasks and is proficient in her skill set.
-
-    Outside of work, Alyssa enjoys family time and hanging out with her best friend who is her twin sister. She appreciates exploring the outdoors, enjoys watching movies, and cheering on the Milwaukee Brewers & Green Bay Packers! She is looking forward to the future and enhancing her career at our firm.`,
   },
   {
     id: 11,
