@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './process-wheel-section.style.scss';
 
-export const ProcessWheelSection = props => {
+export const ProcessWheelSection = (props) => {
   const {
     active,
     className: classNameProp,
@@ -15,7 +15,7 @@ export const ProcessWheelSection = props => {
     radius,
     rotation,
     strokeDasharray,
-    strokeWidth
+    strokeWidth,
   } = props;
 
   const className = classnames(styles.root, classNameProp, { [styles.active]: active });
@@ -62,7 +62,7 @@ ProcessWheelSection.propTypes = {
   radius: PropTypes.number,
   rotation: PropTypes.number,
   strokeDasharray: PropTypes.array,
-  strokeWidth: PropTypes.number
+  strokeWidth: PropTypes.number,
 };
 
 ProcessWheelSection.defaultProps = {
@@ -75,5 +75,5 @@ ProcessWheelSection.defaultProps = {
   radius: 0,
   rotation: 0,
   strokeDasharray: [],
-  strokeWidth: 20
+  strokeWidth: 20,
 };

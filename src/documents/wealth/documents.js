@@ -15,24 +15,24 @@ export const WEALTH_DOCUMENTS = [
     description: '',
     file: CashflowDocument,
     image: CashflowDocumentPlaceholder,
-    name: 'Cash Flow & Inventory Worksheet'
+    name: 'Cash Flow & Inventory Worksheet',
   },
   {
     description: '',
     file: EMoneyDocument,
     image: EMoneyDocumentPlaceholder,
-    name: 'eMoney Client Intro Letter'
+    name: 'eMoney Client Intro Letter',
   },
   {
     description: '',
     file: FinancialAdvisingDocument,
     image: FinancialAdvisingDocumentPlaceholder,
-    name: 'Financial Advising Checklist'
+    name: 'Financial Advising Checklist',
   },
   {
     description: '',
     file: ShortFormDocument,
     image: ShortFormDocumentPlaceholder,
-    name: 'Short Form'
-  }
+    name: 'Short Form',
+  },
 ];

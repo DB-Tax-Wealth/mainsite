@@ -3,7 +3,7 @@ import { Input } from 'components/layout/input/input';
 import PropTypes from 'prop-types';
 import styles from './footer-site-map-learn-more-input.style.scss';
 
-export const FooterSiteMapLearnMoreInput = props => {
+export const FooterSiteMapLearnMoreInput = (props) => {
   const { buttonOnClick, onChange, valid, value } = props;
 
   return (
@@ -24,12 +24,12 @@ FooterSiteMapLearnMoreInput.propTypes = {
   buttonOnClick: PropTypes.func,
   onChange: PropTypes.func,
   valid: PropTypes.bool,
-  value: PropTypes.string
+  value: PropTypes.string,
 };
 
 FooterSiteMapLearnMoreInput.defaultProps = {
   buttonOnClick: () => {},
   onChange: () => {},
   valid: false,
-  value: ''
+  value: '',
 };

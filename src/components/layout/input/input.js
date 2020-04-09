@@ -4,7 +4,7 @@ import React from 'react';
 import classnames from 'classnames';
 import styles from './input.style.scss';
 
-export const Input = props => {
+export const Input = (props) => {
   const {
     buttonColor,
     buttonGlow,
@@ -19,16 +19,16 @@ export const Input = props => {
     shadow,
     type,
     valid,
-    value
+    value,
   } = props;
 
   const className = classnames(styles.root, classNameProp, {
     [styles.error]: error,
     [styles.shadow]: shadow,
-    [styles.valid]: valid
+    [styles.valid]: valid,
   });
   const showButton = Boolean(buttonOnClick);
-  const handleOnChange = event => onChange(event.target.value);
+  const handleOnChange = (event) => onChange(event.target.value);
 
   return (
     <>
@@ -55,7 +55,7 @@ Input.propTypes = {
   shadow: PropTypes.bool,
   type: PropTypes.string,
   valid: PropTypes.bool,
-  value: PropTypes.string
+  value: PropTypes.string,
 };
 
 Input.defaultProps = {
@@ -72,5 +72,5 @@ Input.defaultProps = {
   shadow: false,
   type: 'text',
   valid: false,
-  value: ''
+  value: '',
 };

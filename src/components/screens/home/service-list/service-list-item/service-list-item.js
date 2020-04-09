@@ -5,7 +5,7 @@ import { Icon } from 'components/layout/icon/icon';
 import { Link } from 'react-router-dom';
 import styles from './service-list-item.style.scss';
 
-export const ServiceListItem = props => {
+export const ServiceListItem = (props) => {
   const { children, iconName, title, to } = props;
   const titleExists = Boolean(title);
 
@@ -24,12 +24,12 @@ ServiceListItem.propTypes = {
   children: CHILDREN_PROP_TYPE,
   iconName: PropTypes.string,
   title: PropTypes.string,
-  to: PropTypes.string
+  to: PropTypes.string,
 };
 
 ServiceListItem.defaultProps = {
   children: null,
   iconName: undefined,
   title: '',
-  to: ''
+  to: '',
 };

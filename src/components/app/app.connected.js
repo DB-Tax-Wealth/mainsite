@@ -5,11 +5,11 @@ import { App } from './app';
 
 const mapStateToProps = undefined;
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   onHistoryChange: () => {
     dispatch(closeAccountAccess());
     dispatch(closeContactForm());
-  }
+  },
 });
 
 export const AppConnected = connect(mapStateToProps, mapDispatchToProps)(App);

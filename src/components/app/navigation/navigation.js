@@ -12,10 +12,10 @@ import styles from './navigation.style.scss';
 import { NavigationLink } from './navigation-link/navigation-link';
 import { AccountAccessButtonConnected } from '../account-access-button/account-access-button.connected';
 
-export const Navigation = props => {
+export const Navigation = (props) => {
   const { onMobileNavigationToggleClick } = props;
 
-  const links = NAVIGATION.filter(route => route.key !== 'home').map(route => {
+  const links = NAVIGATION.filter((route) => route.key !== 'home').map((route) => {
     const { path, routes, title, key: routeKey, externalLink } = route;
     return <NavigationLink key={routeKey} routes={routes} title={title} path={path} externalLink={externalLink} />;
   });
@@ -49,9 +49,9 @@ export const Navigation = props => {
 };
 
 Navigation.propTypes = {
-  onMobileNavigationToggleClick: PropTypes.func
+  onMobileNavigationToggleClick: PropTypes.func,
 };
 
 Navigation.defaultProps = {
-  onMobileNavigationToggleClick: null
+  onMobileNavigationToggleClick: null,
 };

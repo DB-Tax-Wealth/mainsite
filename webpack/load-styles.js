@@ -5,8 +5,8 @@ export const loadStyles = ({ production = false }) => {
     loader: 'css-loader',
     options: {
       modules: false,
-      sourceMap: false
-    }
+      sourceMap: false,
+    },
   };
 
   const cssModulesLoader = {
@@ -14,20 +14,20 @@ export const loadStyles = ({ production = false }) => {
     options: {
       importLoaders: 2,
       modules: { localIdentName: production ? '[hash:base64:5]' : '[name][local]' },
-      sourceMap: !production
-    }
+      sourceMap: !production,
+    },
   };
 
   const postCssLoader = {
     loader: 'postcss-loader',
-    options: { sourceMap: !production }
+    options: { sourceMap: !production },
   };
 
   const sassLoader = {
     loader: 'sass-loader',
     options: {
-      sourceMap: !production
-    }
+      sourceMap: !production,
+    },
   };
 
   return {
@@ -35,19 +35,19 @@ export const loadStyles = ({ production = false }) => {
       rules: [
         {
           test: /\.css$/,
-          use: [production ? MiniCssExtractPlugin.loader : 'style-loader', cssLoader]
+          use: [production ? MiniCssExtractPlugin.loader : 'style-loader', cssLoader],
         },
         {
           test: /\.scss$/,
-          use: [production ? MiniCssExtractPlugin.loader : 'style-loader', cssModulesLoader, postCssLoader, sassLoader]
-        }
-      ]
+          use: [production ? MiniCssExtractPlugin.loader : 'style-loader', cssModulesLoader, postCssLoader, sassLoader],
+        },
+      ],
     },
     plugins: [
       new MiniCssExtractPlugin({
         filename: '[name]-[hash].css',
-        chunkFilename: '[id]-[hash].css'
-      })
-    ]
+        chunkFilename: '[id]-[hash].css',
+      }),
+    ],
   };
 };

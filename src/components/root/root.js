@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import { NoMatch } from 'components/screens/no-match/no-match';
 import { AppConnected } from 'components/app/app.connected';
 
-export const Root = props => {
+export const Root = (props) => {
   const { store } = props;
 
   return (
@@ -15,7 +15,7 @@ export const Root = props => {
       <HashRouter hashType="noslash">
         <AppConnected>
           <Switch>
-            {Object.keys(ROUTES).map(key => {
+            {Object.keys(ROUTES).map((key) => {
               const route = ROUTES[key];
               const { component, exact, path, key: routeKey } = route;
               return <Route component={component} exact={exact} key={routeKey} path={path} />;
@@ -29,9 +29,9 @@ export const Root = props => {
 };
 
 Root.propTypes = {
-  store: PropTypes.object
+  store: PropTypes.object,
 };
 
 Root.defaultProps = {
-  store: null
+  store: null,
 };

@@ -9,11 +9,11 @@ import { Button } from '../button/button';
 
 export class DocumentList extends Component {
   static propTypes = {
-    documents: PropTypes.arrayOf(PropTypes.object)
+    documents: PropTypes.arrayOf(PropTypes.object),
   };
 
   static defaultProps = {
-    documents: []
+    documents: [],
   };
 
   getDocuments() {

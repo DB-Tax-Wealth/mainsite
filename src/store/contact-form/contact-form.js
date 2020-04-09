@@ -32,21 +32,21 @@ export const DEFAULT_STATE = {
   emailIsDirty: false,
   isRequesting: false,
   message: '',
-  name: ''
+  name: '',
 };
 
 // Reducer
 export const contactFormReducer = handleActions(
   {
-    [REQUEST_FAILURE]: state => ({ ...state, isRequesting: false }),
-    [REQUEST_START]: state => ({ ...state, isRequesting: true }),
-    [REQUEST_SUCCESS]: state => ({ ...state, isRequesting: false }),
+    [REQUEST_FAILURE]: (state) => ({ ...state, isRequesting: false }),
+    [REQUEST_START]: (state) => ({ ...state, isRequesting: true }),
+    [REQUEST_SUCCESS]: (state) => ({ ...state, isRequesting: false }),
     [RESET]: () => DEFAULT_STATE,
     [UPDATE_ACTIVE]: (state, { payload: active }) => ({ ...state, active }),
     [UPDATE_EMAIL]: (state, { payload: email }) => ({ ...state, email }),
     [UPDATE_EMAIL_IS_DIRTY]: (state, { payload: emailIsDirty }) => ({ ...state, emailIsDirty }),
     [UPDATE_MESSAGE]: (state, { payload: message }) => ({ ...state, message }),
-    [UPDATE_NAME]: (state, { payload: name }) => ({ ...state, name })
+    [UPDATE_NAME]: (state, { payload: name }) => ({ ...state, name }),
   },
   DEFAULT_STATE
 );
@@ -54,37 +54,37 @@ export const contactFormReducer = handleActions(
 // Selectors
 export const selectContactForm = (state = {}) => state.contactForm || DEFAULT_STATE;
 
-export const selectContactFormActive = state => selectContactForm(state).active || DEFAULT_STATE.active;
-export const selectContactFormEmail = state => selectContactForm(state).email || DEFAULT_STATE.email;
-export const selectContactFormEmailIsDirty = state =>
+export const selectContactFormActive = (state) => selectContactForm(state).active || DEFAULT_STATE.active;
+export const selectContactFormEmail = (state) => selectContactForm(state).email || DEFAULT_STATE.email;
+export const selectContactFormEmailIsDirty = (state) =>
   selectContactForm(state).emailIsDirty || DEFAULT_STATE.emailIsDirty;
-export const selectContactFormMessage = state => selectContactForm(state).message || DEFAULT_STATE.message;
-export const selectContactFormName = state => selectContactForm(state).name || DEFAULT_STATE.name;
-export const selectContactFormIsRequesting = state =>
+export const selectContactFormMessage = (state) => selectContactForm(state).message || DEFAULT_STATE.message;
+export const selectContactFormName = (state) => selectContactForm(state).name || DEFAULT_STATE.name;
+export const selectContactFormIsRequesting = (state) =>
   selectContactForm(state).isRequesting || DEFAULT_STATE.isRequesting;
 
-export const selectContactFormNameValid = state => Boolean(selectContactFormName(state));
-export const selectContactFormMessageValid = state => Boolean(selectContactFormMessage(state));
-export const selectContactFormEmailValid = state => {
+export const selectContactFormNameValid = (state) => Boolean(selectContactFormName(state));
+export const selectContactFormMessageValid = (state) => Boolean(selectContactFormMessage(state));
+export const selectContactFormEmailValid = (state) => {
   const email = selectContactFormEmail(state);
   const emailIsCorrectFormat = isValidEmailAddress(email);
 
   return emailIsCorrectFormat;
 };
-export const selectContactFormEmailError = state => {
+export const selectContactFormEmailError = (state) => {
   const emailIsDirty = selectContactFormEmailIsDirty(state);
   const email = selectContactFormEmail(state);
   const emailIsCorrectFormat = isValidEmailAddress(email);
 
   return emailIsDirty && !emailIsCorrectFormat;
 };
-export const selectContactFormEmailErrorMessage = state => {
+export const selectContactFormEmailErrorMessage = (state) => {
   const email = selectContactFormEmail(state);
   if (email) return `${email} is not a valid email address.`;
   return 'Please enter a valid email address.';
 };
 
-export const selectContactFormValid = state => {
+export const selectContactFormValid = (state) => {
   const emailValid = selectContactFormEmailValid(state);
   const messageValid = selectContactFormMessageValid(state);
   const nameValid = selectContactFormNameValid(state);
@@ -93,11 +93,11 @@ export const selectContactFormValid = state => {
 };
 
 // Thunks
-export const closeContactForm = () => dispatch => {
+export const closeContactForm = () => (dispatch) => {
   dispatch(resetContactForm());
 };
 
-export const openContactForm = () => dispatch => {
+export const openContactForm = () => (dispatch) => {
   dispatch(updateContactFormActive(true));
 };
 
@@ -120,7 +120,7 @@ export const requestContactFormSubmit = () => async (dispatch, getState) => {
       triggerAlert({
         children: 'Your message has been submitted. We will get back to you soon.',
         color: 'success',
-        title: 'Success!'
+        title: 'Success!',
       })
     );
     dispatch(resetContactForm());
@@ -130,7 +130,7 @@ export const requestContactFormSubmit = () => async (dispatch, getState) => {
       triggerAlert({
         children: 'There was an error submitting your contact form submission.  Please try again.',
         color: 'danger',
-        title: 'Contact Form Failure'
+        title: 'Contact Form Failure',
       })
     );
   }

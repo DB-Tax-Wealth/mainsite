@@ -19,7 +19,7 @@ import HeroImage from 'images/write-message.jpg';
 const phoneLink = convertPhoneNumberToTelLink(PHONE_NUMBER);
 const faxLink = convertPhoneNumberToTelLink(FAX_NUMBER);
 
-export const Contact = props => {
+export const Contact = (props) => {
   const { onHeroButtonClick } = props;
 
   return (
@@ -123,9 +123,9 @@ export const Contact = props => {
 };
 
 Contact.propTypes = {
-  onHeroButtonClick: PropTypes.func
+  onHeroButtonClick: PropTypes.func,
 };
 
 Contact.defaultProps = {
-  onHeroButtonClick: null
+  onHeroButtonClick: null,
 };

@@ -14,17 +14,17 @@ export const DEFAULT_STATE = { sampleValue: 0 };
 // Reducer
 export const sampleReducer = handleActions(
   {
-    [RESET]: state => ({ ...state, sampleValue: DEFAULT_STATE.sampleValue }),
-    [UPDATE]: state => {
+    [RESET]: (state) => ({ ...state, sampleValue: DEFAULT_STATE.sampleValue }),
+    [UPDATE]: (state) => {
       const { sampleValue } = state;
       return { ...state, sampleValue: sampleValue + 1 };
-    }
+    },
   },
   DEFAULT_STATE
 );
 
 // Selectors
 export const selectSample = (state = {}) => state.sample || {};
-export const selectSampleValue = state => selectSample(state).sampleValue || DEFAULT_STATE.sampleValue;
+export const selectSampleValue = (state) => selectSample(state).sampleValue || DEFAULT_STATE.sampleValue;
 
 // Thunks

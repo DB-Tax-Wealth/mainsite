@@ -10,20 +10,20 @@ export class CircularProgressIndicator extends Component {
   static propTypes = {
     className: PropTypes.string,
     color: PropTypes.string,
-    size: PropTypes.number
+    size: PropTypes.number,
   };
 
   static defaultProps = {
     className: '',
     color: null,
-    size: DEFAULT_SIZE
+    size: DEFAULT_SIZE,
   };
 
   getClassNames() {
     const { className, color } = this.props;
 
     const result = classNames(styles.root, className, {
-      [styles[color]]: color
+      [styles[color]]: color,
     });
 
     return result;

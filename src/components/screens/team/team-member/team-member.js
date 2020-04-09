@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { ROUTES } from 'constants/routes';
 import styles from './team-member.style.scss';
 
-export const TeamMember = props => {
+export const TeamMember = (props) => {
   const { shortBio, name, img, title, id } = props;
   const imageExists = Boolean(img);
 
@@ -37,7 +37,7 @@ TeamMember.propTypes = {
   id: PropTypes.number,
   img: PropTypes.node,
   name: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 TeamMember.defaultProps = {
@@ -45,5 +45,5 @@ TeamMember.defaultProps = {
   id: null,
   img: null,
   name: '',
-  title: ''
+  title: '',
 };

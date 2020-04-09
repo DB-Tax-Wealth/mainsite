@@ -7,7 +7,7 @@ $selector: text-align;
 $modifiers: (
   center: center,
   left: left,
-  right: right
+  right: right,
 );
 
 .#{$selector} {

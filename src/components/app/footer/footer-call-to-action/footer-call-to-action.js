@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './footer-call-to-action.style.scss';
 
-export const FooterCallToAction = props => {
+export const FooterCallToAction = (props) => {
   const { onClick } = props;
 
   return (
@@ -22,9 +22,9 @@ export const FooterCallToAction = props => {
 };
 
 FooterCallToAction.propTypes = {
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 FooterCallToAction.defaultProps = {
-  onClick: null
+  onClick: null,
 };

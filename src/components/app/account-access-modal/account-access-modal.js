@@ -9,12 +9,12 @@ import { SMARTVAULT_LINK } from 'constants/smartvault-link';
 import PropTypes from 'prop-types';
 import { Icon } from 'components/layout/icon/icon';
 
-const openLinkInNewTab = href => Object.assign(document.createElement('a'), { target: '_blank', href }).click();
+const openLinkInNewTab = (href) => Object.assign(document.createElement('a'), { target: '_blank', href }).click();
 
 const onAvantaxClick = () => openLinkInNewTab(AVANTAX_LINK);
 const onSmartvaultClick = () => openLinkInNewTab(SMARTVAULT_LINK);
 
-export const AccountAccessModal = props => {
+export const AccountAccessModal = (props) => {
   const { active, onOverlayClick } = props;
 
   return (
@@ -42,10 +42,10 @@ export const AccountAccessModal = props => {
 
 AccountAccessModal.propTypes = {
   active: PropTypes.bool,
-  onOverlayClick: PropTypes.func
+  onOverlayClick: PropTypes.func,
 };
 
 AccountAccessModal.defaultProps = {
   active: false,
-  onOverlayClick: null
+  onOverlayClick: null,
 };

@@ -33,29 +33,29 @@ export class WealthProcess extends Component {
         icon: 'file-contract',
         label: '1) Understand Goals',
         message: 'Understand your goals and financial position',
-        onClick: () => this.handleOnSectionClick(0)
+        onClick: () => this.handleOnSectionClick(0),
       },
       {
         content: <WealthProcessTeam />,
         icon: 'users',
         label: '2) Prepare',
         message: 'Prepare to meet your team',
-        onClick: () => this.handleOnSectionClick(1)
+        onClick: () => this.handleOnSectionClick(1),
       },
       {
         content: <WealthProcessPlan />,
         icon: 'search',
         label: '3) Plan',
         message: 'Build financial plan',
-        onClick: () => this.handleOnSectionClick(2)
+        onClick: () => this.handleOnSectionClick(2),
       },
       {
         content: <WealthProcessMonitor />,
         icon: 'signal',
         label: '4) Monitor',
         message: 'Monitor and update your goals',
-        onClick: () => this.handleOnSectionClick(3)
-      }
+        onClick: () => this.handleOnSectionClick(3),
+      },
     ];
 
     return (

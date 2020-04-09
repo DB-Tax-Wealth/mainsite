@@ -5,7 +5,7 @@ import { STYLE_PROP_TYPE } from 'constants/style-prop-type';
 import { CHILDREN_PROP_TYPE } from 'constants/children-prop-type';
 import styles from './row.style.scss';
 
-export const Row = props => {
+export const Row = (props) => {
   const { children, className: classNameProp, style } = props;
   const className = classNames(styles.root, classNameProp);
 
@@ -19,11 +19,11 @@ export const Row = props => {
 Row.propTypes = {
   children: CHILDREN_PROP_TYPE,
   className: PropTypes.string,
-  style: STYLE_PROP_TYPE
+  style: STYLE_PROP_TYPE,
 };
 
 Row.defaultProps = {
   children: null,
   className: '',
-  style: null
+  style: null,
 };

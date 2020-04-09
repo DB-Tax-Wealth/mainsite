@@ -6,11 +6,11 @@ import { CarouselTeasers } from './carousel-teasers/carousel-teasers';
 
 export class Carousel extends Component {
   static propTypes = {
-    slides: PropTypes.arrayOf(PropTypes.object)
+    slides: PropTypes.arrayOf(PropTypes.object),
   };
 
   static defaultProps = {
-    slides: []
+    slides: [],
   };
 
   constructor(props) {

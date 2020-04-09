@@ -27,7 +27,7 @@ export class Column extends Component {
     widthMd: PropTypes.number,
     widthPrint: PropTypes.number,
     widthSm: PropTypes.number,
-    widthXl: PropTypes.number
+    widthXl: PropTypes.number,
   };
 
   static defaultProps = {
@@ -50,7 +50,7 @@ export class Column extends Component {
     widthMd: null,
     widthPrint: null,
     widthSm: null,
-    widthXl: null
+    widthXl: null,
   };
 
   getClassNames() {
@@ -76,7 +76,7 @@ export class Column extends Component {
       [styles[`offset-lg-${offsetLg}`]]: offsetLg,
       [styles[`offset-md-${offsetMd}`]]: offsetMd,
       [styles[`offset-sm-${offsetSm}`]]: offsetSm,
-      [styles[`offset-xl-${offsetXl}`]]: offsetXl
+      [styles[`offset-xl-${offsetXl}`]]: offsetXl,
     });
 
     return result;
@@ -90,7 +90,7 @@ export class Column extends Component {
       [styles[`order-lg-${orderLg}`]]: orderLg,
       [styles[`order-md-${orderMd}`]]: orderMd,
       [styles[`order-sm-${orderSm}`]]: orderSm,
-      [styles[`order-xl-${orderXl}`]]: orderXl
+      [styles[`order-xl-${orderXl}`]]: orderXl,
     });
 
     return result;
@@ -104,7 +104,7 @@ export class Column extends Component {
       [styles[`root-lg-${widthLg}`]]: widthLg,
       [styles[`root-md-${widthMd}`]]: widthMd,
       [styles[`root-sm-${widthSm}`]]: widthSm,
-      [styles[`root-xl-${widthXl}`]]: widthXl
+      [styles[`root-xl-${widthXl}`]]: widthXl,
     });
 
     return result;
@@ -115,7 +115,7 @@ export class Column extends Component {
 
     const result = classNames({
       [styles[`print-${widthPrint}`]]: widthPrint,
-      [styles[`print-offset-${offsetPrint}`]]: offsetPrint !== null
+      [styles[`print-offset-${offsetPrint}`]]: offsetPrint !== null,
     });
 
     return result;

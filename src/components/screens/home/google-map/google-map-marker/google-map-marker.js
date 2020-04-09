@@ -12,10 +12,10 @@ const STYLES = {
   height: '2.5rem',
   justifyContent: 'center',
   textShadow: '0 1px 0.5rem #fff',
-  width: '2.5rem'
+  width: '2.5rem',
 };
 
-export const GoogleMapMarker = props => (
+export const GoogleMapMarker = (props) => (
   // eslint-disable-next-line react/jsx-props-no-spreading
   <div {...props} style={STYLES}>
     <Icon name="map-marker-alt" />

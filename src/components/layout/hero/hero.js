@@ -7,7 +7,7 @@ import classnames from 'classnames';
 import { STYLE_PROP_TYPE } from 'constants/style-prop-type';
 import styles from './hero.style.scss';
 
-export const Hero = props => {
+export const Hero = (props) => {
   const {
     animated,
     buttonColor,
@@ -18,7 +18,7 @@ export const Hero = props => {
     style,
     subtitle,
     subtitleColor,
-    title
+    title,
   } = props;
 
   const imageExists = Boolean(image);
@@ -72,7 +72,7 @@ Hero.propTypes = {
   style: STYLE_PROP_TYPE,
   subtitle: PropTypes.string,
   subtitleColor: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 Hero.defaultProps = {
@@ -85,5 +85,5 @@ Hero.defaultProps = {
   style: null,
   subtitle: '',
   subtitleColor: 'primary',
-  title: ''
+  title: '',
 };

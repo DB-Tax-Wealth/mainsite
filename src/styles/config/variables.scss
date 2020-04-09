@@ -48,7 +48,7 @@ $colors: (
   twitter: $color-twitter,
   type: $color-type,
   warning: $color-warning,
-  white: $color-white
+  white: $color-white,
 );
 
 // inputs
@@ -57,7 +57,7 @@ $disabled-opacity: 0.4;
 /* typography
 **********************************************************/
 // font families
-$font-family-mono: Monaco, Menlo, Consolas, 'Courier New', monospace;
+$font-family-mono: 'Monaco', 'Menlo', 'Consolas', 'Courier New', monospace;
 $font-family-sans-serif: 'Benton Sans', arial, sans-serif;
 $font-family-secondary: arial, sans-serif;
 
@@ -99,7 +99,7 @@ $grid-breakpoints: (
   sm: $width-sm,
   md: $width-md,
   lg: $width-lg,
-  xl: $width-xl
+  xl: $width-xl,
 );
 
 // z-indexes

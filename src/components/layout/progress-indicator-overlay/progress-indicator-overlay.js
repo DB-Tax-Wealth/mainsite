@@ -9,12 +9,12 @@ import { Overlay } from '../overlay/overlay';
 export class ProgressIndicatorOverlay extends Component {
   static propTypes = {
     active: PropTypes.bool,
-    dark: PropTypes.bool
+    dark: PropTypes.bool,
   };
 
   static defaultProps = {
     active: false,
-    dark: false
+    dark: false,
   };
 
   shouldComponentUpdate(nextProps) {

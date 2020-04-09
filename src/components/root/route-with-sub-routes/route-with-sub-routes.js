@@ -2,13 +2,13 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-export const RouteWithSubRoutes = props => {
+export const RouteWithSubRoutes = (props) => {
   const { component, exact, routeKey, path, routes } = props;
 
   return (
     <>
       <Route component={component} exact={exact} key={routeKey} path={path} />
-      {Object.keys(routes).map(childKey => {
+      {Object.keys(routes).map((childKey) => {
         const route = routes[childKey];
         const { component: childComponent, exact: childExact, path: childPath, routes: childRoutes } = route;
 
@@ -32,7 +32,7 @@ RouteWithSubRoutes.propTypes = {
   exact: PropTypes.bool,
   routeKey: PropTypes.string,
   path: PropTypes.string,
-  routes: PropTypes.object
+  routes: PropTypes.object,
 };
 
 RouteWithSubRoutes.defaultProps = {
@@ -40,5 +40,5 @@ RouteWithSubRoutes.defaultProps = {
   exact: false,
   routeKey: '',
   path: '',
-  routes: {}
+  routes: {},
 };

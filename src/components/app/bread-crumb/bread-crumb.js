@@ -5,11 +5,11 @@ import { Icon } from 'components/layout/icon/icon';
 import { ROUTES } from 'constants/routes';
 import styles from './bread-crumb.style.scss';
 
-const BreadCrumbBase = props => {
+const BreadCrumbBase = (props) => {
   const path = get(props, 'match.path', '');
 
-  const keys = path.split('/').filter(key => Boolean(key));
-  const routes = keys.map(key => find(ROUTES, { key }));
+  const keys = path.split('/').filter((key) => Boolean(key));
+  const routes = keys.map((key) => find(ROUTES, { key }));
 
   if (routes.length < 2) return null;
 

@@ -3,15 +3,15 @@ import React from 'react';
 import classnames from 'classnames';
 import styles from './textarea.style.scss';
 
-export const Textarea = props => {
+export const Textarea = (props) => {
   const { className: classNameProp, error, onChange, placeholder, shadow, valid, value } = props;
 
   const className = classnames(styles.root, classNameProp, {
     [styles.error]: error,
     [styles.shadow]: shadow,
-    [styles.valid]: valid
+    [styles.valid]: valid,
   });
-  const handleOnChange = event => onChange(event.target.value);
+  const handleOnChange = (event) => onChange(event.target.value);
 
   return (
     <div className={className}>
@@ -27,7 +27,7 @@ Textarea.propTypes = {
   placeholder: PropTypes.string,
   shadow: PropTypes.bool,
   valid: PropTypes.bool,
-  value: PropTypes.string
+  value: PropTypes.string,
 };
 
 Textarea.defaultProps = {
@@ -37,5 +37,5 @@ Textarea.defaultProps = {
   placeholder: 'enter a value...',
   shadow: false,
   valid: false,
-  value: ''
+  value: '',
 };

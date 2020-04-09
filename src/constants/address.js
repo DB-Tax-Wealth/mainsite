@@ -9,5 +9,5 @@ export const ADDRESS = {
   GOOGLE_MAPS,
   STATE,
   STREET,
-  ZIP
+  ZIP,
 };

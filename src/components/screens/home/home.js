@@ -18,7 +18,7 @@ import heroImage4 from 'images/db-tax-team.jpg';
 import PropTypes from 'prop-types';
 import { Disclosure } from './disclosure/disclosure';
 
-export const Home = props => {
+export const Home = (props) => {
   const { history } = props;
   const { push } = history;
 
@@ -31,7 +31,7 @@ export const Home = props => {
       image: heroImage1,
       subtitle: 'Tax',
       teaser: 'Our experienced advisors will help you save money.',
-      title: 'Don’t miss out.'
+      title: 'Don’t miss out.',
     },
     {
       buttonOnClick: () => push(ROUTES.WEALTH.path),
@@ -41,7 +41,7 @@ export const Home = props => {
       image: heroImage3,
       subtitle: 'Wealth',
       teaser: 'Make sure your investments align with your goals.',
-      title: 'The future in your hands.'
+      title: 'The future in your hands.',
     },
     {
       buttonOnClick: () => push(ROUTES.ACCOUNTING.path),
@@ -51,7 +51,7 @@ export const Home = props => {
       image: heroImage2,
       subtitle: 'Accounting',
       teaser: 'Stay on top of your business instead of your books.',
-      title: 'There’s more you’ve earned.'
+      title: 'There’s more you’ve earned.',
     },
     {
       buttonOnClick: () => push(ROUTES.ABOUT.path),
@@ -61,8 +61,8 @@ export const Home = props => {
       image: heroImage4,
       subtitle: 'About',
       teaser: 'We want to develop a strategy designed for your individual situation.',
-      title: 'A history of helping.'
-    }
+      title: 'A history of helping.',
+    },
   ];
 
   return (
@@ -134,9 +134,9 @@ export const Home = props => {
 };
 
 Home.propTypes = {
-  history: PropTypes.object
+  history: PropTypes.object,
 };
 
 Home.defaultProps = {
-  history: { push: () => {} }
+  history: { push: () => {} },
 };

@@ -20,13 +20,13 @@ class AppBase extends Component {
   static propTypes = {
     children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
     history: PropTypes.object,
-    onHistoryChange: PropTypes.func
+    onHistoryChange: PropTypes.func,
   };
 
   static defaultProps = {
     children: null,
     history: { listen: () => {} },
-    onHistoryChange: () => {}
+    onHistoryChange: () => {},
   };
 
   constructor(props) {
@@ -44,7 +44,7 @@ class AppBase extends Component {
     // When the app.js component mounts it fires an event called 'appReady'
     const event = new CustomEvent('appReady', {
       bubbles: true,
-      cancelable: false
+      cancelable: false,
     });
 
     document.dispatchEvent(event);

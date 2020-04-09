@@ -13,13 +13,13 @@ export class CarouselTeasers extends Component {
   static propTypes = {
     activeIndex: PropTypes.number,
     onTeaserClick: PropTypes.func,
-    slides: PropTypes.arrayOf(PropTypes.object)
+    slides: PropTypes.arrayOf(PropTypes.object),
   };
 
   static defaultProps = {
     activeIndex: 0,
     onTeaserClick: () => {},
-    slides: []
+    slides: [],
   };
 
   getCarouselTeasers() {

@@ -8,10 +8,10 @@ export default ({ include, exclude, options } = {}) => {
           exclude,
           use: {
             loader: 'url-loader',
-            options
-          }
-        }
-      ]
-    }
+            options,
+          },
+        },
+      ],
+    },
   };
 };

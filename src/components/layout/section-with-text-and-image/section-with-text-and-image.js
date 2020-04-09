@@ -5,7 +5,7 @@ import React from 'react';
 import { Section } from 'components/layout/section/section';
 import styles from './section-with-text-and-image.style.scss';
 
-export const SectionWithTextAndImage = props => {
+export const SectionWithTextAndImage = (props) => {
   const { children, image, subtitle, subtitleColor, title } = props;
   const imageExists = Boolean(image);
 
@@ -33,7 +33,7 @@ SectionWithTextAndImage.propTypes = {
   image: PropTypes.node,
   subtitle: PropTypes.string,
   subtitleColor: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 SectionWithTextAndImage.defaultProps = {
@@ -41,5 +41,5 @@ SectionWithTextAndImage.defaultProps = {
   image: null,
   subtitle: '',
   subtitleColor: undefined,
-  title: ''
+  title: '',
 };

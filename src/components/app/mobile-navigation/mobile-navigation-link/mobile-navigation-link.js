@@ -11,7 +11,7 @@ export class MobileNavigationLink extends Component {
     onClick: PropTypes.func,
     path: PropTypes.string,
     routes: PropTypes.array,
-    title: PropTypes.string
+    title: PropTypes.string,
   };
 
   static defaultProps = {
@@ -19,7 +19,7 @@ export class MobileNavigationLink extends Component {
     onClick: null,
     path: '',
     routes: [],
-    title: ''
+    title: '',
   };
 
   constructor(props) {
@@ -62,7 +62,7 @@ export class MobileNavigationLink extends Component {
         </div>
         {hasChildRoutes && (
           <div className={styles.children}>
-            {routes.map(route => {
+            {routes.map((route) => {
               const { path: childPath, title: childTitle, key, externalLink } = route;
               const isExternalLink = Boolean(externalLink);
 

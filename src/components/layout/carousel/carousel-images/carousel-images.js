@@ -2,7 +2,7 @@ import React from 'react';
 import { Hero } from 'components/layout/hero/hero';
 import PropTypes from 'prop-types';
 
-export const CarouselImages = props => {
+export const CarouselImages = (props) => {
   const { activeIndex, slides } = props;
 
   return slides.map((slideProps, index) => {
@@ -16,10 +16,10 @@ export const CarouselImages = props => {
 
 CarouselImages.propTypes = {
   activeIndex: PropTypes.number,
-  slides: PropTypes.arrayOf(PropTypes.object)
+  slides: PropTypes.arrayOf(PropTypes.object),
 };
 
 CarouselImages.defaultProps = {
   activeIndex: 0,
-  slides: []
+  slides: [],
 };

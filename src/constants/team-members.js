@@ -35,7 +35,7 @@ export const TEAM_MEMBERS = [
 
     Lisa is a resident of the Town of Raymond. Married to Mark with 4 wonderful children, 2 dogs, and a cat.
 
-    Investment and financial planning services are offered by Lisa Pugel through her affiliation with Avantax.`
+    Investment and financial planning services are offered by Lisa Pugel through her affiliation with Avantax.`,
   },
   {
     id: 2,
@@ -53,7 +53,7 @@ export const TEAM_MEMBERS = [
 
     Gail has been a Wisconsin Notary Public since 2007.
 
-    Gail has 2 children, both boys, Jordan (24) and Zachary (17) and 3 stepchildren, Kodi (27), Joshua (22) and Megan (19). She is married to John. They have a family dog that is 8 years old, a pekingese/maltese mix, named Max. Outside of the office she enjoys traveling, attending sporting events, spending time with family and friends and relaxing.`
+    Gail has 2 children, both boys, Jordan (24) and Zachary (17) and 3 stepchildren, Kodi (27), Joshua (22) and Megan (19). She is married to John. They have a family dog that is 8 years old, a pekingese/maltese mix, named Max. Outside of the office she enjoys traveling, attending sporting events, spending time with family and friends and relaxing.`,
   },
   {
     id: 3,
@@ -71,7 +71,7 @@ export const TEAM_MEMBERS = [
 
     Mark joined the DB Tax & Wealth team in 2013. He began working on special projects such as Business Valuations and Tax Audits, but was needed to fill the role of Small Business Accountant almost immediately. After many years in the Corporate world, Mark finds it very rewarding to work with clients where he knows that his work makes a difference. In 2014, he obtained his Series 7 & 63 licenses.
 
-    Mark lives in the Town of Raymond, is married and has 4 children that keep him busy. He is an avid sports fan, loves his Brewers, Packers and Badgers.`
+    Mark lives in the Town of Raymond, is married and has 4 children that keep him busy. He is an avid sports fan, loves his Brewers, Packers and Badgers.`,
   },
   {
     id: 4,
@@ -85,7 +85,7 @@ export const TEAM_MEMBERS = [
     title: 'Tax & Accounting Manager',
     description: `Angela is an Enrolled Agent (EA), who has been assisting clients in public accounting for over 20 years.  She earned a Bachelor’s Degree in Economics from the University of Wisconsin-Milwaukee in 1998 and obtained her EA status in 2002.  She specializes in personal income tax and strives to provide an excellent interpersonal relationship with her clients that is both informative and friendly. She also has extensive experience with many other facets in the accounting field, such as payroll preparation, sales tax, personal property taxes, and financial statement compilation.  In addition, she is a commissioned Notary Public.
 
-    Angela has 2 children (Trey, 16 and Payton, 13), and is recently married to her husband James.  Angela and James spend their free time supporting her two active children in multiple sports and competitive dance.  Angela also enjoys both watching and playing sports, outdoor activities, and live music.`
+    Angela has 2 children (Trey, 16 and Payton, 13), and is recently married to her husband James.  Angela and James spend their free time supporting her two active children in multiple sports and competitive dance.  Angela also enjoys both watching and playing sports, outdoor activities, and live music.`,
   },
   {
     id: 5,
@@ -99,7 +99,7 @@ export const TEAM_MEMBERS = [
     title: 'Securities Analyst',
     description: `Graduate of Bradley University, Peoria, IL, double major - Business Finance and Economics.  Aliina has worked with the firm since 2009 providing assistance with receptionist duties, appointment management, processing electronic filing, payroll and accounting, and customer care. As Aliina advanced in her career and studies, she assisted with general accounting, reconciliations, financial statements, and basic tax preparation. Her newest role in the firm upon graduation is to perform as our Financial Analyst as she pursues her CFP designation.
 
-    Outside of school, Allina keeps busy with sports and other activities. She participated in 4 years of club volleyball for BU. In addition, she loves to travel and ski, and is an active alumni of Sigma Kappa Sorority. Previously she served as VP of Finance for Sigma Kappa Beta Nu for 2 years. Aliina was the 2016 recipient of the Sigma Kappa Outstanding Active Caryl Cordis D'hodt Award. Other professional experience consists of Credit Operation Intern at CEFCU in Peoria, IL and Manager at the Armory which requires managerial, cost accounting, inventory, and other general business management skills. Her leadership in this department provided her for an Outstanding Achievement Award in 2013 presented at the Business Community event in Oak Creek, WI. Aliina has also spent time mentoring and tutoring high school students who attended alternative and charter school within Peoria, IL. Lastly, Aliina has coached club volleyball at Next Level Volleyball Club (2010 – 2016) and is a certified scorekeeper with the Badger Region and works NCAA Div I matches. She is currently coaching at MATC and 414 Elite. She has also volunteered as an assistant coach at St. Matthews School providing basic volleyball instruction and practices (2010-2013) and St. Francis High School (2014- 2017). Aliina is an accomplished volleyball player herself – 3 year Varsity player at Oak Creek High School (starter) and 8 year club player (starter). All-Conference Honorable Mention 2012 and 2013.`
+    Outside of school, Allina keeps busy with sports and other activities. She participated in 4 years of club volleyball for BU. In addition, she loves to travel and ski, and is an active alumni of Sigma Kappa Sorority. Previously she served as VP of Finance for Sigma Kappa Beta Nu for 2 years. Aliina was the 2016 recipient of the Sigma Kappa Outstanding Active Caryl Cordis D'hodt Award. Other professional experience consists of Credit Operation Intern at CEFCU in Peoria, IL and Manager at the Armory which requires managerial, cost accounting, inventory, and other general business management skills. Her leadership in this department provided her for an Outstanding Achievement Award in 2013 presented at the Business Community event in Oak Creek, WI. Aliina has also spent time mentoring and tutoring high school students who attended alternative and charter school within Peoria, IL. Lastly, Aliina has coached club volleyball at Next Level Volleyball Club (2010 – 2016) and is a certified scorekeeper with the Badger Region and works NCAA Div I matches. She is currently coaching at MATC and 414 Elite. She has also volunteered as an assistant coach at St. Matthews School providing basic volleyball instruction and practices (2010-2013) and St. Francis High School (2014- 2017). Aliina is an accomplished volleyball player herself – 3 year Varsity player at Oak Creek High School (starter) and 8 year club player (starter). All-Conference Honorable Mention 2012 and 2013.`,
   },
   {
     id: 6,
@@ -117,7 +117,7 @@ export const TEAM_MEMBERS = [
 
     Rebecca volunteers her time as a member of Christian Mothers – Our Lady of Guadalupe-Milwaukee (10 years) and is currently the Treasurer of Christian Mothers (3 years). Secretary of Parish council – Our Lady of Guadalupe Parish.  She is also a volunteer as a money counter and Eucharistic Minister and choir member of Our Lady of Guadalupe and also Eucharistic minister for Divine Mercy Parish in South Milwaukee. She loves to line dance and attends water aerobics classes.
 
-    Rebecca, who is widowed, has 6 children. Ruth, who is a Litigation Paralegal  at Gimbel, Reilly, Geurin and Brown Law Firm for 5 years after working at the Milwaukee Courthouse for 23 years.   Ronald, who is a Milwaukee Police Officer for 21 years. Rachel, who is a Resident Assistant at Brenwood Park Assisted Living,  Robert, who is a South Milwaukee Postal Worker,  Richard, who is a Master Electrician and has worked for Ladish Company,  now ATI,  in Cudahy as Maintenance General Foreman for 9 years.  Rosalinda, who completed her residency and is a Family Medicine Physician at Memorial Hospital and Clinics in Carthage, IL. Rebecca has lived in South Milwaukee since 1991.`
+    Rebecca, who is widowed, has 6 children. Ruth, who is a Litigation Paralegal  at Gimbel, Reilly, Geurin and Brown Law Firm for 5 years after working at the Milwaukee Courthouse for 23 years.   Ronald, who is a Milwaukee Police Officer for 21 years. Rachel, who is a Resident Assistant at Brenwood Park Assisted Living,  Robert, who is a South Milwaukee Postal Worker,  Richard, who is a Master Electrician and has worked for Ladish Company,  now ATI,  in Cudahy as Maintenance General Foreman for 9 years.  Rosalinda, who completed her residency and is a Family Medicine Physician at Memorial Hospital and Clinics in Carthage, IL. Rebecca has lived in South Milwaukee since 1991.`,
   },
   {
     id: 7,
@@ -139,7 +139,7 @@ export const TEAM_MEMBERS = [
 
     Chuck has successfully passed the FINRA Series 7 General Securities Representative exam, Series 63 Uniform Securities Agent State Law exam and the Series 65 Uniform Combined State Law exam, as well as obtaining Health and Life Insurance licenses. Chuck has been a CERTIFIED FINANCIAL PLANNER ® professional since 2016 after completing educational course requirements in Investment Planning, Retirement Planning, Tax Planning, Financial Planning, Estate Planning and Insurance Planning. Chuck earned his Bachelor’s degree in Business Administration from the University of Wisconsin-Milwaukee, summa cum laude, in 2003.
 
-    Chuck lives in Menomonee Falls. If you run into him outside of work, he’s probably having fun with his kids Mark (13) and Joelle (12) or his extended family. He loves adventure and the outdoors, especially riding dirt bikes, fishing, skiing in the mountains and riding off-road trails on his mountain bike.`
+    Chuck lives in Menomonee Falls. If you run into him outside of work, he’s probably having fun with his kids Mark (13) and Joelle (12) or his extended family. He loves adventure and the outdoors, especially riding dirt bikes, fishing, skiing in the mountains and riding off-road trails on his mountain bike.`,
   },
   {
     id: 8,
@@ -155,7 +155,7 @@ export const TEAM_MEMBERS = [
  
     To fill her time, over the past 10 years, in conjunction with raising her children, Lisa committed to many roles at Saint Matthew school in Oak Creek. Her duties at St. Matthews allowed her to continue to support her family as they grew up, but gave Lisa the much needed satisfaction of helping others. For over 8 years Lisa worked in the 4K program at Saint Matthews as the classroom assistant and is grateful everyday for the love and support provided by the children, staff and community of the school and parish through teaching.
      
-    In November of 2014, Lisa joined DB Tax and Wealth. Lisa's primary job duties include assisting DB Tax & Wealth Owner, Lisa Pugel. Lisa's role at the firm is unique due to her willingness to help out with numerous tasks on a daily basis. Customer care, staff support, filing, managing QuickBooks files, data entry, scheduling and various duties requiring exceptional organizational skills and creativity.  Lisa enjoys the flexibility her job brings and is excited to continue to learn more as DB Tax & Wealth grows.`
+    In November of 2014, Lisa joined DB Tax and Wealth. Lisa's primary job duties include assisting DB Tax & Wealth Owner, Lisa Pugel. Lisa's role at the firm is unique due to her willingness to help out with numerous tasks on a daily basis. Customer care, staff support, filing, managing QuickBooks files, data entry, scheduling and various duties requiring exceptional organizational skills and creativity.  Lisa enjoys the flexibility her job brings and is excited to continue to learn more as DB Tax & Wealth grows.`,
   },
   {
     id: 9,
@@ -173,7 +173,7 @@ export const TEAM_MEMBERS = [
 
     It was in 2009 Maria came to work with DB Tax & Wealth as a Tax Professional, specializing in individual income tax but gaining much experience with more complex returns.
 
-    Maria has been married for 31 years and has been blessed with 3 children and 3 grandchildren.`
+    Maria has been married for 31 years and has been blessed with 3 children and 3 grandchildren.`,
   },
   {
     id: 10,
@@ -187,7 +187,7 @@ export const TEAM_MEMBERS = [
     title: 'Tax Analyst',
     description: `Alyssa is a graduate from Oak Creek High School and is a Milwaukee native. She has been a member of DB tax since 2017. Alyssa is the first person you will engage with when you interact with our firm! Whether it be her charming voice on the phone or her warm smile as you walk through the doors, she is the point of contact as our full time receptionist. She has been in the customer service field for 10 years and is exceptionally accomplished in providing a welcoming client experience. She has quickly adopted many responsibilities and as she continues to advance, her dedication and willingness to learn have proved her role to be vital to our growing firm. Alyssa administrates all client inquires, provides coordination of document workflow, manages data entry, maintains QuickBook files, regulates tax preparation & organizes the processing, and provides crucial assistance to all staff members. She oversees an array of fundamental tasks and is proficient in her skill set.
 
-    Outside of work, Alyssa enjoys family time and hanging out with her best friend who is her twin sister. She appreciates exploring the outdoors, enjoys watching movies, and cheering on the Milwaukee Brewers & Green Bay Packers! She is looking forward to the future and enhancing her career at our firm.`
+    Outside of work, Alyssa enjoys family time and hanging out with her best friend who is her twin sister. She appreciates exploring the outdoors, enjoys watching movies, and cheering on the Milwaukee Brewers & Green Bay Packers! She is looking forward to the future and enhancing her career at our firm.`,
   },
   {
     id: 11,
@@ -204,7 +204,7 @@ export const TEAM_MEMBERS = [
     Milena was first employed as a Tax Professional with DB Tax & Wealth in 1994. After working 2 tax seasons part-time, she took a break from the income tax profession. However, after pursuing the additional education above, she came back to the firm in 2009.
 
     In addition to working in tax and finance, Milena has been employed at Delta Airlines for over 34 years. This provides her with the opportunity to travel, which she truly loves to do with her husband of 28 years and their 3 wonderful grown children. She and her husband are also involved in social change by running PromiseView, an aftercare home for men recovering from substance abuse. 
-    `
+    `,
   },
   {
     id: 12,
@@ -220,7 +220,7 @@ export const TEAM_MEMBERS = [
 
     Linda began her career working for a non-profit organization, Milwaukee Habitat for Humanity.  She was the Loan Service Coordinator and managed all performing and non-performing loans. She worked strategically with their corporate attorney on all non-performing loans, loans that were in foreclosure and bankruptcy, setting up payment plans, tax & insurance disbursements and reporting all loan activity to the monthly foreclosure committee.  In February of 2016, Linda was hired as a Default Consumer Loan Reporting Specialist with Johnson Financial Group.  Her primary duty was to report all default mortgages to their investors on a monthly basis.  For 2+ years she continued to work with foreclosure & bankruptcy accounts, submitting 1099 reporting, filing claims with investors on foreclosed properties, and handling all invoicing on delinquent properties.
 
-    Linda has been married for more than 25 years to Tony, and has 2 daughters, Alyssa and Emily. Emily graduated as an RN, while Alyssa is studying to become a nurse. They also have 2 dogs, Tukker and Lilee.  She enjoys spending time with her family & friends, any seasonal outdoor activities, and traveling.`
+    Linda has been married for more than 25 years to Tony, and has 2 daughters, Alyssa and Emily. Emily graduated as an RN, while Alyssa is studying to become a nurse. They also have 2 dogs, Tukker and Lilee.  She enjoys spending time with her family & friends, any seasonal outdoor activities, and traveling.`,
   },
   {
     id: 13,
@@ -234,7 +234,7 @@ export const TEAM_MEMBERS = [
     title: 'Head of Marketing & Public Relations',
     description: `Andrea graduated from Winona State University in 1999 with a Bachelor’s Degree in Elementary Education.  She returned back home to Milwaukee where she got her first teaching job at St. Rita’s in Racine teaching 4th grade.  She taught at 3 other Racine schools (Roosevelt, Wind Point, and Julian Thomas) during her 19 year teaching career.  During that time, Andrea taught 2nd, 3rd, & 4th grade and also received her Master’s Degree from Olivet Nazarene University in 2004 in Curriculum & Instruction.  Although she never imagined doing anything other than teaching, Andrea was offered an amazing opportunity by DB Tax & Wealth!  Because of her creativity, ability to build connections with people, and her attention to detail, Andrea was offered a job in Marketing to build a better experience for our incredible clients.  She gladly accepted and looks forward to building relationships, planning events tailored to the interests of our clients, creating a stronger bond between our business and the community, and developing a charitable initiative.
 
-    Andrea spends some of her spare time creating personal, unique videos for weddings, birthdays, and other special occasions.  She has been married to Lee for over 10 years.  They have a dog named Bo and enjoy spending time at their campground on the weekends.  They faithfully follow Wisconsin sports, always cheering on the Packers, Badgers, Brewers, and Bucks!`
+    Andrea spends some of her spare time creating personal, unique videos for weddings, birthdays, and other special occasions.  She has been married to Lee for over 10 years.  They have a dog named Bo and enjoy spending time at their campground on the weekends.  They faithfully follow Wisconsin sports, always cheering on the Packers, Badgers, Brewers, and Bucks!`,
   },
   {
     id: 14,
@@ -248,6 +248,6 @@ export const TEAM_MEMBERS = [
     title: 'Receptionist',
     description: `Ramona is a graduate from Eachieve Academy and a current part time student at Milwaukee Area Technical College. She is the first person you will engage with when you interact with our firm. Being our full time receptionist ensures that you will see her bright smile when you walk in the door and hear her welcoming voice on the phone. Ramona has been is the customer service industry for 7 years which has given her the skill set to ensure that each client has a welcoming experience with our firm! Ramona has adopted many responsibilities since starting with us and her dedication to learning increases every day. Ramona manages all client inquiries, organizes all data entry, and provides pivotal assistance to all staff members. As full time receptionist Ramona has taken on a vital role in our growing firm.
 
-    Outside of work, Ramona likes to spend her time supporting Wisconsin sports with her family and friends. She also enjoys being active whether it’s going for a jog with her dogs, riding her bike or taking a yoga class with her mom. She is looking forward to furthering her education and enhancing her career with us.`
-  }
+    Outside of work, Ramona likes to spend her time supporting Wisconsin sports with her family and friends. She also enjoys being active whether it’s going for a jog with her dogs, riding her bike or taking a yoga class with her mom. She is looking forward to furthering her education and enhancing her career with us.`,
+  },
 ];

@@ -8,7 +8,7 @@ import { convertPhoneNumberToTelLink } from 'util/convert-phone-number-to-tel-li
 import { Icon } from 'components/layout/icon/icon';
 import styles from './team-member-detail.style.scss';
 
-export const TeamMemberDetail = props => {
+export const TeamMemberDetail = (props) => {
   const id = parseInt(get(props, 'match.params.id'));
   const teamMember = find(TEAM_MEMBERS, { id });
   const { description, email, fax, img, name, phone, title } = teamMember;

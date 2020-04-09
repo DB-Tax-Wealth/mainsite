@@ -19,5 +19,5 @@
 // };
 
 export const postContactForm = async () => {
-  return new Promise(resolve => setTimeout(resolve, 3000));
+  return new Promise((resolve) => setTimeout(resolve, 3000));
 };

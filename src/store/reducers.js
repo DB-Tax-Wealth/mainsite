@@ -6,5 +6,5 @@ import { alertsReducer } from './alerts/alerts';
 export const reducers = combineReducers({
   accountAccess: accountAccessReducer,
   alerts: alertsReducer,
-  contactForm: contactFormReducer
+  contactForm: contactFormReducer,
 });

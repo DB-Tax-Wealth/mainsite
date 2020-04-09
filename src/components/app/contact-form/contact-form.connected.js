@@ -16,11 +16,11 @@ import {
   selectContactFormEmailErrorMessage,
   requestContactFormSubmit,
   selectContactFormIsRequesting,
-  updateContactFormEmailIsDirty
+  updateContactFormEmailIsDirty,
 } from 'store/contact-form/contact-form';
 import { ContactForm } from './contact-form';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   active: selectContactFormActive(state),
   email: selectContactFormEmail(state),
   emailError: selectContactFormEmailError(state),
@@ -31,16 +31,16 @@ const mapStateToProps = state => ({
   messageValid: selectContactFormMessageValid(state),
   name: selectContactFormName(state),
   nameValid: selectContactFormNameValid(state),
-  submitDisabled: !selectContactFormValid(state)
+  submitDisabled: !selectContactFormValid(state),
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   onEmailBlur: () => dispatch(updateContactFormEmailIsDirty(true)),
-  onEmailChange: value => dispatch(updateContactFormEmail(value)),
-  onMessageChange: value => dispatch(updateContactFormMessage(value)),
-  onNameChange: value => dispatch(updateContactFormName(value)),
+  onEmailChange: (value) => dispatch(updateContactFormEmail(value)),
+  onMessageChange: (value) => dispatch(updateContactFormMessage(value)),
+  onNameChange: (value) => dispatch(updateContactFormName(value)),
   onOverlayClick: () => dispatch(closeContactForm()),
-  onSubmitClick: () => dispatch(requestContactFormSubmit())
+  onSubmitClick: () => dispatch(requestContactFormSubmit()),
 });
 
 export const ContactFormConnected = connect(mapStateToProps, mapDispatchToProps)(ContactForm);

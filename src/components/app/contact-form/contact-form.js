@@ -10,7 +10,7 @@ import { Input } from 'components/layout/input/input';
 import { Textarea } from 'components/layout/textarea/textarea';
 import { ProgressIndicatorOverlay } from 'components/layout/progress-indicator-overlay/progress-indicator-overlay';
 
-export const ContactForm = props => {
+export const ContactForm = (props) => {
   const {
     active,
     email,
@@ -28,7 +28,7 @@ export const ContactForm = props => {
     onNameChange,
     onOverlayClick,
     onSubmitClick,
-    submitDisabled
+    submitDisabled,
   } = props;
 
   return (
@@ -100,7 +100,7 @@ ContactForm.propTypes = {
   onNameChange: PropTypes.func,
   onOverlayClick: PropTypes.func,
   onSubmitClick: PropTypes.func,
-  submitDisabled: PropTypes.bool
+  submitDisabled: PropTypes.bool,
 };
 
 ContactForm.defaultProps = {
@@ -120,5 +120,5 @@ ContactForm.defaultProps = {
   onNameChange: () => {},
   onOverlayClick: () => {},
   onSubmitClick: null,
-  submitDisabled: false
+  submitDisabled: false,
 };

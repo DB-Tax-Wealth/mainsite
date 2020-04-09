@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import styles from './float-section.style.scss';
 
-export const FloatSection = props => {
+export const FloatSection = (props) => {
   const { children, spacerHeight, spacerColor, shadowColor, className: classNameProp } = props;
 
   const rootClassNames = classnames(styles.root, `shadow--${shadowColor}`, classNameProp);
@@ -29,7 +29,7 @@ FloatSection.propTypes = {
   className: PropTypes.string,
   shadowColor: PropTypes.string,
   spacerColor: PropTypes.string,
-  spacerHeight: PropTypes.string
+  spacerHeight: PropTypes.string,
 };
 
 FloatSection.defaultProps = {
@@ -37,5 +37,5 @@ FloatSection.defaultProps = {
   className: '',
   shadowColor: 'primary',
   spacerColor: 'primary',
-  spacerHeight: ''
+  spacerHeight: '',
 };

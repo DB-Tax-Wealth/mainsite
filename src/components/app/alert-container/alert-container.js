@@ -5,18 +5,18 @@ import styles from './alert-container.style.scss';
 
 export class AlertContainer extends Component {
   static propTypes = {
-    alerts: PropTypes.array
+    alerts: PropTypes.array,
   };
 
   static defaultProps = {
-    alerts: []
+    alerts: [],
   };
 
   getAlerts() {
     const { alerts } = this.props;
     const result = [];
 
-    alerts.forEach(alert => {
+    alerts.forEach((alert) => {
       const { children, color, onDismiss, title } = alert;
 
       result.push(

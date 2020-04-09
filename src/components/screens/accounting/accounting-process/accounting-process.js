@@ -33,29 +33,29 @@ export class AccountingProcess extends Component {
         icon: 'file-contract',
         label: '1) Contact Us',
         message: 'Own a business or starting a new one?',
-        onClick: () => this.handleOnSectionClick(0)
+        onClick: () => this.handleOnSectionClick(0),
       },
       {
         content: <AccountingProcessOrganize />,
         icon: 'users',
         label: '2) Organize',
         message: 'Get organized',
-        onClick: () => this.handleOnSectionClick(1)
+        onClick: () => this.handleOnSectionClick(1),
       },
       {
         content: <AccountingProcessWorkTogether />,
         icon: 'search',
         label: '3) Work Together',
         message: 'How we work together',
-        onClick: () => this.handleOnSectionClick(2)
+        onClick: () => this.handleOnSectionClick(2),
       },
       {
         content: <AccountingProcessPlan />,
         icon: 'signal',
         label: '4) Plan',
         message: 'Plan for the future',
-        onClick: () => this.handleOnSectionClick(3)
-      }
+        onClick: () => this.handleOnSectionClick(3),
+      },
     ];
 
     return (

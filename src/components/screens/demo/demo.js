@@ -18,75 +18,75 @@ const HIGHEST_GROSSING_MOVIES = [
     peak: 1,
     title: 'Avatar',
     worldwideGross: '$2,787,965,087',
-    year: 2009
+    year: 2009,
   },
   {
     rank: 2,
     peak: 2,
     title: 'Avengers: Endgame',
     worldwideGross: '$2,238,487,456',
-    year: 2019
+    year: 2019,
   },
   {
     rank: 3,
     peak: 1,
     title: 'Titanic',
     worldwideGross: '$2,187,463,944',
-    year: 1997
+    year: 1997,
   },
   {
     rank: 4,
     peak: 3,
     title: 'Star Wars: The Force Awakens',
     worldwideGross: '$2,068,223,624',
-    year: 2015
+    year: 2015,
   },
   {
     rank: 5,
     peak: 4,
     title: 'Avengers: Infinity War',
     worldwideGross: '$2,048,359,754',
-    year: 2018
+    year: 2018,
   },
   {
     rank: 6,
     peak: 3,
     title: 'Jurassic World',
     worldwideGross: '$1,671,713,208',
-    year: 2015
+    year: 2015,
   },
   {
     rank: 7,
     peak: 3,
     title: 'The Avengers',
     worldwideGross: '$1,518,812,988',
-    year: 2012
+    year: 2012,
   },
   {
     rank: 8,
     peak: 4,
     title: 'Furious 7',
     worldwideGross: '$1,516,045,911',
-    year: 2015
+    year: 2015,
   },
   {
     rank: 9,
     peak: 5,
     title: 'Avengers: Age of Ultron',
     worldwideGross: '$1,405,403,694',
-    year: 2015
+    year: 2015,
   },
   {
     rank: 10,
     peak: 9,
     title: 'Black Panther',
     worldwideGross: '$1,346,913,161',
-    year: 2018
-  }
+    year: 2018,
+  },
 ];
 
 export const Demo = () => {
-  const movieRows = HIGHEST_GROSSING_MOVIES.map(movie => {
+  const movieRows = HIGHEST_GROSSING_MOVIES.map((movie) => {
     return (
       <tr key={movie.rank}>
         <td>{movie.rank}</td>

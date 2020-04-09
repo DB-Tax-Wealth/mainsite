@@ -15,7 +15,7 @@ export const DEFAULT_STATE = false;
 export const accountAccessReducer = handleActions(
   {
     [RESET]: () => DEFAULT_STATE,
-    [UPDATE]: (state, { payload }) => payload
+    [UPDATE]: (state, { payload }) => payload,
   },
   DEFAULT_STATE
 );
@@ -24,10 +24,10 @@ export const accountAccessReducer = handleActions(
 export const selectAccountAccess = (state = {}) => state.accountAccess || DEFAULT_STATE;
 
 // Thunks
-export const closeAccountAccess = () => dispatch => {
+export const closeAccountAccess = () => (dispatch) => {
   dispatch(updateSampleValue(false));
 };
 
-export const openAccountAccess = () => dispatch => {
+export const openAccountAccess = () => (dispatch) => {
   dispatch(updateSampleValue(true));
 };

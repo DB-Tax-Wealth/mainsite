@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { CHILDREN_PROP_TYPE } from 'constants/children-prop-type';
 import styles from './alert.style.scss';
 
-export const Alert = props => {
+export const Alert = (props) => {
   const { children, color, title } = props;
 
   const className = classNames(styles.root, { [styles[color]]: color });
@@ -21,11 +21,11 @@ export const Alert = props => {
 Alert.propTypes = {
   children: CHILDREN_PROP_TYPE,
   color: PropTypes.oneOf(['danger', 'success']),
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 Alert.defaultProps = {
   children: null,
   color: '',
-  title: ''
+  title: '',
 };

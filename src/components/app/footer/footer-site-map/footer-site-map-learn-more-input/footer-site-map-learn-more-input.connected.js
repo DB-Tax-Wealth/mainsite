@@ -3,18 +3,18 @@ import {
   selectContactFormEmailValid,
   selectContactFormEmail,
   updateContactFormEmail,
-  requestContactFormSubmit
+  requestContactFormSubmit,
 } from 'store/contact-form/contact-form';
 import { FooterSiteMapLearnMoreInput } from './footer-site-map-learn-more-input';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   valid: selectContactFormEmailValid(state),
-  value: selectContactFormEmail(state)
+  value: selectContactFormEmail(state),
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   buttonOnClick: () => dispatch(requestContactFormSubmit()),
-  onChange: value => dispatch(updateContactFormEmail(value))
+  onChange: (value) => dispatch(updateContactFormEmail(value)),
 });
 
 export const FooterSiteMapLearnMoreInputConnnected = connect(

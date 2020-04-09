@@ -4,7 +4,7 @@ import { createAction, handleActions } from 'redux-actions';
 const ALERT_SHAPE = {
   children: null,
   color: 'success',
-  title: 'Alert'
+  title: 'Alert',
 };
 
 // Action Types
@@ -28,7 +28,7 @@ export const alertsReducer = handleActions(
       const alert = find(state, { id: payload });
       return xor(state, [alert]);
     },
-    [RESET]: () => DEFAULT_STATE
+    [RESET]: () => DEFAULT_STATE,
   },
   DEFAULT_STATE
 );
@@ -37,7 +37,7 @@ export const alertsReducer = handleActions(
 export const selectAlerts = (state = {}) => state.alerts || DEFAULT_STATE;
 
 // Thunks
-export const triggerAlert = (alert = {}) => dispatch => {
+export const triggerAlert = (alert = {}) => (dispatch) => {
   const id = uniqueId('alert__');
   const dismissFuction = () => dispatch(removeAlert(id));
 

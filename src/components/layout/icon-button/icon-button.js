@@ -6,7 +6,7 @@ import classnames from 'classnames';
 import { STYLE_PROP_TYPE } from 'constants/style-prop-type';
 import styles from './icon-button.style.scss';
 
-export const IconButton = props => {
+export const IconButton = (props) => {
   const { className: classNameProp, color, glow, iconName, iconType, onClick, style } = props;
   const className = classnames(styles.root, classNameProp);
 
@@ -24,7 +24,7 @@ IconButton.propTypes = {
   iconName: PropTypes.string,
   iconType: PropTypes.string,
   onClick: PropTypes.func,
-  style: STYLE_PROP_TYPE
+  style: STYLE_PROP_TYPE,
 };
 
 IconButton.defaultProps = {
@@ -34,5 +34,5 @@ IconButton.defaultProps = {
   iconName: undefined,
   iconType: undefined,
   onClick: null,
-  style: null
+  style: null,
 };

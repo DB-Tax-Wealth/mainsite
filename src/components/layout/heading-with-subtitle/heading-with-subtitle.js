@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import React from 'react';
 import styles from './heading-with-subtitle.style.scss';
 
-export const HeadingWithSubtitle = props => {
+export const HeadingWithSubtitle = (props) => {
   const { animated, children, subtitle, subtitleColor, subtitleBackground } = props;
   const subtitleExists = Boolean(subtitle);
   const subtitleClassName = classnames(
@@ -34,7 +34,7 @@ HeadingWithSubtitle.propTypes = {
   children: CHILDREN_PROP_TYPE,
   subtitleBackground: PropTypes.bool,
   subtitle: PropTypes.string,
-  subtitleColor: PropTypes.string
+  subtitleColor: PropTypes.string,
 };
 
 HeadingWithSubtitle.defaultProps = {
@@ -42,5 +42,5 @@ HeadingWithSubtitle.defaultProps = {
   children: null,
   subtitleBackground: false,
   subtitle: '',
-  subtitleColor: 'secondary'
+  subtitleColor: 'secondary',
 };

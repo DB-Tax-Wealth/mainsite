@@ -14,7 +14,10 @@
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-  $infix: breakpoint-infix($breakpoint, $grid-breakpoints); // Allow columns to stretch full width below their breakpoints
+  $infix: breakpoint-infix(
+    $breakpoint,
+    $grid-breakpoints
+  ); // Allow columns to stretch full width below their breakpoints
 
   @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
     // Provide basic `.col-{bp}` classes for equal-width flexbox columns
@@ -54,7 +57,7 @@
     }
 
     @for $i from 0 through ($grid-columns - 1) {
-      @if not ($infix == '') {
+      @if not($infix == '') {
         .root.offset-#{$infix}-#{$i} {
           @include make-column-offset($i, $grid-columns);
         }

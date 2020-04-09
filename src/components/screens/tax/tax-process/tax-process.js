@@ -33,29 +33,29 @@ export class TaxProcess extends Component {
         icon: 'file-contract',
         label: '1) File',
         message: 'It is time to file your taxes',
-        onClick: () => this.handleOnSectionClick(0)
+        onClick: () => this.handleOnSectionClick(0),
       },
       {
         content: <TaxProcessOrganize />,
         icon: 'users',
         label: '2) Organize',
         message: 'Get organized',
-        onClick: () => this.handleOnSectionClick(1)
+        onClick: () => this.handleOnSectionClick(1),
       },
       {
         content: <TaxProcessWorkTogether />,
         icon: 'search',
         label: '3) Work Together',
         message: 'How we work together',
-        onClick: () => this.handleOnSectionClick(2)
+        onClick: () => this.handleOnSectionClick(2),
       },
       {
         content: <TaxProcessPlan />,
         icon: 'signal',
         label: '4) Plan',
         message: 'Plan for the future',
-        onClick: () => this.handleOnSectionClick(3)
-      }
+        onClick: () => this.handleOnSectionClick(3),
+      },
     ];
 
     return (

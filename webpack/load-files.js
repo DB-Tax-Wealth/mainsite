@@ -6,10 +6,10 @@ export const loadFiles = (options = { name: '[name].[ext]' }) => {
           test: /\.(csv|doc?x|pdf|rtf|txt|xls?x)$/i,
           use: {
             loader: 'url-loader',
-            options
-          }
-        }
-      ]
-    }
+            options,
+          },
+        },
+      ],
+    },
   };
 };

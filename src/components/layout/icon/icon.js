@@ -9,10 +9,10 @@ import classnames from 'classnames';
 const TYPES = {
   brand: 'fab',
   solid: 'fas',
-  outline: 'far'
+  outline: 'far',
 };
 
-export const Icon = props => {
+export const Icon = (props) => {
   const { className: classNameProp, name, type: typeProp } = props;
   const type = TYPES[typeProp];
   const className = classnames(classNameProp, `${type} fa-${name}`);
@@ -23,11 +23,11 @@ export const Icon = props => {
 Icon.propTypes = {
   className: PropTypes.string,
   name: PropTypes.string,
-  type: PropTypes.oneOf(['brand', 'outline', 'solid'])
+  type: PropTypes.oneOf(['brand', 'outline', 'solid']),
 };
 
 Icon.defaultProps = {
   className: '',
   name: 'bell',
-  type: 'solid'
+  type: 'solid',
 };

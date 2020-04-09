@@ -28,14 +28,14 @@ export const ROUTES = {
     exact: true,
     key: 'engagement-policy',
     path: '/about/engagement-policy',
-    title: 'Engagement Policy'
+    title: 'Engagement Policy',
   },
   FEE_SCHEDULE: {
     component: FeeSchedule,
     exact: true,
     key: 'fee-schedule',
     path: '/about/fee-schedule',
-    title: 'Fee Schedule'
+    title: 'Fee Schedule',
   },
   HOME: { component: Home, exact: true, key: 'home', path: '/', title: 'Home' },
   MISSION_STATEMENT: {
@@ -43,7 +43,7 @@ export const ROUTES = {
     exact: true,
     key: 'mission-statement',
     path: '/about/mission-statement',
-    title: 'Mission Statement'
+    title: 'Mission Statement',
   },
   SERVICES: { component: UnderConstruction, exact: true, key: 'services', path: '/services', title: 'Services' },
   TEAM: { component: Team, exact: true, key: 'team', path: '/about/team', title: 'Team' },
@@ -52,7 +52,7 @@ export const ROUTES = {
     exact: true,
     key: 'team-member',
     path: '/about/team/:id',
-    title: 'Team Member'
+    title: 'Team Member',
   },
   /**
    * Tax Pages
@@ -63,21 +63,21 @@ export const ROUTES = {
     exact: true,
     key: 'tax-process',
     path: '/services/tax/process',
-    title: 'Process'
+    title: 'Process',
   },
   TAX_DOCUMENTS: {
     component: TaxDocuments,
     exact: true,
     key: 'tax-documents',
     path: '/services/tax/documents',
-    title: 'Documents'
+    title: 'Documents',
   },
   TAX_DB_DOCUSHARE: {
     component: UnderConstruction,
     exact: true,
     key: 'tax-db-docushare',
     path: '/services/tax/db-docushare',
-    title: 'DB DocuShare'
+    title: 'DB DocuShare',
   },
   /**
    * Accounting Pages
@@ -87,21 +87,21 @@ export const ROUTES = {
     exact: true,
     key: 'accounting',
     path: '/services/accounting/process',
-    title: 'Accounting'
+    title: 'Accounting',
   },
   ACCOUNTING_PROCESS: {
     component: AccountingProcess,
     exact: true,
     key: 'accounting-process',
     path: '/services/accounting/process',
-    title: 'Process'
+    title: 'Process',
   },
   ACCOUNTING_QUICK_LINKS: {
     component: AccountingQuickLinks,
     exact: true,
     key: 'accounting-quick-links',
     path: '/services/accounting/quick-links',
-    title: 'Quick Links'
+    title: 'Quick Links',
   },
   /**
    * Wealth Pages
@@ -111,27 +111,27 @@ export const ROUTES = {
     exact: true,
     key: 'wealth',
     path: '/services/wealth/process',
-    title: 'Wealth'
+    title: 'Wealth',
   },
   WEALTH_PROCESS: {
     component: WealthProcess,
     exact: true,
     key: 'wealth-process',
     path: '/services/wealth/process',
-    title: 'Process'
+    title: 'Process',
   },
   WEALTH_DOCUMENTS: {
     component: WealthDocuments,
     exact: true,
     key: 'wealth-documents',
     path: '/services/wealth/documents',
-    title: 'Documents'
+    title: 'Documents',
   },
   WEALTH_DB_MONEY: {
     key: 'wealth-db-money',
     externalLink: DB_WEALTH_LINK,
-    title: 'DB Money'
-  }
+    title: 'DB Money',
+  },
 };
 
 const TEAM_ROUTES = [ROUTES.TEAM_MEMBER];
@@ -143,24 +143,24 @@ const ABOUT_ROUTES = [
       ROUTES.MISSION_STATEMENT,
       { ...ROUTES.TEAM, routes: TEAM_ROUTES },
       ROUTES.FEE_SCHEDULE,
-      ROUTES.ENGAGEMENT_POLICY
-    ]
-  }
+      ROUTES.ENGAGEMENT_POLICY,
+    ],
+  },
 ];
 
 const SERVICES_ROUTES = [
   {
     ...ROUTES.TAX,
-    routes: [ROUTES.TAX_PROCESS, ROUTES.TAX_DOCUMENTS, ROUTES.TAX_DB_DOCUSHARE]
+    routes: [ROUTES.TAX_PROCESS, ROUTES.TAX_DOCUMENTS, ROUTES.TAX_DB_DOCUSHARE],
   },
   {
     ...ROUTES.WEALTH,
-    routes: [ROUTES.WEALTH_PROCESS, ROUTES.WEALTH_DOCUMENTS, ROUTES.WEALTH_DB_MONEY]
+    routes: [ROUTES.WEALTH_PROCESS, ROUTES.WEALTH_DOCUMENTS, ROUTES.WEALTH_DB_MONEY],
   },
   {
     ...ROUTES.ACCOUNTING,
-    routes: [ROUTES.ACCOUNTING_PROCESS, ROUTES.ACCOUNTING_QUICK_LINKS]
-  }
+    routes: [ROUTES.ACCOUNTING_PROCESS, ROUTES.ACCOUNTING_QUICK_LINKS],
+  },
 ];
 
 export const NAVIGATION = [ROUTES.HOME, ...ABOUT_ROUTES, ...SERVICES_ROUTES, ROUTES.CONTACT];

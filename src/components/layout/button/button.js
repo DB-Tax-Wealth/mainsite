@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import { STYLE_PROP_TYPE } from 'constants/style-prop-type';
 import styles from './button.style.scss';
 
-export const Button = props => {
+export const Button = (props) => {
   const { children, className: classNameProp, color, disabled, glow, onClick, style } = props;
   const className = classnames(
     styles.root,
@@ -27,7 +27,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   glow: PropTypes.bool,
   onClick: PropTypes.func,
-  style: STYLE_PROP_TYPE
+  style: STYLE_PROP_TYPE,
 };
 
 Button.defaultProps = {
@@ -37,5 +37,5 @@ Button.defaultProps = {
   disabled: false,
   glow: false,
   onClick: null,
-  style: null
+  style: null,
 };

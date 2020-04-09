@@ -15,24 +15,24 @@ export const TAX_DOCUMENTS = [
     description: '',
     file: ConsentDocument,
     image: ConsentDocumentPlaceholder,
-    name: 'Consent to Use Tax Return Information'
+    name: 'Consent to Use Tax Return Information',
   },
   {
     description: '',
     file: EngagementDocument,
     image: EngagementDocumentPlaceholder,
-    name: 'General Engagement Letter'
+    name: 'General Engagement Letter',
   },
   {
     description: '',
     file: ChecklistDocument,
     image: ChecklistDocumentPlaceholder,
-    name: 'Tax Checklist'
+    name: 'Tax Checklist',
   },
   {
     description: '',
     file: InterviewChecklistDocument,
     image: InterviewChecklistDocumentPlaceholder,
-    name: 'Tax Interview Checklist'
-  }
+    name: 'Tax Interview Checklist',
+  },
 ];

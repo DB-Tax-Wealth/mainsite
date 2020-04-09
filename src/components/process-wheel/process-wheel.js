@@ -5,7 +5,7 @@ import Color from 'color';
 import styles from './process-wheel.style.scss';
 import { ProcessWheelSection } from './process-wheel-section/process-wheel-section';
 
-export const ProcessWheel = props => {
+export const ProcessWheel = (props) => {
   const { activeIndex, color, sections, strokeWidth, title } = props;
 
   const sectionsLength = sections.length;
@@ -62,7 +62,7 @@ ProcessWheel.propTypes = {
   color: PropTypes.string,
   sections: PropTypes.arrayOf(PropTypes.object),
   strokeWidth: PropTypes.number,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 ProcessWheel.defaultProps = {
@@ -70,5 +70,5 @@ ProcessWheel.defaultProps = {
   color: colors.secondary,
   sections: [],
   strokeWidth: 20,
-  title: 'Our Process'
+  title: 'Our Process',
 };

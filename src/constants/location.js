@@ -3,5 +3,5 @@ const LONGITUDE = -87.881397;
 
 export const LOCATION = {
   LATITUDE,
-  LONGITUDE
+  LONGITUDE,
 };

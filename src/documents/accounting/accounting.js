@@ -9,6 +9,6 @@ export const ACCOUNTING_DOCUMENTS = [
     description: '',
     image: RecurringACHFormPreview,
     file: RecurringACHForm,
-    name: 'Recurring ACH form'
-  }
+    name: 'Recurring ACH form',
+  },
 ];

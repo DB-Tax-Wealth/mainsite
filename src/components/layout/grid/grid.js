@@ -6,10 +6,10 @@ import classNames from 'classnames';
 import { STYLE_PROP_TYPE } from 'constants/style-prop-type';
 import styles from './grid.style.scss';
 
-export const Grid = props => {
+export const Grid = (props) => {
   const { children, style, className: classNameProp, maxWidth } = props;
   const className = classNames(classNameProp, styles.root, {
-    [styles.maxWidth]: maxWidth
+    [styles.maxWidth]: maxWidth,
   });
 
   return (
@@ -23,12 +23,12 @@ Grid.propTypes = {
   children: CHILDREN_PROP_TYPE,
   className: PropTypes.string,
   maxWidth: PropTypes.bool,
-  style: STYLE_PROP_TYPE
+  style: STYLE_PROP_TYPE,
 };
 
 Grid.defaultProps = {
   children: null,
   className: '',
   maxWidth: false,
-  style: null
+  style: null,
 };

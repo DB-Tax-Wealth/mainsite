@@ -9,10 +9,10 @@ import styles from './mobile-navigation.style.scss';
 import { MobileNavigationLink } from './mobile-navigation-link/mobile-navigation-link';
 import { AccountAccessButtonConnected } from '../account-access-button/account-access-button.connected';
 
-export const MobileNavigation = props => {
+export const MobileNavigation = (props) => {
   const { active, onCloseClick } = props;
   const className = classnames(styles.root, { [styles.active]: active });
-  const links = NAVIGATION.map(route => {
+  const links = NAVIGATION.map((route) => {
     const { path, title, routes, key } = route;
 
     return (
@@ -43,10 +43,10 @@ export const MobileNavigation = props => {
 
 MobileNavigation.propTypes = {
   active: PropTypes.bool,
-  onCloseClick: PropTypes.func
+  onCloseClick: PropTypes.func,
 };
 
 MobileNavigation.defaultProps = {
   active: false,
-  onCloseClick: null
+  onCloseClick: null,
 };

@@ -1,7 +1,7 @@
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 
-export const clean = path => {
+export const clean = (path) => {
   return {
-    plugins: [new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: [path] })]
+    plugins: [new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: [path] })],
   };
 };

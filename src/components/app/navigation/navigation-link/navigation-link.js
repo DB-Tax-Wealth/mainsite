@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './navigation-link.style.scss';
 
-export const NavigationLink = props => {
+export const NavigationLink = (props) => {
   const { path, title, routes, externalLink } = props;
 
   const hasChildRoutes = Boolean(routes.length);
@@ -21,7 +21,7 @@ export const NavigationLink = props => {
           </NavLink>
           {hasChildRoutes && (
             <div className={styles.children}>
-              {routes.map(route => {
+              {routes.map((route) => {
                 const { path: childPath, title: childTitle, key, externalLink: childExternalLink } = route;
 
                 if (childExternalLink) {
@@ -50,12 +50,12 @@ NavigationLink.propTypes = {
   path: PropTypes.string,
   externalLink: PropTypes.string,
   title: PropTypes.string,
-  routes: PropTypes.array
+  routes: PropTypes.array,
 };
 
 NavigationLink.defaultProps = {
   path: '',
   title: '',
   routes: [],
-  externalLink: null
+  externalLink: null,
 };

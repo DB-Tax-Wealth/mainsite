@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { IconButton } from '../icon-button/icon-button';
 
-export const QuickLink = props => {
+export const QuickLink = (props) => {
   const { name, link } = props;
 
   const linkExists = Boolean(link);
@@ -23,10 +23,10 @@ export const QuickLink = props => {
 
 QuickLink.propTypes = {
   name: PropTypes.string,
-  link: PropTypes.string
+  link: PropTypes.string,
 };
 
 QuickLink.defaultProps = {
   name: 'Link',
-  link: ''
+  link: '',
 };

@@ -11,7 +11,7 @@ import { FooterSiteMapLearnMoreInputConnnected } from './footer-site-map-learn-m
 const phoneLink = convertPhoneNumberToTelLink(PHONE_NUMBER);
 
 export const FooterSiteMap = () => {
-  const links = NAVIGATION.map(route => {
+  const links = NAVIGATION.map((route) => {
     const { path, title, key } = route;
 
     return (
