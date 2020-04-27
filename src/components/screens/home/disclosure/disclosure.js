@@ -32,12 +32,8 @@ export const Disclosure = () => (
       <strong>
         Avantax Advisory Services<sup>SM</sup>
       </strong>
-      , Insurance services offered through:
+      , Insurance services offered through an Avantax affiliated insurance agency.
       <br />
-      <br />
-      <strong>
-        Avantax Insurance Agency<sup>SM</sup>
-      </strong>
       <br />
       6333 N. State Highway 161,
       <br />
