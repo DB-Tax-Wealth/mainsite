@@ -71,7 +71,7 @@ export const Home = (props) => {
         <Section color="primary-light">
           <div className="max-width--sm margin--horizontal--auto text-align--center">
             <HeadingWithSubtitle subtitle="Services">
-              We&apos;re here to help you persue your financial success
+              We&apos;re here to help you pursue your financial success
             </HeadingWithSubtitle>
             <p className="color--quaternary-light margin--bottom">
               We want to learn more about your personal situation, identify your dreams and goals, and understand your
