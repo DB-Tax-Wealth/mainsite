@@ -2,10 +2,11 @@ import React from 'react';
 import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { Hero } from 'components/layout/hero/hero';
+import { ROUTES } from 'constants/routes';
 
 export const FeeSchedule = () => {
   return (
-    <Screen>
+    <Screen metaTitle={ROUTES.FEE_SCHEDULE.title}>
       <Hero title="Fee Schedule" subtitle="About" />
       <Section>
         <h3>2019 Tax Preparation Fee Schedule </h3>

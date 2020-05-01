@@ -9,6 +9,7 @@ import { Column } from 'components/layout/grid/column/column';
 import { ProcessWheel } from 'components/process-wheel/process-wheel';
 import { Icon } from 'components/layout/icon/icon';
 import HeroImage from 'images/person-holding-pen.jpg';
+import { ROUTES } from 'constants/routes';
 import { WealthProcessGoals } from './wealth-process-goals/wealth-process-goals';
 import { WealthProcessTeam } from './wealth-process-team/wealth-process-team';
 import { WealthProcessPlan } from './wealth-process-plan/wealth-process-plan';
@@ -59,7 +60,7 @@ export class WealthProcess extends Component {
     ];
 
     return (
-      <Screen>
+      <Screen metaTitle={ROUTES.WEALTH_PROCESS.title}>
         <Hero title="Our Onboarding Process" subtitle="Wealth" image={HeroImage}>
           <p>
             At DB Tax & Wealth, we integrate tax information for a comprehensive picture. Our unique approach allows the

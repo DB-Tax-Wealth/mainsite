@@ -8,6 +8,7 @@ import { TEAM_MEMBERS } from 'constants/team-members';
 import { Hero } from 'components/layout/hero/hero';
 import { Image } from 'components/layout/image/image';
 import TeamPhoto from 'images/db-tax-family-team.jpg';
+import { ROUTES } from 'constants/routes';
 import { TeamMember } from './team-member/team-member';
 
 const teamMembers = TEAM_MEMBERS.map(({ shortBio, id, img, name, title }) => (
@@ -18,7 +19,7 @@ const teamMembers = TEAM_MEMBERS.map(({ shortBio, id, img, name, title }) => (
 
 export const Team = () => {
   return (
-    <Screen>
+    <Screen metaTitle={ROUTES.TEAM.title}>
       <Hero title="Meet the Team" subtitle="About">
         <p>
           We believe our team oriented approach adds a broader perspective to all we do and provides increased benefits

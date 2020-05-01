@@ -10,7 +10,7 @@ const DOCUMENTS = WEALTH_DOCUMENTS;
 
 export const WealthDocuments = () => {
   return (
-    <Screen>
+    <Screen metaTitle={ROUTES.WEALTH_DOCUMENTS.title}>
       <Hero title="Documents" subtitle={ROUTES.WEALTH.title}>
         <p>Documents to help you manage your wealth and assets.</p>
       </Hero>

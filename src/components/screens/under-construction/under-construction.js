@@ -6,7 +6,7 @@ import { ROUTES } from 'constants/routes';
 
 export const UnderConstruction = () => {
   return (
-    <Screen>
+    <Screen metaTitle="Under Construction">
       <div
         className="display--flex text-align--center padding--all"
         style={{ alignItems: 'center', justifyContent: 'center', minHeight: '20rem' }}

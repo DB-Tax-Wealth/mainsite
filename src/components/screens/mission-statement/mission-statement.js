@@ -5,10 +5,11 @@ import { Grid } from 'components/layout/grid/grid';
 import { Row } from 'components/layout/grid/row/row';
 import { Column } from 'components/layout/grid/column/column';
 import { Hero } from 'components/layout/hero/hero';
+import { ROUTES } from 'constants/routes';
 
 export const MissionStatement = () => {
   return (
-    <Screen>
+    <Screen metaTitle={ROUTES.MISSION_STATEMENT.title}>
       <Hero title="Mission Statement" subtitle="About">
         <p>The client &amp; only the client in mind.</p>
       </Hero>

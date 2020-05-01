@@ -13,6 +13,7 @@ import { AccountingProcessGoals } from 'components/screens/accounting/accounting
 import { AccountingProcessOrganize } from 'components/screens/accounting/accounting-process/accounting-process-organize/accounting-process-organize';
 import { AccountingProcessWorkTogether } from 'components/screens/accounting/accounting-process/accounting-process-work-together/accounting-process-work-together';
 import { AccountingProcessPlan } from 'components/screens/accounting/accounting-process/accounting-process-plan/accounting-process-plan';
+import { ROUTES } from 'constants/routes';
 
 export class AccountingProcess extends Component {
   constructor(props) {
@@ -59,7 +60,7 @@ export class AccountingProcess extends Component {
     ];
 
     return (
-      <Screen>
+      <Screen metaTitle={ROUTES.ACCOUNTING_PROCESS.title}>
         <Hero title="Our Onboarding Process" subtitle="Accounting" image={HeroImage}>
           <p>
             DB Tax & Wealth is a one-stop shop for your payroll, bookkeeping and accounting needs. Our experienced team

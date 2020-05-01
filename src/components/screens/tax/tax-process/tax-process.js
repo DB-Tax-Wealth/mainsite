@@ -13,6 +13,7 @@ import { TaxProcessGoals } from 'components/screens/tax/tax-process/tax-process-
 import { TaxProcessOrganize } from 'components/screens/tax/tax-process/tax-process-organize/tax-process-organize';
 import { TaxProcessWorkTogether } from 'components/screens/tax/tax-process/tax-process-work-together/tax-process-work-together';
 import { TaxProcessPlan } from 'components/screens/tax/tax-process/tax-process-plan/tax-process-plan';
+import { ROUTES } from 'constants/routes';
 
 export class TaxProcess extends Component {
   constructor(props) {
@@ -59,7 +60,7 @@ export class TaxProcess extends Component {
     ];
 
     return (
-      <Screen>
+      <Screen metaTitle={ROUTES.TAX_PROCESS.title}>
         <Hero title="Our Onboarding Process" subtitle="Tax" image={HeroImage}>
           <p>
             Our approach helps clients minimize one of life&apos;s most complicated and costly expenses: taxes. DB Tax &
