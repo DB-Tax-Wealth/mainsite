@@ -11,14 +11,13 @@ import { loadFonts } from './webpack/load-fonts';
 import loadImages from './webpack/load-images';
 import { loadJs } from './webpack/load-js';
 import { loadStyles } from './webpack/load-styles';
-import { name } from './package.json';
 import { loadFiles } from './webpack/load-files';
 
-const PUBLIC_PATH = `/${name}`;
+const PUBLIC_PATH = '/';
 
 const ROOT_PATHS = {
   dist: path.join(__dirname, 'docs'),
-  src: path.join(__dirname, 'src')
+  src: path.join(__dirname, 'src'),
 };
 
 const statConfig = {
@@ -50,20 +49,20 @@ const statConfig = {
     timings: true,
     usedExports: false,
     version: true,
-    warnings: false
-  }
+    warnings: false,
+  },
 };
 
 const entryConfig = {
-  entry: path.join(ROOT_PATHS.src, 'index.js')
+  entry: path.join(ROOT_PATHS.src, 'index.js'),
 };
 
 const outputConfig = {
   output: {
     filename: '[name]-[hash].js',
     path: ROOT_PATHS.dist,
-    publicPath: PUBLIC_PATH
-  }
+    publicPath: PUBLIC_PATH,
+  },
 };
 
 const optimizationConfig = {
@@ -74,17 +73,17 @@ const optimizationConfig = {
         commons: {
           chunks: 'initial',
           name: 'vendor',
-          test: /[\\/]node_modules[\\/]/
-        }
-      }
-    }
-  }
+          test: /[\\/]node_modules[\\/]/,
+        },
+      },
+    },
+  },
 };
 
 const commonConfig = merge([
   entryConfig,
   getHtml({ title: 'DB Tax & Financial Services', template: path.join(ROOT_PATHS.src, 'index.html') }),
-  loadJs({ include: ROOT_PATHS.src, exclude: '/node_modules/', options: { cacheDirectory: true } })
+  loadJs({ include: ROOT_PATHS.src, exclude: '/node_modules/', options: { cacheDirectory: true } }),
 ]);
 
 const developmentConfig = merge([
@@ -95,7 +94,7 @@ const developmentConfig = merge([
   loadFonts({ options: { name: '[name].[ext]' } }),
   loadImages({ options: { limit: 15000, name: 'images/[name].[ext]' } }),
   loadStyles({}),
-  { output: { publicPath: '/' } }
+  { output: { publicPath: '/' } },
 ]);
 
 const productionConfig = merge([
@@ -108,10 +107,10 @@ const productionConfig = merge([
   loadStyles({ production: true }),
   optimizationConfig,
   outputConfig,
-  statConfig
+  statConfig,
 ]);
 
-export default mode => {
+export default (mode) => {
   process.env.BABEL_ENV = mode;
 
   if (mode === 'production') return merge(productionConfig, { mode });

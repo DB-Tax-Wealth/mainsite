@@ -6,7 +6,7 @@ import { ROUTES } from 'constants/routes';
 
 export const NoMatch = () => {
   return (
-    <Screen>
+    <Screen metaTitle="Page Not Found">
       <div
         className="display--flex text-align--center padding--all"
         style={{ alignItems: 'center', justifyContent: 'center', minHeight: '20rem' }}

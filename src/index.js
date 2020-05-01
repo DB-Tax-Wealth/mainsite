@@ -1,6 +1,7 @@
 import { AppContainer } from 'react-hot-loader';
 import React from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
+import { render } from 'react-snapshot';
 import { configureStore } from 'util/configure-store/configure-store';
 import { Root } from './components/root/root';
 

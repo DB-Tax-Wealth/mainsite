@@ -15,6 +15,7 @@ import { Column } from 'components/layout/grid/column/column';
 import { GoogleMap } from 'components/screens/home/google-map/google-map';
 import { Button } from 'components/layout/button/button';
 import HeroImage from 'images/write-message.jpg';
+import { ROUTES } from 'constants/routes';
 
 const phoneLink = convertPhoneNumberToTelLink(PHONE_NUMBER);
 const faxLink = convertPhoneNumberToTelLink(FAX_NUMBER);
@@ -23,12 +24,12 @@ export const Contact = (props) => {
   const { onHeroButtonClick } = props;
 
   return (
-    <Screen>
+    <Screen metaTitle={ROUTES.CONTACT.title}>
       <Hero
         buttonLabel="Get in touch now"
         buttonOnClick={onHeroButtonClick}
         image={HeroImage}
-        subtitle="Contact"
+        subtitle={ROUTES.CONTACT.title}
         title="Get in Touch"
       >
         <p>

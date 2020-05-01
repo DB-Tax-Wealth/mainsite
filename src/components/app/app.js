@@ -7,6 +7,8 @@ import React, { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { get } from 'lodash';
+import { Helmet } from 'react-helmet';
+import { COMPANY_NAME } from 'constants/company-name';
 import styles from './app.style.scss';
 import { ContactBar } from './contact-bar/contact-bar';
 import { Navigation } from './navigation/navigation';
@@ -81,6 +83,9 @@ class AppBase extends Component {
 
     return (
       <div className={styles.root}>
+        <Helmet>
+          <title>{COMPANY_NAME}</title>
+        </Helmet>
         <div className={styles.content} ref={this.content}>
           <ContactBar />
           <Navigation onMobileNavigationToggleClick={this.toggleMobileNavigation} />
