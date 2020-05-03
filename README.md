@@ -7,6 +7,18 @@
 
 An application using [React](https://reactjs.org/) deployed as the DB Tax main public website.
 
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+    - [Node.js & Node Package Manager](#nodejs---node-package-manager)
+  - [Installing](#installing)
+  - [Webpack Dev Server](#webpack-dev-server)
+    - [Hot Reloading](#hot-reloading)
+    - [ESLint and Prettier.io](#eslint-and-prettierio)
+    - [Committing](#committing)
+    - [Pre-Commit Hooks](#pre-commit-hooks)
+- [Deployment](#deployment)
+- [License](#license)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -140,41 +152,17 @@ npm run stylelint
 
 It's recommended a developers run `npm run eslint:fix` often during development to prevent any failures from code-style or JavaScript syntactical errors.
 
-## Scripts
+## Deployment
 
-### `build`
+This application is hosted on GitHub pages out of the `docs/` directory of this repository's **master** branch. That means anything committed, and pushed to the `docs/` directory of this repo on the master branch will automatically appear at (http://www.dbtaxinc.com/)[http://www.dbtaxinc.com/].
 
-This command runs `webpack` in "production" mode. It uses the `src/index.js` file as it's entry point, and generates a JavaScript `main.js` and `vendor.js` file in `docs/`.
+**NOTE:** It can take several minutes to an hour after a successful push of the master branch for GitHub pages to update.
 
-### `clean`
+To deploy this application, simply run the build script `npm run build` from the root of this repository. This script will generate a deployable bundle of the application using Webpack, then run a postbuild script that generates static .html files for each page of the application to improve the application's **search engine optimization**.
 
-This command deletes the `dist/` directory.
+`npm run build`
 
-### `eslint`
-
-This command runs `eslint src/`. It prints eslint warnings and errors in the command line.
-
-### `eslint:fix`
-
-This command runs `eslint --fix src/`. It attempts to fix any eslint warnings/errors then prints the remaining warnings and errors in the command line.
-
-#### `start`
-
-This command runs `webpack-dev-server` in "development" mode on the documentation. Hot reloading is enabled. Once running, you can access the documentation running locally at [localhost:9090/](http://localhost:9090/).
-
-### `stylelint`
-
-This command runs `stylelint 'src/**/*/*.scss`. It prints stylelint warnings and errors in the command line.
-
-### `stylelint:fix`
-
-This command runs `stylelint --fix 'src/**/*/*.scss`. It attempts to fix any stylelint warnings/errors then prints the remaining warnings and errors in the command line.
-
-## Built With
-
-- [Babel](https://babeljs.io/) - A JavaScript transpiler
-- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [Webpack](https://github.com/webpack/webpack) - A JavaScript module bundler
+After the build is complete, all updated bundle files will be in the `docs/` directory. Commit and push the changes to this directory to master.
 
 ## License
 

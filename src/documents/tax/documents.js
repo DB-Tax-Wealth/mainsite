@@ -1,14 +1,16 @@
 // Placeholder images
-import ConsentDocumentPlaceholder from './consent_preview.png';
-import EngagementDocumentPlaceholder from './engagement_preview.png';
-import ChecklistDocumentPlaceholder from './checklist_preview.png';
-import InterviewChecklistDocumentPlaceholder from './interview_checklist_preview.png';
+import ConsentDocumentPlaceholder from './consent-preview.png';
+import EngagementDocumentPlaceholder from './engagement-preview.png';
+import ChecklistDocumentPlaceholder from './checklist-preview.png';
+import NewClientInfoDocumentPlaceholder from './new-client-info-preview.png';
+import W4ServiceChecklistDocumentPlaceholder from './w4-service-checklist-preview.png';
 
 // Docs
-import ConsentDocument from './Consent_to_use_tax_return_information.docx';
-import EngagementDocument from './General Engagement Letter.docx';
-import ChecklistDocument from './Tax Checklist.docx';
-import InterviewChecklistDocument from './Tax Interview Checklist.docx';
+import ConsentDocument from './consent-use-tax-return-info.pdf';
+import EngagementDocument from './general-engagement-letter.pdf';
+import ChecklistDocument from './tax-checklist.pdf';
+import NewClientInfoDocument from './new-client-info.pdf';
+import W4ServiceChecklistDocument from './w4-service-checklist.pdf';
 
 export const TAX_DOCUMENTS = [
   {
@@ -31,8 +33,14 @@ export const TAX_DOCUMENTS = [
   },
   {
     description: '',
-    file: InterviewChecklistDocument,
-    image: InterviewChecklistDocumentPlaceholder,
-    name: 'Tax Interview Checklist',
+    file: NewClientInfoDocument,
+    image: NewClientInfoDocumentPlaceholder,
+    name: 'New Client Information',
+  },
+  {
+    description: '',
+    file: W4ServiceChecklistDocument,
+    image: W4ServiceChecklistDocumentPlaceholder,
+    name: 'W4 - Payroll Withholding Check-up',
   },
 ];
