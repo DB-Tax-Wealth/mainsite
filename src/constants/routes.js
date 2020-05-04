@@ -72,6 +72,11 @@ export const ROUTES = {
     path: '/services/tax/documents',
     title: 'Documents',
   },
+  TAX_DB_DOCUSHARE: {
+    key: 'tax-db-docushare',
+    externalLink: DB_WEALTH_LINK,
+    title: 'DB DocuShare',
+  },
   /**
    * Accounting Pages
    */
@@ -120,20 +125,10 @@ export const ROUTES = {
     path: '/services/wealth/documents',
     title: 'Documents',
   },
-  /**
-   * TODO: For some reason external links need to be last in this config.  If
-   * they are not last, any links later in the object will no longer work.
-   * External Links
-   */
   WEALTH_DB_MONEY: {
     key: 'wealth-db-money',
     externalLink: DB_WEALTH_LINK,
     title: 'DB Money',
-  },
-  TAX_DB_DOCUSHARE: {
-    key: 'tax-db-docushare',
-    externalLink: DB_WEALTH_LINK,
-    title: 'DB DocuShare',
   },
 };
 
@@ -165,5 +160,7 @@ const SERVICES_ROUTES = [
     routes: [ROUTES.ACCOUNTING_PROCESS, ROUTES.ACCOUNTING_QUICK_LINKS],
   },
 ];
+
+console.log('NAVIGATION: ', JSON.stringify([ROUTES.HOME, ...ABOUT_ROUTES, ...SERVICES_ROUTES, ROUTES.CONTACT]));
 
 export const NAVIGATION = [ROUTES.HOME, ...ABOUT_ROUTES, ...SERVICES_ROUTES, ROUTES.CONTACT];
