@@ -11,7 +11,7 @@ import { TaxDocuments } from 'components/screens/tax/tax-documents/tax-documents
 import { TaxProcess } from 'components/screens/tax/tax-process/tax-process';
 import { Team } from 'components/screens/team/team';
 import { TeamMemberDetail } from 'components/screens/team/team-member/team-member-detail/team-member-detail';
-// import { UnderConstruction } from 'components/screens/under-construction/under-construction';
+import { UnderConstruction } from 'components/screens/under-construction/under-construction';
 import { WealthDocuments } from 'components/screens/wealth/wealth-documents/wealth-documents';
 import { WealthProcess } from 'components/screens/wealth/wealth-process/wealth-process';
 
@@ -45,7 +45,7 @@ export const ROUTES = {
     path: '/about/mission-statement',
     title: 'Mission Statement',
   },
-  // SERVICES: { component: UnderConstruction, exact: true, key: 'services', path: '/services', title: 'Services' },
+  SERVICES: { component: UnderConstruction, exact: true, key: 'services', path: '/services', title: 'Services' },
   TEAM: { component: Team, exact: true, key: 'team', path: '/about/team', title: 'Team' },
   TEAM_MEMBER: {
     component: TeamMemberDetail,
@@ -71,11 +71,6 @@ export const ROUTES = {
     key: 'tax-documents',
     path: '/services/tax/documents',
     title: 'Documents',
-  },
-  TAX_DB_DOCUSHARE: {
-    key: 'tax-db-docushare',
-    externalLink: DB_WEALTH_LINK,
-    title: 'DB DocuShare',
   },
   /**
    * Accounting Pages
@@ -125,10 +120,20 @@ export const ROUTES = {
     path: '/services/wealth/documents',
     title: 'Documents',
   },
+  /**
+   * TODO: For some reason external links need to be last in this config.  If
+   * they are not last, any links later in the object will no longer work.
+   * External Links
+   */
   WEALTH_DB_MONEY: {
     key: 'wealth-db-money',
     externalLink: DB_WEALTH_LINK,
     title: 'DB Money',
+  },
+  TAX_DB_DOCUSHARE: {
+    key: 'tax-db-docushare',
+    externalLink: DB_WEALTH_LINK,
+    title: 'DB DocuShare',
   },
 };
 
