@@ -7,6 +7,12 @@ import PropTypes from 'prop-types';
 import { NoMatch } from 'components/screens/no-match/no-match';
 import { AppConnected } from 'components/app/app.connected';
 
+// This is to filter out any external links so that we don't attempt to make
+// application routes from them.
+const APP_ROUTES = Object.keys(ROUTES)
+  .map((key) => ROUTES[key])
+  .filter(({ externalLink }) => !externalLink);
+
 export const Root = (props) => {
   const { store } = props;
 
@@ -15,8 +21,7 @@ export const Root = (props) => {
       <BrowserRouter>
         <AppConnected>
           <Switch>
-            {Object.keys(ROUTES).map((key) => {
-              const route = ROUTES[key];
+            {APP_ROUTES.map((route) => {
               const { component, exact, path, key: routeKey } = route;
               return <Route component={component} exact={exact} key={routeKey} path={path} />;
             })}
