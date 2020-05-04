@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="canonical" href="https://dbtaxinc.com">
+  <title>DB Tax & Wealth</title>
+  <script type="text/javascript">
+    var segmentCount = 0;
+    var _window$location = window.location,
+      hash = _window$location.hash,
+      hostname = _window$location.hostname,
+      pathname = _window$location.pathname,
+      port = _window$location.port,
+      protocol = _window$location.protocol,
+      search = _window$location.search;
+
+    var root = "".concat(protocol, "//").concat(hostname).concat(port ? ":".concat(port) : '');
+    var domain = "".concat(pathname.split('/').slice(0, 1 + segmentCount).join('/'), "/?p=/");
+    var route = "".concat(pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~'));
+    var params = "".concat(search ? "&q=".concat(search.slice(1).replace(/&/g, '~and~')) : '');
+
+    var result = root + domain + route + params + hash;
+
+    window.location.replace(result);
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -30,7 +30,6 @@ export const Screen = (props) => {
         <meta name="og:image" content={`${PUBLIC_URL}${OpenGraphImage}`} />
         <meta name="og:title" content={title} />
         <meta name="og:type" content="website" />
-
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content={TWITTER_HANDLE} />
         <meta name="twitter:site" content={TWITTER_HANDLE} />
