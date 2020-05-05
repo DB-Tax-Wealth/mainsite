@@ -154,7 +154,7 @@ It's recommended a developers run `npm run eslint:fix` often during development 
 
 ## Deployment
 
-This application is hosted on GitHub pages out of the `docs/` directory of this repository's **master** branch. That means anything committed, and pushed to the `docs/` directory of this repo on the master branch will automatically appear at (http://www.dbtaxinc.com/)[http://www.dbtaxinc.com/].
+This application is hosted on GitHub pages out of the `docs/` directory of this repository's **master** branch. That means anything committed, and pushed to the `docs/` directory of this repo on the master branch will automatically appear at [http://www.dbtaxinc.com/](http://www.dbtaxinc.com/).
 
 **NOTE:** It can take several minutes to an hour after a successful push of the master branch for GitHub pages to update.
 
