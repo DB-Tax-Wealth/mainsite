@@ -13,7 +13,7 @@ export const Screen = (props) => {
   const { children, className: classNameProp, metaTitle, metaDescription, url } = props;
 
   const className = classNames('animated', 'fadeIn', styles.root, classNameProp);
-  const title = `${metaTitle ? `${metaTitle} | ` : ''} ${COMPANY_NAME}`;
+  const title = `${metaTitle ? `${metaTitle} | ` : ''}${COMPANY_NAME}`;
 
   return (
     <div className={className}>
