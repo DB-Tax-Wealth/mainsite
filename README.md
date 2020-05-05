@@ -1,9 +1,9 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
-[![GitHub issues](https://img.shields.io/github/issues/BreadboxIO/dbtax-mainsite.svg)](https://github.com/BreadboxIO/dbtax-mainsite/issues)
-[![GitHub stars](https://img.shields.io/github/stars/BreadboxIO/dbtax-mainsite.svg)](https://github.com/BreadboxIO/dbtax-mainsite/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/DB-Tax-Wealth/mainsite.svg)](https://github.com/DB-Tax-Wealth/mainsite/issues)
+[![GitHub stars](https://img.shields.io/github/stars/DB-Tax-Wealth/mainsite.svg)](https://github.com/DB-Tax-Wealth/mainsite/stargazers)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-# 🌈 DB Tax Mainsite
+# 🌈 Mainsite
 
 An application using [React](https://reactjs.org/) deployed as the DB Tax main public website.
 
@@ -43,13 +43,13 @@ Clone this repository to your working directory:
 First clone the repository:
 
 ```
-git clone https://github.com/BreadboxIO/dbtax-mainsite.git
+git clone https://github.com/DB-Tax-Wealth/mainsite.git
 ```
 
 After cloning is complete, navigate inside the newly cloned repository:
 
 ```
-cd dbtax-mainsite
+cd mainsite
 ```
 
 Finally, run `npm install` to install all project dependencies:
@@ -65,7 +65,7 @@ During development, this application can be run in a web browser using [Webpack 
 First, navigate to the root of the project:
 
 ```
-cd path/to/your/working/directory/dbtax-mainsite
+cd path/to/your/working/directory/mainsite
 ```
 
 Then start the application:
