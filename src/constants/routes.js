@@ -63,14 +63,14 @@ export const ROUTES = {
     exact: true,
     key: 'tax-process',
     path: '/services/tax/process',
-    title: 'Process',
+    title: 'Tax Process',
   },
   TAX_DOCUMENTS: {
     component: TaxDocuments,
     exact: true,
     key: 'tax-documents',
     path: '/services/tax/documents',
-    title: 'Documents',
+    title: 'Tax Documents',
   },
   TAX_DB_DOCUSHARE: {
     key: 'tax-db-docushare',
@@ -92,14 +92,14 @@ export const ROUTES = {
     exact: true,
     key: 'accounting-process',
     path: '/services/accounting/process',
-    title: 'Process',
+    title: 'Accounting Process',
   },
   ACCOUNTING_QUICK_LINKS: {
     component: AccountingQuickLinks,
     exact: true,
     key: 'accounting-quick-links',
     path: '/services/accounting/quick-links',
-    title: 'Quick Links',
+    title: 'Accounting Quick Links',
   },
   /**
    * Wealth Pages
@@ -116,14 +116,14 @@ export const ROUTES = {
     exact: true,
     key: 'wealth-process',
     path: '/services/wealth/process',
-    title: 'Process',
+    title: 'Wealth Process',
   },
   WEALTH_DOCUMENTS: {
     component: WealthDocuments,
     exact: true,
     key: 'wealth-documents',
     path: '/services/wealth/documents',
-    title: 'Documents',
+    title: 'Wealth Documents',
   },
   WEALTH_DB_MONEY: {
     key: 'wealth-db-money',

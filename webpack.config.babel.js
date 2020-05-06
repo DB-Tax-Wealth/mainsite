@@ -2,6 +2,7 @@ import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import TerserWebpackPlugin from 'terser-webpack-plugin';
 import merge from 'webpack-merge';
 import path from 'path';
+import { COMPANY_NAME } from 'constants/company-name';
 import { clean } from './webpack/clean';
 import { devServer } from './webpack/dev-server';
 import { getFavicons } from './webpack/get-favicons';
@@ -83,7 +84,7 @@ const optimizationConfig = {
 
 const commonConfig = merge([
   entryConfig,
-  getHtml({ title: 'DB Tax & Financial Services', template: path.join(ROOT_PATHS.src, 'index.html') }),
+  getHtml({ title: COMPANY_NAME, template: path.join(ROOT_PATHS.src, 'index.html') }),
   loadJs({ include: ROOT_PATHS.src, exclude: '/node_modules/', options: { cacheDirectory: true } }),
 ]);
 
