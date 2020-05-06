@@ -125,6 +125,8 @@ export const requestContactFormSubmit = () => async (dispatch, getState) => {
     );
     dispatch(resetContactForm());
   } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log('error: ', error);
     dispatch(contactFormRequestFailure());
     dispatch(
       triggerAlert({

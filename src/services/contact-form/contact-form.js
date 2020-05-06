@@ -15,8 +15,6 @@ export const postContactForm = ({
   return axios.get(CONTACT_FORM_ENDPOINT, {
     headers: {
       accept: '*/*',
-      'sec-fetch-dest': 'script',
-      'sec-fetch-mode': 'no-cors',
     },
     params: {
       SourceUrl: SOURCE_URL,
