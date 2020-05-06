@@ -179,7 +179,7 @@ export const TEAM_MEMBERS = [
     email: 'mwood@dbtaxinc.com',
     fax: '',
     img: milenaWood,
-    name: 'Milena Wood',
+    name: 'Milena Wood, EA',
     shortBio:
       'Trustworthy.  Caring.  Compassionate.  Loves to travel with family.  Flight attendant who also prepares taxes.  Dedicated to making a difference in this world.',
     phone: '414-764-7330',
