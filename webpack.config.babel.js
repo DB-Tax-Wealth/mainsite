@@ -103,6 +103,7 @@ const productionConfig = merge([
   clean(ROOT_PATHS.dist),
   commonConfig,
   copyFiles({ from: path.join(ROOT_PATHS.src, 'CNAME'), to: path.join(ROOT_PATHS.dist) }),
+  copyFiles({ from: path.join(ROOT_PATHS.src, '404.html'), to: path.join(ROOT_PATHS.dist, '404.html') }),
   copyFiles({ from: path.join(ROOT_PATHS.src, 'robots.txt'), to: path.join(ROOT_PATHS.dist, 'robots.txt') }),
   copyFiles({
     from: path.join(ROOT_PATHS.src, 'google8c9086298038990c.html'),
