@@ -10,7 +10,7 @@ import styles from './screen.style.scss';
 import OpenGraphImage from '../../../images/open-graph-image.png';
 
 export const Screen = (props) => {
-  const { children, className: classNameProp, metaTitle, metaDescription, url } = props;
+  const { children, className: classNameProp, metaTitle, metaDescription } = props;
 
   const className = classNames('animated', 'fadeIn', styles.root, classNameProp);
   const title = `${metaTitle ? `${metaTitle} | ` : ''}${COMPANY_NAME}`;
@@ -19,21 +19,22 @@ export const Screen = (props) => {
     <div className={className}>
       <Helmet>
         <title>{title}</title>
-        {metaDescription && (
-          <>
-            <meta name="description" content={metaDescription} />
-            <meta name="og:description" content={metaDescription} />
-            <meta name="twitter:description" content={metaDescription} />
-          </>
-        )}
-        {url && <meta name="og:url" content={PUBLIC_URL} />}
-        <meta name="og:image" content={`${PUBLIC_URL}${OpenGraphImage}`} />
-        <meta name="og:title" content={title} />
-        <meta name="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:creator" content={TWITTER_HANDLE} />
-        <meta name="twitter:site" content={TWITTER_HANDLE} />
-        <meta name="twitter:title" content={title} />
+        <meta name="title" content={title} />
+        <meta name="description" content={metaDescription} />
+
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={`${PUBLIC_URL}${OpenGraphImage}`} />
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={PUBLIC_URL} />
+
+        <meta property="twitter:creator" content={TWITTER_HANDLE} />
+        <meta property="twitter:site" content={TWITTER_HANDLE} />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:description" content={metaDescription} />
+        <meta property="twitter:image" content={`${PUBLIC_URL}${OpenGraphImage}`} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:url" content={PUBLIC_URL} />
       </Helmet>
       {children}
     </div>
@@ -45,13 +46,12 @@ Screen.propTypes = {
   className: PropTypes.string,
   metaDescription: PropTypes.string,
   metaTitle: PropTypes.string,
-  url: PropTypes.string,
 };
 
 Screen.defaultProps = {
   children: null,
   className: '',
-  metaDescription: '',
+  metaDescription:
+    'We want to help you develop, implement, and monitor a strategy that’s designed to address your individual situation.',
   metaTitle: '',
-  url: '',
 };
