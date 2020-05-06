@@ -106,7 +106,7 @@ const productionConfig = merge([
   copyFiles({ from: path.join(ROOT_PATHS.src, 'robots.txt'), to: path.join(ROOT_PATHS.dist, 'robots.txt') }),
   copyFiles({ from: path.join(ROOT_PATHS.src, 'sitemap.txt'), to: path.join(ROOT_PATHS.dist, 'sitemap.txt') }),
   getFavicons({ sourcePath: path.join(ROOT_PATHS.src, '/images/favicon.png') }),
-  loadFiles({ limit: 1000, name: '/documents/[name].[ext]' }),
+  loadFiles({ limit: 1000, name: 'documents/[name].[ext]' }),
   loadFonts({ options: { limit: 5000, name: 'fonts/[name].[ext]' } }),
   loadImages({ options: { limit: 5000, name: 'images/[name].[ext]' } }),
   loadStyles({ production: true }),
