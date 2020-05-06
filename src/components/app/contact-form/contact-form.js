@@ -9,10 +9,12 @@ import { Button } from 'components/layout/button/button';
 import { Input } from 'components/layout/input/input';
 import { Textarea } from 'components/layout/textarea/textarea';
 import { ProgressIndicatorOverlay } from 'components/layout/progress-indicator-overlay/progress-indicator-overlay';
+import styles from './contact-form.style.scss';
 
 export const ContactForm = (props) => {
   const {
     active,
+    address,
     email,
     emailError,
     emailErrorMessage,
@@ -22,6 +24,7 @@ export const ContactForm = (props) => {
     messageValid,
     name,
     nameValid,
+    onAddressChange,
     onEmailBlur,
     onEmailChange,
     onMessageChange,
@@ -56,6 +59,11 @@ export const ContactForm = (props) => {
                 valid={emailValid}
                 value={email}
               />
+              {/* This filed is used by FMG suite to prevent robots, if it's filled
+              out it throws an error */}
+              <div className={styles.hidden}>
+                <Input onChange={onAddressChange} placeholder="enter your address..." type="text" value={address} />
+              </div>
             </Column>
           </Row>
           <Row className="margin--bottom">
@@ -85,6 +93,7 @@ export const ContactForm = (props) => {
 
 ContactForm.propTypes = {
   active: PropTypes.bool,
+  address: PropTypes.string,
   email: PropTypes.string,
   emailError: PropTypes.bool,
   emailErrorMessage: PropTypes.string,
@@ -94,6 +103,7 @@ ContactForm.propTypes = {
   messageValid: PropTypes.bool,
   name: PropTypes.string,
   nameValid: PropTypes.bool,
+  onAddressChange: PropTypes.func,
   onEmailBlur: PropTypes.func,
   onEmailChange: PropTypes.func,
   onMessageChange: PropTypes.func,
@@ -105,6 +115,7 @@ ContactForm.propTypes = {
 
 ContactForm.defaultProps = {
   active: '',
+  address: '',
   email: '',
   emailError: false,
   emailErrorMessage: false,
@@ -114,6 +125,7 @@ ContactForm.defaultProps = {
   messageValid: false,
   name: '',
   nameValid: false,
+  onAddressChange: () => {},
   onEmailBlur: null,
   onEmailChange: () => {},
   onMessageChange: () => {},

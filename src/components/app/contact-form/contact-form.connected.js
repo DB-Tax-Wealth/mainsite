@@ -17,11 +17,14 @@ import {
   requestContactFormSubmit,
   selectContactFormIsRequesting,
   updateContactFormEmailIsDirty,
+  selectContactFormAddress,
+  updateContactFormAddress,
 } from 'store/contact-form/contact-form';
 import { ContactForm } from './contact-form';
 
 const mapStateToProps = (state) => ({
   active: selectContactFormActive(state),
+  address: selectContactFormAddress(state),
   email: selectContactFormEmail(state),
   emailError: selectContactFormEmailError(state),
   emailErrorMessage: selectContactFormEmailErrorMessage(state),
@@ -35,6 +38,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
+  onAddressChange: (value) => dispatch(updateContactFormAddress(value)),
   onEmailBlur: () => dispatch(updateContactFormEmailIsDirty(true)),
   onEmailChange: (value) => dispatch(updateContactFormEmail(value)),
   onMessageChange: (value) => dispatch(updateContactFormMessage(value)),

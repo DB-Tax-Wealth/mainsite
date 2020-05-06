@@ -9,6 +9,7 @@ const REQUEST_START = 'contact-form/REQUEST_START';
 const REQUEST_SUCCESS = 'contact-form/REQUEST_SUCCESS';
 const RESET = 'contact-form/RESET';
 const UPDATE_ACTIVE = 'contact-form/UPDATE_ACTIVE';
+const UPDATE_ADDRESS = 'contact-form/UPDATE_ADDRESS';
 const UPDATE_EMAIL = 'contact-form/UPDATE_EMAIL';
 const UPDATE_EMAIL_IS_DIRTY = 'contact-form/UPDATE_EMAIL_IS_DIRTY';
 const UPDATE_MESSAGE = 'contact-form/UPDATE_MESSAGE';
@@ -20,6 +21,7 @@ export const contactFormRequestStart = createAction(REQUEST_START);
 export const contactFormRequestSuccess = createAction(REQUEST_SUCCESS);
 export const resetContactForm = createAction(RESET);
 export const updateContactFormActive = createAction(UPDATE_ACTIVE);
+export const updateContactFormAddress = createAction(UPDATE_ADDRESS);
 export const updateContactFormEmail = createAction(UPDATE_EMAIL);
 export const updateContactFormEmailIsDirty = createAction(UPDATE_EMAIL_IS_DIRTY);
 export const updateContactFormMessage = createAction(UPDATE_MESSAGE);
@@ -28,6 +30,7 @@ export const updateContactFormName = createAction(UPDATE_NAME);
 // Default State
 export const DEFAULT_STATE = {
   active: false,
+  address: '',
   email: '',
   emailIsDirty: false,
   isRequesting: false,
@@ -43,6 +46,7 @@ export const contactFormReducer = handleActions(
     [REQUEST_SUCCESS]: (state) => ({ ...state, isRequesting: false }),
     [RESET]: () => DEFAULT_STATE,
     [UPDATE_ACTIVE]: (state, { payload: active }) => ({ ...state, active }),
+    [UPDATE_ADDRESS]: (state, { payload: address }) => ({ ...state, address }),
     [UPDATE_EMAIL]: (state, { payload: email }) => ({ ...state, email }),
     [UPDATE_EMAIL_IS_DIRTY]: (state, { payload: emailIsDirty }) => ({ ...state, emailIsDirty }),
     [UPDATE_MESSAGE]: (state, { payload: message }) => ({ ...state, message }),
@@ -58,6 +62,7 @@ export const selectContactFormActive = (state) => selectContactForm(state).activ
 export const selectContactFormEmail = (state) => selectContactForm(state).email || DEFAULT_STATE.email;
 export const selectContactFormEmailIsDirty = (state) =>
   selectContactForm(state).emailIsDirty || DEFAULT_STATE.emailIsDirty;
+export const selectContactFormAddress = (state) => selectContactForm(state).address || DEFAULT_STATE.address;
 export const selectContactFormMessage = (state) => selectContactForm(state).message || DEFAULT_STATE.message;
 export const selectContactFormName = (state) => selectContactForm(state).name || DEFAULT_STATE.name;
 export const selectContactFormIsRequesting = (state) =>
@@ -107,13 +112,14 @@ export const requestContactFormSubmit = () => async (dispatch, getState) => {
   const Email = selectContactFormEmail(state);
   const Name = selectContactFormName(state);
   const Message = selectContactFormMessage(state);
+  const Address = selectContactFormAddress(state);
 
   if (!Email) return;
 
   dispatch(contactFormRequestStart());
 
   try {
-    await postContactForm({ Email, Name, Message });
+    await postContactForm({ Email, Name, Message, Address });
     dispatch(contactFormRequestSuccess());
     dispatch(updateContactFormEmailIsDirty(false));
     dispatch(
@@ -125,8 +131,6 @@ export const requestContactFormSubmit = () => async (dispatch, getState) => {
     );
     dispatch(resetContactForm());
   } catch (error) {
-    // eslint-disable-next-line no-console
-    console.log('error: ', error);
     dispatch(contactFormRequestFailure());
     dispatch(
       triggerAlert({
