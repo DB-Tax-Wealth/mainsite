@@ -103,6 +103,10 @@ const productionConfig = merge([
   commonConfig,
   copyFiles({ from: path.join(ROOT_PATHS.src, 'CNAME'), to: path.join(ROOT_PATHS.dist) }),
   copyFiles({ from: path.join(ROOT_PATHS.src, 'robots.txt'), to: path.join(ROOT_PATHS.dist, 'robots.txt') }),
+  copyFiles({
+    from: path.join(ROOT_PATHS.src, 'google8c9086298038990c.html'),
+    to: path.join(ROOT_PATHS.dist, 'google8c9086298038990c.html'),
+  }),
   copyFiles({ from: path.join(ROOT_PATHS.src, 'sitemap.txt'), to: path.join(ROOT_PATHS.dist, 'sitemap.txt') }),
   getFavicons({ sourcePath: path.join(ROOT_PATHS.src, '/images/favicon.png') }),
   loadFiles({ limit: 1000, name: 'documents/[name].[ext]' }),
