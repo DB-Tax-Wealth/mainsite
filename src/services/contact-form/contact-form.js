@@ -13,6 +13,11 @@ export const postContactForm = ({
   Message = 'Please email me with more information about your services.',
 }) => {
   return axios.get(CONTACT_FORM_ENDPOINT, {
+    headers: {
+      accept: '*/*',
+      'sec-fetch-dest': 'script',
+      'sec-fetch-mode': 'no-cors',
+    },
     params: {
       SourceUrl: SOURCE_URL,
       PreferredContactMethod: PREFERRED_CONTACT_METHOD,
