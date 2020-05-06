@@ -109,17 +109,17 @@ export const openContactForm = () => (dispatch) => {
 export const requestContactFormSubmit = () => async (dispatch, getState) => {
   const state = getState();
 
-  const Email = selectContactFormEmail(state);
-  const Name = selectContactFormName(state);
-  const Message = selectContactFormMessage(state);
-  const Address = selectContactFormAddress(state);
+  const email = selectContactFormEmail(state);
+  const name = selectContactFormName(state);
+  const message = selectContactFormMessage(state);
+  const address = selectContactFormAddress(state);
 
-  if (!Email) return;
+  if (!email) return;
 
   dispatch(contactFormRequestStart());
 
   try {
-    await postContactForm({ Email, Name, Message, Address });
+    await postContactForm({ address, email, message, name });
     dispatch(contactFormRequestSuccess());
     dispatch(updateContactFormEmailIsDirty(false));
     dispatch(
