@@ -36,7 +36,7 @@ export const ContactForm = (props) => {
 
   return (
     <>
-      <ModalOverlay active={active} onOverlayClick={onOverlayClick}>
+      <ModalOverlay active={active} onOverlayClick={onOverlayClick} className={styles.root}>
         <h4>
           <Icon name="envelope" /> Contact Us
         </h4>

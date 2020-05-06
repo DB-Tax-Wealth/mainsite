@@ -6,8 +6,8 @@ import styles from './modal-overlay.style.scss';
 import { Overlay } from '../overlay/overlay';
 
 export const ModalOverlay = (props) => {
-  const { active, children, onOverlayClick } = props;
-  const className = classnames(styles.root, { [styles.active]: active });
+  const { active, children, onOverlayClick, className: classNameProp } = props;
+  const className = classnames(styles.root, classNameProp, { [styles.active]: active });
 
   return (
     <div className={className}>
@@ -20,11 +20,13 @@ export const ModalOverlay = (props) => {
 ModalOverlay.propTypes = {
   active: PropTypes.bool,
   children: CHILDREN_PROP_TYPE,
+  className: PropTypes.string,
   onOverlayClick: PropTypes.func,
 };
 
 ModalOverlay.defaultProps = {
   active: false,
   children: null,
+  className: '',
   onOverlayClick: null,
 };
