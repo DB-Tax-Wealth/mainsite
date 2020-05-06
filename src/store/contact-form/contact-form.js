@@ -118,29 +118,30 @@ export const requestContactFormSubmit = () => async (dispatch, getState) => {
 
   dispatch(contactFormRequestStart());
 
-  // The following try/catch is commented out because we're getting an error
-  // even during a success beacuse of a CORS issue. Once that CORS issues is
-  // resolved, this can be added back in.
-  // try {
-  await postContactForm({ address, email, message, name });
-  dispatch(contactFormRequestSuccess());
-  dispatch(updateContactFormEmailIsDirty(false));
-  dispatch(
-    triggerAlert({
-      children: 'Your message has been submitted. We will get back to you soon.',
-      color: 'success',
-      title: 'Success!',
-    })
-  );
-  dispatch(resetContactForm());
-  // } catch (error) {
-  //   dispatch(contactFormRequestFailure());
-  //   dispatch(
-  //     triggerAlert({
-  //       children: 'There was an error submitting your contact form submission.  Please try again.',
-  //       color: 'danger',
-  //       title: 'Contact Form Failure',
-  //     })
-  //   );
-  // }
+  // The following try/catch has been adjusted because there's a CORS error
+  // causing even successful responses to throw an error. So until the CORS
+  // error is corrected, this will have to remain.
+  try {
+    await postContactForm({ address, email, message, name });
+  } catch (error) {
+    // dispatch(contactFormRequestFailure());
+    // dispatch(
+    //   triggerAlert({
+    //     children: 'There was an error submitting your contact form submission.  Please try again.',
+    //     color: 'danger',
+    //     title: 'Contact Form Failure',
+    //   })
+    // );
+
+    dispatch(contactFormRequestSuccess());
+    dispatch(updateContactFormEmailIsDirty(false));
+    dispatch(
+      triggerAlert({
+        children: 'Your message has been submitted. We will get back to you soon.',
+        color: 'success',
+        title: 'Success!',
+      })
+    );
+    dispatch(resetContactForm());
+  }
 };
