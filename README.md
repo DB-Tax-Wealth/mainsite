@@ -164,6 +164,8 @@ To deploy this application, simply run the build script `npm run build` from the
 
 After the build is complete, all updated bundle files will be in the `docs/` directory. Commit and push the changes to this directory to master.
 
+**NOTE:** Occaisonally, react-snapshot arbitrarily does not update the metadata on the static pages.  When this happens, simply commit/stage the static pages with correct metadata, then re-run `npm run postbuild` which will re-generate the files.  Commit/stage the pages with correct metadata and repeat.  This typically only takes 2-3 additional tries.
+
 ## License
 
 This project is licensed under the MIT License - see the [MIT Open Source Initiative](https://opensource.org/licenses/MIT) for details
