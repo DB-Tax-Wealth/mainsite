@@ -35,7 +35,7 @@ export const ROUTES = {
     key: 'contact',
     path: '/contact',
     title: 'Contact',
-    description: '414-764-7330 . 1125 Milwaukee Ave. South Milwaukee, WI · 53172',
+    description: '414-764-7330 · 1125 Milwaukee Ave. South Milwaukee, WI · 53172',
   },
   DEMO: { component: Demo, exact: true, key: 'demo', path: '/demo', title: 'Demo' },
   ENGAGEMENT_POLICY: {
