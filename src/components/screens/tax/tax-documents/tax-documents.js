@@ -10,7 +10,7 @@ const DOCUMENTS = TAX_DOCUMENTS;
 
 export const TaxDocuments = () => {
   return (
-    <Screen metaTitle={ROUTES.TAX_DOCUMENTS.title}>
+    <Screen metaTitle={ROUTES.TAX_DOCUMENTS.title} metaDescription={ROUTES.TAX_DOCUMENTS.description}>
       <Hero title="Documents" subtitle={ROUTES.TAX.title}>
         <p>Documents to help you with your taxes.</p>
       </Hero>

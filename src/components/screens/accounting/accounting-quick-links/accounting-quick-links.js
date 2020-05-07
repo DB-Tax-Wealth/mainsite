@@ -14,7 +14,7 @@ const DOCUMENTS = ACCOUNTING_DOCUMENTS;
 
 export const AccountingQuickLinks = () => {
   return (
-    <Screen metaTitle={ROUTES.ACCOUNTING_QUICK_LINKS.title}>
+    <Screen metaTitle={ROUTES.ACCOUNTING_QUICK_LINKS.title} metaDescription={ROUTES.ACCOUNTING_QUICK_LINKS.description}>
       <Hero title="Accounting" subtitle={ROUTES.ACCOUNTING_QUICK_LINKS.title}>
         <p>Documents and links to help you with your accounting.</p>
       </Hero>

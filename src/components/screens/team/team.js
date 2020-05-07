@@ -19,7 +19,7 @@ const teamMembers = TEAM_MEMBERS.map(({ shortBio, id, img, name, title }) => (
 
 export const Team = () => {
   return (
-    <Screen metaTitle={ROUTES.TEAM.title}>
+    <Screen metaTitle={ROUTES.TEAM.title} metaDescription={ROUTES.TEAM.description}>
       <Hero title="Meet the Team" subtitle="About">
         <p>
           We believe our team oriented approach adds a broader perspective to all we do and provides increased benefits

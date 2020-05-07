@@ -24,7 +24,7 @@ export const Contact = (props) => {
   const { onHeroButtonClick } = props;
 
   return (
-    <Screen metaTitle={ROUTES.CONTACT.title}>
+    <Screen metaTitle={ROUTES.CONTACT.title} metaDescription={ROUTES.CONTACT.description}>
       <Hero
         buttonLabel="Get in touch now"
         buttonOnClick={onHeroButtonClick}

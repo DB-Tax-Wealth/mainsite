@@ -60,7 +60,7 @@ export class TaxProcess extends Component {
     ];
 
     return (
-      <Screen metaTitle={ROUTES.TAX_PROCESS.title}>
+      <Screen metaTitle={ROUTES.TAX_PROCESS.title} metaDescription={ROUTES.TAX.description}>
         <Hero title="Our Onboarding Process" subtitle="Tax" image={HeroImage}>
           <p>
             Our approach helps clients minimize one of life&apos;s most complicated and costly expenses: taxes. DB Tax &

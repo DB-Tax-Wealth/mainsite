@@ -19,9 +19,24 @@ import { AccountingQuickLinks } from 'components/screens/accounting/accounting-q
 import { DB_WEALTH_LINK } from './db-wealth-link';
 
 export const ROUTES = {
-  ABOUT: { component: About, exact: true, key: 'about', path: '/about', title: 'About' },
+  ABOUT: {
+    component: About,
+    exact: true,
+    key: 'about',
+    path: '/about',
+    title: 'About',
+    description:
+      'To date, the firm has processed more than 60,000 Personal Income Tax, Corporate, Partnership, Proprietorship, and Fiduciary Tax Returns. We not only prepare these returns, but we stand behind them with 100% accuracy guarantee.',
+  },
   // CAREERS: { component: Careers, exact: true, key: 'careers', path: '/careers', title: 'Careers' },
-  CONTACT: { component: ContactConnected, exact: true, key: 'contact', path: '/contact', title: 'Contact' },
+  CONTACT: {
+    component: ContactConnected,
+    exact: true,
+    key: 'contact',
+    path: '/contact',
+    title: 'Contact',
+    description: '414-764-7330 . 1125 Milwaukee Ave. South Milwaukee, WI · 53172',
+  },
   DEMO: { component: Demo, exact: true, key: 'demo', path: '/demo', title: 'Demo' },
   ENGAGEMENT_POLICY: {
     component: EngagementPolicy,
@@ -37,16 +52,33 @@ export const ROUTES = {
     path: '/about/fee-schedule',
     title: 'Fee Schedule',
   },
-  HOME: { component: Home, exact: true, key: 'home', path: '/', title: 'Home' },
+  HOME: {
+    component: Home,
+    exact: true,
+    key: 'home',
+    path: '/',
+    title: 'Home',
+    description: 'At DB Tax & Wealth, we have the client—and only the client—in mind.',
+  },
   MISSION_STATEMENT: {
     component: MissionStatement,
     exact: true,
     key: 'mission-statement',
     path: '/about/mission-statement',
     title: 'Mission Statement',
+    description:
+      'Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you develop, implement, and monitor a strategy that’s designed to address your individual situation.',
   },
   SERVICES: { component: UnderConstruction, exact: true, key: 'services', path: '/services', title: 'Services' },
-  TEAM: { component: Team, exact: true, key: 'team', path: '/about/team', title: 'Team' },
+  TEAM: {
+    component: Team,
+    exact: true,
+    key: 'team',
+    path: '/about/team',
+    title: 'Team',
+    description:
+      'We believe our team oriented approach adds a broader perspective to all we do and provides increased benefits to our clients.',
+  },
   TEAM_MEMBER: {
     component: TeamMemberDetail,
     exact: true,
@@ -57,7 +89,14 @@ export const ROUTES = {
   /**
    * Tax Pages
    */
-  TAX: { component: TaxProcess, exact: true, key: 'tax', path: '/services/tax/process', title: 'Tax' },
+  TAX: {
+    component: TaxProcess,
+    exact: true,
+    key: 'tax',
+    path: '/services/tax/process',
+    title: 'Tax',
+    description: 'Our approach helps clients minimize one of life’s most complicated and costly expenses: taxes.',
+  },
   TAX_PROCESS: {
     component: TaxProcess,
     exact: true,
@@ -71,6 +110,7 @@ export const ROUTES = {
     key: 'tax-documents',
     path: '/services/tax/documents',
     title: 'Tax Documents',
+    description: 'Documents to help you with your taxes.',
   },
   TAX_DB_DOCUSHARE: {
     key: 'tax-db-docushare',
@@ -86,6 +126,7 @@ export const ROUTES = {
     key: 'accounting',
     path: '/services/accounting/process',
     title: 'Accounting',
+    description: 'DB Tax & Wealth is a one-stop shop for your payroll, bookkeeping and accounting needs.',
   },
   ACCOUNTING_PROCESS: {
     component: AccountingProcess,
@@ -100,6 +141,7 @@ export const ROUTES = {
     key: 'accounting-quick-links',
     path: '/services/accounting/quick-links',
     title: 'Accounting Quick Links',
+    description: 'Documents and links to help you with your accounting.',
   },
   /**
    * Wealth Pages
@@ -110,6 +152,7 @@ export const ROUTES = {
     key: 'wealth',
     path: '/services/wealth/process',
     title: 'Wealth',
+    description: 'At DB Tax & Wealth, we integrate tax information for a comprehensive picture.',
   },
   WEALTH_PROCESS: {
     component: WealthProcess,
@@ -124,6 +167,7 @@ export const ROUTES = {
     key: 'wealth-documents',
     path: '/services/wealth/documents',
     title: 'Wealth Documents',
+    description: 'Documents to help you manage your wealth and assets.',
   },
   WEALTH_DB_MONEY: {
     key: 'wealth-db-money',

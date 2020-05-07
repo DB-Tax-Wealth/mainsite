@@ -60,7 +60,7 @@ export class WealthProcess extends Component {
     ];
 
     return (
-      <Screen metaTitle={ROUTES.WEALTH_PROCESS.title}>
+      <Screen metaTitle={ROUTES.WEALTH_PROCESS.title} metaDescription={ROUTES.WEALTH.description}>
         <Hero title="Our Onboarding Process" subtitle="Wealth" image={HeroImage}>
           <p>
             At DB Tax & Wealth, we integrate tax information for a comprehensive picture. Our unique approach allows the

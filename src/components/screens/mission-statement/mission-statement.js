@@ -9,7 +9,7 @@ import { ROUTES } from 'constants/routes';
 
 export const MissionStatement = () => {
   return (
-    <Screen metaTitle={ROUTES.MISSION_STATEMENT.title}>
+    <Screen metaTitle={ROUTES.MISSION_STATEMENT.title} metaDescription={ROUTES.MISSION_STATEMENT.description}>
       <Hero title="Mission Statement" subtitle="About">
         <p>The client &amp; only the client in mind.</p>
       </Hero>

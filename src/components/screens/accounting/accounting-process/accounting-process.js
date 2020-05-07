@@ -60,7 +60,7 @@ export class AccountingProcess extends Component {
     ];
 
     return (
-      <Screen metaTitle={ROUTES.ACCOUNTING_PROCESS.title}>
+      <Screen metaTitle={ROUTES.ACCOUNTING_PROCESS.title} metaDescription={ROUTES.ACCOUNTING.description}>
         <Hero title="Our Onboarding Process" subtitle="Accounting" image={HeroImage}>
           <p>
             DB Tax & Wealth is a one-stop shop for your payroll, bookkeeping and accounting needs. Our experienced team

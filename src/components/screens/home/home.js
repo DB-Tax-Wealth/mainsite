@@ -65,7 +65,7 @@ export const Home = (props) => {
   ];
 
   return (
-    <Screen>
+    <Screen metaDescription={ROUTES.HOME.description}>
       <Carousel slides={slides} />
       <Section color="primary-light">
         <div className="max-width--sm margin--horizontal--auto text-align--center">
