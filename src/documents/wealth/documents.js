@@ -5,10 +5,10 @@ import FinancialAdvisingDocumentPlaceholder from './financial_advising_document_
 import ShortFormDocumentPlaceholder from './short_form_preview.png';
 
 // Docs
-import CashflowDocument from './Cash Flow & Inventory Worksheet.docx';
+import CashflowDocument from './cash-flow-inventory-worksheet.pdf';
 import EMoneyDocument from './eMoneyClientIntroLetter.docx';
-import FinancialAdvisingDocument from './Financial Advising Checklist.docx';
-import ShortFormDocument from './Short Form.docx';
+import FinancialAdvisingDocument from './financial-advising-checklist.pdf';
+import ShortFormDocument from './short-form.pdf';
 
 export const WEALTH_DOCUMENTS = [
   {

@@ -2,7 +2,7 @@
 import RecurringACHFormPreview from './recurring_ach_form_preview.png';
 
 // Docs
-import RecurringACHForm from './recurring_ach_form.docx';
+import RecurringACHForm from './recurring-ach-form.pdf';
 
 export const ACCOUNTING_DOCUMENTS = [
   {
