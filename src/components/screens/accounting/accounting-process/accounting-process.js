@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Hero } from 'components/layout/hero/hero';
 import { Section } from 'components/layout/section/section';
 
@@ -14,6 +13,7 @@ import { AccountingProcessOrganize } from 'components/screens/accounting/account
 import { AccountingProcessWorkTogether } from 'components/screens/accounting/accounting-process/accounting-process-work-together/accounting-process-work-together';
 import { AccountingProcessPlan } from 'components/screens/accounting/accounting-process/accounting-process-plan/accounting-process-plan';
 import { ROUTES } from 'constants/routes';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 export class AccountingProcess extends Component {
   constructor(props) {
@@ -60,7 +60,7 @@ export class AccountingProcess extends Component {
     ];
 
     return (
-      <Screen metaTitle={ROUTES.ACCOUNTING_PROCESS.title} metaDescription={ROUTES.ACCOUNTING.description}>
+      <ScreenConnected metaTitle={ROUTES.ACCOUNTING_PROCESS.title} metaDescription={ROUTES.ACCOUNTING.description}>
         <Hero title="Our Onboarding Process" subtitle="Accounting" image={HeroImage}>
           <p>
             DB Tax & Wealth is a one-stop shop for your payroll, bookkeeping and accounting needs. Our experienced team
@@ -86,7 +86,7 @@ export class AccountingProcess extends Component {
             </Row>
           </Grid>
         </Section>
-      </Screen>
+      </ScreenConnected>
     );
   }
 }

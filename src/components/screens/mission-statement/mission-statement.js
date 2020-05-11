@@ -1,15 +1,15 @@
 import React from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { Grid } from 'components/layout/grid/grid';
 import { Row } from 'components/layout/grid/row/row';
 import { Column } from 'components/layout/grid/column/column';
 import { Hero } from 'components/layout/hero/hero';
 import { ROUTES } from 'constants/routes';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 export const MissionStatement = () => {
   return (
-    <Screen metaTitle={ROUTES.MISSION_STATEMENT.title} metaDescription={ROUTES.MISSION_STATEMENT.description}>
+    <ScreenConnected metaTitle={ROUTES.MISSION_STATEMENT.title} metaDescription={ROUTES.MISSION_STATEMENT.description}>
       <Hero title="Mission Statement" subtitle="About">
         <p>The client &amp; only the client in mind.</p>
       </Hero>
@@ -50,6 +50,6 @@ export const MissionStatement = () => {
           </Row>
         </Grid>
       </Section>
-    </Screen>
+    </ScreenConnected>
   );
 };

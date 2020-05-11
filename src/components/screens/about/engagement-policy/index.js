@@ -1,12 +1,12 @@
 import React from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { Hero } from 'components/layout/hero/hero';
 import { ROUTES } from 'constants/routes';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 export const EngagementPolicy = () => {
   return (
-    <Screen metaTitle={ROUTES.ENGAGEMENT_POLICY.title}>
+    <ScreenConnected metaTitle={ROUTES.ENGAGEMENT_POLICY.title}>
       <Hero title="Engagement Policy" subtitle="About" />
       <Section>
         <h2>Engagement Agreement Records &amp; Policy Certification</h2>
@@ -145,6 +145,6 @@ export const EngagementPolicy = () => {
           </p>
         </em>
       </Section>
-    </Screen>
+    </ScreenConnected>
   );
 };

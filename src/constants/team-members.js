@@ -13,7 +13,7 @@ import chuckWinn from 'images/team/chuck-winn.jpg';
 
 export const TEAM_MEMBERS = [
   {
-    id: 1,
+    id: 'lisa-pugel',
     email: 'lpugel@dbtaxinc.com',
     fax: '',
     img: lisaPugel,
@@ -37,7 +37,7 @@ export const TEAM_MEMBERS = [
     Investment and financial planning services are offered by Lisa Pugel through her affiliation with Avantax.`,
   },
   {
-    id: 2,
+    id: 'gail-fisher',
     email: 'gfisher@dbtaxinc.com',
     fax: '',
     img: gailFisher,
@@ -55,7 +55,7 @@ export const TEAM_MEMBERS = [
     Gail has 2 children, both boys, Jordan (24) and Zachary (17) and 3 stepchildren, Kodi (27), Joshua (22) and Megan (19). She is married to John. They have a family dog that is 8 years old, a pekingese/maltese mix, named Max. Outside of the office she enjoys traveling, attending sporting events, spending time with family and friends and relaxing.`,
   },
   {
-    id: 3,
+    id: 'mark-pugel',
     email: 'mark@dbtaxinc.com',
     fax: '',
     img: markPugel,
@@ -73,7 +73,7 @@ export const TEAM_MEMBERS = [
     Mark lives in the Town of Raymond, is married and has 4 children that keep him busy. He is an avid sports fan, loves his Brewers, Packers and Badgers.`,
   },
   {
-    id: 4,
+    id: 'angela-hernandez',
     email: 'ahernandez@dbtaxinc.com',
     fax: '',
     img: angelaHernandez,
@@ -87,7 +87,7 @@ export const TEAM_MEMBERS = [
     Angela has 2 children (Trey, 16 and Payton, 13), and is recently married to her husband James.  Angela and James spend their free time supporting her two active children in multiple sports and competitive dance.  Angela also enjoys both watching and playing sports, outdoor activities, and live music.`,
   },
   {
-    id: 5,
+    id: 'aliina-klatt',
     email: 'aklatt@dbtaxinc.com',
     fax: '',
     img: aliinaKlatt,
@@ -101,7 +101,7 @@ export const TEAM_MEMBERS = [
     Outside of school, Allina keeps busy with sports and other activities. She participated in 4 years of club volleyball for BU. In addition, she loves to travel and ski, and is an active alumni of Sigma Kappa Sorority. Previously she served as VP of Finance for Sigma Kappa Beta Nu for 2 years. Aliina was the 2016 recipient of the Sigma Kappa Outstanding Active Caryl Cordis D'hodt Award. Other professional experience consists of Credit Operation Intern at CEFCU in Peoria, IL and Manager at the Armory which requires managerial, cost accounting, inventory, and other general business management skills. Her leadership in this department provided her for an Outstanding Achievement Award in 2013 presented at the Business Community event in Oak Creek, WI. Aliina has also spent time mentoring and tutoring high school students who attended alternative and charter school within Peoria, IL. Lastly, Aliina has coached club volleyball at Next Level Volleyball Club (2010 – 2016) and is a certified scorekeeper with the Badger Region and works NCAA Div I matches. She is currently coaching at MATC and 414 Elite. She has also volunteered as an assistant coach at St. Matthews School providing basic volleyball instruction and practices (2010-2013) and St. Francis High School (2014- 2017). Aliina is an accomplished volleyball player herself – 3 year Varsity player at Oak Creek High School (starter) and 8 year club player (starter). All-Conference Honorable Mention 2012 and 2013.`,
   },
   {
-    id: 6,
+    id: 'rebecca-campos',
     email: 'rcampos@dbtaxinc.com',
     fax: '',
     img: rebeccaCampos,
@@ -119,7 +119,7 @@ export const TEAM_MEMBERS = [
     Rebecca, who is widowed, has 6 children. Ruth, who is a Litigation Paralegal  at Gimbel, Reilly, Geurin and Brown Law Firm for 5 years after working at the Milwaukee Courthouse for 23 years.   Ronald, who is a Milwaukee Police Officer for 21 years. Rachel, who is a Resident Assistant at Brenwood Park Assisted Living,  Robert, who is a South Milwaukee Postal Worker,  Richard, who is a Master Electrician and has worked for Ladish Company,  now ATI,  in Cudahy as Maintenance General Foreman for 9 years.  Rosalinda, who completed her residency and is a Family Medicine Physician at Memorial Hospital and Clinics in Carthage, IL. Rebecca has lived in South Milwaukee since 1991.`,
   },
   {
-    id: 7,
+    id: 'chuck-winn',
     email: 'cwinn@dbtaxinc.com',
     fax: '',
     img: chuckWinn,
@@ -141,7 +141,7 @@ export const TEAM_MEMBERS = [
     Chuck lives in Menomonee Falls. If you run into him outside of work, he’s probably having fun with his kids Mark (13) and Joelle (12) or his extended family. He loves adventure and the outdoors, especially riding dirt bikes, fishing, skiing in the mountains and riding off-road trails on his mountain bike.`,
   },
   {
-    id: 8,
+    id: 'lisa-reinke',
     email: 'lreinke@dbtaxinc.com',
     fax: '',
     img: lisaReinke,
@@ -157,7 +157,7 @@ export const TEAM_MEMBERS = [
     In November of 2014, Lisa joined DB Tax and Wealth. Lisa's primary job duties include assisting DB Tax & Wealth Owner, Lisa Pugel. Lisa's role at the firm is unique due to her willingness to help out with numerous tasks on a daily basis. Customer care, staff support, filing, managing QuickBooks files, data entry, scheduling and various duties requiring exceptional organizational skills and creativity.  Lisa enjoys the flexibility her job brings and is excited to continue to learn more as DB Tax & Wealth grows.`,
   },
   {
-    id: 9,
+    id: 'maria-taylor',
     email: 'mtaylor@dbtaxinc.com',
     fax: '',
     img: mariaTaylor,
@@ -175,7 +175,7 @@ export const TEAM_MEMBERS = [
     Maria has been married for 31 years and has been blessed with 3 children and 3 grandchildren.`,
   },
   {
-    id: 11,
+    id: 'milena-wood',
     email: 'mwood@dbtaxinc.com',
     fax: '',
     img: milenaWood,
@@ -192,7 +192,7 @@ export const TEAM_MEMBERS = [
     `,
   },
   {
-    id: 12,
+    id: 'linda-scholer',
     email: 'lschloer@dbtaxinc.com',
     fax: '',
     img: lindaScholer,
@@ -208,7 +208,7 @@ export const TEAM_MEMBERS = [
     Linda has been married for more than 25 years to Tony, and has 2 daughters, Alyssa and Emily. Emily graduated as an RN, while Alyssa is studying to become a nurse. They also have 2 dogs, Tukker and Lilee.  She enjoys spending time with her family & friends, any seasonal outdoor activities, and traveling.`,
   },
   {
-    id: 13,
+    id: 'andrea-ostrowski',
     email: 'aostrowski@dbtaxinc.com',
     fax: '',
     img: andreaOstrowski,
@@ -222,7 +222,7 @@ export const TEAM_MEMBERS = [
     Andrea spends some of her spare time creating personal, unique videos for weddings, birthdays, and other special occasions.  She has been married to Lee for over 10 years.  They have a dog named Bo and enjoy spending time at their campground on the weekends.  They faithfully follow Wisconsin sports, always cheering on the Packers, Badgers, Brewers, and Bucks!`,
   },
   {
-    id: 14,
+    id: 'ramona-koeller',
     email: 'rkoeller@dbtaxinc.com',
     fax: '',
     img: '',

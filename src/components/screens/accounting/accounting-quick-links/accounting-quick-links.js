@@ -1,5 +1,4 @@
 import React from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Hero } from 'components/layout/hero/hero';
 import { Section } from 'components/layout/section/section';
 import { ROUTES } from 'constants/routes';
@@ -9,12 +8,16 @@ import { Row } from 'components/layout/grid/row/row';
 import { Column } from 'components/layout/grid/column/column';
 import { ACCOUNTING_DOCUMENTS } from 'documents/accounting/accounting';
 import { QuickLink } from 'components/layout/quick-link/quick-link';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 const DOCUMENTS = ACCOUNTING_DOCUMENTS;
 
 export const AccountingQuickLinks = () => {
   return (
-    <Screen metaTitle={ROUTES.ACCOUNTING_QUICK_LINKS.title} metaDescription={ROUTES.ACCOUNTING_QUICK_LINKS.description}>
+    <ScreenConnected
+      metaTitle={ROUTES.ACCOUNTING_QUICK_LINKS.title}
+      metaDescription={ROUTES.ACCOUNTING_QUICK_LINKS.description}
+    >
       <Hero title="Accounting" subtitle={ROUTES.ACCOUNTING_QUICK_LINKS.title}>
         <p>Documents and links to help you with your accounting.</p>
       </Hero>
@@ -35,6 +38,6 @@ export const AccountingQuickLinks = () => {
           </Row>
         </Grid>
       </Section>
-    </Screen>
+    </ScreenConnected>
   );
 };

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { Hero } from 'components/layout/hero/hero';
 import { ROUTES } from 'constants/routes';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 export const FeeSchedule = () => {
   return (
-    <Screen metaTitle={ROUTES.FEE_SCHEDULE.title}>
+    <ScreenConnected metaTitle={ROUTES.FEE_SCHEDULE.title}>
       <Hero title="Fee Schedule" subtitle="About" />
       <Section>
         <h3>2019 Tax Preparation Fee Schedule </h3>
@@ -20,6 +20,6 @@ export const FeeSchedule = () => {
         <p>Setup fees vary by form/site</p>
         <p>POA form $75 (unless otherwise included)</p>
       </Section>
-    </Screen>
+    </ScreenConnected>
   );
 };

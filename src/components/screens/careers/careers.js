@@ -1,14 +1,14 @@
 import React from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { Hero } from 'components/layout/hero/hero';
 import heroImage from 'images/hand-with-glasses.jpg';
 import { COMPANY_NAME } from 'constants/company-name';
 import { ROUTES } from 'constants/routes';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 export const Careers = () => {
   return (
-    <Screen metaTitle={ROUTES.CAREERS.title}>
+    <ScreenConnected metaTitle={ROUTES.CAREERS.title}>
       <Hero image={heroImage} title="A Future With Us" subtitle={ROUTES.CAREERS.title}>
         <p>
           We are passionate about finding the best talent to join our organization and building long-term partnerships
@@ -31,6 +31,6 @@ export const Careers = () => {
           There are currently no job openings at <strong>{COMPANY_NAME}</strong>.
         </p>
       </Section>
-    </Screen>
+    </ScreenConnected>
   );
 };

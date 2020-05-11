@@ -1,6 +1,5 @@
 import { GoogleMap } from 'components/screens/home/google-map/google-map';
 import React from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { SectionWithTextAndImage } from 'components/layout/section-with-text-and-image/section-with-text-and-image';
 import womanManFinancialConsulting from 'images/woman-man-financial-consulting.jpg';
 import { ServiceList } from 'components/screens/home/service-list/service-list';
@@ -16,6 +15,7 @@ import heroImage2 from 'images/person-writing-down-plan.jpg';
 import heroImage3 from 'images/man-fishing.jpg';
 import heroImage4 from 'images/db-tax-team.jpg';
 import PropTypes from 'prop-types';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 export const Home = (props) => {
   const { history } = props;
@@ -65,7 +65,7 @@ export const Home = (props) => {
   ];
 
   return (
-    <Screen metaDescription={ROUTES.HOME.description}>
+    <ScreenConnected metaDescription={ROUTES.HOME.description}>
       <Carousel slides={slides} />
       <Section color="primary-light">
         <div className="max-width--sm margin--horizontal--auto text-align--center">
@@ -124,7 +124,7 @@ export const Home = (props) => {
         </p>
       </SectionWithTextAndImage>
       <GoogleMap />
-    </Screen>
+    </ScreenConnected>
   );
 };
 

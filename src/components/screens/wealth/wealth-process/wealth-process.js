@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Hero } from 'components/layout/hero/hero';
 import { Section } from 'components/layout/section/section';
 
@@ -10,6 +9,7 @@ import { ProcessWheel } from 'components/process-wheel/process-wheel';
 import { Icon } from 'components/layout/icon/icon';
 import HeroImage from 'images/person-holding-pen.jpg';
 import { ROUTES } from 'constants/routes';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 import { WealthProcessGoals } from './wealth-process-goals/wealth-process-goals';
 import { WealthProcessTeam } from './wealth-process-team/wealth-process-team';
 import { WealthProcessPlan } from './wealth-process-plan/wealth-process-plan';
@@ -60,7 +60,7 @@ export class WealthProcess extends Component {
     ];
 
     return (
-      <Screen metaTitle={ROUTES.WEALTH_PROCESS.title} metaDescription={ROUTES.WEALTH.description}>
+      <ScreenConnected metaTitle={ROUTES.WEALTH_PROCESS.title} metaDescription={ROUTES.WEALTH.description}>
         <Hero title="Our Onboarding Process" subtitle="Wealth" image={HeroImage}>
           <p>
             At DB Tax & Wealth, we integrate tax information for a comprehensive picture. Our unique approach allows the
@@ -86,7 +86,7 @@ export class WealthProcess extends Component {
             </Row>
           </Grid>
         </Section>
-      </Screen>
+      </ScreenConnected>
     );
   }
 }

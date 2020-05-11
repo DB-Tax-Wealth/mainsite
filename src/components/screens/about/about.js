@@ -1,13 +1,13 @@
 import React from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { Link } from 'react-router-dom';
 import { ROUTES } from 'constants/routes';
 import { Hero } from 'components/layout/hero/hero';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 export const About = () => {
   return (
-    <Screen metaTitle={ROUTES.ABOUT.title} metaDescription={ROUTES.ABOUT.description}>
+    <ScreenConnected metaTitle={ROUTES.ABOUT.title} metaDescription={ROUTES.ABOUT.description}>
       <Hero title="Our Story" subtitle={ROUTES.ABOUT.title}>
         <p>When you have a great story, share it.</p>
       </Hero>
@@ -50,6 +50,6 @@ export const About = () => {
           have the opportunity to work with you!
         </p>
       </Section>
-    </Screen>
+    </ScreenConnected>
   );
 };

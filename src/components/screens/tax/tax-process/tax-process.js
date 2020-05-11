@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Hero } from 'components/layout/hero/hero';
 import { Section } from 'components/layout/section/section';
 
@@ -14,6 +13,7 @@ import { TaxProcessOrganize } from 'components/screens/tax/tax-process/tax-proce
 import { TaxProcessWorkTogether } from 'components/screens/tax/tax-process/tax-process-work-together/tax-process-work-together';
 import { TaxProcessPlan } from 'components/screens/tax/tax-process/tax-process-plan/tax-process-plan';
 import { ROUTES } from 'constants/routes';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 export class TaxProcess extends Component {
   constructor(props) {
@@ -60,7 +60,7 @@ export class TaxProcess extends Component {
     ];
 
     return (
-      <Screen metaTitle={ROUTES.TAX_PROCESS.title} metaDescription={ROUTES.TAX.description}>
+      <ScreenConnected metaTitle={ROUTES.TAX_PROCESS.title} metaDescription={ROUTES.TAX.description}>
         <Hero title="Our Onboarding Process" subtitle="Tax" image={HeroImage}>
           <p>
             Our approach helps clients minimize one of life&apos;s most complicated and costly expenses: taxes. DB Tax &
@@ -87,7 +87,7 @@ export class TaxProcess extends Component {
             </Row>
           </Grid>
         </Section>
-      </Screen>
+      </ScreenConnected>
     );
   }
 }

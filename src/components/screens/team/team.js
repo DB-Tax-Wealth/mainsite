@@ -1,5 +1,4 @@
 import React from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { Grid } from 'components/layout/grid/grid';
 import { Row } from 'components/layout/grid/row/row';
@@ -9,6 +8,7 @@ import { Hero } from 'components/layout/hero/hero';
 import { Image } from 'components/layout/image/image';
 import TeamPhoto from 'images/db-tax-family-team.jpg';
 import { ROUTES } from 'constants/routes';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 import { TeamMember } from './team-member/team-member';
 
 const teamMembers = TEAM_MEMBERS.map(({ shortBio, id, img, name, title }) => (
@@ -19,7 +19,7 @@ const teamMembers = TEAM_MEMBERS.map(({ shortBio, id, img, name, title }) => (
 
 export const Team = () => {
   return (
-    <Screen metaTitle={ROUTES.TEAM.title} metaDescription={ROUTES.TEAM.description}>
+    <ScreenConnected metaTitle={ROUTES.TEAM.title} metaDescription={ROUTES.TEAM.description}>
       <Hero title="Meet the Team" subtitle="About">
         <p>
           We believe our team oriented approach adds a broader perspective to all we do and provides increased benefits
@@ -51,6 +51,6 @@ export const Team = () => {
           <Row>{teamMembers}</Row>
         </Grid>
       </Section>
-    </Screen>
+    </ScreenConnected>
   );
 };

@@ -6,7 +6,6 @@ import { FAX_NUMBER } from 'constants/fax-number';
 import { PHONE_NUMBER } from 'constants/phone-number';
 import PropTypes from 'prop-types';
 import { convertPhoneNumberToTelLink } from 'util/convert-phone-number-to-tel-link/convert-phone-number-to-tel-link';
-import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { Hero } from 'components/layout/hero/hero';
 import { Grid } from 'components/layout/grid/grid';
@@ -16,6 +15,7 @@ import { GoogleMap } from 'components/screens/home/google-map/google-map';
 import { Button } from 'components/layout/button/button';
 import HeroImage from 'images/write-message.jpg';
 import { ROUTES } from 'constants/routes';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 
 const phoneLink = convertPhoneNumberToTelLink(PHONE_NUMBER);
 const faxLink = convertPhoneNumberToTelLink(FAX_NUMBER);
@@ -24,7 +24,7 @@ export const Contact = (props) => {
   const { onHeroButtonClick } = props;
 
   return (
-    <Screen metaTitle={ROUTES.CONTACT.title} metaDescription={ROUTES.CONTACT.description}>
+    <ScreenConnected metaTitle={ROUTES.CONTACT.title} metaDescription={ROUTES.CONTACT.description}>
       <Hero
         buttonLabel="Get in touch now"
         buttonOnClick={onHeroButtonClick}
@@ -119,7 +119,7 @@ export const Contact = (props) => {
           </Row>
         </Grid>
       </Section>
-    </Screen>
+    </ScreenConnected>
   );
 };
 

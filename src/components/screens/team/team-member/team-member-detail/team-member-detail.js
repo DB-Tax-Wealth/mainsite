@@ -1,15 +1,16 @@
 import React from 'react';
-import { Screen } from 'components/layout/screen/screen';
 import { Section } from 'components/layout/section/section';
 import { HeadingWithSubtitle } from 'components/layout/heading-with-subtitle/heading-with-subtitle';
 import { TEAM_MEMBERS } from 'constants/team-members';
 import { find, get } from 'lodash';
 import { convertPhoneNumberToTelLink } from 'util/convert-phone-number-to-tel-link/convert-phone-number-to-tel-link';
 import { Icon } from 'components/layout/icon/icon';
+import { ScreenConnected } from 'components/layout/screen/screen.connected';
 import styles from './team-member-detail.style.scss';
 
 export const TeamMemberDetail = (props) => {
-  const id = parseInt(get(props, 'match.params.id'));
+  const id = get(props, 'match.params.id');
+
   const teamMember = find(TEAM_MEMBERS, { id });
   const { description, email, fax, img, name, phone, title } = teamMember;
 
@@ -20,7 +21,7 @@ export const TeamMemberDetail = (props) => {
   const imageExists = Boolean(img);
 
   return (
-    <Screen className={styles.root} metaTitle={name}>
+    <ScreenConnected className={styles.root} metaTitle={name}>
       <Section>
         <div className="display--flex">
           {imageExists && (
@@ -61,6 +62,6 @@ export const TeamMemberDetail = (props) => {
         <h2>About</h2>
         <div style={{ whiteSpace: 'pre-line' }}>{description}</div>
       </Section>
-    </Screen>
+    </ScreenConnected>
   );
 };
