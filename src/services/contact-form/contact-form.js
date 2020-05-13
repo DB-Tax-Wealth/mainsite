@@ -5,7 +5,7 @@ const PREFERRED_CONTACT_METHOD = 'Email';
 const MESSAGE_SUBJECT = 'Have A Question?';
 
 const CONTACT_FORM_ENDPOINT =
-  'http://fmgsuite.dbtaxinc.com/af8dcc97-5470-4d5a-9af7-a66ddcac6709/cms-core/forms/contactform/submit';
+  'https://fmgsuite.dbtaxinc.com/af8dcc97-5470-4d5a-9af7-a66ddcac6709/cms-core/forms/contactform/submit';
 
 export const postContactForm = ({ address, email, message, name }) => {
   const Name = name || 'Potential Client';
