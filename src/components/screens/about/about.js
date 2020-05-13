@@ -19,7 +19,7 @@ export const About = () => {
           retired from the military and ventured into small business entrepreneurship. After its establishment and
           continued growth, <Link to={ROUTES.TEAM.path}>new staff was hired</Link>, more office space was added, and the
           firm began to accomplish what most small businesses envy – that is growth, dedicated clients, quality service,
-          and an excellent reputation in a great community. In 1989, Diane and Larry retired and their daughter{' '}
+          and an excellent reputation in a great community. In 1994, Diane and Larry retired and their daughter{' '}
           <strong>Lisa Pugel</strong>, began actively managing the <strong>South Milwaukee</strong> location.
         </p>
         <p>
