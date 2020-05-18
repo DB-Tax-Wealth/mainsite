@@ -6,7 +6,7 @@ import ShortFormDocumentPlaceholder from './short_form_preview.png';
 
 // Docs
 import CashflowDocument from './cash-flow-inventory-worksheet.pdf';
-import EMoneyDocument from './eMoneyClientIntroLetter.docx';
+import EMoneyDocument from './emoney-information.pdf';
 import FinancialAdvisingDocument from './financial-advising-checklist.pdf';
 import ShortFormDocument from './short-form.pdf';
 
