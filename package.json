@@ -1,5 +1,6 @@
 {
   "name": "dbtax-mainsite",
+  "homepage": "www.dbtaxinc.com/",
   "version": "0.0.1",
   "description": "A DB Tax & Financial Services main branding website.",
   "main": "./src/index.js",

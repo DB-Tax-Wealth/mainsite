@@ -4,11 +4,12 @@ import gailFisher from 'images/team/gail-fisher.jpg';
 import markPugel from 'images/team/mark-pugel.jpg';
 import angelaHernandez from 'images/team/angela-hernandez.jpg';
 import aliinaKlatt from 'images/team/aliina-klatt.jpg';
-import lindaScholer from 'images/team/linda-scholer.jpg';
 import lisaReinke from 'images/team/lisa-reinke.jpg';
 import mariaTaylor from 'images/team/maria-taylor.jpg';
 import milenaWood from 'images/team/milena-wood.jpg';
 import rebeccaCampos from 'images/team/rebecca-campos.jpg';
+import ramona from 'images/team/ramona.jpg';
+import matt from 'images/team/matt-burke.jpg';
 import chuckWinn from 'images/team/chuck-winn.jpg';
 
 export const TEAM_MEMBERS = [
@@ -192,22 +193,6 @@ export const TEAM_MEMBERS = [
     `,
   },
   {
-    id: 'linda-scholer',
-    email: 'lschloer@dbtaxinc.com',
-    fax: '',
-    img: lindaScholer,
-    name: 'Linda Scholer',
-    shortBio:
-      'Genuine.  Resourceful.  Patient.  Mother of girls.  Loves being outdoors, traveling, and spending time with family.  Dog mom to Tukker and Lilee.',
-    phone: '414-764-7330',
-    title: 'Firm Administrative Assistant',
-    description: `Graduate of Carthage College, Kenosha, WI, double major in Accounting and Business Administration (May 2008). Linda then graduated from Keller Graduate School of Management in December 2012 with an MBA in Accounting and Financial Management.  She joined DB Tax & Wealth in October 2018 and is currently in the process of studying for the Series 7 exam. She is also a Wisconsin Notary Public.
-
-    Linda began her career working for a non-profit organization, Milwaukee Habitat for Humanity.  She was the Loan Service Coordinator and managed all performing and non-performing loans. She worked strategically with their corporate attorney on all non-performing loans, loans that were in foreclosure and bankruptcy, setting up payment plans, tax & insurance disbursements and reporting all loan activity to the monthly foreclosure committee.  In February of 2016, Linda was hired as a Default Consumer Loan Reporting Specialist with Johnson Financial Group.  Her primary duty was to report all default mortgages to their investors on a monthly basis.  For 2+ years she continued to work with foreclosure & bankruptcy accounts, submitting 1099 reporting, filing claims with investors on foreclosed properties, and handling all invoicing on delinquent properties.
-
-    Linda has been married for more than 25 years to Tony, and has 2 daughters, Alyssa and Emily. Emily graduated as an RN, while Alyssa is studying to become a nurse. They also have 2 dogs, Tukker and Lilee.  She enjoys spending time with her family & friends, any seasonal outdoor activities, and traveling.`,
-  },
-  {
     id: 'andrea-ostrowski',
     email: 'aostrowski@dbtaxinc.com',
     fax: '',
@@ -225,7 +210,7 @@ export const TEAM_MEMBERS = [
     id: 'ramona-koeller',
     email: 'rkoeller@dbtaxinc.com',
     fax: '',
-    img: '',
+    img: ramona,
     name: 'Ramona Koeller',
     shortBio:
       'Friendly.  Approachable.  Considerate.  Wisconsin sports supporter.  Active. Loves to jog, ride her bike, and do Yoga with her Mom.  Namaste.',
@@ -234,5 +219,20 @@ export const TEAM_MEMBERS = [
     description: `Ramona is a graduate from Eachieve Academy and a current part time student at Milwaukee Area Technical College. She is the first person you will engage with when you interact with our firm. Being our full time receptionist ensures that you will see her bright smile when you walk in the door and hear her welcoming voice on the phone. Ramona has been is the customer service industry for 7 years which has given her the skill set to ensure that each client has a welcoming experience with our firm! Ramona has adopted many responsibilities since starting with us and her dedication to learning increases every day. Ramona manages all client inquiries, organizes all data entry, and provides pivotal assistance to all staff members. As full time receptionist Ramona has taken on a vital role in our growing firm.
 
     Outside of work, Ramona likes to spend her time supporting Wisconsin sports with her family and friends. She also enjoys being active whether it’s going for a jog with her dogs, riding her bike or taking a yoga class with her mom. She is looking forward to furthering her education and enhancing her career with us.`,
+  },
+  {
+    id: 'matt-burke',
+    email: 'matt@dbtaxinc.com',
+    fax: '',
+    img: matt,
+    name: 'Matt Burke',
+    shortBio: 'Compassionate. Outgoing. Social. Loves Traveling, Golfing and Collecting Records.',
+    phone: '414-764-7330',
+    title: 'Operations Specialist',
+    description: `Matt graduated from the University of Wisconsin-Milwaukee with a Bachelor’s Degree in finance and a certificate of International Business. He has obtained his Series 7 and 63 FINRA licenses and is currently studying for his Series 65.
+
+    Prior to employment with DB Tax and Wealth, Matt worked for 5 years with Charles Schwab out of Indianapolis on the Client Tax Reporting team. At DB, Matt is a part of the Operations team serving as an Operations Specialist.
+    
+    Matt has just moved back to the area, outside of work he enjoys golfing, traveling, and collecting records.`,
   },
 ];
