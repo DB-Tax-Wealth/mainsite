@@ -8,7 +8,7 @@ import lisaReinke from 'images/team/lisa-reinke.jpg';
 import mariaTaylor from 'images/team/maria-taylor.jpg';
 import milenaWood from 'images/team/milena-wood.jpg';
 import rebeccaCampos from 'images/team/rebecca-campos.jpg';
-import ramona from 'images/team/ramona.jpg';
+import ramona from 'images/team/ramona.png';
 import matt from 'images/team/matt-burke.jpg';
 import chuckWinn from 'images/team/chuck-winn.jpg';
 

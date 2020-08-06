@@ -35,9 +35,9 @@ export const Disclosure = () => (
       , Insurance services offered through an Avantax affiliated insurance agency.
       <br />
       <br />
-      6333 N. State Highway 161,
+      3200 Olympus Blvd., Suite 100
       <br />
-      Fourth Floor, Irving, TX 75038,
+      Dallas, TX 75019,
       <br />
       <a href={convertPhoneNumberToTelLink('9728706000')}>972-870-6000</a>.
       <br />
