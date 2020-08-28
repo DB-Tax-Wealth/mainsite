@@ -222,7 +222,7 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'matt-burke',
-    email: 'matt@dbtaxinc.com',
+    email: 'mburke@dbtaxinc.com',
     fax: '',
     img: matt,
     name: 'Matt Burke',
