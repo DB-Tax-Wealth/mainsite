@@ -11,9 +11,9 @@ import { ROUTES } from 'constants/routes';
 import { ScreenConnected } from 'components/layout/screen/screen.connected';
 import { TeamMember } from './team-member/team-member';
 
-const teamMembers = TEAM_MEMBERS.map(({ shortBio, id, img, name, title }) => (
+const teamMembers = TEAM_MEMBERS.map(({ readmore, shortBio, id, img, name, title }) => (
   <Column widthMd={4} widthLg={3} key={name} className="margin--bottom display--flex">
-    <TeamMember shortBio={shortBio} id={id} img={img} name={name} title={title} />
+    <TeamMember readmore={readmore} shortBio={shortBio} id={id} img={img} name={name} title={title} />
   </Column>
 ));
 

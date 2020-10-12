@@ -6,8 +6,9 @@ import { ROUTES } from 'constants/routes';
 import styles from './team-member.style.scss';
 
 export const TeamMember = (props) => {
-  const { shortBio, name, img, title, id } = props;
+  const { readmore, shortBio, name, img, title, id } = props;
   const imageExists = Boolean(img);
+  const checkReadmore = Boolean(readmore);
 
   return (
     <div className={styles.root}>
@@ -22,11 +23,13 @@ export const TeamMember = (props) => {
         </div>
         <div className="border--bottom margin--bottom padding--bottom--half">{title}</div>
         <div className={styles.description}>{shortBio}</div>
-        <Link to={`${ROUTES.TEAM.path}/${id}`} style={{ textDecoration: 'none' }}>
-          <Button className="display--block margin--top" style={{ width: '100%' }}>
-            Read More
-          </Button>
-        </Link>
+        {checkReadmore && (
+          <Link to={`${ROUTES.TEAM.path}/${id}`} style={{ textDecoration: 'none' }}>
+            <Button className="display--block margin--top" style={{ width: '100%' }}>
+              Read More
+            </Button>
+          </Link>
+        )}
       </div>
     </div>
   );
@@ -38,6 +41,7 @@ TeamMember.propTypes = {
   img: PropTypes.node,
   name: PropTypes.string,
   title: PropTypes.string,
+  readmore: PropTypes.number,
 };
 
 TeamMember.defaultProps = {
@@ -46,4 +50,5 @@ TeamMember.defaultProps = {
   img: null,
   name: '',
   title: '',
+  readmore: null,
 };
