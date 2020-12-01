@@ -11,7 +11,6 @@ import rebeccaCampos from 'images/team/rebecca-campos.jpg';
 import ramona from 'images/team/ramona.png';
 import matt from 'images/team/matt-burke.jpg';
 import chuckWinn from 'images/team/chuck-winn.jpg';
-import katie from 'images/team/katie-muzenski.jpg';
 import susan from 'images/team/susan-charles.jpg';
 import jason from 'images/team/jason-klatt.jpg';
 import cullen from 'images/team/cullen-quinn.jpg';
@@ -251,20 +250,6 @@ export const TEAM_MEMBERS = [
     Prior to employment with DB Tax and Wealth, Matt worked for 5 years with Charles Schwab out of Indianapolis on the Client Tax Reporting team. At DB, Matt is a part of the Operations team serving as an Operations Specialist.
     
     Matt has just moved back to the area, outside of work he enjoys golfing, traveling, and collecting records.`,
-    readmore: 1,
-  },
-  {
-    id: 'katie-muzenski',
-    email: 'kmuzenski@dbtaxinc.com',
-    fax: '',
-    img: katie,
-    name: 'Katie Muzenski',
-    shortBio:
-      'Outgoing, Bubbly, Fun. Loving Cat Mom. A foodie who likes to work out. Recently took up photography as a hobby. The first smiling face you’ll see at DB.',
-    phone: '414-764-7330',
-    title: 'Receptionist',
-    description: `Katie graduated high school online at eAchieve academy and is currently enrolled at Milwaukee Area Technical College in hopes of finishing an accounting degree and eventually pursuing a Bachelor's degree in Business and Finance at the University of Wisconsin-Milwaukee. She is an ambitious and passionate business professional with a background in management and customer service, most recently managing high volume retailers in the Wauwatosa area. Katie enjoys helping people and building long lasting relationships and networks. 
-    She was born and raised (and is stuck) in Milwaukee, Wisconsin surrounded by her incredible and supportive family. She has two cats that are like her children. She loves to spend time with them and spoil them. She enjoys working out and spending time outside (when the weather cooperates). Recently, Katie started dabbling in photography as a hobby and she enjoys doing family portraits as well as nature and cityscapes. She currently resides in West Allis as well as bartends and serves part time at Paulie's Pub and Eatery.`,
     readmore: 1,
   },
   {
