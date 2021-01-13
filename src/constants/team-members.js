@@ -254,13 +254,13 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'cullen-quinn',
-    email: '',
+    email: 'cquinn@dbtaxinc.com',
     fax: '',
     img: cullen,
     name: 'Cullen Quinn',
     shortBio: `Chill. Cooperative. Mathematical. Collector of vinyl records
      who loves to bodybuild and watch Naruto (the greatest ninja ever).`,
-    phone: '',
+    phone: '414-764-7330',
     title: 'Staff Accountant',
     description: `Cullen graduated from the University of Wisconsin-Madison in 2020 with a Bachelor’s of Business Administration in Accounting.
     
