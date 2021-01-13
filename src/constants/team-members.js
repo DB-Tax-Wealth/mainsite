@@ -258,11 +258,16 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: cullen,
     name: 'Cullen Quinn',
-    shortBio: `University of Wisconsin - Madison
-    Pursuing Bachelors of Business Administration degree in the field of Accounting`,
+    shortBio: `Chill. Cooperative. Mathematical. Collector of vinyl records
+     who loves to bodybuild and watch Naruto (the greatest ninja ever).`,
     phone: '',
-    title: 'Accounting Intern',
-    description: '',
+    title: 'Staff Accountant',
+    description: `Cullen graduated from the University of Wisconsin-Madison in 2020 with a Bachelor’s of Business Administration in Accounting.
+    
+    He plans to pursue a CPA license. Being a recent grad, Cullen brings a fresh perspective to the firm!
+    
+    In his freetime, he enjoys bodybuilding, collecting vinyl records, and watching Naruto (the greatest ninja ever).`,
+    readmore: 1,
   },
   {
     id: 'jason-klatt',
