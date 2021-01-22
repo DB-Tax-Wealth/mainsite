@@ -4,6 +4,7 @@ import EngagementDocumentPlaceholder from './engagement-preview.png';
 import ChecklistDocumentPlaceholder from './checklist-preview.png';
 import NewClientInfoDocumentPlaceholder from './new-client-info-preview.png';
 import W4ServiceChecklistDocumentPlaceholder from './w4-service-checklist-preview.png';
+import OurTaxProcessDocumentPlaceholder from './our-tax-process-preview.png';
 
 // Docs
 import ConsentDocument from './consent-use-tax-return-info.pdf';
@@ -11,6 +12,7 @@ import EngagementDocument from './general-engagement-letter.pdf';
 import ChecklistDocument from './tax-checklist.pdf';
 import NewClientInfoDocument from './new-client-info.pdf';
 import W4ServiceChecklistDocument from './w4-service-checklist.pdf';
+import OurTaxProcessDocument from './our-tax-process.pdf';
 
 export const TAX_DOCUMENTS = [
   {
@@ -42,5 +44,11 @@ export const TAX_DOCUMENTS = [
     file: W4ServiceChecklistDocument,
     image: W4ServiceChecklistDocumentPlaceholder,
     name: 'W4 - Payroll Withholding Check-up',
+  },
+  {
+    description: '',
+    file: OurTaxProcessDocument,
+    image: OurTaxProcessDocumentPlaceholder,
+    name: 'Tax Process Document',
   },
 ];
