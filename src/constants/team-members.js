@@ -275,20 +275,15 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: jen,
     name: 'Jennifer Kohls',
-    shortBio: 'Family-oriented, Generous, Hardworking. Boy mom who loves to garden and hit the links.',
+    shortBio: `Hard-working. Inquisitive. Generous. 
+    Spreadsheet enthusiast focused on setting goals and hitting targets.`,
     phone: '414-764-7330',
     title: 'Portfolio Management Analyst',
-    description: `Jen started her career with 7 years in finance; first banking, then investments. While employed at Strong Investments, she obtained her Series 7 & 63 licenses.
-     
-    In search for a more flexible schedule to handle family commitments, Jen switched to contracted work closer to home in Oak Creek. 
+    description: `Jen started her career with over 7 years in finance; first banking, then investments. In search of a more flexible schedule to handle family commitments, Jen switched to contracted work closer to home. She spent numerous years working in the non-profit sector, yet the world of finance has beckoned her back. She previously obtained her Series 7 General Securities Representative license and Series 63 Uniform Securities Agent license, and she is looking forward to obtaining them again. Jen enjoys researching and analyzing investments in her current role.
+
+    Jen graduated Magna Cum Laude with Business Honors from UW-Parkside, majoring in Business Management - Finance. She also earned a Six Sigma Green Belt Certification, which specializes in process improvement.
     
-    She spent numerous years working in the non-profit sector, including as a Volunteer Manager and Outreach Specialist at Project Concern of Cudahy-St. Francis. 
-    
-    However, the world of finance has beckoned her back. Jen graduated with Business Honors and Magna Cum Laude from UW Parkside, majoring in Business Management - Finance. 
-    
-    She also earned a Six Sigma Green Belt Certification, which specializes in process improvement. In her spare time, Jen enjoys golfing, gardening, and supporting her 2 teen sons in their activities. 
-    
-    She is excited to invest her time and talents back into the world of finance.`,
+    In her spare time, Jen enjoys gardening, golfing, and supporting her sons in their activities. She has a long history of volunteering in her community and she's passionate about helping others.`,
     readmore: 1,
   },
   {

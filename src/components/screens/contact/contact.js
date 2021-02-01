@@ -87,27 +87,27 @@ export const Contact = (props) => {
                     </tr>
                     <tr>
                       <td>Monday</td>
-                      <td>8am–4pm</td>
+                      <td>8am–6pm</td>
                     </tr>
                     <tr>
                       <td>Tuesday</td>
-                      <td>8am–4pm</td>
+                      <td>8am–6pm</td>
                     </tr>
                     <tr>
                       <td>Wednesday</td>
-                      <td>8am–4pm</td>
+                      <td>8am–6pm</td>
                     </tr>
                     <tr>
                       <td>Thursday</td>
-                      <td>8am–4pm</td>
+                      <td>8am–6pm</td>
                     </tr>
                     <tr>
                       <td>Friday</td>
-                      <td>8am–4pm</td>
+                      <td>8am–6pm</td>
                     </tr>
                     <tr>
                       <td>Saturday</td>
-                      <td>Closed</td>
+                      <td>9am–1pm</td>
                     </tr>
                   </tbody>
                 </table>

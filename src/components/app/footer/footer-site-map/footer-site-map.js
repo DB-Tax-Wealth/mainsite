@@ -50,27 +50,27 @@ export const FooterSiteMap = () => {
           </div>
           <div className="display--flex">
             <div className={styles.day}>Mon.</div>
-            <div>8am-4pm</div>
+            <div>8am-6pm</div>
           </div>
           <div className="display--flex">
             <div className={styles.day}>Tues.</div>
-            <div>8am-4pm</div>
+            <div>8am-6pm</div>
           </div>
           <div className="display--flex">
             <div className={styles.day}>Wed.</div>
-            <div>8am-4pm</div>
+            <div>8am-6pm</div>
           </div>
           <div className="display--flex">
             <div className={styles.day}>Thurs.</div>
-            <div>8am-4pm</div>
+            <div>8am-6pm</div>
           </div>
           <div className="display--flex">
             <div className={styles.day}>Fri.</div>
-            <div>8am-4pm</div>
+            <div>8am-6pm</div>
           </div>
           <div className="display--flex">
             <div className={styles.day}>Sat.</div>
-            <div>Closed</div>
+            <div>9am-1pm</div>
           </div>
         </div>
       </div>
