@@ -15,6 +15,7 @@ import susan from 'images/team/susan-charles.jpg';
 import jason from 'images/team/jason-klatt.jpg';
 import cullen from 'images/team/cullen-quinn.jpg';
 import jen from 'images/team/jen-kohls.jpg';
+import ashley from 'images/team/Ashley-Iwinski.png';
 
 export const TEAM_MEMBERS = [
   {
@@ -85,7 +86,7 @@ export const TEAM_MEMBERS = [
     email: 'ahernandez@dbtaxinc.com',
     fax: '',
     img: angelaHernandez,
-    name: 'Angela Hernandez, EA',
+    name: 'Angela Hernandez, EA, CTRC',
     shortBio:
       'Hard worker.  Go-getter.  Athletic.  Lover of the outdoors.  Enjoys playing and watching sports, especially when her kids are involved.  Big fan of live music.',
     phone: '414-764-7330',
@@ -284,6 +285,25 @@ export const TEAM_MEMBERS = [
     Jen graduated Magna Cum Laude with Business Honors from UW-Parkside, majoring in Business Management - Finance. She also earned a Six Sigma Green Belt Certification, which specializes in process improvement.
     
     In her spare time, Jen enjoys gardening, golfing, and supporting her sons in their activities. She has a long history of volunteering in her community and she's passionate about helping others.`,
+    readmore: 1,
+  },
+  {
+    id: 'ashley-iwinski',
+    email: 'aiwinski@dbtaxinc.com',
+    fax: '',
+    img: ashley,
+    name: 'Ashley Iwinski',
+    shortBio: `Eager. Ambitious. Driven. Family-oriented Dog Mom who always has a plan and loves to travel to Carribean islands.
+     Enjoys sporting events, coffee shops, and collecting Starbucks mugs.`,
+    phone: '414-764-7330',
+    title: 'Financial Analyst',
+    description: `Ashley is familiar with the South Milwaukee area as she attended Cudahy High School and graduated in 2015. From there, Ashley attended the University of Wisconsin - La Crosse to obtain her Bachelor’s degree in Finance and Economics. She completed her Bachelor’s degree in May 2019 and immediately decided to further her education at the University of Wisconsin - Milwaukee where she worked to obtain her Master’s in Business Administration. While earning her Masters, Ashley worked at USBancorp as a Mutual Fund Administrator starting in June 2019. There she was able to gain deeper knowledge within the investment field and form relationships with advisors that specialize in Exchange Traded Funds. 
+
+    In April 2021, Ashley left USBancorp in search of new, more growth-driven opportunities and DB Tax & Wealth was, and is, the best fit for that fulfillment. Ashley graduated with her Master’s in Business Administration and began her journey with DB Tax & Wealth in May 2021. She feels eager and motivated to use her past experience and academic knowledge to benefit her personal and professional goals, all while always assisting the company towards their bottom line.  
+    
+    Next, Ashley plans to strive within her Financial Analyst position and continue her education on the Certified Financial Planner track starting Fall 2021. Once completing her certification, her main focus is to ensure her work is to the best of her ability to benefit DB Tax & Wealth and grow within the company. 
+    
+    Ashley currently lives in Wheeling, IL with her boyfriend, Jake, and their dog, Ollie (Blue Heeler/Dalmatian). Ashley enjoys going to Schaumburg Boomers games, where Jake currently plays, visiting coffee shops and collecting Starbucks mugs from each state/location!`,
     readmore: 1,
   },
   {
