@@ -16,6 +16,7 @@ import jason from 'images/team/jason-klatt.jpg';
 import cullen from 'images/team/cullen-quinn.jpg';
 import jen from 'images/team/jen-kohls.jpg';
 import ashley from 'images/team/Ashley-Iwinski.png';
+import sarah from 'images/team/sarah-kaleta.jpg';
 
 export const TEAM_MEMBERS = [
   {
@@ -304,6 +305,29 @@ export const TEAM_MEMBERS = [
     Next, Ashley plans to strive within her Financial Analyst position and continue her education on the Certified Financial Planner track starting Fall 2021. Once completing her certification, her main focus is to ensure her work is to the best of her ability to benefit DB Tax & Wealth and grow within the company. 
     
     Ashley currently lives in Wheeling, IL with her boyfriend, Jake, and their dog, Ollie (Blue Heeler/Dalmatian). Ashley enjoys going to Schaumburg Boomers games, where Jake currently plays, visiting coffee shops and collecting Starbucks mugs from each state/location!`,
+    readmore: 1,
+  },
+  {
+    id: 'sarah-kaleta',
+    email: 'skaleta@dbtaxinc.com',
+    fax: '',
+    img: sarah,
+    name: 'Sarah Kaleta',
+    shortBio: `Strategic. 
+    Upbeat. 
+    Attentive.
+    Enjoys a variety of music, ice fishing & spending time with family and friends.`,
+    phone: '414-764-7330',
+    title: 'Securities Operation Specialist',
+    description: `Sarah is an Operations Specialist with DB Tax & Wealth.  For the past 10 years she has been the acting Operations Manager for an independent investment firm where she honed in on her strategic organizational skills to visualize, assess & develop best practices within
+    the organization.
+   
+   Prior to working with investments she held a variety of managerial roles.  She first began her career as a Life & Health Insurance Agent team lead for the WAIP (one of the “for-profit” arms of the Wisconsin Dental Association.)  There she developed her passion for
+    providing service excellence, delivering comprehensive solutions, and capitalising on educational opportunities.
+   
+   Sarah graduated from Milwaukee Area Technical College in 2008 with an Associate’s of Sciences Degree, first obtained her Wisconsin Life & Health Insurance License in 2004 and is an active notary.
+   
+   When she’s not out on the lake waiting for the next big catch, you can find her watching the latest thriller movie, jamming out to the musical theme of the day or playing cards with family and friends.`,
     readmore: 1,
   },
   {
