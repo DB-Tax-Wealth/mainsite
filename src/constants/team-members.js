@@ -318,7 +318,7 @@ export const TEAM_MEMBERS = [
     Attentive.
     Enjoys a variety of music, ice fishing & spending time with family and friends.`,
     phone: '414-764-7330',
-    title: 'Securities Operation Specialist',
+    title: 'Client Operations Assistant',
     description: `Sarah is an Operations Specialist with DB Tax & Wealth.  For the past 10 years she has been the acting Operations Manager for an independent investment firm where she honed in on her strategic organizational skills to visualize, assess & develop best practices within the organization.
    
    Prior to working with investments she held a variety of managerial roles.  She first began her career as a Life & Health Insurance Agent team lead for the WDAIP (one of the “for-profit” arms of the Wisconsin Dental Association.)  There she developed her passion for providing service excellence, delivering comprehensive solutions, and capitalising on educational opportunities.
