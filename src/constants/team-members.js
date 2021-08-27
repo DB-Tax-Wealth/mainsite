@@ -139,7 +139,7 @@ export const TEAM_MEMBERS = [
     name: 'Chuck Winn, CFP®',
     shortBio:
       'Adventurous.  Cordial.  Easygoing.  Lover of nature.  Daredevil on his dirt bike, the slopes, and the water.  Fun-loving Dad of Mark and Joelle.',
-    phone: '414-764-7730',
+    phone: '414-764-7330',
     title: 'Senior Wealth Planner',
     description: `Chuck Winn is a Certified Financial Planner with DB Tax & Wealth. With over 20 years of investment experience, he is ready to discuss your financial scenario and goals.
 
