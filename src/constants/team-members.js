@@ -271,23 +271,23 @@ export const TEAM_MEMBERS = [
     In his freetime, he enjoys bodybuilding, collecting vinyl records, and watching Naruto (the greatest ninja ever).`,
     readmore: 1,
   },
-  {
-    id: 'jen-kohls',
-    email: 'jkohls@dbtaxinc.com',
-    fax: '',
-    img: jen,
-    name: 'Jennifer Kohls',
-    shortBio: `Hard-working. Inquisitive. Generous. 
-    Spreadsheet enthusiast focused on setting goals and hitting targets.`,
-    phone: '414-764-7330',
-    title: 'Portfolio Management Analyst',
-    description: `Jen started her career with over 7 years in finance; first banking, then investments. In search of a more flexible schedule to handle family commitments, Jen switched to contracted work closer to home. She spent numerous years working in the non-profit sector, yet the world of finance has beckoned her back. She previously obtained her Series 7 General Securities Representative license and Series 63 Uniform Securities Agent license, and she is looking forward to obtaining them again. Jen enjoys researching and analyzing investments in her current role.
+  // {
+  //   id: 'jen-kohls',
+  //   email: 'jkohls@dbtaxinc.com',
+  //   fax: '',
+  //   img: jen,
+  //   name: 'Jennifer Kohls',
+  //   shortBio: `Hard-working. Inquisitive. Generous. 
+  //   Spreadsheet enthusiast focused on setting goals and hitting targets.`,
+  //   phone: '414-764-7330',
+  //   title: 'Portfolio Management Analyst',
+  //   description: `Jen started her career with over 7 years in finance; first banking, then investments. In search of a more flexible schedule to handle family commitments, Jen switched to contracted work closer to home. She spent numerous years working in the non-profit sector, yet the world of finance has beckoned her back. She previously obtained her Series 7 General Securities Representative license and Series 63 Uniform Securities Agent license, and she is looking forward to obtaining them again. Jen enjoys researching and analyzing investments in her current role.
 
-    Jen graduated Magna Cum Laude with Business Honors from UW-Parkside, majoring in Business Management - Finance. She also earned a Six Sigma Green Belt Certification, which specializes in process improvement.
+  //   Jen graduated Magna Cum Laude with Business Honors from UW-Parkside, majoring in Business Management - Finance. She also earned a Six Sigma Green Belt Certification, which specializes in process improvement.
     
-    In her spare time, Jen enjoys gardening, golfing, and supporting her sons in their activities. She has a long history of volunteering in her community and she's passionate about helping others.`,
-    readmore: 1,
-  },
+  //   In her spare time, Jen enjoys gardening, golfing, and supporting her sons in their activities. She has a long history of volunteering in her community and she's passionate about helping others.`,
+  //   readmore: 1,
+  // },
   {
     id: 'ashley-iwinski',
     email: 'aiwinski@dbtaxinc.com',
