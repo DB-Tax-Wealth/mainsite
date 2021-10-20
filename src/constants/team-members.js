@@ -17,6 +17,7 @@ import cullen from 'images/team/cullen-quinn.jpg';
 import jen from 'images/team/jen-kohls.jpg';
 import ashley from 'images/team/Ashley-Iwinski.png';
 import sarah from 'images/team/sarah-kaleta.jpg';
+import melissa from 'images/team/melissa-coppage.png';
 
 export const TEAM_MEMBERS = [
   {
@@ -72,7 +73,7 @@ export const TEAM_MEMBERS = [
     shortBio:
       'Capable.  Honest (Sometimes Brutally).  Headstrong.  Baseball Fanatic.  Loves stats.  Traveler and Geography buff. Foodie who will try anything once, especially if it’s spicy.',
     phone: '414-764-7330',
-    title: 'President of DB Tax & Wealth, Accounting Director',
+    title: 'Vice President of DB Tax & Wealth, Accounting Director',
     description: `Mark graduated from St. Mary’s University in Winona, MN in 1996 with a Bachelor’s degree in Accounting, and is also proud to be a graduate of Marquette University High School here in Milwaukee. Mark played baseball through his junior year in college, and became an assistant coach for his senior season.
 
     He began his career in accounting with Midwest Express Airlines, as a data entry clerk in the Revenue Accounting department. He was promoted 5 times in 4 years and was trusted to work in correlation with other departments on many projects, creating enhancements to out of date processes and automated tasks that were formerly manual. In 2001, Mark was hired as a staff accountant for Time Warner Cable. In 2006 when the company switched gears and regionalized positions, he gladly accepted a new role as a Financial Analyst. Over the course of his career there, Mark’s skill set grew in many areas. He gained valuable experience in creating and reading financial statements, compiling annual budgets and monthly outlooks, 1099-MISC calculations and submissions, Federal and State Tax filings, data analytics and compliance auditing. Over the course of 11 years, Mark became an expert in Microsoft Excel, learning most everything on his own. This knowledge allows him to create working templates for tax and financial services needs.
@@ -232,7 +233,7 @@ export const TEAM_MEMBERS = [
     shortBio:
       'Friendly.  Approachable.  Considerate.  Wisconsin sports supporter.  Active. Loves to jog, ride her bike, and do Yoga with her Mom.  Namaste.',
     phone: '414-764-7330',
-    title: 'Firm Administrative Assistant',
+    title: 'Client Experience Specialist',
     description: `Ramona is a graduate from Eachieve Academy and a current part time student at Milwaukee Area Technical College. She is the first person you will engage with when you interact with our firm. Being our full time receptionist ensures that you will see her bright smile when you walk in the door and hear her welcoming voice on the phone. Ramona has been is the customer service industry for 7 years which has given her the skill set to ensure that each client has a welcoming experience with our firm! Ramona has adopted many responsibilities since starting with us and her dedication to learning increases every day. Ramona manages all client inquiries, organizes all data entry, and provides pivotal assistance to all staff members. As full time receptionist Ramona has taken on a vital role in our growing firm.
 
     Outside of work, Ramona likes to spend her time supporting Wisconsin sports with her family and friends. She also enjoys being active whether it’s going for a jog with her dogs, riding her bike or taking a yoga class with her mom. She is looking forward to furthering her education and enhancing her career with us.`,
@@ -246,7 +247,7 @@ export const TEAM_MEMBERS = [
     name: 'Matt Burke',
     shortBio: 'Compassionate. Outgoing. Social. Loves Traveling, Golfing and Collecting Records.',
     phone: '414-764-7330',
-    title: 'Operations Specialist',
+    title: 'Investment Management Analyst',
     description: `Matt graduated from the University of Wisconsin-Milwaukee with a Bachelor’s Degree in finance and a certificate of International Business. He has obtained his Series 7 and 63 FINRA licenses and is currently studying for his Series 65.
 
     Prior to employment with DB Tax and Wealth, Matt worked for 5 years with Charles Schwab out of Indianapolis on the Client Tax Reporting team. At DB, Matt is a part of the Operations team serving as an Operations Specialist.
@@ -329,6 +330,20 @@ export const TEAM_MEMBERS = [
     readmore: 1,
   },
   {
+    id: 'melissa-coppage',
+    email: 'mcoppage@dbtaxinc.com',
+    fax: '',
+    img: melissa,
+    name: 'Melissa Coppage',
+    shortBio: ``,
+    phone: '414-764-7330',
+    title: 'Senior Wealth Planner',
+    description: `Melissa began her career in Finance in 1996. Her licenses include Series 6, 7, 63 and 65 and she is a Dave Ramsey Smartvestor Pro. She works hard to educate clients so they have a full understanding of the strategies that are being implemented. Her goal is to always go above and beyond expectations and she strives to deliver reliable solutions in a professional and timely manner. In addition to all of the services DB Tax & Wealth already provides, Melissa specializes in Asset Protection/Life Insurance as well as Long Term Care & Disability Strategies
+
+    Melissa is the oldest of eight children. She was born and raised on a dairy farm in Wautoma, WI.  She graduated with a CCAF degree from the United States Air Force. She retired with 24 years of Military service, including 13 years active duty. She currently resides in Wauwatosa with her husband, Rich, a retired Sheriff. They have two sons: Adrian, a UWM graduate who now works in Environmental Engineering and Miles, a senior at Wauwatosa West High School. Melissa enjoys spending time at the gym and teaching fitness classes. She is an active member of First Congregational Church.`,
+    readmore: 1,
+  },
+  {
     id: 'jason-klatt',
     email: '',
     fax: '',
@@ -336,7 +351,7 @@ export const TEAM_MEMBERS = [
     name: 'Jason Klatt',
     shortBio: 'Carthage College - Double major in Finance and Marketing',
     phone: '',
-    title: 'Financial Analyst',
+    title: 'Marketing Analyst',
     description: '',
   },
   {

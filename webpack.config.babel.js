@@ -90,7 +90,7 @@ const commonConfig = merge([
 
 const developmentConfig = merge([
   commonConfig,
-  devServer({ host: 'localhost', port: 9090 }),
+  devServer({ host: 'localhost', port: 9080 }),
   getSourcemaps({ type: 'cheap-module-eval-source-map' }),
   loadFiles({ name: '[name].[ext]' }),
   loadFonts({ options: { name: '[name].[ext]' } }),
