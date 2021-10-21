@@ -335,7 +335,7 @@ export const TEAM_MEMBERS = [
     fax: '',
     img: melissa,
     name: 'Melissa Coppage',
-    shortBio: ``,
+    shortBio: '',
     phone: '414-764-7330',
     title: 'Senior Wealth Planner',
     description: `Melissa began her career in Finance in 1996. Her licenses include Series 6, 7, 63 and 65 and she is a Dave Ramsey Smartvestor Pro. She works hard to educate clients so they have a full understanding of the strategies that are being implemented. Her goal is to always go above and beyond expectations and she strives to deliver reliable solutions in a professional and timely manner. In addition to all of the services DB Tax & Wealth already provides, Melissa specializes in Asset Protection/Life Insurance as well as Long Term Care & Disability Strategies
