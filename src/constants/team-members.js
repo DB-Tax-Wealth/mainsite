@@ -114,22 +114,17 @@ export const TEAM_MEMBERS = [
     readmore: 1,
   },
   {
-    id: 'rebecca-campos',
-    email: 'rcampos@dbtaxinc.com',
+    id: 'melissa-coppage',
+    email: 'mcoppage@dbtaxinc.com',
     fax: '',
-    img: rebeccaCampos,
-    name: 'Rebecca Campos',
-    shortBio:
-      'Thoughtful.  Warm.  Spiritual.  Christian Mother who is dedicated to volunteering at her church.  Loves to keep busy with the children and grandchildren.',
+    img: melissa,
+    name: 'Melissa Coppage, CLU®, ChFC®, LUTCF',
+    shortBio: '',
     phone: '414-764-7330',
-    title: 'Tax Professional',
-    description: `Rebecca is a graduate of Holy Trinity Grade School and a graduate of St. Mary’s Academy Major-History Minor-Business. She completed her tax preparation studies at H & R Block (2001). She also completed a course in Corporate Taxation at MATC, Oak Creek Campus (2009).
+    title: 'Senior Wealth Planner',
+    description: `Melissa began her career in Finance in 1996. Her licenses include Series 6, 7, 63 and 65 and she is a Dave Ramsey Smartvestor Pro. She works hard to educate clients so they have a full understanding of the strategies that are being implemented. Her goal is to always go above and beyond expectations and she strives to deliver reliable solutions in a professional and timely manner. In addition to all of the services DB Tax & Wealth already provides, Melissa specializes in Asset Protection/Life Insurance as well as Long Term Care & Disability Strategies
 
-    Prior to her employment with DB Tax & Wealth, Rebecca worked 18 years doing audit work at Milwaukee Insurance (1980-1998). Personal Lines Insurance Assistant Underwriter at Unitrin (formerly Milwaukee Insurance) (1998-2003). She retired from Unitrin in 2003. Currently, she is working as a tax professional specializing in individual and small business tax return preparation with the firm (2002-present). Rebecca also provides supervision of other tax professionals in the firm (2009 – present). Annually Rebecca attends the Back to Basics tax seminars (2 parts).
-
-    Rebecca volunteers her time as a member of Christian Mothers – Our Lady of Guadalupe-Milwaukee (10 years) and is currently the Treasurer of Christian Mothers (3 years). Secretary of Parish council – Our Lady of Guadalupe Parish.  She is also a volunteer as a money counter and Eucharistic Minister and choir member of Our Lady of Guadalupe and also Eucharistic minister for Divine Mercy Parish in South Milwaukee. She loves to line dance and attends water aerobics classes.
-
-    Rebecca, who is widowed, has 6 children. Ruth, who is a Litigation Paralegal  at Gimbel, Reilly, Geurin and Brown Law Firm for 5 years after working at the Milwaukee Courthouse for 23 years.   Ronald, who is a Milwaukee Police Officer for 21 years. Rachel, who is a Resident Assistant at Brenwood Park Assisted Living,  Robert, who is a South Milwaukee Postal Worker,  Richard, who is a Master Electrician and has worked for Ladish Company,  now ATI,  in Cudahy as Maintenance General Foreman for 9 years.  Rosalinda, who completed her residency and is a Family Medicine Physician at Memorial Hospital and Clinics in Carthage, IL. Rebecca has lived in South Milwaukee since 1991.`,
+    Melissa is the oldest of eight children. She was born and raised on a dairy farm in Wautoma, WI.  She graduated with a CCAF degree from the United States Air Force. She retired with 24 years of Military service, including 13 years active duty. She currently resides in Wauwatosa with her husband, Rich, a retired Sheriff. They have two sons: Adrian, a UWM graduate who now works in Environmental Engineering and Miles, a senior at Wauwatosa West High School. Melissa enjoys spending time at the gym and teaching fitness classes. She is an active member of First Congregational Church.`,
     readmore: 1,
   },
   {
@@ -153,20 +148,6 @@ export const TEAM_MEMBERS = [
     Chuck has successfully passed the FINRA Series 7 General Securities Representative exam, Series 63 Uniform Securities Agent State Law exam and the Series 65 Uniform Combined State Law exam, as well as obtaining Health and Life Insurance licenses. Chuck has been a CERTIFIED FINANCIAL PLANNER ® professional since 2016 after completing educational course requirements in Investment Planning, Retirement Planning, Tax Planning, Financial Planning, Estate Planning and Insurance Planning. Chuck earned his Bachelor’s degree in Business Administration from the University of Wisconsin-Milwaukee, summa cum laude, in 2003.
 
     Chuck lives in Menomonee Falls. If you run into him outside of work, he’s probably having fun with his kids Mark (13) and Joelle (12) or his extended family. He loves adventure and the outdoors, especially riding dirt bikes, fishing, skiing in the mountains and riding off-road trails on his mountain bike.`,
-    readmore: 1,
-  },
-  {
-    id: 'melissa-coppage',
-    email: 'mcoppage@dbtaxinc.com',
-    fax: '',
-    img: melissa,
-    name: 'Melissa Coppage, CLU®, ChFC®, LUTCF',
-    shortBio: '',
-    phone: '414-764-7330',
-    title: 'Senior Wealth Planner',
-    description: `Melissa began her career in Finance in 1996. Her licenses include Series 6, 7, 63 and 65 and she is a Dave Ramsey Smartvestor Pro. She works hard to educate clients so they have a full understanding of the strategies that are being implemented. Her goal is to always go above and beyond expectations and she strives to deliver reliable solutions in a professional and timely manner. In addition to all of the services DB Tax & Wealth already provides, Melissa specializes in Asset Protection/Life Insurance as well as Long Term Care & Disability Strategies
-
-    Melissa is the oldest of eight children. She was born and raised on a dairy farm in Wautoma, WI.  She graduated with a CCAF degree from the United States Air Force. She retired with 24 years of Military service, including 13 years active duty. She currently resides in Wauwatosa with her husband, Rich, a retired Sheriff. They have two sons: Adrian, a UWM graduate who now works in Environmental Engineering and Miles, a senior at Wauwatosa West High School. Melissa enjoys spending time at the gym and teaching fitness classes. She is an active member of First Congregational Church.`,
     readmore: 1,
   },
   {
@@ -341,6 +322,25 @@ export const TEAM_MEMBERS = [
    Sarah graduated from Milwaukee Area Technical College in 2008 with an Associate’s of Sciences Degree, first obtained her Wisconsin Life & Health Insurance License in 2004 and is an active notary.
    
    When she’s not out on the lake waiting for the next big catch, you can find her watching the latest thriller movie, jamming out to the musical theme of the day or playing cards with family and friends.`,
+    readmore: 1,
+  },
+  {
+    id: 'rebecca-campos',
+    email: 'rcampos@dbtaxinc.com',
+    fax: '',
+    img: rebeccaCampos,
+    name: 'Rebecca Campos',
+    shortBio:
+      'Thoughtful.  Warm.  Spiritual.  Christian Mother who is dedicated to volunteering at her church.  Loves to keep busy with the children and grandchildren.',
+    phone: '414-764-7330',
+    title: 'Tax Professional',
+    description: `Rebecca is a graduate of Holy Trinity Grade School and a graduate of St. Mary’s Academy Major-History Minor-Business. She completed her tax preparation studies at H & R Block (2001). She also completed a course in Corporate Taxation at MATC, Oak Creek Campus (2009).
+
+    Prior to her employment with DB Tax & Wealth, Rebecca worked 18 years doing audit work at Milwaukee Insurance (1980-1998). Personal Lines Insurance Assistant Underwriter at Unitrin (formerly Milwaukee Insurance) (1998-2003). She retired from Unitrin in 2003. Currently, she is working as a tax professional specializing in individual and small business tax return preparation with the firm (2002-present). Rebecca also provides supervision of other tax professionals in the firm (2009 – present). Annually Rebecca attends the Back to Basics tax seminars (2 parts).
+
+    Rebecca volunteers her time as a member of Christian Mothers – Our Lady of Guadalupe-Milwaukee (10 years) and is currently the Treasurer of Christian Mothers (3 years). Secretary of Parish council – Our Lady of Guadalupe Parish.  She is also a volunteer as a money counter and Eucharistic Minister and choir member of Our Lady of Guadalupe and also Eucharistic minister for Divine Mercy Parish in South Milwaukee. She loves to line dance and attends water aerobics classes.
+
+    Rebecca, who is widowed, has 6 children. Ruth, who is a Litigation Paralegal  at Gimbel, Reilly, Geurin and Brown Law Firm for 5 years after working at the Milwaukee Courthouse for 23 years.   Ronald, who is a Milwaukee Police Officer for 21 years. Rachel, who is a Resident Assistant at Brenwood Park Assisted Living,  Robert, who is a South Milwaukee Postal Worker,  Richard, who is a Master Electrician and has worked for Ladish Company,  now ATI,  in Cudahy as Maintenance General Foreman for 9 years.  Rosalinda, who completed her residency and is a Family Medicine Physician at Memorial Hospital and Clinics in Carthage, IL. Rebecca has lived in South Milwaukee since 1991.`,
     readmore: 1,
   },
   {
