@@ -156,6 +156,20 @@ export const TEAM_MEMBERS = [
     readmore: 1,
   },
   {
+    id: 'melissa-coppage',
+    email: 'mcoppage@dbtaxinc.com',
+    fax: '',
+    img: melissa,
+    name: 'Melissa Coppage, CLU®, ChFC®, LUTCF',
+    shortBio: '',
+    phone: '414-764-7330',
+    title: 'Senior Wealth Planner',
+    description: `Melissa began her career in Finance in 1996. Her licenses include Series 6, 7, 63 and 65 and she is a Dave Ramsey Smartvestor Pro. She works hard to educate clients so they have a full understanding of the strategies that are being implemented. Her goal is to always go above and beyond expectations and she strives to deliver reliable solutions in a professional and timely manner. In addition to all of the services DB Tax & Wealth already provides, Melissa specializes in Asset Protection/Life Insurance as well as Long Term Care & Disability Strategies
+
+    Melissa is the oldest of eight children. She was born and raised on a dairy farm in Wautoma, WI.  She graduated with a CCAF degree from the United States Air Force. She retired with 24 years of Military service, including 13 years active duty. She currently resides in Wauwatosa with her husband, Rich, a retired Sheriff. They have two sons: Adrian, a UWM graduate who now works in Environmental Engineering and Miles, a senior at Wauwatosa West High School. Melissa enjoys spending time at the gym and teaching fitness classes. She is an active member of First Congregational Church.`,
+    readmore: 1,
+  },
+  {
     id: 'lisa-reinke',
     email: 'lreinke@dbtaxinc.com',
     fax: '',
@@ -327,20 +341,6 @@ export const TEAM_MEMBERS = [
    Sarah graduated from Milwaukee Area Technical College in 2008 with an Associate’s of Sciences Degree, first obtained her Wisconsin Life & Health Insurance License in 2004 and is an active notary.
    
    When she’s not out on the lake waiting for the next big catch, you can find her watching the latest thriller movie, jamming out to the musical theme of the day or playing cards with family and friends.`,
-    readmore: 1,
-  },
-  {
-    id: 'melissa-coppage',
-    email: 'mcoppage@dbtaxinc.com',
-    fax: '',
-    img: melissa,
-    name: 'Melissa Coppage',
-    shortBio: '',
-    phone: '414-764-7330',
-    title: 'Senior Wealth Planner',
-    description: `Melissa began her career in Finance in 1996. Her licenses include Series 6, 7, 63 and 65 and she is a Dave Ramsey Smartvestor Pro. She works hard to educate clients so they have a full understanding of the strategies that are being implemented. Her goal is to always go above and beyond expectations and she strives to deliver reliable solutions in a professional and timely manner. In addition to all of the services DB Tax & Wealth already provides, Melissa specializes in Asset Protection/Life Insurance as well as Long Term Care & Disability Strategies
-
-    Melissa is the oldest of eight children. She was born and raised on a dairy farm in Wautoma, WI.  She graduated with a CCAF degree from the United States Air Force. She retired with 24 years of Military service, including 13 years active duty. She currently resides in Wauwatosa with her husband, Rich, a retired Sheriff. They have two sons: Adrian, a UWM graduate who now works in Environmental Engineering and Miles, a senior at Wauwatosa West High School. Melissa enjoys spending time at the gym and teaching fitness classes. She is an active member of First Congregational Church.`,
     readmore: 1,
   },
   {
