@@ -22,7 +22,7 @@ import melissa from 'images/team/melissa-coppage.png';
 export const TEAM_MEMBERS = [
   {
     id: 'lisa-pugel',
-    email: 'lpugel@dbtaxinc.com',
+    email: 'lpugel@dbtaxandwealth.com',
     fax: '',
     img: lisaPugel,
     name: 'Lisa A. Pugel, EA',
@@ -47,7 +47,7 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'gail-fisher',
-    email: 'gfisher@dbtaxinc.com',
+    email: 'gfisher@@dbtaxandwealth.com',
     fax: '',
     img: gailFisher,
     name: 'Gail Fisher',
@@ -100,7 +100,7 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'aliina-klatt',
-    email: 'aklatt@dbtaxinc.com',
+    email: 'aklatt@dbtaxandwealth.com',
     fax: '',
     img: aliinaKlatt,
     name: 'Aliina Klatt',
@@ -115,7 +115,7 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'melissa-coppage',
-    email: 'mcoppage@dbtaxinc.com',
+    email: 'mcoppage@dbtaxandwealth.com',
     fax: '',
     img: melissa,
     name: 'Melissa Coppage, CLU®, ChFC®, LUTCF',
@@ -129,7 +129,7 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'chuck-winn',
-    email: 'cwinn@dbtaxinc.com',
+    email: 'cwinn@dbtaxandwealth.com',
     fax: '',
     img: chuckWinn,
     name: 'Chuck Winn, CFP®',
@@ -236,7 +236,7 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'matt-burke',
-    email: 'mburke@dbtaxinc.com',
+    email: 'mburke@dbtaxandwealth.com',
     fax: '',
     img: matt,
     name: 'Matt Burke',
@@ -286,7 +286,7 @@ export const TEAM_MEMBERS = [
   // },
   {
     id: 'ashley-iwinski',
-    email: 'aiwinski@dbtaxinc.com',
+    email: 'aiwinski@dbtaxandwealth.com',
     fax: '',
     img: ashley,
     name: 'Ashley Iwinski',
@@ -305,7 +305,7 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'sarah-kaleta',
-    email: 'skaleta@dbtaxinc.com',
+    email: 'skaleta@dbtaxandwealth.com',
     fax: '',
     img: sarah,
     name: 'Sarah Kaleta',
